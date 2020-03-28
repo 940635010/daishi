@@ -18,6 +18,7 @@ header ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
 }
 
 header ul li img {
@@ -114,13 +115,13 @@ header ul li img {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    height: 40px;
+    height: 50px;
     margin: 20px auto 5px;
 }
 
 .settings>ul>li>img {
-    width: 34px;
-    height: 34px;
+    width: 50px;
+    height: 50px;
 }
 
 .settings-name {
@@ -132,17 +133,20 @@ header ul li img {
 }
 
 .settings-name>span {
-    font-size: 11px;
-    width: 15%;
-
+    font-size: 9px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
 }
 
 footer {
-    /* position: fixed; */
     width: 100%;
+    position: fixed;
     bottom: 0;
+    height: 60px;
     background-color: white;
     z-index: 9;
+    margin-top: 4.25rem;
 }
 
 footer>ul {
@@ -169,12 +173,15 @@ footer>ul {
 footer>ul>li {
     width: 25%;
     text-align: center;
-    line-height: 60px;
+    line-height: 50px;
     font-size: 13px;
+    margin-top: 20px;
 }
 
 footer>ul>li img {
-    margin-top: 25px;
     width: 50px;
     height: 50px;
+}
+.clear{
+    height: 60px;
 }
