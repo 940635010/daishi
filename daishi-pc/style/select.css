@@ -1,0 +1,27 @@
+.select-box{
+    overflow: hidden;
+    border: 1px solid black;
+    position: relative;
+}
+.select-triangle{
+    float: right;
+    border: 7px solid;
+    border-color: transparent transparent black;
+}
+.select-childbox{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+.select-img{
+    position: relative;
+    float: right;
+}
+.select-child{
+    padding-left: 14px;
+}
+.select-active{
+    padding-left: 14px;
+}
