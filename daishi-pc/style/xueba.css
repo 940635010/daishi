@@ -131,6 +131,7 @@
     font-size: 24px;
     line-height: 79px;
     margin-top: 53px;
+    cursor: pointer;
 }
 
 /* 方格布局 课程 */
@@ -213,6 +214,7 @@
     width: 165px;
     height: 41px;
     background-color: #4047ff;
+    cursor: pointer;
 }
 .xb-grow2>div>div {
     width: 42px;
@@ -236,6 +238,7 @@
     color: #a3a6ff;
     font-size: 20px;
     width: 165px;
+    cursor: pointer;
     height: 41px;
     background-color: #4047ff;
 }
@@ -283,16 +286,77 @@
     flex-direction: column;
     justify-content: space-around;
 }
-
-/* 轮播图 */
-.xblbt {
+/* 优秀教师模范 */
+.szxxjsbox1{
     width: 100%;
-    height: 668px;
-    margin-top: -20px;
-    background-color: #0a10b8;
-    margin-bottom: 40px;
+    margin-top: 46px;
+    background-color: #f8f8f8;
+}
+.szlsqq{
+    width: 1200px;
+    margin: auto;
+    z-index: 9;
+    position: relative;
+}
+.szlsqq img{
+    width: 100%;
+}
+.szlsqq>div{
+    position: absolute;
+    width: 315px;
+    height: 63px;
+    border-radius: 41px;
+    border: 1px solid #23227b;
+    text-align: center;
+    line-height: 63px;
+    font-size: 24px;
+    background-color: white;
+    cursor: pointer;
+}
+.szlsqq>div:hover{
+    background-color: #caccff;
+    border: solid 1px #1e25e6;
+}
+.szhovers1{
+    top: 60px;
+    left: 135px;
+}.szhovers2{
+    top: 178px;
+    left: 81px;
+}.szhovers3{
+    top: 302px;
+    left: 81px;
+}.szhovers4{
+    top: 409px;
+    left: 135px;
+}.szhovers5{
+    top: 60px;
+    right: 128px;
+}.szhovers6{
+    top: 178px;
+    right: 79px;
+}.szhovers7{
+    top: 302px;
+    right: 79px;
+}.szhovers8{
+    top: 409px;
+    right: 128px;
+}
+ /* 轮播图 */
+ .szlbt-box{
+    width: 100%;
+    margin-top: -60px;
+    background-color: #2659ff;
 }
 
+.szlbtyg{
+    position: relative;
+    width: 1200px;
+    margin: auto;
+}
+.szlbtyg img{
+    width: 100%;
+}
 /* 环境 */
 .xbhuan-jin {
     width: 1200px;
@@ -345,6 +409,7 @@
     width: 100%;
     height: 79px;
     color: #ffffff;
+    cursor: pointer;
     background-color: #262cdc;
     text-align: center;
     font-size: 24px;
