@@ -1,0 +1,38 @@
+/* charts */
+.charts{
+    margin-top:  6vw;
+}
+.chart1{
+    margin: auto;
+}
+.chart2,.chart3,.chart4,.chart5,.chart6,.chart7{
+    margin-top: 6vw;
+}
+.chart4 img{
+    margin-left:35vw;
+}
+.chart4 input{
+    width: 94vw;
+    height: 10vw;
+    margin-left: 35vw;
+    font-size: 5vw;
+    color: darkgrey;
+    margin-top: 2vw;
+    border: 1px solid darkgrey;
+    border-radius: 2vw;
+}
+.get{
+    border: 1px solid rgb(255,80,77);
+    background-color: rgb(255,80,77);
+    color: white;
+    text-align: center;
+    width: 93vw;
+    height: 10vw;
+    border-radius: 2vw;
+    margin-left: 35vw;
+    margin-top:5vw;
+    font-size: 5vw ;                              vw;
+}
+.get>p{
+    margin-top:1.5vw;
+}
