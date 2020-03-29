@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shizhi</title>
-    <link rel="stylesheet" href="../style/shizhi.css">
-        <link rel="stylesheet" href="../templet/head.css">
-        <link rel="stylesheet" href="../templet/footer.css">
-    </head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../templet/head.css">
+    <link rel="stylesheet" href="../templet/footer.css">
+    <link rel="stylesheet" href="../style/select.css">
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
         /* 封装倒计时样式 */
         .timeItem {
             font-size: 20px;
@@ -18,7 +20,7 @@
             background: #438ae4;
             display: inline-block;
         }
-    
+
         .dot {
             display: inline-block;
             padding: 5px 4px;
@@ -26,12 +28,64 @@
             font-weight: bold;
             vertical-align: top;
         }
-        .index-footer {
-             height: 374px;
+        .shangke-content{
+            width: 100%;
+        }
+        .shangke-content>img{
+            width: 100%;
+        }
+        .shangke-lunbo{
+            margin-top: 120px;
+            width: 100%;
+            height: 600px;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+        .shangke-input{
+            width: 1200px;
+            margin: 72px auto;
+            display: flex;
+            justify-content:space-between;
+            flex-wrap:wrap;
+        }
+        .shangke-input>input{
+            width: 578px;
+            height: 75px;
+            box-sizing: border-box;
+            font-size: 24px;
+            padding-left: 25px;
+            margin-bottom: 42PX;
+        }
+        .shangke-input>input::-webkit-input-placeholder{
+            color: #cccccc;
+        }
+        .shangke-ys{
+            margin-bottom: 42px;
+        }
+        .shangke-btn{
+            width: 100%;
+            height: 75px;
+            background-color: #2558ff;
+            border: 0px;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .shangke-img{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .shangke-congfu{
+            width: 1200px;
+            height: 726px;
+            margin: 72px auto;
+            border: 1px solid red;
+        }
+        .shangke-style{
+            margin-top: 42px;
         }
     </style>
 </head>
-
 <body>
     <!-- 头部 -->
     <div class="index-header">
@@ -75,102 +129,34 @@
             </div>
         </div>
     </div>
-    <!-- 师资怎么样 -->
-    <div class="szbox-sz">
-        <!-- 头部 轮播图 -->
-        <div class="szimg-1">
-            <img src="../images/yinxing/sztop.png" alt="">
-        </div>
-        <!-- 辅导模式 -->
-        <div class="xbxian-xia">
-            <ul class="xbxian-ul">
-                <li>
-                    <div class="xbli-div">
-                        <p>K12</p>
-                        <div></div>
-                        <span>本土教育品牌</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="xbli-div">
-                        <p>DSE</p>
-                        <div></div>
-                        <span>独特教学方法</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="xbli-div">
-                        <p>6对1</p>
-                        <div></div>
-                        <span>效果监测评估</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="xbli-div">
-                        <p>27年</p>
-                        <div></div>
-                        <span>教培辅导经验</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="xbli-div">
-                        <p>5年+</p>
-                        <div></div>
-                        <span>教龄精英教师</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="xbli-div">
-                        <p>100万+</p>
-                        <div></div>
-                        <span>圆梦名校学生</span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <!-- 老师团队 -->
-        <div class="szimg-2">
+    <!-- 内容 -->
+    <div class="shangke-content">
+        <div class="shangke-lunbo">
 
         </div>
-        <!-- 了解团队 -->
-        <div class="sztd1">
-            <div class="szimg-3">
-                <div class="szdianji"></div>
-            </div>
+        <img src="../images/ly/pcshangke_03.jpg">
+        <div class="shangke-input">
+            <input type="text" placeholder="请输入您孩子的姓名">
+            <div class="shangke-ys shangke-select1"></div>
+            <div class="shangke-ys shangke-select2"></div>
+            <div class="shangke-ys shangke-select3"></div>
+            <input type="text" placeholder="请输入您的电话">
+            <input type="text" placeholder="住址（方便就近安排校区）">
+            <button class="shangke-btn">立即获取课程价格</button>
         </div>
-        <!-- 按钮图片 -->
-        <div class='szantp'>
-            <img src="../images/yinxing/szmscgt.png" alt="">
-        </div>
+        <div class="shangke-congfu">
 
-        <!-- 优秀教师模范 -->
-        <div class="szxxjsbox1">
-            <div class="szlsqq">
-                <img src="../images/yinxing/xblaoskoutu.png" alt="">
-                <div class="szhovers1">04.培训：教学技巧培训</div>
-                <div class="szhovers2">03.面试：专业知识面试</div>
-                <div class="szhovers3">02.笔试：专业知识笔试</div>
-                <div class="szhovers4">01.报名：5年+教龄教师</div>
-                <div class="szhovers5">05.考核：培训成果检查</div>
-                <div class="szhovers6">06.试讲：授课风格面试</div>
-                <div class="szhovers7">07.授课：安排首次授课</div>
-                <div class="szhovers8">戴氏中考中心合格教师</div>
-            </div>
         </div>
-         <!-- 轮播图  -->
-         <div class="szlbt-box">
-            <div class="szlbtyg">
-                <img src="../images/yinxing/szlbt1.png" alt="">
-            </div>
-        </div>
-        <!-- 底部图片 -->
-        <div class="xbimgs-1">
-            <img src="../images/yinxing/szdibutp.png">
-
+        <div class="shangke-img">
+            <img src="../images/ly/pcshangke_06.jpg">
+            <button class="shangke-btn shangke-style">立即获取课程价格</button>
         </div>
     </div>
     <!-- 底部 -->
     <div class="index-footer">
+        <div class="footer-back">
+            <img src="../images/index/footerback.jpg" alt="">
+        </div>
         <div class="footer-pic">
             <img src="../images/index/footerpic.jpg" alt="">
             <div class="footer-inp">
@@ -189,10 +175,10 @@
             </div>
         </div>
     </div>
-</body>
-<script>
-
-    /*
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/select.js"></script>
+    <script>
+        /*
         倒计时的封装
         date:未来的时间，
         style: 样式类名,
@@ -293,6 +279,27 @@
         date: "2020-07-6"
     })
 
-
-</script>
+    new Select({
+            position:$('.shangke-select1'),
+            arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select2'),
+            arr:["科目",'语文','数学','英语','物理','化学','语言表演','情商美术'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select3'),
+            arr:["班级",'一对一','3~6人精品','15人大师班'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+    </script>
+</body>
 </html>

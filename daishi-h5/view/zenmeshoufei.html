@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/select.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>怎么收费</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        #shoufei-box{
+            width: 90%;
+            margin: 125px auto 0;
+            background-color: white;
+            z-index: 1;
+            border-radius: 25px;
+        }
+        #shoufei-box>p{
+            font-weight: 600;
+            text-align: center;
+            font-size: 18px;
+            padding: 21px 0;
+            color: #228aec;
+        }
+        #shoufei-box>p>span{
+            color: black;
+        }
+        .shoufei-zhezhao{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #7f7f7f;
+        }
+        .shoufei-input{
+            width: 91%;
+            margin: 0 auto;
+        }
+        .shoufei-input>input{
+            width: 100%;
+            height: 34.5px;
+            padding-left: 12px;
+            margin-bottom: 22px;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+        .shoufei-select{
+            margin: 0 auto;
+            width: 91%;
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+        }
+        .shoufei-select>div{
+            margin-bottom: 21px;
+        }
+        .shoufei-select>.btn{
+            border: 0;
+            width: 100%;
+            height: 37px;
+            margin: 0 auto;
+            background-color: #4a8fe6;
+            line-height: 37px;
+            margin-bottom: 21px;
+            color: white;
+        }
+        .close-btn{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border: 1px solid white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 29px;
+            left: calc( 50% - 15px);
+            color: white;
+            margin-top: 21px;
+        }
+    </style>
+</head>
+<body>
+    <div class="shoufei-zhezhao">
+        <div id="shoufei-box">
+            <p><span>10秒</span>免费|获取报价详情</p>
+            <div class="shoufei-input">
+                <input type="text" placeholder="请输入您孩子的姓名">
+                <input type="text" placeholder="请输入您的电话">
+                <input type="text" placeholder="住址（便于就近安排校区）">
+            </div>
+            <div class="shoufei-select">
+                <div id="shoufei-select1"></div>
+                <div id="shoufei-select2"></div>
+                <div id="shoufei-select3"></div>
+                <button class="btn">立即获取课程报价</button>
+            </div>
+            <div class="close-btn">X</div>
+        </div>
+    </div>
+    <script src="../js/select.js"></script>
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script>
+        new Select({
+            position:$('#shoufei-select1'),
+            arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+            width:'47%',
+            height:'37px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('#shoufei-select2'),
+            arr:["科目",'语文','数学','英语','物理','化学','语言表演','情商美术'],
+            width:'47%',
+            height:'37px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('#shoufei-select3'),
+            arr:["班级",'一对一','3~6人精品','15人大师班'],
+            width:'100%',
+            height:'37px',
+            drop:'180px'
+        })
+    </script>
+</body>
+</html>

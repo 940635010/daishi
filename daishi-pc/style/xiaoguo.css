@@ -1,13 +1,7 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
-
-.szbox-sz {
-    width: 100%;
-    margin-top: 120px;
-}
-
 /* 头部 轮播图 */
 .szimg-1 {
     width: 100%;
@@ -16,6 +10,7 @@
 .szimg-1>img {
     width: 100%;
 }
+
 
 /* 辅导模式*/
 .xbxian-xia {
@@ -90,60 +85,37 @@
     font-size: 20px;
     color: #333333;
 }
-/* 老师团队  */
-.szimg-2{
-    width: 1200px;
-    height: 800px;
-    margin: auto;
-    background-image: url("../images/yinxing/szbjhz.png");
-    background-size: cover;
-    margin-bottom: 65px;
+
+/* 立即预约测评 */
+.xgljcpbox{
+background-color: #438ae6;
+box-shadow: 0 0 2px #438ae6;
 }
-/* 了解团队 */
-.szimg-3{
+.xgljcpl{
     width: 1200px;
+    margin: auto;
+    height: 119px;
     position: relative;
-    height: 260px;
-    margin: auto;
-    background-image: url("../images/yinxing/shiztuandu.png");
-    background-size: cover;
 }
-.szdianji{
-    position: absolute;
+.xgljcpl>div{
+    width: 343px;
     height: 72px;
-    width: 358px;
-    top: 165px;
-    left: 24px;
+    bottom: 27px;
+    right: 205px;
     cursor: pointer;
+    position: absolute;
 }
-.sztd1{
-    width: 100%;
-    padding:10px 0px ;
-    background-image: url("../images/yinxing/shiztuandu1.png");
-    background-size: contain ;
+.xgljcpl>img{
+    width: 1111px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 89px;
 }
 
-/* 底部图片 */
-.xbimgs-1{
-    width: 100%;
-}
-.xbimgs-1>img{
-   width:  100%;
-}
- /* 按钮图片 */
-.szantp{
-    margin: auto;
-    margin-top: 72px;
-    width: 655px;
-    height: 102px;
-}
-.szantp>img{
-    width: 100%;
-}
 /* 优秀教师模范 */
 .szxxjsbox1{
     width: 100%;
-    margin-top: 46px;
+    padding-top: 30px;
     background-color: #f8f8f8;
 }
 .szlsqq{
@@ -209,5 +181,59 @@
     margin: auto;
 }
 .szlbtyg img{
+    width: 100%;
+}
+
+/* 5阶教学标准 */
+.xgwjiebox {
+	width: 1200px;
+    margin: auto;
+    margin-top: 71px;
+}
+.xgwjiebox>p{
+    text-align: center;
+    font-size: 36px;
+}
+.xgxxwj{
+    width: 100%;
+    height: 204px;
+    margin-top: 72px;
+}
+.xgxxwj>ul>li{
+    list-style: none;
+    float: left;
+    margin-bottom: 42px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+        width: 165px;
+        height: 60px;
+        margin-right: 41px;
+        box-sizing: border-box;
+        color: #438ae4;
+        border: solid 1px #438ae4;
+        cursor: pointer;
+}
+.xgxxwj>ul>.xgcdli{
+    width: 268px;
+}
+.xgxxwj>ul>li:last-child{
+    margin-right: 0px;
+}
+.xgxxwj>ul>li:nth-of-type(5){
+    margin-right: 0px;
+}
+.xgxxwj>ul>li:hover{
+    color: white;
+        background-color: #438ae4;
+}
+.xgwjiebox>img{
+    width: 100%;
+}
+/* 底部图片 */
+.xbimgs-1{
+    margin-top: 73px;
+}
+.xbimgs-1 img {
     width: 100%;
 }
