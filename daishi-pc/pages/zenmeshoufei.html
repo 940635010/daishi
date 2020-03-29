@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/select.css">
+    <link rel="stylesheet" href="../style/select.css">
     <style>
         *{
             margin: 0;
@@ -23,7 +23,7 @@
             background: #7f7f7f;
         }
         .shoufei-box{
-            background-image: url(../images/pc报价表单.png);
+            background-image: url(../images/ly/pcbiaodan.png);
             width: 600px;
             height: 567px;
             position: fixed;
@@ -32,6 +32,7 @@
             border-radius: 30px;
         }
         .shoufei-box>input{
+            box-sizing: border-box;
             display: block;
             width: 445px;
             height: 60px;
@@ -105,8 +106,8 @@
             </div>
         </div>
     </div>
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/select.js"></script>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/select.js"></script>
     <script>
         new Select({
             position:$('#charge-select1'),
