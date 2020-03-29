@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../templet/head.css">
+    <link rel="stylesheet" href="../templet/footer.css">
+    <link rel="stylesheet" href="../css/middle-school.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 封装倒计时样式 */
+        .timeItem {
+            font-size: 20px;
+            padding: 6px 8px;
+            color: #fff;
+            background: #438ae4;
+            display: inline-block;
+        }
+
+        .dot {
+            display: inline-block;
+            padding: 5px 4px;
+            font-size: 20px;
+            font-weight: bold;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="index-header">
+        <div class="index-head">
+            <a href="#">
+                <img src="../images/index/logo.png" alt="">
+            </a>
+            <div class="index-right">
+                <div class="index-top">
+                    <div class="top-zk">
+                        <p class="top-zk-txt">中考倒计时</p>
+                        <div class="top-zk-time"></div>
+                    </div>
+                    <div class="top-zk">
+                        <p class="top-zk-txt">高考倒计时</p>
+                        <div class="top-gk-time"></div>
+                    </div>
+                </div>
+                <div class="index-bom">
+                    <div class="bom-nav">
+                        <ul>
+                            <li class="li-active">首页</li>
+                            <li>师资力量</li>
+                            <li>校区查询</li>
+                            <li>热点资讯</li>
+                            <li>关于我们</li>
+                        </ul>
+                        <div class="nav-line"></div>
+                    </div>
+                    <div class="bom-phone">
+                        <div class="phone-one">
+                            <img src="../images/index/phone.png" alt="">
+                            <p>028-66060688</p>
+                        </div>
+                        <div class="phone-two">
+                            <img src="../images/index/wx.png" alt="">
+                            <p>微信</p>
+                            <div class="index-erweima"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle-main">
+        <!-- banner -->
+        <div class="middle-banner">
+            <img src="../images/middle/banner01.png" alt="">
+        </div>
+
+        <!-- 精准定位 -->
+        <div class="middle-posi center">
+            <div class="posi-title">
+                <img src="../images/middle/title01.png" alt="">
+            </div>
+            <div class="posi-pic">
+                <img src="../images/middle/jz01.jpg" alt="">
+                <img src="../images/middle/jz02.jpg" alt="">
+                <img src="../images/middle/jz03.jpg" alt="">
+                <img src="../images/middle/jz04.jpg" alt="">
+                <a class="posi-link" href="">立即资讯></a>
+                <a class="posi-link" href="">立即资讯></a>
+                <a class="posi-link" href="">立即资讯></a>
+                <a class="posi-link" href="">立即资讯></a>
+            </div>
+
+        </div>
+
+        <!-- 私人定制 -->
+        <div class="made-title center">
+            <img src="../images/middle/title02.png" alt="">
+        </div>
+        <div class="middle-made">
+            <div class="made-content center">
+                <div class="made-ren"></div>
+            </div>
+            <div class="made-bom">
+                <img src="../images/middle/dzbom.png" alt="">
+                <div class="made-img ">
+                    <img src="../images/middle/txt.png" alt="">
+                    <img class="book" src="../images/middle/book.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- 教学标准 -->
+        <div class="middle-tea center">
+            <div class="tea-title">
+                <img src="../images/middle/title03.png" alt="">
+            </div>
+            <div class="tea-stan">
+                <div class="tea-school">
+                    <p class="tea-back">小学</p>
+                    <p class="wid">初一1初二</p>
+                    <p>初三</p>
+                    <p class="wid">高一1高二</p>
+                    <p>高三</p>
+                </div>
+                <div class="tea-school tea-cour center">
+                    <p>语文</p>
+                    <p>英语</p>
+                    <p class="tea-back">数学</p>
+                </div>
+            </div>
+            <div class="tea-show">
+                <img src="../images/middle/show01.png" alt="">
+                <div>点击立即资讯</div>
+                <div>点击立即资讯</div>
+                <div>点击立即资讯</div>
+                <div>点击立即资讯</div>
+                <div>点击立即资讯</div>
+            </div>
+        </div>
+
+        <!-- 课程表单 -->
+        <div class="entra-form center">
+            <div class="entra-inp">
+                <input type="text" placeholder="请输入您孩子的姓名">
+                <select name="" id="">
+                    <option value="">年级</option>
+                </select>
+                <select name="" id="">
+                    <option value="">班型</option>
+                </select>
+                <select name="" id="">
+                    <option value="">科目</option>
+                </select>
+                <input type="text" placeholder="请输入您的电话">
+                <input type="text" placeholder="住址（便于就近安排校区）">
+            </div>
+            <div class="entra-form-btn">立即获取课程报价</div>
+        </div>
+
+        <!-- 检测管理 -->
+        <div class="tea-man center">
+            <div class="man-title">
+                <img src="../images/middle/title09.png" alt="">
+            </div>
+            <div class="man-model">
+                <img src="../images/middle/jc01.jpg" alt="">
+                <img src="../images/middle/jc02.jpg" alt="">
+                <img src="../images/middle/jc03.jpg" alt="">
+                <img src="../images/middle/jc04.jpg" alt="">
+                <img src="../images/middle/jc05.jpg" alt="">
+                <img src="../images/middle/jc06.jpg" alt="">
+            </div>
+            <div class="man-btn">028-66060688点击立即咨询</div>
+        </div>
+
+        <!-- 精细化流程 -->
+        <div class="middle-liu">
+            <div class="middle-title center">
+                <img src="../images/middle/title04.png" alt="">
+            </div>
+            <div class="liu-content">
+                <div class="con-show center">
+                    <img src="../images/middle/jx01.jpg" alt="">
+                    <img src="../images/middle/jx02.jpg" alt="">
+                    <img src="../images/middle/jx03.jpg" alt="">
+                    <img src="../images/middle/jx04.jpg" alt="">
+                </div>
+                <div class="con-show1 center">
+                    <img src="../images/middle/jx05.jpg" alt="">
+                    <img src="../images/middle/jx06.jpg" alt="">
+                    <img src="../images/middle/jx07.jpg" alt="">
+                </div>
+                <div class="man-btn">028-66060688点击立即咨询</div>
+            </div>
+        </div>
+
+        <!-- 名师出高徒 -->
+        <div class="middle-tu">
+            <div class="tu-title center">
+                <img src="../images/middle/title05.png" alt="">
+            </div>
+            <!-- <div class="tu-back">
+                <img src="../images/entrance/xbren.jpg" alt="">
+            </div> -->
+            <div class="szxxjsbox1">
+                <div class="szlsqq">
+                    <img src="../images/entrance/xblaoskoutu(1).png" alt="">
+                    <div class="szhovers1">04.培训：教学技巧培训</div>
+                    <div class="szhovers2">03.面试：专业知识面试</div>
+                    <div class="szhovers3">02.笔试：专业知识笔试</div>
+                    <div class="szhovers4">01.报名：5年+教龄教师</div>
+                    <div class="szhovers5">05.考核：培训成果检查</div>
+                    <div class="szhovers6">06.试讲：授课风格面试</div>
+                    <div class="szhovers7">07.授课：安排首次授课</div>
+                    <div class="szhovers8">戴氏中考中心合格教师</div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- 优秀模范导师 -->
+        <div class="middle-exc">
+            <!-- <div class="tutor-btn">优秀模范导师</div> -->
+        </div>
+
+        <!-- 好口碑 -->
+        <div class="middle-word center">
+            <div class="word-title">
+                <img src="../images/middle/title06.png" alt="">
+            </div>
+            <div class="word-phone"></div>
+            <div class="word-txt">
+                <img src="../images/middle/title07.png" alt="">
+            </div>
+            <div class="word-btn  center">立即报名：028-66060688</div>
+        </div>
+
+        <!-- 校区环境 -->
+        <div class="middle-str center">
+            <div class="str-title">
+                <img src="../images/middle/title08.png" alt="">
+            </div>
+            <div class="xbhuan-jin">
+                <div><img src="../images/yinxing/xbhj1.png"></div>
+                <div><img src="../images/yinxing/xbhj2.png"></div>
+                <div><img src="../images/yinxing/xbhj3.png"></div>
+                <div><img src="../images/yinxing/xbhj4.png"></div>
+                <div><img src="../images/yinxing/xbhj5.png"></div>
+                <div class="effect-baojia">立即获取课程报价</div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="index-footer">
+            <div class="footer-back">
+                <div class="back-logo center">
+                    <img src="../images/index/logo_u16.png" alt="">
+                </div>
+                <div class="back-text center">
+                    <img src="../images/entrance/zkfootertxt.png" alt="">
+                </div>
+            </div>
+            <div class="footer-pic">
+                <div class="pic-logo center">
+                    <img src="../images/index/f1.jpg" alt="">
+                    <img src="../images/index/f2.jpg" alt="">
+                    <img src="../images/index/f3.jpg" alt="">
+                    <img src="../images/index/f4.jpg" alt="">
+                    <img src="../images/index/f5.jpg" alt="">
+                    <img src="../images/index/f6.jpg" alt="">
+                </div>
+                <div class="pic-txt center">
+                    <p>网站经案号</p>
+                    <p>联电话：028-66060688</p>
+                    <p>校区地址：顺城街，顺吉大厦3楼</p>
+                </div>
+                <div class="pic-back">
+                    <img src="../images/index/ren.png" alt="">
+                </div>
+                <div class="footer-inp">
+                    <input type="text" placeholder="请输入您孩子的姓名">
+                    <input type="text" placeholder="请输入您的电话">
+                    <select name="" id="">
+                        <option value="">年级</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">科目</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">班级</option>
+                    </select>
+                    <p>立即获取课程报价</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    /*
+        倒计时的封装
+        date:未来的时间，
+        style: 样式类名,
+        pre: 前缀
+    */
+
+
+    function checkTime(i) { //将0-9的数字前面加上0，例1变为01 
+        return i < 10 ? "0" + i : i
+    }
+
+
+    function TimeCount(options) {
+
+        this.dom = document.createElement("section"),
+            this.parent = options.parent;
+        this.date = options.date || new Date();
+        this.style = options.style;
+        this.pre = options.pre;
+        this.dot = options.dot
+        this.init();//初始化数据
+
+    }
+
+
+    TimeCount.prototype.init = function () {
+
+        this.dayDom = document.createElement("div");
+        var dot = document.createElement("span");
+        dot.classList.add("dot")
+        var text = this.dot ? document.createTextNode(this.dot) : document.createTextNode(":")
+        dot.appendChild(text)
+
+        if (this.style) {
+            this.dayDom.classList.add(this.style)
+        } else {
+            this.dayDom.classList.add("timeItem")
+        }
+        this.hourDom = this.dayDom.cloneNode();
+        this.minuteDom = this.dayDom.cloneNode();
+
+        var { days,
+            hours,
+            minutes } = this.updateTime()
+        this.render(days, hours, minutes)
+
+        this.dom.appendChild(this.dayDom)
+        this.dom.appendChild(dot.cloneNode(true))
+        this.dom.appendChild(this.hourDom)
+        this.dom.appendChild(dot.cloneNode(true))
+        this.dom.appendChild(this.minuteDom)
+
+        this.parent.appendChild(this.dom)
+
+        //开启定时
+
+        this.time = setInterval(() => {
+
+            var { days, hours, minutes } = this.updateTime()
+            this.render(days, hours, minutes)
+
+        }, 1000)
+
+
+    }
+
+    TimeCount.prototype.render = function (days, hours, minutes) {
+
+        this.dayDom.innerHTML = checkTime(days) + "天";
+        this.hourDom.innerHTML = checkTime(hours) + "时";
+        this.minuteDom.innerHTML = checkTime(minutes) + "分"
+
+
+
+    }
+
+    TimeCount.prototype.updateTime = function () {
+
+        var leftTime = (new Date(this.date)) - (new Date()); //计算剩余的毫秒数 
+        var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数 
+        var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时 
+        var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟 
+        return {
+            days,
+            hours,
+            minutes
+        }
+
+    }
+
+
+    new TimeCount({
+        parent: document.getElementsByClassName("top-zk-time")[0],
+        date: "2020-06-12"
+    })
+    new TimeCount({
+        parent: document.getElementsByClassName("top-gk-time")[0],
+        date: "2020-07-6"
+    })
+
+
+</script>
+
+</html>

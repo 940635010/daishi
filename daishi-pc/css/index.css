@@ -23,8 +23,8 @@
     box-sizing: border-box;
 }
 .index-head>a>img{
-    width: 358px;
-    height: 80px;
+    width: 357px;
+    height: 77px;
 }
 .index-right{
     width: 803px;
@@ -90,6 +90,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .phone-one{
     display: flex;
@@ -109,11 +110,26 @@
     align-items: center;
     font-size: 12px;
     color: #438ae4;
+    cursor: pointer;
 }
 .phone-two>img{
     width: 20px;
     height: 15px;
     margin-right: 5px;
+}
+.index-erweima{
+    width: 123px;
+    height: 137px;
+    position: absolute;
+    bottom: -137px;
+    right: -36px;
+    background-image: url(../images/index/erweima.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: none;
+}
+.phone-two:hover .index-erweima{
+    display: block;
 }
 
 /* ============主体========== */
@@ -159,11 +175,12 @@
 
 /* ===========课程类型========== */
 .banner-course{
-    width: 360px;
+    width: 370px;
     height: 540px;
     background-color: white;
     margin-left: 165px;
     padding: 20px 0px 0px 20px;
+    box-sizing: border-box;
     position: absolute;
     top: 21px;
     left: 26px;
@@ -178,15 +195,23 @@
     align-items: center;
     margin-bottom: 23px;
 }
+.course-one-1>.wid>img{
+    width: 20px;
+    height: 22px;
+}
+.course-one-1>.widt>img{
+    width: 24px;
+    height: 22px;
+}
 .one-1-img{
-    width: 33px;
-    height: 33px;
-    background-color:gray;
+    width: 24px;
+    height: 20px;
     margin-right: 10px;
 }
+
 .one-1-img>img{
-    width: 33px;
-    height: 33px;
+    width: 24px;
+    height: 20px;
 }
 .course-one-1>p{
     font-size: 20px;
@@ -211,10 +236,10 @@
 }
 .course-1{
     width: 180px;
-    height: 224px;
+    height: 232px;
     padding-top: 63px;
     box-sizing: border-box;
-    border: 1px solid skyblue;
+    box-shadow: 0px 2px 5px #b0cef3;
 }
 .course-1-logo{
     width: 60px;
@@ -245,25 +270,31 @@
     color: #BCBCBC;
     border: 1px solid #BCBCBC;
     border-radius: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .course-1-line{
     width: 100%;
-    height: 2.5px;
+    height: 5px;
     background:gray;
 }
 
-/* =====点击课程盒子时下划线的颜色 */
-.course-line-active{
-    background: #275bfd;
-}
-/* =======点击盒子时了解详解的样式 */
-.background{
+/* =======移入盒子时了解详解的样式 */
+.course-1:hover .course-1-link{
     background: #275bfd;
     color: #ffffff;
 }
+/* =====移入课程盒子时下划线的颜色 */
+.course-1:hover .course-1-line{
+    background: #275bfd;
+}
 
 /* ========推销========= */
+.index-shell{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/entrance/01.jpg);
+    background-size: 100% 100%;
+}
 .index-sell{
     width: 1200px;
     height: 398px;
@@ -280,12 +311,6 @@
     color: #333333;
     font-size: 18px;
 }
-.border-b{
-    border-bottom: 1px solid gainsboro;
-}
-.border-r{
-    border-right: 1px solid gainsboro;
-}
 .index-sell-1>p:first-child{
     font-size: 36px;
     color: #333333;
@@ -298,46 +323,155 @@
     margin-bottom: 20px;
 }
 /* ==============宣传======== */
-.index-pro{
+/* 方格布局 课程 */
+.xb-grow {
     width: 1200px;
-    height: 727px;
-    margin-top: 72px;
+    height: 728px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
 }
-.index-pro>div{
-    width: 301px;
-    height: 727px;
+
+.xb-grow>div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.index-pro .index-pro-c{
-    width: 514px;
+
+.xb-grow>div>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-.index-pro .index-pro-r{
-    width: 314px;
+
+.xb-grow11 {
+    height: 215px;
+    color: #ffffff;
+    background-color: #1e25e6;
 }
-.index-pro-l>div{
-    width: 301px;
-    height: 214px;
-    background: paleturquoise;
-    margin-bottom: 39px;
+
+.xb-grow12 {
+    height: 215px;
+    color: #ffffff;
+    box-shadow: 0 0 8px #d9e4f1;
 }
-.pro-c-t{
-    width: 514px;
-    height: 311px;
-    background: #438ae4;
+
+.xb-grow31 {
+    height: 226px;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 10px 18px;
+    background-color: #1e25e6;
+}
+
+.xb-grow21 {
+    height: 315px;
+    position: relative;
+    color: #ffffff;
+    background-color: #1e25e6;
+}
+
+.xb-grow22 {
+    height: 185px;
+    box-sizing: border-box;
+    padding: 10px 18px;
+    color: #ffffff;
+    background-color: #1e25e6;
+}
+.xb-grow1 {
+    width: 303px;
+}
+
+.xb-grow2 {
+    width: 518px;
+}
+.xb-grow2>div>span{
+    font-size: 24px;
+
+}
+.xb-grow2>div>p{
+    font-size: 18px;
+}
+.xb-grow2>div>button{
+    border: 0px;
+    color: #a3a6ff;
+    font-size: 20px;
+    width: 165px;
+    height: 41px;
+    background-color: #4047ff;
+}
+.xb-grow2>div>div {
+    width: 42px;
+    height: 3px;
+    background-color: #f4df30;
+}
+
+.xb-grow3 {
+    width: 318px;
+}
+.xb-grow3>div>span{
+    font-size: 24px;
+
+}
+.xb-grow3>div>p{
+    font-size: 18px;
+    line-height: 36px;
+}
+.xb-grow3>div>button{
+    border: 0px;
+    color: #a3a6ff;
+    font-size: 20px;
+    width: 165px;
+    height: 41px;
+    background-color: #4047ff;
+}
+.xb-grow3>div>div {
+    width: 42px;
+    height: 3px;
+    background-color: #f4df30;
+    
+}
+.xb-grow1>div>p {
+    text-align: center;
+    margin-top: 20px;
+    color: #333333;
+    font-size: 36px;
+}
+
+.xb-grow1>div>span {
     margin-bottom: 20px;
+    text-align: center;
+    color: #333333;
+    font-size: 24px;
 }
-.pro-c{
-    width: 514px;
-    height: 180px;
-    background: #438ae4;
-    margin-bottom: 29px;
+
+.xb-grow1>.xb-grow11>p {
+    color: white;
 }
-.index-pro-r>div{
-    width: 314px;
-    height: 227px;
-    background: #438ae4;
-    margin-bottom: 20px;
+
+.xb-grow1>.xb-grow11>span {
+    color: white;
+}
+
+.xb-grow21 img {
+    height: 100%;
+}
+.xb-grow2>div>.xbmfzx{
+    position: absolute;
+    top: 188px;
+    left: 24px;
+    width: 233px;
+    height: 61px;
+    opacity: 0;
+}
+.xb-grtie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* =======步骤======= */
@@ -354,6 +488,7 @@
 .step{
     width: 1200px;
     height: 986px;
+    position: relative;
 }
 .step-nav{
     width: 1200px;
@@ -371,17 +506,31 @@
     font-size: 25px;
     color:white;
 }
+.step-nav>ul>li{
+    cursor: pointer;
+}
 .step-line{
     position: absolute;
-    width: 200px;
+    width: 179px;
     height: 2px;
     background: white;
     top: 47px;
-    left: 97px;
+    left: 109px;
 }
 .step-content{
     width: 1200px;
     height: 746px;
+    position: absolute;
+    display: none;
+}
+.cor{
+    background-color: pink;
+}
+.colo{
+    background-color: palegoldenrod;
+}
+.show{
+    display: block;
 }
 .con-school{
     width: 1200px;
@@ -454,12 +603,14 @@
     line-height: 40px;
     font-size: 16px;
 }
-/* =========点击时的样式 */
-.att-active{
-    color: #ffffff;
+/* =========移入时的样式 */
+.content-1:hover{
     background: #3a78f0;
 }
-.attp{
+.content-1:hover .con-txt{
+    color: #ffffff;
+}
+.content-1:hover .attp{
     color: #ffffff;
     background: #f3b819;
 }
@@ -486,6 +637,7 @@
 .infor-bom-l{
     width: 720px;
     height: 540px;
+    position: relative;
 }
 .l-nav{
     position: relative;
@@ -516,6 +668,11 @@
 .l-text{
     width: 720px;
     height: 453px;
+    position: absolute;
+    display: none;
+}
+.infor-show{
+    display: block;
 }
 .text-top{
     height: 375px;
@@ -528,6 +685,7 @@
 .text-top-p1>span{
     color: #3a78f0;
     margin-left:135px;
+    cursor: pointer;
 }
 .text-top>p:nth-of-type(3)>span{
 margin-left:125px ;
@@ -538,9 +696,22 @@ margin-left:125px ;
     margin-top: 29px;
     margin-bottom: 40px;
 }
-.text-bom>img{
+.text-bom{
     width: 720px;
     height: 77px;
+    font-size: 20px;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text-bom>div{
+    width: 320px;
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .infor-bom-r{
@@ -558,51 +729,93 @@ margin-left:125px ;
     height: 793px;
     margin-top: 72px;
 }
-.footer-back>img{
+.footer-back{
     width: 100%;
     height: 420px;
+    background-image: url(../images/index/footerback.jpg);
+    background-size: 100% 100%;
+    padding-top: 55px;
+    box-sizing: border-box;
+}
+.back-logo,.back-text{
+    width: 1200px;
+}
+.back-logo>img{
+    width: 450px;
+    height: 100px;
+    margin-left: 380px;
+    margin-bottom: 79px;
 }
 .footer-pic{
     width: 100%;
     height: 374px;
     position: relative;
+    padding-top: 72px;
+    box-sizing: border-box;
 }
-.footer-pic>img{
+.pic-logo{
+    width: 1200px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pic-txt{
+    width: 1200px;
+    height: 150px;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    padding-top: 42px;
+    box-sizing: border-box;
+}
+.pic-txt>p{
+    margin-bottom: 9px;
+}
+.pic-back{
     width: 100%;
-    height: 374px;
+    height: 95px;
+    background-image: url(../images/index/footerdibuback.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+.pic-back>img{
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
 }
 .footer-inp{
     position: absolute;
     bottom: 20px;
-    left: 291px;
-    width: 834px;
+    left: 191px;
+    width:1012px;
     height: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .footer-inp>input{
-    width: 140px;
-    height: 45px;
+    width: 161px;
+    height: 42px;
     border: none;
     padding: 0px 0px 0px 10px;
     box-sizing: border-box;
 }
 .footer-inp>select{
-    width: 125px;
-    height: 45px;
+    width: 136px;
+    height: 42px;
     border: none;
     font-weight: bold;
     padding: 0px 0px 0px 10px;
     box-sizing: border-box;
 }
 .footer-inp>p{
-    width: 150px;
-    height: 45px;
+    width: 199px;
+    height: 42px;
     background-color: #f3b819;
     font-size: 16px;
     color: #333333;
     text-align: center;
-    line-height:45px ;
+    line-height:42px ;
     font-weight: bold;
 }

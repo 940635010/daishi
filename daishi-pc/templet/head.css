@@ -19,8 +19,8 @@
     box-sizing: border-box;
 }
 .index-head>a>img{
-    width: 256px;
-    height: 60px;
+    width: 357px;
+    height: 77px;
 }
 .index-right{
     width: 803px;
@@ -86,6 +86,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .phone-one{
     display: flex;
@@ -105,9 +106,24 @@
     align-items: center;
     font-size: 12px;
     color: #438ae4;
+    cursor: pointer;
 }
 .phone-two>img{
     width: 20px;
     height: 15px;
     margin-right: 5px;
+}
+.index-erweima{
+    width: 123px;
+    height: 137px;
+    position: absolute;
+    bottom: -137px;
+    right: -36px;
+    background-image: url(../images/index/erweima.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: none;
+}
+.phone-two:hover .index-erweima{
+    display: block;
 }

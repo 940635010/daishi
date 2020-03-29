@@ -23,7 +23,7 @@
         var len=this.arr.length
         var _height=parseInt(this.hei)/3
         this.position.addClass('select-box').css({'width':this.wid,'height':this.hei,'line-height':this.hei})
-        $("<img class='select-img' src='images/Arrow.png'>").appendTo(this.position).css({'right':'3px','top':_height,'width':_height})
+        $("<img class='select-img' src='../images/ly/Arrow.png'>").appendTo(this.position).css({'right':'3px','top':_height,'width':_height})
         $("<div class='select-active'></div>").appendTo(this.position).html(this.arr[0])
         $("<div class='select-childbox'></div>").appendTo(this.position).css({'overflow':'auto','height':this.drop})
         for(let i=0;i<len;i++){

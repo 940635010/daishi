@@ -1,0 +1,566 @@
+/* ===========主体========== */
+.center{
+    margin: 0 auto;
+}
+.middle-main{
+    width: 100%;
+    height: 100%;
+}
+.middle-banner{
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/middle/banner.jpg);
+    max-block-size: 100% 100%;
+    margin-top: 117px;
+    position: relative;
+}
+.middle-banner>img{
+    width: 1200px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* ============精准定位========== */
+.middle-posi{
+    width: 1200px;
+    height: 424px;
+    margin-top: 72px;
+    position: relative;
+}
+.posi-title{
+    width: 1200px;
+    height: 79px;
+    position: relative;
+}
+.posi-title>img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.posi-pic{
+    width: 1200px;
+    height: 345px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.posi-pic>img{
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0,0,.2);
+}
+.posi-link{
+    font-size: 24px;
+    color:#5c3095 ;
+    text-decoration: none;
+}
+.posi-pic>a:nth-of-type(1){
+    position: absolute;
+    bottom: 30px;
+    left: 81px;
+}
+.posi-pic>a:nth-of-type(2){
+    position: absolute;
+    bottom: 30px;
+    left: 392px;
+}
+.posi-pic>a:nth-of-type(3){
+    position: absolute;
+    bottom: 30px;
+    left: 702px;
+}
+.posi-pic>a:nth-of-type(4){
+    position: absolute;
+    bottom: 30px;
+    left: 1013px;
+}
+
+
+/* ============私人定制====== */
+.made-title{
+    width: 1200px;
+    height: 36px;
+    position: relative;
+    margin-top: 72px;
+}
+.made-title>img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.middle-made{
+    width: 100%;
+    height: 692px;
+    margin-top: 42px;
+    background-image: url(../images/middle/dzback.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+.made-content{
+    width: 1200px;
+    height: 579px;
+}
+.made-ren{
+    width: 1200px;
+    height: 579px;
+    background-image: url(../images/middle/ren.jpg);
+    background-size: 100% 100%;
+}
+.made-bom{
+    width: 100%;
+    height: 237px;
+    position: absolute;
+    bottom: 0px;
+}
+.made-bom>img{
+    width: 100%;
+    height: 237px;
+}
+.made-img{
+    width: 1200px;
+    height: 108px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.book{
+    position: absolute;
+    bottom: 0px;
+    right: -50px;
+}
+
+/* ===========教学标准======== */
+.middle-tea{
+    width: 1200px;
+    height: 840px;
+    margin-top: 72px;
+}
+.tea-title{
+    width: 1200px;
+    height: 94px;
+    position: relative;
+}
+.tea-title>img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.tea-stan{
+    width: 1200px;
+    height: 200px;
+}
+.tea-school{
+    display: flex;
+    justify-content: space-between;
+}
+.tea-school>p{
+    width: 166px;
+    height: 59px;
+    border: 1px solid #452a8b;
+    font-size: 24px;
+    color: #452a8b;
+    text-align: center;
+    line-height: 59px;
+}
+.tea-school .wid{
+    width: 265px;
+}
+.tea-school .tea-back{
+    background-color: #452a8b;
+    color: white;
+}
+
+.tea-cour{
+    width: 589px;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.tea-cour>p{
+    width: 166px;
+    height: 59px;
+    border: 1px solid #452a8b;
+    font-size: 24px;
+    color: #452a8b;
+    text-align: center;
+    line-height: 59px;
+}
+.tea-show{
+    width: 1200px;
+    height: 542px;
+    position: relative;
+}
+.tea-show>div{
+    width: 205px;
+    height: 47px;
+    background-image: url(../images/middle/btnback.jpg);
+    background-size: 100% 100%;
+    color: white;
+    font-size: 18px;
+    text-align:center;
+    line-height: 47px;
+}
+.tea-show>div:nth-of-type(1){
+    position: absolute;
+    bottom: 17px;
+    left: 17px;
+}
+.tea-show>div:nth-of-type(2){
+    position: absolute;
+    bottom: 17px;
+    left: 258px;
+}
+.tea-show>div:nth-of-type(3){
+    position: absolute;
+    bottom: 17px;
+    left: 499px;
+}
+.tea-show>div:nth-of-type(4){
+    position: absolute;
+    bottom: 17px;
+    left: 739px;
+}
+.tea-show>div:nth-of-type(5){
+    position: absolute;
+    bottom: 17px;
+    left: 978px;
+}
+
+/* =============课程表单========== */
+.entra-form{
+    width: 1200px;
+    height: 420px;
+    margin-top: 72px;
+}
+.entra-inp{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.entra-inp>input,.entra-inp>select{
+    width: 579px;
+    height: 76px;
+    margin-bottom: 39px;
+    font-size: 24px;
+    padding: 0px 0px 0px  10px;
+    box-sizing: border-box;
+
+}
+.entra-form-btn{
+    width: 1200px;
+    height: 80px;
+    background-image: url(../images/middle/btnback.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 24px;
+    color: #333333;
+}
+
+/* ===========检测管理========= */
+.tea-man{
+    width: 1200px;
+    height: 859px;
+    margin-top: 72px;
+}
+.man-title{
+    width: 1200px;
+    height: 96px;
+    position: relative;
+}
+.man-title>img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.man-model{
+    width: 1200px;
+    height: 659px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.man-model>img{
+    width: 580px;
+    height: 200px;
+    box-shadow: 0px 2px 10px rgba(0, 0,0,.2);
+}
+.man-btn{
+    width: 725px;
+    height: 62px;
+    background-image: url(../images/middle/btnback.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 62px;
+    color: #333333;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+/* ===========精细化流程========== */
+.middle-liu{
+    width: 100%;
+    height: 100%;
+    margin-top: 72px;
+}
+.middle-title{
+    width: 1200px;
+    height: 94px;
+    position: relative;
+}
+.middle-title>img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);    
+}
+.liu-content{
+    width: 100%;
+    height: 949px;
+    background-image: url(../images/middle/jxback_05.jpg);
+    background-size: 100% 100%;
+    padding-top: 42px;
+    box-sizing: border-box;
+}
+.con-show,.con-show1{
+    width: 1200px;
+    height: 362px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con-show1{
+    width: 891px;
+    height: 362px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 57px;
+}
+.con-show>img,.con-show1>img{
+    border-radius: 10px;
+}
+
+/* ===========名师出高徒========= */
+.middle-tu{
+    width: 100%;
+    height: 648px;
+    margin-top: 72px;
+}
+.tu-title{
+    width: 1200px;
+    height: 80px;
+    position: relative;
+}
+.tu-title>img,.tu-back>img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);    
+}
+/* .tu-back{
+    width: 100%;
+    height: 564px;
+    background-image: url(../images/entrance/xbback.jpg);
+    background-size: 100% 100%;
+    position: relative;
+} */
+
+.szxxjsbox1{
+    width: 100%;
+    /* margin-top: 46px; */
+    background-color: #f8f8f8;
+}
+.szlsqq{
+    width: 1200px;
+    margin: auto;
+    z-index: 9;
+    position: relative;
+}
+.szlsqq img{
+    width: 100%;
+}
+.szlsqq>div{
+    position: absolute;
+    width: 315px;
+    height: 63px;
+    border-radius: 41px;
+    border: 1px solid #23227b;
+    text-align: center;
+    line-height: 63px;
+    font-size: 24px;
+    background-color: white;
+    cursor: pointer;
+}
+.szlsqq>div:hover{
+    background-color: #caccff;
+    border: solid 1px #1e25e6;
+}
+.szhovers1{
+    top: 60px;
+    left: 135px;
+}.szhovers2{
+    top: 178px;
+    left: 81px;
+}.szhovers3{
+    top: 302px;
+    left: 81px;
+}.szhovers4{
+    top: 409px;
+    left: 135px;
+}.szhovers5{
+    top: 60px;
+    right: 128px;
+}.szhovers6{
+    top: 178px;
+    right: 79px;
+}.szhovers7{
+    top: 302px;
+    right: 79px;
+}.szhovers8{
+    top: 409px;
+    right: 128px;
+}
+
+/* ========== 优秀模范导师============*/
+.middle-exc{
+    width: 100%;
+    height: 691px;
+    background-color: blue;
+    position: relative;
+}
+.tutor-btn{
+    width: 467px;
+    height: 78px;
+    background-image: url(../images/entrance/baojia.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    top:-39px;
+    left: 50%;
+    transform: translate(-50%);
+    color:#438ae4;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 78px;
+}
+
+/* =============好口碑========= */
+.middle-word{
+    width: 1200px;
+    height: 836px;
+    margin-top: 72px;
+}
+.word-title{
+    width: 1200px;
+    height: 46px;
+    position: relative;
+}
+.word-title>img , .word-txt>img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);  
+}
+.word-phone{
+    width: 1200px;
+    height: 617px;
+    background-color:pink;
+    margin-bottom: 20px;
+}
+.word-txt{
+    width: 1200px;
+    height: 43px;
+    position: relative;
+}
+.word-btn{
+    width:473px;
+    height:73px;
+    background-image: url(../images/middle/btnback.jpg);
+    background-size: 100% 100%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 73px;
+    margin-top: 20px;
+}
+
+/* =============校区环境========= */
+.middle-str{
+    width: 1200px;
+    height: 981px;
+    margin-top: 57px;
+}
+.str-title{
+    width: 1200px;
+    height: 93px;
+    position: relative;
+}
+.str-title>img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);  
+}
+/* 环境 */
+.xbhuan-jin {
+    width: 1200px;
+    height: 889px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 73px;
+}
+
+.xbhuan-jin>div {
+    float: left;
+}
+.xbhuan-jin>div>img{
+    width: 100%;
+    height: 100%;
+}
+
+.xbhuan-jin>div:nth-of-type(1) {
+    width: 702px;
+    height: 311px;
+    margin-right: 24px;
+}
+
+.xbhuan-jin>div:nth-of-type(2) {
+    width: 474px;
+    height: 311px;
+}
+
+.xbhuan-jin>div:nth-of-type(3) {
+    width: 340px;
+    margin-right: 23px;
+    margin-top: 23px;
+    height: 433px;
+}
+
+.xbhuan-jin>div:nth-of-type(4) {
+    width: 339px;
+    margin-top: 23px;
+    margin-right: 24px;
+    height: 433px;
+}
+
+.xbhuan-jin>div:nth-of-type(5) {
+    margin-top: 23px;
+    width: 474px;
+    height: 433px;
+}
+
+.effect-baojia {
+    width:100%;
+    height:60px;
+    color: white;
+    background-image: url(../images/middle/btnback.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 60px;
+    margin-top: 48px;
+}
+
+
