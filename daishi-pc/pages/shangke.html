@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../templet/head.css">
+    <link rel="stylesheet" href="../templet/footer.css">
+    <link rel="stylesheet" href="../style/select.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* 封装倒计时样式 */
+        .timeItem {
+            font-size: 20px;
+            padding: 6px 8px;
+            color: #fff;
+            background: #438ae4;
+            display: inline-block;
+        }
+
+        .dot {
+            display: inline-block;
+            padding: 5px 4px;
+            font-size: 20px;
+            font-weight: bold;
+            vertical-align: top;
+        }
+        .shangke-content{
+            width: 100%;
+        }
+        .shangke-content>img{
+            width: 100%;
+        }
+        .shangke-lunbo{
+            margin-top: 120px;
+            width: 100%;
+            height: 600px;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+        .shangke-input{
+            width: 1200px;
+            margin: 72px auto;
+            display: flex;
+            justify-content:space-between;
+            flex-wrap:wrap;
+        }
+        .shangke-input>input{
+            width: 578px;
+            height: 75px;
+            box-sizing: border-box;
+            font-size: 24px;
+            padding-left: 25px;
+            margin-bottom: 42PX;
+        }
+        .shangke-input>input::-webkit-input-placeholder{
+            color: #cccccc;
+        }
+        .shangke-ys{
+            margin-bottom: 42px;
+        }
+        .shangke-btn{
+            width: 100%;
+            height: 75px;
+            background-color: #2558ff;
+            border: 0px;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .shangke-img{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .shangke-congfu{
+            width: 1200px;
+            height: 726px;
+            margin: 72px auto;
+            border: 1px solid red;
+        }
+        .shangke-style{
+            margin-top: 42px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="index-header">
+        <div class="index-head">
+            <a href="#">
+                <img src="../images/index/u440.png" alt="">
+            </a>
+            <div class="index-right">
+                <div class="index-top">
+                    <div class="top-zk">
+                        <p class="top-zk-txt">中考倒计时</p>
+                        <div class="top-zk-time"></div>
+                    </div>
+                    <div class="top-zk">
+                        <p class="top-zk-txt">高考倒计时</p>
+                        <div class="top-gk-time"></div>
+                    </div>
+                </div>
+                <div class="index-bom">
+                    <div class="bom-nav">
+                        <ul>
+                            <li class="li-active">首页</li>
+                            <li>师资力量</li>
+                            <li>校区查询</li>
+                            <li>热点资讯</li>
+                            <li>关于我们</li>
+                        </ul>
+                        <div class="nav-line"></div>
+                    </div>
+                    <div class="bom-phone">
+                        <div class="phone-one">
+                            <img src="../images/index/phone.png" alt="">
+                            <p>028-66060688</p>
+                        </div>
+                        <div class="phone-two">
+                            <img src="../images/index/wx.png" alt="">
+                            <p>微信</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="shangke-content">
+        <div class="shangke-lunbo">
+
+        </div>
+        <img src="../images/ly/pcshangke_03.jpg">
+        <div class="shangke-input">
+            <input type="text" placeholder="请输入您孩子的姓名">
+            <div class="shangke-ys shangke-select1"></div>
+            <div class="shangke-ys shangke-select2"></div>
+            <div class="shangke-ys shangke-select3"></div>
+            <input type="text" placeholder="请输入您的电话">
+            <input type="text" placeholder="住址（方便就近安排校区）">
+            <button class="shangke-btn">立即获取课程价格</button>
+        </div>
+        <div class="shangke-congfu">
+
+        </div>
+        <div class="shangke-img">
+            <img src="../images/ly/pcshangke_06.jpg">
+            <button class="shangke-btn shangke-style">立即获取课程价格</button>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="index-footer">
+        <div class="footer-back">
+            <img src="../images/index/footerback.jpg" alt="">
+        </div>
+        <div class="footer-pic">
+            <img src="../images/index/footerpic.jpg" alt="">
+            <div class="footer-inp">
+                <input type="text" placeholder="请输入您孩子的姓名">
+                <input type="text" placeholder="请输入您的电话">
+                <select name="" id="">
+                    <option value="">年级</option>
+                </select>
+                <select name="" id="">
+                    <option value="">科目</option>
+                </select>
+                <select name="" id="">
+                    <option value="">班级</option>
+                </select>
+                <p>立即获取课程报价</p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/select.js"></script>
+    <script>
+        /*
+        倒计时的封装
+        date:未来的时间，
+        style: 样式类名,
+        pre: 前缀
+    */
+
+
+    function checkTime(i) { //将0-9的数字前面加上0，例1变为01 
+        return i < 10 ? "0" + i : i
+    }
+
+
+    function TimeCount(options) {
+
+        this.dom = document.createElement("section"),
+            this.parent = options.parent;
+        this.date = options.date || new Date();
+        this.style = options.style;
+        this.pre = options.pre;
+        this.dot = options.dot
+        this.init();//初始化数据
+
+    }
+
+
+    TimeCount.prototype.init = function () {
+
+        this.dayDom = document.createElement("div");
+        var dot = document.createElement("span");
+        dot.classList.add("dot")
+        var text = this.dot ? document.createTextNode(this.dot) : document.createTextNode(":")
+        dot.appendChild(text)
+
+        if (this.style) {
+            this.dayDom.classList.add(this.style)
+        } else {
+            this.dayDom.classList.add("timeItem")
+        }
+        this.hourDom = this.dayDom.cloneNode();
+        this.minuteDom = this.dayDom.cloneNode();
+
+        var { days,
+            hours,
+            minutes } = this.updateTime()
+        this.render(days, hours, minutes)
+
+        this.dom.appendChild(this.dayDom)
+        this.dom.appendChild(dot.cloneNode(true))
+        this.dom.appendChild(this.hourDom)
+        this.dom.appendChild(dot.cloneNode(true))
+        this.dom.appendChild(this.minuteDom)
+
+        this.parent.appendChild(this.dom)
+
+        //开启定时
+
+        this.time = setInterval(() => {
+
+            var { days, hours, minutes } = this.updateTime()
+            this.render(days, hours, minutes)
+
+        }, 1000)
+
+
+    }
+
+    TimeCount.prototype.render = function (days, hours, minutes) {
+
+        this.dayDom.innerHTML = checkTime(days) + "天";
+        this.hourDom.innerHTML = checkTime(hours) + "时";
+        this.minuteDom.innerHTML = checkTime(minutes) + "分"
+
+
+
+    }
+
+    TimeCount.prototype.updateTime = function () {
+
+        var leftTime = (new Date(this.date)) - (new Date()); //计算剩余的毫秒数 
+        var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数 
+        var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时 
+        var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟 
+        return {
+            days,
+            hours,
+            minutes
+        }
+
+    }
+
+
+    new TimeCount({
+        parent: document.getElementsByClassName("top-zk-time")[0],
+        date: "2020-06-12"
+    })
+    new TimeCount({
+        parent: document.getElementsByClassName("top-gk-time")[0],
+        date: "2020-07-6"
+    })
+
+    new Select({
+            position:$('.shangke-select1'),
+            arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select2'),
+            arr:["科目",'语文','数学','英语','物理','化学','语言表演','情商美术'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select3'),
+            arr:["班级",'一对一','3~6人精品','15人大师班'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+    </script>
+</body>
+</html>
