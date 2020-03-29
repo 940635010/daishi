@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.chunji-xuanchuan img {
+    width: 100%;
+    height: 375px;
+}
+
+.time-out {
+    top: 49px;
+}
+
+.cs {
+    top: -50px;
+}
+
+.online {
+    width: 100%;
+}
+
+.online .online-name {
+    height: 50px;
+    width: 90vw;
+}
+
+.online .online-name img {
+    width: 90vw;
+    height: 50px;    
+    margin-left: 17px;
+}
+
+.course-price {
+    margin-top: 20px;
+}
+.online .online-content{
+    width: 100vw;
+    height: 300px;
+    margin-top: 10px;
+    background-image: url(./../images/seaside/online1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.online-content .txt1{
+    position: absolute;
+    left: 70px;
+    top: 245px;
+}
+.online-content .txt2{
+    position: absolute;
+    left: 70px;
+    top: 350px;
+}
+.online-content .txt3{
+    position: absolute;
+    left: 70px;
+    top: 450px;
+}
+.online-content p{
+    font-size: 12px;
+    color: rgb(50, 80, 233);
+}
+.lb{
+    width: 100%;
+    height: 160px;
+}
+.lb img{
+    height: 160px;
+    width: 90%;
+    margin-left: 15px;
+}
+.teacher{
+    position: relative;
+    height: 480px;
+}
+.teacher-name{
+    width: 145px;
+    height: 20px;
+    margin: 20px auto;
+}
+.teacher-name img{
+    width: 145px;
+    height: 20px;
+}
+.teacher-content{
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+}
+.teacher .talk{
+    position: absolute;
+    top: 215px;
+    left: 70px;
+    width: 235px;
+    height: 35px;
+    background-color: #2A1DF0;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 999;
+}
+.teacher-choose{
+    position: relative;
+    top: -60px;
+    width: 100%;
+    height: 250px;
+}
+.teacher-choose img{
+    width: 100%;
+    height: 250px;
+}
+.environment-name{
+    width: 160px;
+    height: 20px;
+    margin: 20px auto;
+}
+.environment-name img{
+    width: 160px;
+    height: 20px;
+}
+.environment-content{
+    height: 520px;
+    width: 90%;
+    margin: 0 auto;
+}
+.environment-content img{
+    height: 520px;
+    width: 100%;
+}
+.environment .environment-price-get{
+    width: 90%;
+    height: 35px;
+    font-size: 12px;
+    color: white;
+    /* font-weight: bold; */
+    line-height: 35px;
+    /* margin: 10px 0; */
+    margin: 10px auto;
+    text-align: center;
+    background-color: #2D8FED;
+}

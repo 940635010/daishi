@@ -6,34 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./../style/share.css">
+    <link rel="stylesheet" href="./../style/index.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <title>首页</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-        #content {
-            position: relative;
-            top: -4px;
-            width: 100%;
-            height: 500px;
-            background-color: turquoise;
-        }
-
-        .tab-bar {
-            width: 90%;
-            margin: 0 auto;
-            height: 300px;
-        }
-
-        .tab-bar>span {
-            width: 85px;
-            height: 24px;
-
-        }
-    </style>
 </head>
 
 <body>
@@ -79,30 +54,97 @@
         </div>
     </div>
     <div class="time-out">
-        <div class="time-title"><span>2020高考倒计时</span><span>2020中考倒计时</span></div>
+        <div class="time-title time1"><span>2020高考倒计时</span></div>
+        <div class="time-title time2"><span>2020中考倒计时</span></div>
     </div>
     <div id="content">
+        <!-- 课程信息 -->
         <div class="tab-bar">
             <div class="tab">
-                <span>VIP一对一</span>
+                <span class="show1">VIP一对一</span>
                 <span>3-6精品班</span>
                 <span>15人大班</span>
             </div>
             <div class="tab-content">
-                <div class="tab-items show"></div>
+                <div class="tab-items show2">
+                    <span class="tab-items-title">环环相扣 步步精心</span>
+                    <div class="tab-item-content">
+                        <div>
+                            <span><img src="./../images/seaside/tab-content_03.jpg" alt=""></span>
+                            <span><img src="./../images/seaside/tab-content_10.jpg" alt=""></span>
+                            <span><img src="./../images/seaside/tab-content_15.jpg" alt=""></span>
+                            <a href="#"><img class="zixun zixun1" src="./../images/seaside/tab-zixun_03.jpg"></a>
+                        </div>
+                        <div>
+                            <span><img src="./../images/seaside/tab-content_05.jpg" alt=""></span>
+                            <span><img src="./../images/seaside/tab-content_08.jpg" alt=""></span>
+                            <span><img src="./../images/seaside/tab-content_13.jpg" alt=""></span>
+                            <a href="#"><img class="zixun zixun2" src="./../images/seaside/tab-zixun_03.jpg"> </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="tab-items"></div>
                 <div class="tab-items"></div>
             </div>
         </div>
+        <!-- 课程报价 -->
+        <div class="course-price">
+            <span class="course-price-name">&nbsp;10秒免费获取课程报价</span>
+            <div class="course-price-content" style="">李易公共部分</div>
+            <div class="course-price-get">立即获取课程报价</div>
+        </div>
+        <!-- 了解我们 -->
+        <div class="about">
+            <span class="about-name">&nbsp;你还想了解我们</span>
+            <div class="about-content">
+                <div class="about-content-item">
+                    <div><span>效果怎么样？</span><button>点击了解</button></div>
+                    <div><span>管理怎么样？</span><button>点击了解</button></div>
+                    <div><span>怎么上课？</span><button>点击了解</button></div>
+                    <div><span>校园查询</span><button>点击了解</button></div>
+                </div>
+                <div class="about-content-item">
+                    <div><span>师资怎么样？</span><button>点击了解</button></div>
+                    <div><span>怎么收费？</span><button>点击了解</button></div>
+                    <div><span>环境怎么样？</span><button>点击了解</button></div>
+                    <div><span>其他问题</span><button>点击了解</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 热点资讯 -->
+    <div class="hot">
+        <span class="hot-name"> &nbsp;热点资讯</span>
+        <div class="hot-content">
+            <div class="hot-tab-title">
+                <div class="hot-tab-title-item show">每日导读</div>
+                <div class="hot-tab-title-item">戴氏资讯</div>
+                <div class="hot-tab-title-item">中考资讯</div>
+                <div class="hot-tab-title-item">高考资讯</div>
+            </div>
+            <div class="hot-tab-content">
+                <div class="hot-tab-content-item">
+                    <div style="border-bottom: 1px dashed rgba(128, 128, 128, 0.568);"><span>&nbsp;&nbsp;家长必读：小学生家长</span><span class="hot-icon">&gt;</span></div>
+                    <div style="border-bottom: 1px dashed rgba(128, 128, 128, 0.568);"><span>&nbsp;&nbsp;家长必读：小学生家长</span><span class="hot-icon">&gt;</span></div>
+                    <div style="border-bottom: 1px dashed rgba(128, 128, 128, 0.568);"><span>&nbsp;&nbsp;家长必读：小学生家长</span><span class="hot-icon">&gt;</span></div>
+                    <div style="border-bottom: 1px dashed rgba(128, 128, 128, 0.568);"><span>&nbsp;&nbsp;家长必读：小学生家长</span><span class="hot-icon">&gt;</span></div>
+                    <div><span>&nbsp;&nbsp;家长必读：小学生家长</span><span class="hot-icon">&gt;</span></div>
+                </div>
+                <div class="hot-tab-content-item"></div>
+                <div class="hot-tab-content-item"></div>
+                <div class="hot-tab-content-item"></div>
+            </div>
+
+        </div>
     </div>
     <!-- 固定地步区域 -->
     <div>
-            <div class="products">
-                    <img src="./../images/share/footer_03.jpg">
-                </div>
-                <div class="free">
-                    <img src="./../images/share/footer2_12.jpg">
-                </div>
+        <div class="products">
+            <img src="./../images/share/footer_03.jpg">
+        </div>
+        <div class="free">
+            <img src="./../images/share/footer2_12.jpg">
+        </div>
     </div>
     <p class="clear"></p>
     <footer>

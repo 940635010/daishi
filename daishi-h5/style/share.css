@@ -27,6 +27,10 @@ header ul li img {
 
 .time-out {
     position: sticky;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     left: 0;
     top: 50px;
     width: 100%;
@@ -52,8 +56,9 @@ header ul li img {
 }
 
 .timeItem {
+    
     display: inline-block;
-    font-size: 17px;
+    font-size: 12px;
     padding: 0px 8px;
     color: black;
     border-radius: 5px;
@@ -63,20 +68,22 @@ header ul li img {
 .dot {
     display: inline-block;
     padding: 0px 4px;
-    font-size: 16px;
+    font-size: 11px;
     color: white;
     font-weight: bold;
     vertical-align: top;
 }
 
 .time-title {
-    display: flex;
-    justify-content: space-between;
-    margin: 2px 50px;
+    margin: 5px 0;
+    width: 50vw;
+    /* display: inline-block; */
+    text-align: center;
 }
 
 .time-title>span {
-    font-size: 14px;
+    font-size: 11px;
+    display: block;
 }
 
 .times {
@@ -114,28 +121,28 @@ header ul li img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 92%;
     height: 50px;
     margin: 20px auto 5px;
 }
 
 .settings>ul>li>img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 .settings-name {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    /* width: 100%; */
     margin: 0 auto;
 }
 
 .settings-name>span {
-    font-size: 9px;
-    width: 50px;
-    height: 50px;
+    font-size: 10px;
+    width: 60px;
+    height: 20px;
     text-align: center;
 }
 

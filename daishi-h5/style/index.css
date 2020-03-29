@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#content {
+    position: relative;
+    top: -4px;
+    width: 100%;
+}
+
+.tab-bar {
+    width: 100%;
+    margin: 0 auto;
+    height: 430px;
+    background-color: white;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto 10px;
+    padding-top: 20px;
+}
+
+.tab-bar>span {
+    width: 85px;
+    height: 24px;
+    font-size: 12px;
+}
+
+.tab-content {
+    width: 90%;
+    height: 370px;
+    margin: 0 auto;
+    box-shadow: 2px -3px 2px 4px rgba(247, 247, 247);
+    border-radius: 10px;
+    background-color: rgba(250, 250, 250);
+}
+
+.tab>span {
+    font-size: 12px;
+}
+
+.tab>.show1 {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(255, 139, 76);
+}
+
+.tab-items {
+    display: none;
+}
+
+.show2 {
+    display: block;
+}
+
+.tab-items-title {
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: 8px auto;
+    height: 30px;
+    line-height: 30px;
+}
+
+.tab-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 310px;
+    margin: 0px auto;
+}
+
+.tab-item-content>div {
+    width: 38vw;
+    height: 310px;
+}
+
+.tab-item-content span img {
+    width: 38vw;
+    margin-bottom: 20px;
+}
+
+.zixun {
+    width: 87px;
+    height: 24px;
+}
+
+.tab-item-content .zixun1 {
+    position: relative;
+    top: -259px;
+    left: 9px;
+}
+
+.tab-item-content .zixun2 {
+    position: relative;
+    bottom: 68px;
+    right: -9px;
+}
+
+.course-price{
+    height: 460px;
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: hotpink; */
+}
+.course-price .course-price-name{
+    margin: 10px 0;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    border-left: 4px solid #228AEC;
+}
+.course-price .course-price-content{
+    height: 320px;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 320px;
+
+}
+.course-price .course-price-get{
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #2D8FED;
+}
+.about{
+    width: 90%;
+    margin: 0 auto;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.about-content-item div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 150px;
+    height: 120px;
+}
+.about-content-item div span{
+    font-size: 15px;
+    width: 100px;
+    height: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.about-content-item div button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: #2D8FED;
+    border: 1px solid rgba(128, 128, 128, 0.075);
+    margin: 0 auto;
+}
+.about .about-name{
+    margin: 10px 0;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    border-left: 4px solid #228AEC;
+}
+.hot{
+    width: 90%;
+    margin: 10px auto;
+}
+.hot .hot-name{
+    margin: 10px 0;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    border-left: 4px solid #228AEC;
+}
+.hot .hot-content .hot-tab-title{
+    width: 100%;
+    margin: 10px auto;
+}
+.hot .hot-content .hot-tab-title div{
+    width: 23%;
+    display: inline-block;
+    font-size: 13px;
+    height: 25px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.hot .hot-content .hot-tab-title .show{
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(255, 139, 76);
+}
+.hot .hot-content .hot-tab-content .hot-tab-content-item div{
+    width: 100%;
+    height: 60px;
+    
+    line-height: 60px;
+}
+.hot .hot-content .hot-tab-content .hot-tab-content-item span:nth-of-type(0){
+    width: 80%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 13px;
+    display: inline-block;
+}
+.hot .hot-content .hot-tab-content .hot-tab-content-item .hot-icon{
+    position: relative;
+    right: -138px;
+}

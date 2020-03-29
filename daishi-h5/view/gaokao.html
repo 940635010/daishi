@@ -6,34 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./../style/share.css">
+    <link rel="stylesheet" href="./../style/index.css">
+    <link rel="stylesheet" href="./../style/chunji.css">
+    <link rel="stylesheet" href="./../style/gaokao.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <title>高考</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-        #content {
-            position: relative;
-            top: -4px;
-            width: 100%;
-            height: 500px;
-            background-color: turquoise;
-        }
-
-        .tab-bar {
-            width: 90%;
-            margin: 0 auto;
-            height: 300px;
-        }
-
-        .tab-bar>span {
-            width: 85px;
-            height: 24px;
-
-        }
-    </style>
+    <title>高考页面</title>
 </head>
 
 <body>
@@ -41,68 +18,79 @@
     <header>
         <ul>
             <li><img src="./../images/share/top_03.jpg" style="width:43px;height:30px;line-height:50px;"></li>
-            <li><img src="./../images/share/top_05.jpg" style="width:180px;height:40px;line-height:50px;"></li>
+            <li><img src="./../images/share/top_05.jpg" style="width:150px;height:30px;line-height:50px;"></li>
             <li><img src="./../images/share/top_07.jpg" style="width:140px;height:30px;line-height:50px;"></li>
         </ul>
     </header>
     <!-- 站位unmount -->
-    <div class="cs">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./../images/share/banner01.jpg" /></div>
-                <div class="swiper-slide"><img src="./../images/share/banner02.jpg" /></div>
-                <div class="swiper-slide"><img src="./../images/share/banner03.jpg" /></div>
-                <div class="swiper-slide"><img src="./../images/share/banner04.jpg" /></div>
-                <div class="swiper-slide"><img src="./../images/share/banner05.jpg" /></div>
-                <div class="swiper-slide"><img src="./../images/share/banner06.jpg" /></div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <div class="settings">
-            <ul>
-                <li><img src="./../images/share/icon1.png" alt=""></li>
-                <li><img src="./../images/share/icon2.png" alt=""></li>
-                <li><img src="./../images/share/icon3.png" alt=""></li>
-                <li><img src="./../images/share/icon4.png" alt=""></li>
-                <li><img src="./../images/share/icon5.png" alt=""></li>
-                <li><img src="./../images/share/icon6.png" alt=""></li>
-            </ul>
-            <div class="settings-name">
-                <span>幼升小</span>
-                <span>小升初</span>
-                <span>春季班</span>
-                <span>中小学一对一</span>
-                <span>中考集训</span>
-                <span>高考集训</span>
-            </div>
-        </div>
-    </div>
     <div class="time-out">
-        <div class="time-title"><span>2020高考倒计时</span><span>2020中考倒计时</span></div>
+        <div class="time-title time1"><span>2020高考倒计时</span></div>
+        <div class="time-title time2"><span>2020中考倒计时</span></div>
+    </div>
+    <div class="cs">
+        <div class="gaokao-xuanchuan"><img src="./../images/seaside/gaokao/banner.png"> </div>
+
+    </div>
+    <div class="settings">
+       <div class="settings-item title">2020高考倒计时</div>
+       <div class="settings-item times2"></div>
+       <div class="settings-item late">早报名早提升</div>
     </div>
     <div id="content">
-        <div class="tab-bar">
-            <div class="tab">
-                <span>VIP一对一</span>
-                <span>3-6精品班</span>
-                <span>15人大班</span>
+        <!-- 类别 -->
+        <div class="lb">
+            <img src="../images/seaside/leibie_03.jpg">
+        </div>
+        <!-- 课程报价 -->
+        <div class="course-price">
+            <span class="course-price-name">&nbsp;10秒免费获取课程报价</span>
+            <div class="course-price-content" style="">李易公共部分</div>
+            <div class="course-price-get">立即获取课程报价</div>
+        </div>
+        <!-- 名师部分 -->
+        <div class="teacher">
+            <div class="teacher-name">
+                <img src="./../images/seaside/teacher.png">
             </div>
-            <div class="tab-content">
-                <div class="tab-items show"></div>
-                <div class="tab-items"></div>
-                <div class="tab-items"></div>
+            <div class="teacher-content">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="talk">与TA交流</div>
+            <div class="teacher-choose">
+                <img src="./../images/seaside/tea-xuanba0.png" alt="">
             </div>
         </div>
+        <!-- 环境部分 -->
+        <div class="environment">
+            <div class="environment-name">
+                <img src="./../images/seaside/environment.png">
+            </div>
+            <div class="environment-content">
+                <img src="./../images/seaside/en-tent.png" alt="">
+            </div>
+            <div class="environment-price-get">立即获取课程报价</div>
+        </div>
+    </div>
     </div>
     <!-- 固定地步区域 -->
-    <footer>
+    <div>
         <div class="products">
             <img src="./../images/share/footer_03.jpg">
         </div>
         <div class="free">
             <img src="./../images/share/footer2_12.jpg">
         </div>
+    </div>
+    <p class="clear"></p>
+    <footer>
         <ul>
             <li><img src="./../images/share/foot-span_03.jpg"> </li>
             <li><img src="./../images/share/foot-span_05.jpg"> </li>
@@ -114,7 +102,10 @@
 <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
 <script src="./../js/share.js"> </script>
 <script>
-
+    new TimeCount({
+    parent: document.getElementsByClassName("times2")[0],
+    date: "2020-06-07"
+})
 </script>
 
 </html>

@@ -99,12 +99,12 @@ TimeCount.prototype.updateTime = function () {
 
 
 new TimeCount({
-    parent: document.getElementsByClassName("time-out")[0],
+    parent: document.getElementsByClassName("time1")[0],
     date: "2020-06-01"
 })
 
 new TimeCount({
-    parent: document.getElementsByClassName("time-out")[0],
+    parent: document.getElementsByClassName("time2")[0],
     date: "2020-06-07"
 })
 
