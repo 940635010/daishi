@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* 封装倒计时样式 */
+        .timeItem {
+            font-size: 20px;
+            padding: 6px 8px;
+            color: #fff;
+            background: #438ae4;
+            display: inline-block;
+        }
+
+        .dot {
+            display: inline-block;
+            padding: 5px 4px;
+            font-size: 20px;
+            font-weight: bold;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="index-wrap">
+        <!-- 头部 -->
+        <div class="index-header">
+            <div class="index-head">
+                <!-- logo -->
+                <a href="#">
+                    <img src="../images/index/u440.png" alt="">
+                </a>
+                <!-- 右边倒计时和导航部分 -->
+                <div class="index-right">
+                    <!-- 倒计时 -->
+                    <div class="index-top">
+                        <div class="top-zk">
+                            <p class="top-zk-txt">中考倒计时</p>
+                            <div class="top-zk-time"></div>
+                        </div>
+                        <div class="top-zk">
+                            <p class="top-zk-txt">高考倒计时</p>
+                            <div class="top-gk-time"></div>
+                        </div>
+                    </div>
+                    <!-- 导航 -->
+                    <div class="index-bom">
+                        <div class="bom-nav">
+                            <ul>
+                                <li class="li-active">首页</li>
+                                <li>师资力量</li>
+                                <li>校区查询</li>
+                                <li>热点资讯</li>
+                                <li>关于我们</li>
+                            </ul>
+                            <div class="nav-line"></div>
+                        </div>
+                        <div class="bom-phone">
+                            <div class="phone-one">
+                                <img src="../images/index/phone.png" alt="">
+                                <p>028-66060688</p>
+                            </div>
+                            <div class="phone-two">
+                                <img src="../images/index/wx.png" alt="">
+                                <p>微信</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主体部分 -->
+        <div class="index-main">
+            <!-- 轮播图+课程 -->
+            <div class="index-banner">
+                <!-- 轮播图 -->
+                <div class="banner">
+                    <img src="../images/index/banner5.jpg" alt="">
+                </div>
+                <!-- 各种课程 -->
+                <div class="banner-course">
+                    <div class="course-one">
+                        <div class="course-one-1">
+                            <div class="one-1-img">
+                                <img src="../images/index/rm.png" alt="">
+                            </div>
+                            <p>热门课程</p>
+                        </div>
+                        <div class="course-one-2">
+                            <span>中考集训</span>
+                            <span>高考集训</span>
+                            <span>春季班</span>
+                            <span>中学1对1</span>
+                        </div>
+                        <div class="course-one-3">
+                            <span>幼升小</span>
+                            <span>小升初</span>
+                        </div>
+                    </div>
+                    <div class="course-one">
+                        <div class="course-one-1">
+                            <div class="one-1-img">
+                                <img src="../images/index/cz.png" alt="">
+                            </div>
+                            <p>初中课程</p>
+                        </div>
+                        <div class="course-one-2">
+                            <span>语文</span>
+                            <span>数学</span>
+                            <span>英语</span>
+                            <span>物理</span>
+                            <span>化学</span>
+                        </div>
+                    </div>
+                    <div class="course-one">
+                        <div class="course-one-1">
+                            <div class="one-1-img">
+                                <img src="../images/index/gz.png" alt="">
+                            </div>
+                            <p>高中课程</p>
+                        </div>
+                        <div class="course-one-2">
+                            <span>语文</span>
+                            <span>数学</span>
+                            <span>英语</span>
+                            <span>文综</span>
+                            <span>理综</span>
+                        </div>
+                    </div>
+                    <div class="course-one">
+                        <div class="course-one-1">
+                            <div class="one-1-img">
+                                <img src="../images/index/xx.png" alt="">
+                            </div>
+                            <p>小学课程</p>
+                        </div>
+                        <div class="course-one-2">
+                            <span>语文</span>
+                            <span>数学</span>
+                            <span>英语</span>
+                            <span>语言表演</span>
+                            <span>情商美术</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 轮播图的切换按钮 -->
+                <div class="banner-switch">
+                    <div class="switch-left">
+                        <img src="../images/index/u140.png" alt="">
+                    </div>
+                    <div class="switch-right">
+                        <img src="../images/index/u145.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 课程 -->
+            <div class="course">
+                <div class="course-1">
+                    <div class="course-1-logo center">
+                        <img src="../images/index/zk.png" alt="">
+                    </div>
+                    <div class="course-1-txt">中考集训</div>
+                    <div class="course-1-link center background">了解详情></div>
+                    <div class="course-1-line course-line-active"></div>
+                </div>
+                <div class="course-1">
+                    <div class="course-1-logo center">
+                        <img src="../images/index/zx.png" alt="">
+                    </div>
+                    <div class="course-1-txt center">中小学1对1</div>
+                    <div class="course-1-link center">了解详情></div>
+                    <div class="course-1-line"></div>
+                </div>
+                <div class="course-1">
+                    <div class="course-1-logo center">
+                        <img src="../images/index/gk.png" alt="">
+                    </div>
+                    <div class="course-1-txt center">高考集训</div>
+                    <div class="course-1-link center">了解详情></div>
+                    <div class="course-1-line"></div>
+                </div>
+                <div class="course-1">
+                    <div class="course-1-logo center">
+                        <img src="../images/index/cj.png" alt="">
+                    </div>
+                    <div class="course-1-txt center">春季班</div>
+                    <div class="course-1-link center">了解详情></div>
+                    <div class="course-1-line"></div>
+                </div>
+                <div class="course-1">
+                    <div class="course-1-logo center">
+                        <img src="../images/index/yx.png" alt="">
+                    </div>
+                    <div class="course-1-txt center">幼升小</div>
+                    <div class="course-1-link center">了解详情></div>
+                    <div class="course-1-line"></div>
+                </div>
+                <div class="course-1">
+                    <div class="course-1-logo center">
+                        <img src="../images/index/xs.png" alt="">
+                    </div>
+                    <div class="course-1-txt center">小升初</div>
+                    <div class="course-1-link center">了解详情></div>
+                    <div class="course-1-line"></div>
+                </div>
+            </div>
+
+            <!-- 推销 -->
+            <div class="index-sell center">
+                <div class="index-sell-1 border-b border-r">
+                    <p>K12</p>
+                    <p class="center"></p>
+                    <p>本土教商品牌</p>
+                </div>
+                <div class="index-sell-1 border-b border-r">
+                    <p>DSE</p>
+                    <p class="center"></p>
+                    <p>独特教学方法</p>
+                </div>
+                <div class="index-sell-1 border-b">
+                    <p>6对1</p>
+                    <p class="center"></p>
+                    <p>效果监测评估</p>
+                </div>
+                <div class="index-sell-1 border-r">
+                    <p>27年</p>
+                    <p class="center"></p>
+                </div>
+                <div class="index-sell-1 border-r">
+                    <p>5年+</p>
+                    <p class="center"></p>
+                    <p>教龄精英教师</p>
+                </div>
+                <div class="index-sell-1">
+                    <p>100万+</p>
+                    <p class="center"></p>
+                    <p>圆梦名校学生</p>
+                </div>
+            </div>
+
+            <!-- 宣传 -->
+            <div class="index-pro center">
+                <div class="index-pro-l">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="index-pro-c">
+                    <div class="pro-c-t"></div>
+                    <div class="pro-c"></div>
+                    <div class="pro-c"></div>
+                </div>
+                <div class="index-pro-r">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <!-- 步骤 -->
+            <div class="index-step">
+                <div class="step center">
+                    <div class="step-nav">
+                        <ul>
+                            <li class="active">5阶教学标准</li>
+                            <li>6对1监测管理</li>
+                            <li>7步精细化辅导流程</li>
+                        </ul>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="con-school">
+                            <div class="school">
+                                <div>小学</div>
+                                <div class="school-wid">初一 | 初二</div>
+                                <div>初三</div>
+                                <div class="school-wid">高一 | 高二</div>
+                                <div class="school-back">高三</div>
+                            </div>
+                            <div class="school">
+                                <div>语文</div>
+                                <div>英语</div>
+                                <div>数学</div>
+                                <div>物理</div>
+                                <div>化学</div>
+                                <div class="school-back">生物</div>
+                            </div>
+                        </div>
+                        <div class="con-text">
+                            <img src="../images/index/01.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 关注 -->
+            <div class="index-att center">
+                <div class="att-title">热点关注</div>
+                <div class="att-content">
+                    <div class="content-1 border-b border-r att-active">
+                        <p>效果怎么样？</p>
+                        <p class="attp">点击了解</p>
+                    </div>
+                    <div class="content-1 border-b border-r">
+                        <p>师资怎么样？</p>
+                        <p>点击了解</p>
+                    </div>
+                    <div class="content-1 border-b border-r">
+                        <p>管理怎么样？</p>
+                        <p>点击了解</p>
+                    </div>
+                    <div class="content-1 border-b ">
+                        <p>环境怎么样？</p>
+                        <p>点击了解</p>
+                    </div>
+                    <div class="content-1 border-r">
+                        <p>怎么收费？</p>
+                        <p>点击了解</p>
+                    </div>
+                    <div class="content-1 border-r">
+                        <p>怎么上课</p>
+                        <p>点击了解</p>
+                    </div>
+                    <div class="content-1 border-r">
+                        <p>小区查询</p>
+                        <p>点击了解</p>
+                    </div>
+                    <div  class="content-1">
+                        <p>其他问题</p>
+                        <p>在线咨询</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 资讯 -->
+            <div class="index-infor center">
+                <div class="infor-title">热点资讯</div>
+                <div class="infor-bom">
+                    <div class="infor-bom-l">
+                        <div class="l-nav">
+                            <ul>
+                                <li class="nav-active">戴氏资讯</li>
+                                <li>中考资讯</li>
+                                <li>高考资讯</li>
+                            </ul>
+                            <div class="l-nav-line"></div>
+                        </div>
+                        <div class="l-text">
+                            <div class="text-top">
+                                <p class="text-top-p1">戴氏教育：春李学霸班，在线辅与，课不容缓，家长 注意些什么…<span>[详情]</span></p>
+                                <p>数氏教育：春手学霸班，在线辅e，课不办缓，家长该注意统什么数氏教育：春季学拥班，在线辅e，课不安缓，家长该注意统什么..</p>
+                                <p class="text-top-p1">戴氏教育：春季学霸班，在线辅导，课不容缓，家长该注意些什么…<span>[详情]</span></p>
+                                <p>数氏教育：春手学霸班，在线辅e，课不办缓，家长该注意统什么数氏教育：春季学拥班，在线辅e，课不安缓，家长该注意统什么..</p>
+                            </div>
+                            <div class="text-bom">
+                                <img src="../images/index/02.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor-bom-r">
+                        <img src="../images/index/inforcjb.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部 -->
+            <div class="index-footer">
+                <div class="footer-back">
+                    <img src="../images/index/footerback.jpg" alt="">
+                </div>
+                <div class="footer-pic">
+                    <img src="../images/index/footerpic.jpg" alt="">
+                    <div class="footer-inp">
+                        <input type="text" placeholder="请输入您孩子的姓名">
+                        <input type="text" placeholder="请输入您的电话">
+                        <select name="" id="">
+                            <option value="">年级</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">科目</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">班级</option>
+                        </select>
+                        <p>立即获取课程报价</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    /*
+        倒计时的封装
+        date:未来的时间，
+        style: 样式类名,
+        pre: 前缀
+    */
+
+
+    function checkTime(i) { //将0-9的数字前面加上0，例1变为01 
+        return i < 10 ? "0" + i : i
+    }
+
+
+    function TimeCount(options) {
+
+        this.dom = document.createElement("section"),
+            this.parent = options.parent;
+        this.date = options.date || new Date();
+        this.style = options.style;
+        this.pre = options.pre;
+        this.dot = options.dot
+        this.init();//初始化数据
+
+    }
+
+
+    TimeCount.prototype.init = function () {
+
+        this.dayDom = document.createElement("div");
+        var dot = document.createElement("span");
+        dot.classList.add("dot")
+        var text = this.dot ? document.createTextNode(this.dot) : document.createTextNode(":")
+        dot.appendChild(text)
+
+        if (this.style) {
+            this.dayDom.classList.add(this.style)
+        } else {
+            this.dayDom.classList.add("timeItem")
+        }
+        this.hourDom = this.dayDom.cloneNode();
+        this.minuteDom = this.dayDom.cloneNode();
+
+        var { days,
+            hours,
+            minutes } = this.updateTime()
+        this.render(days, hours, minutes)
+
+        this.dom.appendChild(this.dayDom)
+        this.dom.appendChild(dot.cloneNode(true))
+        this.dom.appendChild(this.hourDom)
+        this.dom.appendChild(dot.cloneNode(true))
+        this.dom.appendChild(this.minuteDom)
+
+        this.parent.appendChild(this.dom)
+
+        //开启定时
+
+        this.time = setInterval(() => {
+
+            var { days, hours, minutes } = this.updateTime()
+            this.render(days, hours, minutes)
+
+        }, 1000)
+
+
+    }
+
+    TimeCount.prototype.render = function (days, hours, minutes) {
+
+        this.dayDom.innerHTML = checkTime(days) + "天";
+        this.hourDom.innerHTML = checkTime(hours) + "时";
+        this.minuteDom.innerHTML = checkTime(minutes) + "分"
+
+
+
+    }
+
+    TimeCount.prototype.updateTime = function () {
+
+        var leftTime = (new Date(this.date)) - (new Date()); //计算剩余的毫秒数 
+        var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数 
+        var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时 
+        var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟 
+        return {
+            days,
+            hours,
+            minutes
+        }
+
+    }
+
+
+    new TimeCount({
+        parent: document.getElementsByClassName("top-zk-time")[0],
+        date: "2020-06-12"
+    })
+    new TimeCount({
+        parent: document.getElementsByClassName("top-gk-time")[0],
+        date: "2020-07-6"
+    })
+
+
+</script>
+
+</html>
