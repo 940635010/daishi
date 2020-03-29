@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../templet/head.css">
+    <link rel="stylesheet" href="../templet/footer.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    #about-box{
+        width: 1903px;
+        overflow: hidden;
+        margin-top: 125px;
+    }
+    .about-img{
+        margin-top: 75px;
+    }
+    .about{
+        margin: 0 auto;
+        width: 1200px;
+    }
+    .about-ul{
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        
+    }
+    .about-ul>li{
+        display: block;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 298px;
+        height: 68px;
+        background-color: #ecf3fc;
+    }
+    .about-ul>li>a{
+        display: block;
+        text-decoration: none;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 68px;
+        color: black;
+        font-size: 20px;
+    }
+    .about>p{
+        display: block;
+        height: 185px;
+        text-align: center;
+        line-height: 185px;
+        font-size: 36px;
+    }
+    .about-li>a:hover{
+        background-color: #438ae4;
+        color: white;
+    }
+
+    /* 头部样式 */
+    .timeItem {
+            font-size: 20px;
+            padding: 6px 8px;
+            color: #fff;
+            background: #438ae4;
+            display: inline-block;
+        }
+
+        .dot {
+            display: inline-block;
+            padding: 5px 4px;
+            font-size: 20px;
+            font-weight: bold;
+            vertical-align: top;
+        }
+        
+</style>
+<body>
+    <!-- 头部 -->
+    <div class="index-header">
+        <div class="index-head">
+            <a href="#">
+                <img src="../images/index/u440.png" alt="">
+            </a>
+            <div class="index-right">
+                <div class="index-top">
+                    <div class="top-zk">
+                        <p class="top-zk-txt">中考倒计时</p>
+                        <div class="top-zk-time"></div>
+                    </div>
+                    <div class="top-zk">
+                        <p class="top-zk-txt">高考倒计时</p>
+                        <div class="top-gk-time"></div>
+                    </div>
+                </div>
+                <div class="index-bom">
+                    <div class="bom-nav">
+                        <ul>
+                            <li class="li-active">首页</li>
+                            <li>师资力量</li>
+                            <li>校区查询</li>
+                            <li>热点资讯</li>
+                            <li>关于我们</li>
+                        </ul>
+                        <div class="nav-line"></div>
+                    </div>
+                    <div class="bom-phone">
+                        <div class="phone-one">
+                            <img src="../images/index/phone.png" alt="">
+                            <p>028-66060688</p>
+                        </div>
+                        <div class="phone-two">
+                            <img src="../images/index/wx.png" alt="">
+                            <p>微信</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div id="about-box">
+        <img src="../images/pc-about_02.jpg">
+        <img class="about-img" src="../images/pc-about_04.jpg">
+        <img src="../images/pc-about_06.jpg">
+        <div class="about">
+            <img src="../images/pc-about_08.jpg">
+            <p>校区查询</p>
+            <ul class="about-ul">
+                <li class="about-li"><a href="#">顺吉大厦总校</a></li>
+                <li class="about-li"><a href="#">温江成实外</a></li>
+                <li class="about-li"><a href="#">骡马市</a> </li>
+                <li class="about-li"><a href="#">高升桥</a></li>
+                <li class="about-li"><a href="#">桐梓林</a></li>
+                <li class="about-li"><a href="#">牛王庙</a></li>
+                <li class="about-li"><a href="#">双楠</a></li>
+                <li class="about-li"><a href="#">龙爪堰</a></li>
+                <li class="about-li"><a href="#">北门客运站</a></li>
+                <li class="about-li"><a href="#">万象城</a></li>
+                <li class="about-li"><a href="#">省体育馆</a></li>
+                <li class="about-li"><a href="#">建设路</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="index-footer">
+        <div class="footer-back">
+            <img src="../images/index/footerback.jpg" alt="">
+        </div>
+        <div class="footer-pic">
+            <img src="../images/index/footerpic.jpg" alt="">
+            <div class="footer-inp">
+                <input type="text" placeholder="请输入您孩子的姓名">
+                <input type="text" placeholder="请输入您的电话">
+                <select name="" id="">
+                    <option value="">年级</option>
+                </select>
+                <select name="" id="">
+                    <option value="">科目</option>
+                </select>
+                <select name="" id="">
+                    <option value="">班级</option>
+                </select>
+                <p>立即获取课程报价</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

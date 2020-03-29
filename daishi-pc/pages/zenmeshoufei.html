@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/select.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #shoufei-box{
+            width: 100%;
+            height: 100%;
+        }
+        #shoufei-mask{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #7f7f7f;
+        }
+        .shoufei-box{
+            background-image: url(images/pc报价表单.png);
+            width: 600px;
+            height: 567px;
+            position: fixed;
+            top: calc( 50% - 267px);
+            left: calc( 50% - 300px);
+            border-radius: 30px;
+        }
+        .shoufei-box>input{
+            display: block;
+            width: 445px;
+            height: 60px;
+            margin: 0px  auto;
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
+        .charge-img{
+            position: absolute;
+            top: -32px;
+        }
+        .shoufei-box>.shoufei-first{
+            margin-top: 150px;
+        }
+        .charge-select{
+            display: flex;
+            width: 465px;
+            margin: 0 auto;
+            justify-content:space-between;
+            margin-bottom: 12px;
+        }
+        .btn-style2{
+            width: 222px;
+            height: 60px;
+            background-color: #cecece;
+            border: 0px;
+            color: #999999;
+        }
+        .btn-style1{
+            width: 222px;
+            height: 60px;
+            border: 0px;
+            background: -webkit-linear-gradient(left,#f1ca48,#ec5b2b);
+            background: -moz-linear-gradient(left,#f1ca48,#ec5b2b);
+            background: linear-gradient(left,#f1ca48,#ec5b2b);
+            color: white;
+        }
+        .shoufei-i{
+            position: absolute;
+            right: -55px;
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 28px;
+            text-align: center;
+            color: white;
+            top: 0;
+            font-weight: 200;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="shoufei-box">
+        <div id="shoufei-mask">
+            <div class="shoufei-box">
+                <input class="shoufei-first" type="text" placeholder="请输入您孩子的姓名">
+                <input type="text" placeholder="请输入您的电话">
+                <input type="text" placeholder="住址（便于就近安排校区）">
+                <div class="charge-select">
+                    <div id="charge-select1"></div>
+                    <div id="charge-select3"></div>
+                    <div id="charge-select2"></div>
+                </div>
+                <div class="charge-select">
+                    <button class="charge-btn btn-style1">立即获取课程报价</button>
+                    <button class="charge-btn btn-style2">稍后咨询</button>
+                </div>
+                <div class="shoufei-i">X</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/select.js"></script>
+    <script>
+        new Select({
+            position:$('#charge-select1'),
+            arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+            width:'148px',
+            height:'60px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('#charge-select2'),
+            arr:["科目",'语文','数学','英语','物理','化学','语言表演','情商美术'],
+            width:'133px',
+            height:'60px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('#charge-select3'),
+            arr:["班级",'一对一','3~6人精品','15人大师班'],
+            width:'133px',
+            height:'60px',
+            drop:'180px'
+        })
+    </script>
+</body>
+</html>
