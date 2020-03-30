@@ -1,14 +1,153 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-/* 头部 轮播图 */
-.szimg-1 {
+
+/* 效果 */
+.xiaoguobox {
+    margin: auto;
     width: 100%;
+    margin-top: 120px;
 }
 
-.szimg-1>img {
+
+/* ==========轮播图+课程========== */
+.index-banner{
     width: 100%;
+    height: 600px;
+    position: relative;
+    margin-bottom: 72px;
+}
+/* ===========轮播图========= */
+.banner{
+    width: 100%;
+    height: 600px;
+}
+.banner>img{
+    width: 100%;
+    height: 100%;
+}
+/* =======轮播图切换按钮========= */
+.banner-switch{
+    width: 96px;
+    height: 42px;
+    position: absolute;
+    top: 87%;
+    left: 84%;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-switch>div{
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.527);
+}
+.switch-left>img,.switch-right>img{
+   margin: 14px;
+}
+
+/* ===========课程类型========== */
+.banner-course{
+    width: 370px;
+    height: 540px;
+    background-color: white;
+    margin-left: 165px;
+    padding: 20px 0px 0px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 21px;
+    left: 26px;
+}
+.course-one{
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 45px;
+}
+.course-one-1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+}
+.course-one-1>.wid>img{
+    width: 20px;
+    height: 22px;
+}
+.course-one-1>.widt>img{
+    width: 24px;
+    height: 22px;
+}
+.one-1-img{
+    width: 24px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.one-1-img>img{
+    width: 24px;
+    height: 20px;
+}
+.course-one-1>p{
+    font-size: 20px;
+    color: #333333;
+    font-weight: bold;
+}
+.course-one-2{
+    margin-bottom: 20px;
+}
+.course-one-2>span,.course-one-3>span{
+    margin-right: 23px;
+}
+
+
+/* ============课程========= */
+.course{
+    width: 1200px;
+    height: 224px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.course-1{
+    width: 180px;
+    height: 232px;
+    padding-top: 63px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px #b0cef3;
+}
+.course-1-logo{
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+}
+.center{
+    margin: 0 auto;
+}
+.course-1-logo>img{
+    width: 60px;
+    height: 60px;
+}
+.course-1-txt{
+    height: 28px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 15px;
+}
+.course-1-link{
+    width: 104px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #BCBCBC;
+    border: 1px solid #BCBCBC;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+.course-1-line{
+    width: 100%;
+    height: 5px;
+    background:gray;
 }
 
 
@@ -87,17 +226,19 @@
 }
 
 /* 立即预约测评 */
-.xgljcpbox{
-background-color: #438ae6;
-box-shadow: 0 0 2px #438ae6;
+.xgljcpbox {
+    background-color: #438ae6;
+    box-shadow: 0 0 2px #438ae6;
 }
-.xgljcpl{
+
+.xgljcpl {
     width: 1200px;
     margin: auto;
     height: 119px;
     position: relative;
 }
-.xgljcpl>div{
+
+.xgljcpl>div {
     width: 343px;
     height: 72px;
     bottom: 27px;
@@ -105,7 +246,8 @@ box-shadow: 0 0 2px #438ae6;
     cursor: pointer;
     position: absolute;
 }
-.xgljcpl>img{
+
+.xgljcpl>img {
     width: 1111px;
     position: absolute;
     bottom: 0px;
@@ -113,21 +255,24 @@ box-shadow: 0 0 2px #438ae6;
 }
 
 /* 优秀教师模范 */
-.szxxjsbox1{
+.szxxjsbox1 {
     width: 100%;
     padding-top: 30px;
     background-color: #f8f8f8;
 }
-.szlsqq{
+
+.szlsqq {
     width: 1200px;
     margin: auto;
     z-index: 9;
     position: relative;
 }
-.szlsqq img{
+
+.szlsqq img {
     width: 100%;
 }
-.szlsqq>div{
+
+.szlsqq>div {
     position: absolute;
     width: 315px;
     height: 63px;
@@ -139,101 +284,222 @@ box-shadow: 0 0 2px #438ae6;
     background-color: white;
     cursor: pointer;
 }
-.szlsqq>div:hover{
+
+.szlsqq>div:hover {
     background-color: #caccff;
     border: solid 1px #1e25e6;
 }
-.szhovers1{
+
+.szhovers1 {
     top: 60px;
     left: 135px;
-}.szhovers2{
+}
+
+.szhovers2 {
     top: 178px;
     left: 81px;
-}.szhovers3{
+}
+
+.szhovers3 {
     top: 302px;
     left: 81px;
-}.szhovers4{
+}
+
+.szhovers4 {
     top: 409px;
     left: 135px;
-}.szhovers5{
+}
+
+.szhovers5 {
     top: 60px;
     right: 128px;
-}.szhovers6{
+}
+
+.szhovers6 {
     top: 178px;
     right: 79px;
-}.szhovers7{
+}
+
+.szhovers7 {
     top: 302px;
     right: 79px;
-}.szhovers8{
+}
+
+.szhovers8 {
     top: 409px;
     right: 128px;
 }
+
 /* 轮播图 */
-.szlbt-box{
+.szlbt-box {
     width: 100%;
     margin-top: -60px;
     background-color: #2659ff;
 }
 
-.szlbtyg{
+.szlbtyg {
     position: relative;
     width: 1200px;
     margin: auto;
 }
-.szlbtyg img{
+
+.szlbtyg img {
     width: 100%;
 }
 
 /* 5阶教学标准 */
 .xgwjiebox {
-	width: 1200px;
+    width: 1200px;
     margin: auto;
     margin-top: 71px;
+    position: relative;
 }
-.xgwjiebox>p{
+
+.xgwjiebox>p {
     text-align: center;
     font-size: 36px;
 }
-.xgxxwj{
+
+.xgxxwj {
     width: 100%;
     height: 204px;
     margin-top: 72px;
 }
-.xgxxwj>ul>li{
+
+.xgxxwj>ul>li {
     list-style: none;
     float: left;
     margin-bottom: 42px;
     line-height: 60px;
     text-align: center;
     font-size: 24px;
-        width: 165px;
-        height: 60px;
-        margin-right: 41px;
-        box-sizing: border-box;
-        color: #438ae4;
-        border: solid 1px #438ae4;
-        cursor: pointer;
+    width: 165px;
+    height: 60px;
+    margin-right: 41px;
+    box-sizing: border-box;
+    color: #438ae4;
+    border: solid 1px #438ae4;
+    cursor: pointer;
 }
-.xgxxwj>ul>.xgcdli{
+
+.xgxxwj>ul>.xgcdli {
     width: 268px;
 }
-.xgxxwj>ul>li:last-child{
+
+.xgxxwj>ul>li:last-child {
     margin-right: 0px;
 }
-.xgxxwj>ul>li:nth-of-type(5){
+
+.xgxxwj>ul>li:nth-of-type(5) {
     margin-right: 0px;
 }
-.xgxxwj>ul>li:hover{
+
+.xgxxwj>ul>li:hover {
     color: white;
-        background-color: #438ae4;
+    background-color: #438ae4;
 }
-.xgwjiebox>img{
+
+.xgwjiebox>img {
     width: 100%;
 }
+
+.xgwjieboxan {
+    width: 204px;
+    height: 45px;
+    position: absolute;
+    cursor: pointer;
+    bottom: 25px;
+}
+
+.xgan1 {
+    left: 17px;
+}
+.xgan2 {
+    left: 259px;
+}
+
+.xgan3 {
+    left: 499px;
+}
+
+.xgan4 {
+    left: 739px;
+}
+.xgan5 {
+    left: 980px;
+}
+
+
+/* 表单 */
+.xb-formx {
+	width: 100%;
+    height: 1382px;
+    margin-top: 72px;
+    overflow: hidden;
+	background-color: #f6f9fe;
+}
+.xb-form {
+    height: 472px;
+    width: 1200px;
+    margin: auto;
+}
+.xgfor-div{
+        width: 579px;
+        height: 200px;
+        float: left;
+        margin-bottom: 30px;
+        box-shadow:0 0 10px #cadeff;
+}
+.xgfor-div:nth-of-type(2n){
+    margin-left: 42px;
+}
+.xgfor-div:nth-of-type(5){
+    margin-bottom:0px;
+}
+.xgfor-div:nth-of-type(6){
+    margin-bottom:0px;
+}
+.xgfor-div>img{
+    width: 100%;
+    height: 100%;
+}
+.xb-form>p{
+    margin-top: 71px;
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 73px;
+}
+.xb-insl {
+    width: 570px;
+    height: 76px;
+    border: solid 1px #333333;
+    padding: 0px 20px;
+    font-size: 24px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.xb-inslaa {
+    margin-right: 53px;
+}
+
+.xb-insbox {
+    width: 100%;
+    height: 79px;
+    color: #ffffff;
+        background-color: #f3b819;
+    text-align: center;
+    font-size: 24px;
+    line-height: 79px;
+    margin-top: 53px;
+    cursor: pointer;
+}
+
 /* 底部图片 */
-.xbimgs-1{
+.xbimgs-1 {
     margin-top: 73px;
 }
+
 .xbimgs-1 img {
     width: 100%;
 }

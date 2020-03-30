@@ -1,0 +1,147 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.guanli{
+    width: 100%;margin-top: 120px;
+}
+/* ==========轮播图+课程========== */
+.index-banner{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-bottom: 72px;
+}
+/* ===========轮播图========= */
+.banner{
+    width: 100%;
+    height: 600px;
+}
+.banner>img{
+    width: 100%;
+    height: 100%;
+}
+/* =======轮播图切换按钮========= */
+.banner-switch{
+    width: 96px;
+    height: 42px;
+    position: absolute;
+    top: 87%;
+    left: 84%;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-switch>div{
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.527);
+}
+.switch-left>img,.switch-right>img{
+   margin: 14px;
+}
+
+/* ===========课程类型========== */
+.banner-course{
+    width: 370px;
+    height: 540px;
+    background-color: white;
+    margin-left: 165px;
+    padding: 20px 0px 0px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 21px;
+    left: 26px;
+}
+.course-one{
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 45px;
+}
+.course-one-1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+}
+.course-one-1>.wid>img{
+    width: 20px;
+    height: 22px;
+}
+.course-one-1>.widt>img{
+    width: 24px;
+    height: 22px;
+}
+.one-1-img{
+    width: 24px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.one-1-img>img{
+    width: 24px;
+    height: 20px;
+}
+.course-one-1>p{
+    font-size: 20px;
+    color: #333333;
+    font-weight: bold;
+}
+.course-one-2{
+    margin-bottom: 20px;
+}
+.course-one-2>span,.course-one-3>span{
+    margin-right: 23px;
+}
+
+
+/* ============课程========= */
+.course{
+    width: 1200px;
+    height: 224px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.course-1{
+    width: 180px;
+    height: 232px;
+    padding-top: 63px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px #b0cef3;
+}
+.course-1-logo{
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+}
+.center{
+    margin: 0 auto;
+}
+.course-1-logo>img{
+    width: 60px;
+    height: 60px;
+}
+.course-1-txt{
+    height: 28px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 15px;
+}
+.course-1-link{
+    width: 104px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #BCBCBC;
+    border: 1px solid #BCBCBC;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+.course-1-line{
+    width: 100%;
+    height: 5px;
+    background:gray;
+}
