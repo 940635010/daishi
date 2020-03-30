@@ -1,0 +1,22 @@
+.ML-xuanchuan img{
+    width: 100%;
+    height: 460px;
+}
+#content{
+    top: 80px;
+}
+.jinzhun-name{
+    text-align: center;
+    margin: 20px 0;
+}
+.jinzhun-name img{
+    width: 232px;
+    height: 20px;
+}
+.person-content-item a{
+    line-height: 50px;
+}
+.tupo-name{
+    text-align: center;
+    
+}

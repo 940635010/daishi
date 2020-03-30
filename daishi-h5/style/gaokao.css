@@ -57,9 +57,281 @@
     background-color: #FF5A56;
     margin-bottom: 30px;
 }
+.course-price{
+    height: 420px;
+}
 .course-price .course-price-get{
     background-color: #FF5A56;
 }
 .course-price .course-price-name{
     border-left: 4px solid #FF5A56;
+}
+.study{
+    width: 100%;
+    padding: 20px 0;
+}
+.study-name{
+    text-align: center;
+}
+.study-name img{
+    width: 90%;
+    height: 60px;
+}
+.study-content div{
+    margin: 20px auto;
+    width: 90%;
+    height: 95px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 90%;
+}
+.study-content div:nth-of-type(1){
+    background-image: url("../images/seaside/gaokao/zu 32.png");
+}
+.study-content div:nth-of-type(2){
+    background-image: url("../images/seaside/gaokao/zu 32(1).png");
+}
+.study-content div:nth-of-type(3){
+    background-image: url("../images/seaside/gaokao/zu 32(2).png");
+}
+.study-content div:nth-of-type(4){
+    background-image: url("../images/seaside/gaokao/zu 32(3).png");
+}
+.study-content div:nth-of-type(5){
+    background-image: url("../images/seaside/gaokao/zu 32(4).png");
+}
+.study-content div p{
+    height: 2px;
+    width: 40px;
+    display: block;
+    background-color: black;
+    margin: 10px 100px 0;
+}
+.study-content div span{
+    margin-left: 100px;
+    font-size: 13px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+}
+.study-content div h4{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 100px 0;
+}
+.follow img{
+    width: 100%;
+    height: 140px;
+}
+.person{
+    
+    background-color: #FEF7F6;
+}
+.person-name{
+    background-color: white;
+    text-align: center;
+    margin: 20px 0;
+}
+.person-name img{
+    width: 90%;
+    height: 60px;
+
+}
+.person-content{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.person-content .person-content-item{
+    width: 160px;
+    height: 228px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba(187, 187, 187, 0.5);
+}
+.person-content .person-content-item img{
+    width: 28px;
+    height: 28px;
+}
+.person-content .person-content-item p{
+    font-size: 13px;
+    line-height: 25px;
+    color: #CFCFCF;
+}
+.person-content .person-content-item h4{
+    font-size: 15px;
+    line-height: 40px;
+}
+.person-content .person-content-item div{
+    margin-top: 30px;
+}
+.heart-name{
+    text-align: center;
+}
+.heart-name img{
+    width: 136px;
+    height: 24px;
+}
+.heart-content-item,heart-content-item2{
+    margin: 20px 0;
+}
+.heart-content-item img{
+    width: 90%;
+    height: 24px;
+}
+.heart-content-item .h-name{
+    text-align: center;
+}
+
+.heart-content-item .h-content{
+    width: 90%;
+    margin: 20px auto;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 90%;
+}
+.heart-content-item .item1{
+    background-image: url("./../images/seaside/gaokao/zu 32(5).png");
+}
+.heart-content-item .item2{
+    background-image: url("./../images/seaside/gaokao/zu 32(6).png");
+}
+.heart-content-item .h-content p{
+    margin-left: 125px;
+    font-size: 12px;
+    height: 60px;
+    padding-top: 20px;
+}
+.heart-content-item2 .item3 .item3-name{
+    margin: 10px 0;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    border-left: 4px solid #228AEC;
+}
+.heart-content-item2 .item3 .item3-content{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 40%;
+}
+.heart-content-item2 .item3 .item1{
+    background-image: url("./../images/seaside/gaokao/xuanbaliucheng.png");
+    height: 180px;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #FEF7F6;
+}
+.heart-content-item2 .item3 .item2{
+    background-image: url("./../images/seaside/gaokao/zu26.png");
+    height: 222px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.heart-content-item2 .item3 .item2 .time_1{
+    /* margin-top: 20px; */
+    margin-left: 50%;
+    color: grey;
+    font-size: 14px;
+    line-height: 25px;
+}
+.heart-content-item2 .item3 .item2 .time_2{
+    /* margin-top: 20px; */
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: 4px;
+}
+.heart-content-item2 img{
+    width: 90%;
+    height: 24px;
+}
+.heart-content-item2 .h-name{
+    text-align: center;
+}
+.h-content .item3 {
+    margin: 20px 0;
+}
+.h-content .item3 .xintai{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    height: 80px;
+    width: 100%;
+    margin: 20px 0;
+}
+.h-content .item3 .xintai:nth-of-type(1){
+    background-image: url("./../images/seaside/gaokao/zu 32(7).png");
+}
+.h-content .item3 .xintai:nth-of-type(2){
+    background-image: url("./../images/seaside/gaokao/zu 32(8).png");
+}
+.h-content .item3 .xintai:nth-of-type(3){
+    background-image: url("./../images/seaside/gaokao/zu 32(9).png");
+}
+.h-content .item3 .xintai p{
+    width: 180px;
+    font-size: 12px;
+    margin-left: 40%;
+    padding-top: 20px;
+    line-height: 20px;
+    display: block;
+}
+.h-content .item3  .normal p{
+    margin-left: 10%;
+}
+.click-get{
+    background-color: #FF5A56;
+    text-align: center;
+    color: white;
+    height: 38px;
+    width: 90%;
+    line-height: 38px;
+    margin: 20px auto;
+}
+.teacher-name2{
+    text-align: center;
+}
+.teacher-name2 img{
+    width: 50%;
+    height: 60px;
+
+}
+.teacher .talk{
+    background-color: #FF5A56;
+    top: 240px;
+}
+.teacher .teacher-choose{
+    text-align: center;
+    margin-top: 40px;
+}
+.teacher .teacher-choose img{
+    width: 90%;
+    height: 190px;
+}
+.environment-name{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+}
+.environment-name img{
+    width: 90%;
+    height: 55px;
+
+}
+.environment-content{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.environment-content img{
+    width: 90%;
 }

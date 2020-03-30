@@ -34,6 +34,7 @@
 
 .course-price {
     margin-top: 20px;
+    height: 390px;
 }
 .online .online-content{
     width: 100vw;
@@ -104,7 +105,7 @@
     line-height: 35px;
     font-size: 15px;
     font-weight: bold;
-    z-index: 998;
+    z-index: 9;
 }
 .teacher-choose{
     position: relative;
