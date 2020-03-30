@@ -6,29 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shizhi</title>
     <link rel="stylesheet" href="../style/shizhi.css">
-        <link rel="stylesheet" href="../templet/head.css">
-        <link rel="stylesheet" href="../templet/footer.css">
-    </head>
-    <style>
-        /* 封装倒计时样式 */
-        .timeItem {
-            font-size: 20px;
-            padding: 6px 8px;
-            color: #fff;
-            background: #438ae4;
-            display: inline-block;
-        }
-    
-        .dot {
-            display: inline-block;
-            padding: 5px 4px;
-            font-size: 20px;
-            font-weight: bold;
-            vertical-align: top;
-        }
-        .index-footer {
-             height: 374px;
-        }
+    <link rel="stylesheet" href="../templet/head.css">
+    <link rel="stylesheet" href="../templet/footer.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    /* 封装倒计时样式 */
+    .timeItem {
+        font-size: 20px;
+        padding: 6px 8px;
+        color: #fff;
+        background: #438ae4;
+        display: inline-block;
+    }
+
+    .dot {
+        display: inline-block;
+        padding: 5px 4px;
+        font-size: 20px;
+        font-weight: bold;
+        vertical-align: top;
+    }
+    .index-footer {
+        margin-top: 0;
+         height: 374px;
+
+    }
     </style>
 </head>
 
@@ -37,7 +43,7 @@
     <div class="index-header">
         <div class="index-head">
             <a href="#">
-                <img src="../images/index/u440.png" alt="">
+                <img src="../images/index/logo.png" alt="">
             </a>
             <div class="index-right">
                 <div class="index-top">
@@ -69,6 +75,7 @@
                         <div class="phone-two">
                             <img src="../images/index/wx.png" alt="">
                             <p>微信</p>
+                            <div class="index-erweima"></div>
                         </div>
                     </div>
                 </div>
@@ -169,26 +176,43 @@
 
         </div>
     </div>
-    <!-- 底部 -->
-    <div class="index-footer">
-        <div class="footer-pic">
-            <img src="../images/index/footerpic.jpg" alt="">
-            <div class="footer-inp">
-                <input type="text" placeholder="请输入您孩子的姓名">
-                <input type="text" placeholder="请输入您的电话">
-                <select name="" id="">
-                    <option value="">年级</option>
-                </select>
-                <select name="" id="">
-                    <option value="">科目</option>
-                </select>
-                <select name="" id="">
-                    <option value="">班级</option>
-                </select>
-                <p>立即获取课程报价</p>
-            </div>
+   <!-- 底部 -->
+   <div class="index-footer">
+       
+    <div class="footer-pic">
+        <div class="pic-logo center">
+            <img src="../images/index/f1.jpg" alt="">
+            <img src="../images/index/f2.jpg" alt="">
+            <img src="../images/index/f3.jpg" alt="">
+            <img src="../images/index/f4.jpg" alt="">
+            <img src="../images/index/f5.jpg" alt="">
+            <img src="../images/index/f6.jpg" alt="">
+        </div>
+        <div class="pic-txt center">
+            <p>网站经案号</p>
+            <p>联电话：028-66060688</p>
+            <p>校区地址：顺城街，顺吉大厦3楼</p>
+        </div>
+        <div class="pic-back">
+            <img src="../images/index/ren.png" alt="">
+        </div>
+        <div class="footer-inp">
+            <input type="text" placeholder="请输入您孩子的姓名">
+            <input type="text" placeholder="请输入您的电话">
+            <select name="" id="">
+                <option value="">年级</option>
+            </select>
+            <select name="" id="">
+                <option value="">科目</option>
+            </select>
+            <select name="" id="">
+                <option value="">班级</option>
+            </select>
+            <p>立即获取课程报价</p>
         </div>
     </div>
+</div>
+
 </body>
 <script>
 
