@@ -5,23 +5,159 @@ header{
     width: 100%;
     height: 79vw;
     border: 1px solid #000;
+    box-sizing: border-box;
 }
-
+img{
+    width: 100%;
+}
+.banner{
+    width: 100%;
+}
+.banner>img{
+    width: 100%;
+}
 /*  
     width: 100%;
 } */
 /* 选择原因 */
 .reason{
-    margin-top: 2000vw;
     width: 100%;
 }
-
+.reason>div{
+    width: 100%;
+    margin-top: 6vw;
+}
 .reason>img{
     width: 100%;
-    /* margin-right:20vw; */
+    
+}
+.tl{
+    margin-top: 6vw;
 }
 .reason p{
     width: 100%;
-    margin: auto    ;
-    font-size: 180vw;
+    margin: auto ;
+    color: darkgray;
+    text-align: center;
+    margin-top: 2vw;
+}
+.jion{
+    width: 80%;
+    border: 1px solid rgb(255,80,77);
+    background-color: rgb(255,80,77);
+    box-sizing: border-box;
+    color: white;
+    border-radius: 1vw;
+}
+
+/* start */
+.start{
+    margin-top: 6vw;
+}
+.start>p{
+    color: darkgray;
+    text-align: center;
+    margin-top: 2vw;
+}
+.method{
+    margin-top: 3vw;
+}
+
+/* 公共————计价 */
+.ly{
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 93vw;
+    height: 40vw;
+    margin: auto;
+    margin-top: 6vw;
+}
+.git{
+    width: 80%;
+    border: 1px solid rgb(255,80,77);
+    background-color: rgb(255,80,77);
+    box-sizing: border-box;
+    color: white;
+    border-radius: 1vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+/* cammp */
+.cammp{
+    margin-top: 6vw;
+}
+.cammp>p{
+    color: darkgray;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+/* broke */
+.broke{
+    margin-top: 6vw;
+}
+.broke>p{
+    color: darkgray;
+    text-align: center;
+    margin-top: 2vw;
+}
+.different{
+    margin-top: 3vw;
+}
+.in{
+    width: 80%;
+    border: 1px solid rgb(255,80,77);
+    background-color: rgb(255,80,77);
+    box-sizing: border-box;
+    color: white;
+    border-radius: 1vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+/*more*/
+.more{
+    margin-top: 6vw;
+}
+.more>p{
+    color: darkgray;
+    text-align: center;
+    margin-top: 2vw;
+}
+.plan{
+    margin-top: 3vw;
+}
+
+/* charge */
+.charge{
+    margin-top: 6vw;
+}
+.charge>p{
+    color: darkgray;
+    text-align: center;
+    margin-top: 2vw;
+}
+.price{
+    margin-top: 3vw;
+}
+
+/* teach */
+.teach{
+    margin-top: 6vw;
+}
+.teacher{
+    margin-top: 6vw;
+}
+
+/* environment */
+.environment{
+    margin-top: 6vw;
+}
+.en{
+    width: 90%;
+    margin: auto;
+    margin-top: 3vw;
 }

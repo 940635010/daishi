@@ -1,37 +1,60 @@
+html{
+    width: 100%;
+}
+.banner_ysx{
+    width: 100%;
+    display: inline-block;
+}
+.banner_ysx>img{
+  
+    width: 100%;
+}
 /* charts */
 .charts{
+    width: 100%;
     margin-top:  6vw;
 }
+
 .chart1{
+    width: 100%;
     margin: auto;
+}
+.chart1>img{
+    width: 100%;
 }
 .chart2,.chart3,.chart4,.chart5,.chart6,.chart7{
     margin-top: 6vw;
+    width: 100%;
 }
-.chart4 img{
-    margin-left:35vw;
+.chart2>img,.chart3>img,.chart4>img{
+    width: 100%;
 }
+.chart5>img,.chart6>img,.chart7>img{
+    width: 100%;
+}
+
 .chart4 input{
-    width: 94vw;
+    width: 90%;
     height: 10vw;
-    margin-left: 35vw;
+    text-align: center;
     font-size: 5vw;
     color: darkgrey;
     margin-top: 2vw;
     border: 1px solid darkgrey;
     border-radius: 2vw;
 }
+
 .get{
     border: 1px solid rgb(255,80,77);
     background-color: rgb(255,80,77);
+    box-sizing: border-box;
     color: white;
     text-align: center;
-    width: 93vw;
+    width: 46vw;
     height: 10vw;
     border-radius: 2vw;
-    margin-left: 35vw;
     margin-top:5vw;
-    font-size: 5vw ;                              vw;
+    font-size: 5vw ;        
 }
 .get>p{
     margin-top:1.5vw;

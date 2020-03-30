@@ -1,0 +1,23 @@
+html{
+    width: 100%;
+}
+
+/* banner */
+.fi{
+    width: 100%;
+}
+.fi>img{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+
+/* skill */
+.skill{
+    width: 100%;
+    margin-top: 6vw;
+}
+.skill>img{
+    width: 80%;
+    margin: auto;
+}
