@@ -17,6 +17,9 @@
         this.position.on('click','.select-child',function(){
             _this.onchild(this)
         })
+        // this.position.children('.select-childbox').children('div').on('mouseover',function(){
+        //     console.log(1)
+        // })
     }
     // 初始化
     Select.prototype.add=function(){
@@ -46,7 +49,10 @@
         this.position.children('.select-active').eq(0).html(_this.innerHTML)
     }
     !('Select' in _global) && (_global.Select=Select)
-    
+    // 移入和移除效果
+    // Select.prototype.yiruyichu=function(){
+        
+    // }
 })()
 // 传对象过去
 // 需要传position盒子的位置比如：$('#box')
