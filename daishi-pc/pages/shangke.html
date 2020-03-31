@@ -39,7 +39,6 @@
             margin-top: 120px;
             width: 100%;
             height: 600px;
-            border: 1px solid red;
             box-sizing: border-box;
         }
         .shangke-input{
@@ -75,16 +74,57 @@
         .shangke-img{
             width: 1200px;
             margin: 0 auto;
+            text-align: center;
+            margin-top: 72px;
+        }
+        .shangke-img>img{
+            margin-bottom: 42px;
         }
         .shangke-congfu{
             width: 1200px;
             height: 726px;
             margin: 0 auto;
         }
-        .shangke-style{
-            margin-top: 42px;
+        .shangke-zhidao{
+            width: 1200px;
+            margin: 0 auto;
+            height: 632px;
+            background-image: url(../images/shangke/shangke2.png);
+            position: relative;
+            overflow: hidden;
         }
-    </style>
+        .shangke-zhidao>img{
+            position: absolute;
+            left: 458px;
+        }
+        .shangke-zhidao p{
+            font-size: 24px;
+            color: #2558ff;
+            line-height: 38px;
+        }
+        .shangke-zhidao1{
+            position: absolute;
+            left: 120px;
+            top: 32px;
+        }
+        .shangke-zhidao2{
+            position: absolute;
+            left: 120px;
+            top: 236px;
+        }
+        .shangke-zhidao3{
+            position: absolute;
+            left: 120px;
+            top: 440px;
+        }
+        .shangke-jvzhong{
+            width: 1200px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 72px;
+            margin-bottom: 42px;
+        }
+        </style>
 </head>
 <body>
     <!-- 头部 -->
@@ -133,9 +173,145 @@
     <!-- 内容 -->
     <div class="shangke-content">
         <div class="shangke-lunbo">
-
+            <!-- 轮播图+课程 -->
+            <div class="index-banner">
+                <!-- 轮播图 -->
+                <div class="banner">
+                    <img src="../images/index/banner5.jpg" alt="">
+                </div>
+                <!-- 各种课程 -->
+                <div class="banner-course">
+                    <div class="course-one">
+                        <div class="course-one-1">
+                            <div class="one-1-img wid">
+                                <img src="../images/index/rm.png" alt="">
+                            </div>
+                            <p>热门课程</p>
+                        </div>
+                        <div class="course-one-2">
+                            <span>中考集训</span>
+                            <span>高考集训</span>
+                            <span>春季班</span>
+                            <span>中学1对1</span>
+                        </div>
+                        <div class="course-one-3">
+                            <span>幼升小</span>
+                            <span>小升初</span>
+                        </div>
+                    </div>
+                    <div class="course-one">
+                        <div class="course-one-1">
+                            <div class="one-1-img">
+                                <img src="../images/index/cz.png" alt="">
+                            </div>
+                            <p>初中课程</p>
+                        </div>
+                        <div class="course-one-2">
+                            <span>语文</span>
+                            <span>数学</span>
+                            <span>英语</span>
+                            <span>物理</span>
+                            <span>化学</span>
+                        </div>
+                    </div>
+                    <div class="course-one">
+                        <div class="course-one-1">
+                            <div class="one-1-img">
+                                <img src="../images/index/gz.png" alt="">
+                            </div>
+                            <p>高中课程</p>
+                        </div>
+                        <div class="course-one-2">
+                            <span>语文</span>
+                            <span>数学</span>
+                            <span>英语</span>
+                            <span>文综</span>
+                            <span>理综</span>
+                        </div>
+                    </div>
+                    <div class="course-one">
+                        <div class="course-one-1">
+                            <div class="one-1-img widt">
+                                <img src="../images/index/xx.png" alt="">
+                            </div>
+                            <p>小学课程</p>
+                        </div>
+                        <div class="course-one-2">
+                            <span>语文</span>
+                            <span>数学</span>
+                            <span>英语</span>
+                            <span>语言表演</span>
+                            <span>情商美术</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 轮播图的切换按钮 -->
+                <div class="banner-switch">
+                    <div class="switch-left">
+                        <img src="../images/index/u140.png" alt="">
+                    </div>
+                    <div class="switch-right">
+                        <img src="../images/index/u145.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <img src="../images/ly/pcshangke_03.jpg">
+        <!-- 推销 -->
+        <div class="index-shell">
+            <div class="index-sell center">
+                <div class="index-sell-1">
+                    <p>K12</p>
+                    <p class="center"></p>
+                    <p>本土教商品牌</p>
+                </div>
+                <div class="index-sell-1">
+                    <p>DSE</p>
+                    <p class="center"></p>
+                    <p>独特教学方法</p>
+                </div>
+                <div class="index-sell-1">
+                    <p>6对1</p>
+                    <p class="center"></p>
+                    <p>效果监测评估</p>
+                </div>
+                <div class="index-sell-1">
+                    <p>27年</p>
+                    <p class="center"></p>
+                </div>
+                <div class="index-sell-1">
+                    <p>5年+</p>
+                    <p class="center"></p>
+                    <p>教龄精英教师</p>
+                </div>
+                <div class="index-sell-1">
+                    <p>100万+</p>
+                    <p class="center"></p>
+                    <p>圆梦名校学生</p>
+                </div>
+            </div>
+        </div>
+        <div class="shangke-jvzhong">
+            <img src="../images/shangke/biaoti2.png">
+        </div>
+        <div class="shangke-zhidao">
+            <img src="../images/shangke/shangke1.png">
+            <div class="shangke-zhidao1">
+                <p>足不出户：无需接送，孩子在家就能上课</p>
+                <p>省时安全：不用出门，无惧疫情</p>
+                <p>随时帮听：在线旁听，监督上课质量</p>
+            </div>
+            <div class="shangke-zhidao2"> 
+                <p>操作简单：手机、平板、电脑就能和老师面对面交流</p>
+                <p>更加高效：节约补课路程时间，课后老师在线答疑</p>
+                <p>复习方便：随时观看回放课程，知识点掌握更牢固</p>
+            </div>
+            <div class="shangke-zhidao3">
+                <p>直播上课：视频面对面互动授课</p>
+                <p>在线答疑：全天在线免费答疑</p>
+                <p>严格过手：霞姐测评巩固效果</p>
+            </div>
+        </div>
+        <!-- select -->
         <div class="shangke-input">
             <input type="text" placeholder="请输入您孩子的姓名">
             <div class="shangke-ys shangke-select1"></div>
@@ -207,8 +383,9 @@
         </div>
         </div>
         <div class="shangke-img">
-            <img src="../images/ly/pcshangke_06.jpg">
-            <button class="shangke-btn shangke-style">立即获取课程价格</button>
+            <img src="../images/shangke/biaoti.png">
+            <img src="../images/shangke/tupian.png">
+            <button class="shangke-btn">立即获取课程价格</button>
         </div>
     </div>
     <!-- 底部 -->
