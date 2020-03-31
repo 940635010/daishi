@@ -57,9 +57,6 @@
     background-color: #FF5A56;
     margin-bottom: 30px;
 }
-.course-price{
-    height: 420px;
-}
 .course-price .course-price-get{
     background-color: #FF5A56;
 }
@@ -190,12 +187,11 @@
 }
 
 .heart-content-item .h-content{
-    width: 90%;
-    margin: 20px auto;
+    padding: 10px;
     height: 80px;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: 90%;
+    background-size: 90% 100%;
+    background-position-x: 50%;
 }
 .heart-content-item .item1{
     background-image: url("./../images/seaside/gaokao/zu 32(5).png");
@@ -206,16 +202,17 @@
 .heart-content-item .h-content p{
     margin-left: 125px;
     font-size: 12px;
-    height: 60px;
-    padding-top: 20px;
+    line-height: 20px;
 }
 .heart-content-item2 .item3 .item3-name{
-    margin: 10px 0;
-    font-size: 18px;
-    height: 30px;
-    line-height: 30px;
+    /* padding: 10px; */
+    font-size: 14px;
+    height: 15px;
+    line-height: 15px;
     font-weight: bold;
-    border-left: 4px solid #228AEC;
+    color: #228AEC;
+    margin-left: 20px;
+    border-left: 2px solid #228AEC;
 }
 .heart-content-item2 .item3 .item3-content{
     background-repeat: no-repeat;
@@ -223,11 +220,11 @@
     background-position-x: 40%;
 }
 .heart-content-item2 .item3 .item1{
-    background-image: url("./../images/seaside/gaokao/xuanbaliucheng.png");
-    height: 180px;
-    width: 90%;
+    background-image: url("./../images/seaside/gaokao/jiaoxue.png");
+    height: 187px;
+    /* width: 90%; */
     margin: 20px auto;
-    background-color: #FEF7F6;
+    /* background-color: #FEF7F6; */
 }
 .heart-content-item2 .item3 .item2{
     background-image: url("./../images/seaside/gaokao/zu26.png");

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./../style/share.css">
+    <link rel="stylesheet" href="../style/select.css">
     <link rel="stylesheet" href="./../style/index.css">
     <link rel="stylesheet" href="./../style/chunji.css">
     <link rel="stylesheet" href="./../style/gaokao.css">
@@ -18,8 +19,8 @@
     <!-- 顶部公共部分 -->
     <header>
         <ul>
-            <li style="margin-left: 10px;"><img src="./../images/share/top_03.jpg"
-                    style="width:43px;height:30px;line-height:50px;"></li>
+            <li id="bgone" onclick="showdiv();" style="margin-left: 10px;cursor: pointer;"><img
+                    src="./../images/share/top_03.jpg" style="width:43px;height:30px;line-height:50px;"></li>
             <li><img src="./../images/share/top_05.jpg" style="width:150px;height:30px;line-height:50px;"></li>
             <li style="margin-right: 10px;"><img src="./../images/share/top_07.jpg"
                     style="width:150px;height:30px;line-height:50px;"></li>
@@ -89,173 +90,104 @@
             <div class="tupo-name">
                 <img src="./../images/seaside/zhongxiaoxue/xiaobioati.png" alt="">
             </div>
-        </div>
-        <!-- 课程报价 -->
-        <div class="course-price">
-            <span class="course-price-name">&nbsp;10秒免费获取课程报价</span>
-            <div class="course-price-content" style="">李易公共部分</div>
-            <div class="course-price-get">立即获取课程报价</div>
-        </div>
-        <!-- 学习状态部分 -->
-        <div class="study">
-            <div class="study-name">
-                <img src="../images/seaside/gaokao/biaoti1.png" alt="">
-            </div>
-            <div class="study-content">
-                <div>
-                    <h4>基础薄弱，学习困难</h4>
-                    <p></p>
-                    <span>上课听不懂，课后不会学，做题不会用</span>
-                </div>
-                <div>
-                    <h4>粗心马虎，频频丢分</h4>
-                    <p></p>
-                    <span>审题不清不全，计算失误不断</span>
-                </div>
-                <div>
-                    <h4>眼高手低，纸上谈兵</h4>
-                    <p></p>
-                    <span>一讲就懂，一看就会，一做就错</span>
-                </div>
-                <div>
-                    <h4>效率低下，进步维艰</h4>
-                    <p></p>
-                    <span>日夜刷题苦练，迟迟不见效果</span>
-                </div>
-                <div>
-                    <h4>生搬硬套，连蒙带猜</h4>
-                    <p></p>
-                    <span>抓不住题干考点，理不清解题思路</span>
-                </div>
+            <div class="tupo-content">
+                <img src="./../images/seaside/zhongxiaoxue/sirendingzhi.png" alt="">
             </div>
         </div>
-        <!-- 带你走出困境 -->
-        <div class="follow"><img src="../images/seaside/gaokao/zixunbanner.png" alt=""></div>
-        <!-- 私人订制部分 -->
-        <div class="person">
-            <div class="person-name">
-                <img src="../images/seaside/gaokao/biaotikaobei.png" alt="">
+        <!-- 五阶教学 -->
+        <div class="five">
+            <div class="five-name">
+                <img src="./../images/seaside/zhongxiaoxue/biaoti.png" alt="">
             </div>
-            <div class="person-content">
-                <div>
-                    <div class="person-content-item">
+            <div class="five-content">
+                <div class="five-item">
+                    <select name="小学" id="">
+                        <option value="">小学</option>
+                        <option value="">小学</option>
+                        <option value="">小学</option>
+                        <option value="">小学</option>
+                    </select>
+                    <select name="语文" id="">
+                        <option value="">语文</option>
+                        <option value="">数学</option>
+                        <option value="">英语</option>
+                        <option value="">物理</option>
+                    </select>
+                    <img src="./../images/seaside/zhongxiaoxue/zu 32.png" alt="">
+                </div>
+                <div class="shangke-input">
+                    <input type="text" placeholder="请输入孩子的姓名">
+                    <div class="shangke-select1 shangke-div"></div>
+                    <div class="shangke-select2 shangke-div"></div>
+                    <div class="shangke-select3 shangke-div"></div>
+                    <input type="text" placeholder="请输入您的电话">
+                    <input type="text" placeholder="住址（便于就近安排校区）">
+                </div>
+                <div class="course-price-get">立即获取课程报价</div>
+            </div>
+        </div>
+        <!-- 6对1 -->
+        <div class="six">
+            <div class="six-name">
+                <img src="./../images/seaside/zhongxiaoxue/biaoti3.png" alt="">
+            </div>
+            <div class="six-content">
+                <div class="six-content-items">
+                    <div class="six-content-item">
+                        <div><img src="./../images/seaside/zhongxiaoxue/guihuasheji.png" alt="">
+                            <h4>教育规划师</h4>
+                        </div>
+                        <p>全面科学的测评，发现学生学科知识、学习态度、学习方法、学习习惯。所存在的问题，制定一套针对性的辅导
+                            教学计划</p>
+                    </div>
+                    <div class="six-content-item">
+                        <div><img src="./../images/seaside/zhongxiaoxue/icon-.png" alt="">
+                            <h4>学习管理师</h4>
+                        </div>
+                        <p>负责监管学生的学习状态，进行思想工作沟通，定期跟学生家长进行家访、电访</p>
+                    </div>
+                    <div class="six-content-item">
+                        <div><img src="./../images/seaside/zhongxiaoxue/dc-icon-daxuekejiyuan.png" alt="">
+                            <h4>学科教师</h4>
+                        </div>
+                        <p>通过学生的测评结果，匹配最适合学生的老师，充分帮助学生快速解决学科和学习方法等问题</p>
+                    </div>
+                    <div class="six-content-item">
+                        <div><img src="./../images/seaside/zhongxiaoxue/xinlizixun.png" alt="">
+                            <h4>心理咨询师</h4>
+                        </div>
+                        <p>戴氏心理老师及时帮助学生纠正学习心态，激发学习兴趣,树立积极的学习态度</p>
+                    </div>
+                    <div class="six-content-item">
                         <div>
-                            <img src="../images/seaside/gaokao/RectangleCopy.png" alt="">
-                            <h4>确定目标差值</h4>
-                            <p>参考去年各批次分数线</p>
-                            <p style="color:black;">自身情况确定目标</p>
-                            <p>院校、专业，找到分数差</p>
+                            <img src="./../images/seaside/zhongxiaoxue/jiaoxue.png" alt="">
+                            <h4>个性化教研组</h4>
                         </div>
+                        <p>专职老师每周集中讨论哪一种学生适合哪一种教学方式及分析命题趋势、政策等</p>
                     </div>
-                    <div class="person-content-item">
-                        <div>
-                            <img src="../images/seaside/gaokao/ziyuan.png" alt="">
-                            <h4>分数差值拆解</h4>
-                            <p style="color:black;">结合各学科特点</p>
-                            <p style="color:black;">以及自身实际情况</p>
-                            <p>确定各学科“增长任务”</p>
+                    <div class="six-content-item">
+                        <div><img src="./../images/seaside/zhongxiaoxue/yuedu.png" alt="">
+                            <h4>陪读老师</h4>
                         </div>
+                        <p>学生上完课后，可以全天在戴氏教育免费陪读，并由陪读老师帮助学生解决学习上的难题</p>
                     </div>
-                </div>
-                <div>
-                    <div class="person-content-item">
-                        <div>
-                            <img src="../images/seaside/gaokao/jihuarenwu.png" alt="">
-                            <h4>制定学习计划</h4>
-                            <p>根据学习中涉及到的知识</p>
-                            <p>能力和方法并结合教师的</p>
-                            <p style="color:black;">建议制定每日计划</p>
-                        </div>
-                    </div>
-                    <div class="person-content-item">
-                        <div>
-                            <img src="../images/seaside/gaokao/jihua.png" alt="">
-                            <h4>落实学习计划</h4>
-                            <p style="color:black;">6对1全程监测管理</p>
-                            <p>严格执行每日学习计划</p>
-                            <p>把坏习惯、弱学科逐一-击破</p>
-                        </div>
-                    </div>
+                    <div class="xiangqing">028-66060688点解了解详情</div>
                 </div>
             </div>
         </div>
-        <!-- 课程报价 -->
-        <div class="course-price">
-            <div class="course-price-content" style="">李易公共部分</div>
-            <div class="course-price-get">立即获取课程报价</div>
-        </div>
-        <!-- 课程核心特色 -->
-        <div class="heart">
-            <div class="heart-name">
-                <img src="./../images/seaside/gaokao/dabiaoti.png" alt="">
+        <!-- 7步 -->
+        <div class="seven">
+            <div class="seven-name">
+                <img src="./../images/seaside/zhongxiaoxue/biaoti4.png" alt="">
             </div>
-            <div class="heart-content">
-                <div class="heart-content-item">
-                    <div class="h-name"><img src="./../images/seaside/gaokao/xiaobiaoti.png" alt=""></div>
-                    <div class="h-content item1">
-                        <p>任课老师交流讨论，总结教学方法。学科内部每周教研，紧随命题趋势。课后严格过手训练，巩固教学成果
-                        </p>
-                    </div>
-                </div>
-                <div class="heart-content-item">
-                    <div class="h-name"><img src="./../images/seaside/gaokao/xiaobiaoti(1).png" alt=""></div>
-                    <div class="h-content item2">
-                        <p>精准定位学生情况，分层教学循序渐进严格过手靶向突破
-                        </p>
-                    </div>
-                </div>
-                <div class="heart-content-item2">
-                    <div class="h-name"><img src="./../images/seaside/gaokao/xiaobiaoti2.png" alt=""></div>
-                    <div class="h-content item3">
-                        <span class="item3-name">&nbsp;教学管理</span>
-                        <div class="item3-content item1"></div>
-                    </div>
-                    <div class="h-content item3">
-                        <span class="item3-name">&nbsp;时间管理</span>
-                        <div class="item3-content item2">
-                            <div class="time_1">
-                                <p>07:50-08:20</p>
-                                <p>08:30-12:00</p>
-                                <p>13:00-13:50</p>
-                                <p>14:00-17:30</p>
-                                <p>18:30-19:00</p>
-                                <p>19:10-20:30</p>
-                            </div>
-                            <div class="time_2">
-                                <p>每日晨读</p>
-                                <p>上午课程</p>
-                                <p>午间答疑</p>
-                                <p>下午课程</p>
-                                <p>晚间答疑</p>
-                                <p>过手训练</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="h-content item3">
-                        <span class="item3-name">&nbsp;心态管理</span>
-                        <div class="item3-content item3">
-                            <div class="xintai">
-                                <p>主题班会:每周开展主题班会，师
-                                    生高频互动交流</p>
-                            </div>
-                            <div class="xintai normal">
-                                <p>贴心交流:心理咨询师一-对一谈话
-                                    调整学习状态</p>
-                            </div>
-                            <div class="xintai">
-                                <p>素质拓展:室内外素质拓展，德智.
-                                    体美全面培养</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="seven-content">
+                <div class="xiangqing dingwei">028-66060688点解了解详情</div>
             </div>
         </div>
-        <div class="click-get">点击了解详情</div>
         <!-- 名师部分 -->
         <div class="teacher">
             <div class="teacher-name2">
-                <img src="./../images/seaside/gaokao/zu 32(11).png">
+                <img src="./../images/seaside/zhongxiaoxue/biaoti6.png">
             </div>
             <div class="teacher-content">
                 <div class="swiper-container">
@@ -270,17 +202,34 @@
             </div>
             <div class="talk">与TA交流</div>
             <div class="teacher-choose">
-                <img src="./../images/seaside/gaokao/xuanbaliucheng.png" alt="">
+                <img src="./../images/seaside/zhongxiaoxue/liucheng.png" alt="">
             </div>
         </div>
+        <!-- 家长好评 -->
+        <div class="home">
+            <div class="home-content">
+                <img class="p1" src="./../images/seaside/zhongxiaoxue/zu32(3).png" alt="">
+                <img class="p2" src="./../images/seaside/zhongxiaoxue/biaoti3.png" alt="">
+            </div>
+            <div class="xiangqing">立即报名：028-66060688</div>
+        </div>
         <!-- 环境部分 -->
-        <div class="environment gaokao">
+        <div class="environment">
             <div class="environment-name">
-                <img src="./../images/seaside/gaokao/biaoti2.png">
+                <img src="./../images/seaside/environment.png">
             </div>
             <div class="environment-content">
                 <img src="./../images/seaside/en-tent.png" alt="">
             </div>
+            <div class="shangke-input">
+                <input type="text" placeholder="请输入孩子的姓名">
+                <div class="shangke-select1 shangke-div"></div>
+                <div class="shangke-select2 shangke-div"></div>
+                <div class="shangke-select3 shangke-div"></div>
+                <input type="text" placeholder="请输入您的电话">
+                <input type="text" placeholder="住址（便于就近安排校区）">
+            </div>
+            <div class="course-price-get">立即获取课程报价</div>
         </div>
     </div>
     </div>
@@ -302,10 +251,50 @@
             <li><img src="./../images/share/foot-span_09.jpg"> </li>
         </ul>
     </footer>
+    <!-- 遮罩层  -->
+    <div id="bg">
+        <div class="index-nav">
+            <div class="baise">
+                <div class="baise-name">
+                    <img src="./../images/share/tuceng1.png" alt="">
+                    <h4>029-6606-0688</h4>
+                    <p>点击拨打客服电话</p>
+                </div>
+                <div class="baise-content">
+                    <div><img src="./../images/share/zu31@2x(13).png" alt="">
+                        <p>首页</p>
+                    </div>
+                    <div><img src="./../images/share/zu 31@2x(14).png" alt="">
+                        <p>社区查询</p>
+                    </div>
+                    <div><img src="./../images/share/zu 31@2x(15).png" alt="">
+                        <p>价格查询</p>
+                    </div>
+                    <div><img src="./../images/share/zu 31@2x(16).png" alt="">
+                        <p>关于我们</p>
+                    </div>
+                </div>
+                <div class="foots">
+                    <div><img src="./../images/share/dianhua-2@2x.png" alt="">
+                        <p>电话咨询</p>
+                    </div>
+                    <div><img src="./../images/share/message-channel@2x.png" alt="">
+                        <p>短信咨询</p>
+                    </div>
+                    <div><img src="./../images/share/kefu@2x.png" alt="">
+                        <p>在线咨询</p>
+                    </div>
+                </div>
+            </div>
+            <div class="yinying" id="btnclose" onclick="hidediv();">
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
 <script src="./../js/jquery-2.2.4.min.js"></script>
 <script src="./../js/share.js"> </script>
+<script src="../js/select.js"></script>
 <script>
 </script>
 

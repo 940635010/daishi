@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./../style/share.css">
+    <link rel="stylesheet" href="../style/select.css">
     <link rel="stylesheet" href="./../style/index.css">
     <link rel="stylesheet" href="./../style/chunji.css">
     <link rel="stylesheet" href="./../style/gaokao.css">
@@ -17,8 +18,8 @@
     <!-- 顶部公共部分 -->
     <header>
         <ul>
-            <li style="margin-left: 10px;"><img src="./../images/share/top_03.jpg"
-                    style="width:43px;height:30px;line-height:50px;"></li>
+            <li id="bgone" onclick="showdiv();" style="margin-left: 10px;cursor: pointer;"><img
+                    src="./../images/share/top_03.jpg" style="width:43px;height:30px;line-height:50px;"></li>
             <li><img src="./../images/share/top_05.jpg" style="width:150px;height:30px;line-height:50px;"></li>
             <li style="margin-right: 10px;"><img src="./../images/share/top_07.jpg"
                     style="width:150px;height:30px;line-height:50px;"></li>
@@ -46,7 +47,14 @@
         <!-- 课程报价 -->
         <div class="course-price">
             <span class="course-price-name">&nbsp;10秒免费获取课程报价</span>
-            <div class="course-price-content" style="">李易公共部分</div>
+            <div class="shangke-input">
+                <input type="text" placeholder="请输入孩子的姓名">
+                <div class="shangke-select1 shangke-div"></div>
+                <div class="shangke-select2 shangke-div"></div>
+                <div class="shangke-select3 shangke-div"></div>
+                <input type="text" placeholder="请输入您的电话">
+                <input type="text" placeholder="住址（便于就近安排校区）">
+            </div>
             <div class="course-price-get">立即获取课程报价</div>
         </div>
         <!-- 学习状态部分 -->
@@ -134,7 +142,14 @@
         </div>
         <!-- 课程报价 -->
         <div class="course-price">
-            <div class="course-price-content" style="">李易公共部分</div>
+            <div class="shangke-input">
+                <input type="text" placeholder="请输入孩子的姓名">
+                <div class="shangke-select1 shangke-div"></div>
+                <div class="shangke-select2 shangke-div"></div>
+                <div class="shangke-select3 shangke-div"></div>
+                <input type="text" placeholder="请输入您的电话">
+                <input type="text" placeholder="住址（便于就近安排校区）">
+            </div>
             <div class="course-price-get">立即获取课程报价</div>
         </div>
         <!-- 课程核心特色 -->
@@ -146,21 +161,23 @@
                 <div class="heart-content-item">
                     <div class="h-name"><img src="./../images/seaside/gaokao/xiaobiaoti.png" alt=""></div>
                     <div class="h-content item1">
-                        <p>任课老师交流讨论，总结教学方法。学科内部每周教研，紧随命题趋势。课后严格过手训练，巩固教学成果
+                        <p>任课老师交流讨论，总结教学方法。</p>
+                        <p>学科内部每周教研，紧随命题趋势。</p>
+                        <p>课后严格过手训练，巩固教学成果
                         </p>
                     </div>
                 </div>
                 <div class="heart-content-item">
                     <div class="h-name"><img src="./../images/seaside/gaokao/xiaobiaoti(1).png" alt=""></div>
                     <div class="h-content item2">
-                        <p>精准定位学生情况，分层教学循序渐进严格过手靶向突破
+                        <p>精准定位学生情况，分层教学循序</p>
+                        <p>渐进严格过手靶向突破
                         </p>
                     </div>
                 </div>
                 <div class="heart-content-item2">
                     <div class="h-name"><img src="./../images/seaside/gaokao/xiaobiaoti2.png" alt=""></div>
                     <div class="h-content item3">
-                        <span class="item3-name">&nbsp;教学管理</span>
                         <div class="item3-content item1"></div>
                     </div>
                     <div class="h-content item3">
@@ -187,11 +204,14 @@
                     <div class="h-content item3">
                         <span class="item3-name">&nbsp;心态管理</span>
                         <div class="item3-content item3">
-                            <div class="xintai"><p>主题班会:每周开展主题班会，师生高频互动交流</p>
+                            <div class="xintai">
+                                <p>主题班会:每周开展主题班会，师生高频互动交流</p>
                             </div>
-                            <div class="xintai normal"><p>贴心交流:心理咨询师一对一谈话调整学习状态</p>
+                            <div class="xintai normal">
+                                <p>贴心交流:心理咨询师一对一谈话调整学习状态</p>
                             </div>
-                            <div class="xintai"><p>素质拓展:室内外素质拓展，德智体美全面培养</p>
+                            <div class="xintai">
+                                <p>素质拓展:室内外素质拓展，德智体美全面培养</p>
                             </div>
                         </div>
                     </div>
@@ -249,15 +269,56 @@
             <li><img src="./../images/share/foot-span_09.jpg"> </li>
         </ul>
     </footer>
+    <!-- 遮罩层  -->
+    <div id="bg">
+        <div class="index-nav">
+            <div class="baise">
+                <div class="baise-name">
+                    <img src="./../images/share/tuceng1.png" alt="">
+                    <h4>029-6606-0688</h4>
+                    <p>点击拨打客服电话</p>
+                </div>
+                <div class="baise-content">
+                    <div><img src="./../images/share/zu31@2x(13).png" alt="">
+                        <p>首页</p>
+                    </div>
+                    <div><img src="./../images/share/zu 31@2x(14).png" alt="">
+                        <p>社区查询</p>
+                    </div>
+                    <div><img src="./../images/share/zu 31@2x(15).png" alt="">
+                        <p>价格查询</p>
+                    </div>
+                    <div><img src="./../images/share/zu 31@2x(16).png" alt="">
+                        <p>关于我们</p>
+                    </div>
+                </div>
+                <div class="foots">
+                    <div><img src="./../images/share/dianhua-2@2x.png" alt="">
+                        <p>电话咨询</p>
+                    </div>
+                    <div><img src="./../images/share/message-channel@2x.png" alt="">
+                        <p>短信咨询</p>
+                    </div>
+                    <div><img src="./../images/share/kefu@2x.png" alt="">
+                        <p>在线咨询</p>
+                    </div>
+                </div>
+            </div>
+            <div class="yinying" id="btnclose" onclick="hidediv();">
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
 <script src="./../js/jquery-2.2.4.min.js"></script>
 <script src="./../js/share.js"> </script>
+<script src="../js/select.js"></script>
 <script>
     new TimeCount({
         parent: document.getElementsByClassName("times2")[0],
         date: "2020-06-07"
     })
+
 </script>
 
 </html>

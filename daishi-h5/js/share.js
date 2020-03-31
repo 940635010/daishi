@@ -14,7 +14,7 @@ function checkTime(i) { //将0-9的数字前面加上0，例1变为01
 function TimeCount(options) {
 
     this.dom = document.createElement("div"),
-    this.parent = options.parent;
+        this.parent = options.parent;
     this.date = options.date || new Date();
     this.style = options.style;
     this.pre = options.pre;
@@ -144,3 +144,20 @@ $('.hot-tab-title-item').on('click', function () {
     $(this).addClass('show').siblings().removeClass('show')
     $('.hot-tab-content-item').eq(index).addClass('current').siblings().removeClass('current')
 })
+
+
+/* zhezhao */
+function showdiv() {
+    document.getElementById("bg").style.display = "block";
+}
+
+function hidediv() {
+    document.getElementById("bg").style.display = 'none';
+}
+document.getElementById("bgone").addEventListener('click', function (e) {
+    document.getElementById("bg").style.top = e.pageY - e.clientY + "px";
+})
+document.getElementById('bg').addEventListener('touchmove', function (e) { 
+    e.preventDefault(); 
+    e.stopPropagation();
+},false) 

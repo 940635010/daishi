@@ -6,103 +6,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./../style/share.css">
+    <link rel="stylesheet" href="../style/select.css">
+    <link rel="stylesheet" href="./../style/index.css">
+    <link rel="stylesheet" href="./../style/chunji.css">
+    <link rel="stylesheet" href="./../style/gaokao.css">
+    <link rel="stylesheet" href="./../style/1v1.css">
+    <link rel="stylesheet" href="./../style/zhongkao.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <title>中考</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-        #content {
-            position: relative;
-            top: -4px;
-            width: 100%;
-            height: 500px;
-            background-color: turquoise;
-        }
-
-        .tab-bar {
-            width: 90%;
-            margin: 0 auto;
-            height: 300px;
-        }
-
-        .tab-bar>span {
-            width: 85px;
-            height: 24px;
-
-        }
-    </style>
 </head>
 
 <body>
     <!-- 顶部公共部分 -->
     <header>
-        <ul>
-            <li><img src="./../images/share/top_03.jpg" style="width:43px;height:30px;line-height:50px;"></li>
-            <li><img src="./../images/share/top_05.jpg" style="width:180px;height:40px;line-height:50px;"></li>
-            <li><img src="./../images/share/top_07.jpg" style="width:140px;height:30px;line-height:50px;"></li>
-        </ul>
+            <ul>
+                    <li id="bgone" onclick="showdiv();" style="margin-left: 10px;cursor: pointer;"><img src="./../images/share/top_03.jpg"
+                            style="width:43px;height:30px;line-height:50px;"></li>
+                    <li><img src="./../images/share/top_05.jpg" style="width:150px;height:30px;line-height:50px;"></li>
+                    <li style="margin-right: 10px;"><img src="./../images/share/top_07.jpg"
+                            style="width:150px;height:30px;line-height:50px;"></li>
+                </ul>
     </header>
     <!-- 站位unmount -->
-    <div class="cs">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./../images/share/banner01.jpg" /></div>
-                <div class="swiper-slide"><img src="./../images/share/banner02.jpg" /></div>
-                <div class="swiper-slide"><img src="./../images/share/banner03.jpg" /></div>
-                <div class="swiper-slide"><img src="./../images/share/banner04.jpg" /></div>
-                <div class="swiper-slide"><img src="./../images/share/banner05.jpg" /></div>
-                <div class="swiper-slide"><img src="./../images/share/banner06.jpg" /></div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <div class="settings">
-            <ul>
-                <li><img src="./../images/share/icon1.png" alt=""></li>
-                <li><img src="./../images/share/icon2.png" alt=""></li>
-                <li><img src="./../images/share/icon3.png" alt=""></li>
-                <li><img src="./../images/share/icon4.png" alt=""></li>
-                <li><img src="./../images/share/icon5.png" alt=""></li>
-                <li><img src="./../images/share/icon6.png" alt=""></li>
-            </ul>
-            <div class="settings-name">
-                <span>幼升小</span>
-                <span>小升初</span>
-                <span>春季班</span>
-                <span>中小学一对一</span>
-                <span>中考集训</span>
-                <span>高考集训</span>
-            </div>
-        </div>
-    </div>
     <div class="time-out">
-        <div class="time-title"><span>2020高考倒计时</span><span>2020中考倒计时</span></div>
+        <div class="time-title time1"><span>2020高考倒计时</span></div>
+        <div class="time-title time2"><span>2020中考倒计时</span></div>
+    </div>
+    <div class="cs">
+        <div class="ML-xuanchuan"><img src="./../images/seaside/zhongxiaoxue/banner.png"> </div>
+        <div class="settings">
+            <div class="settings-item title">2020中考倒计时</div>
+            <div class="settings-item times2"></div>
+            <div class="settings-item late">早报名早提升</div>
+        </div>
+
     </div>
     <div id="content">
-        <div class="tab-bar">
-            <div class="tab">
-                <span>VIP一对一</span>
-                <span>3-6精品班</span>
-                <span>15人大班</span>
+        <!-- 类别 -->
+        <div class="lb">
+            <img src="../images/seaside/leibie_03.jpg">
+        </div>
+        <div class="course-price">
+            <span class="course-price-name">&nbsp;10秒免费获取课程报价</span>
+            <div class="shangke-input">
+                <input type="text" placeholder="请输入孩子的姓名">
+                <div class="shangke-select1 shangke-div"></div>
+                <div class="shangke-select2 shangke-div"></div>
+                <div class="shangke-select3 shangke-div"></div>
+                <input type="text" placeholder="请输入您的电话">
+                <input type="text" placeholder="住址（便于就近安排校区）">
             </div>
-            <div class="tab-content">
-                <div class="tab-items show"></div>
-                <div class="tab-items"></div>
-                <div class="tab-items"></div>
+            <div class="course-price-get">立即获取课程报价</div>
+        </div>
+        <!-- 6对1 -->
+        <div class="six">
+            <div class="six-name">
+
+            </div>
+            <div class="six-content">
+                <div class="six-content-items">
+                    <div class="six-content-item">
+                        <div><img src="./../images/seaside/zhongkao/guihuasheji@2x.png" alt="">
+                            <h4>教育规划师</h4>
+                        </div>
+                        <p>全面科学的测评，发现学生学科知识、学习态度、学习方法、学习习惯。所存在的问题，制定一套针对性的辅导
+                            教学计划</p>
+                    </div>
+                    <div class="six-content-item">
+                        <div><img src="./../images/seaside/zhongkao/icon-@2x.png" alt="">
+                            <h4>学习管理师</h4>
+                        </div>
+                        <p>负责监管学生的学习状态，进行思想工作沟通，定期跟学生家长进行家访、电访</p>
+                    </div>
+                    <div class="six-content-item">
+                        <div><img src="./../images/seaside/zhongkao/dc-icon-daxuekejiyuan@2x.png" alt="">
+                            <h4>学科教师</h4>
+                        </div>
+                        <p>通过学生的测评结果，匹配最适合学生的老师，充分帮助学生快速解决学科和学习方法等问题</p>
+                    </div>
+                    <div class="six-content-item">
+                        <div><img src="./../images/seaside/zhongkao/xinlizixun@2x.png" alt="">
+                            <h4>心理咨询师</h4>
+                        </div>
+                        <p>戴氏心理老师及时帮助学生纠正学习心态，激发学习兴趣,树立积极的学习态度</p>
+                    </div>
+                    <div class="six-content-item">
+                        <div>
+                            <img src="./../images/seaside/zhongkao/jiaoxue@2x.png" alt="">
+                            <h4>个性化教研组</h4>
+                        </div>
+                        <p>专职老师每周集中讨论哪一种学生适合哪一种教学方式及分析命题趋势、政策等</p>
+                    </div>
+                    <div class="six-content-item">
+                        <div><img src="./../images/seaside/zhongkao/yuedu@2x.png" alt="">
+                            <h4>陪读老师</h4>
+                        </div>
+                        <p>学生上完课后，可以全天在戴氏教育免费陪读，并由陪读老师帮助学生解决学习上的难题</p>
+                    </div>
+                    <div class="xiangqing">028-66060688点解了解详情</div>
+                </div>
+            </div>
+        </div>
+        <!-- 7步 -->
+        <div class="zseven">
+            <div class="zseven-content">
+                <div class="xiangqing dingwei">028-66060688点解了解详情</div>
+            </div>
+        </div>
+        <!-- 8步 -->
+        <div class="eight">
+            <div class="eight-content">
+                <div>
+                    <div class="eight-content-item">
+                        <h4>专属定制</h4>
+                        <p>为每一位考生定制一套适合
+                            当前学习情况的学习方案
+                        </p>
+                    </div>
+                    <div class="eight-content-item">
+                        <h4>严格管理</h4>
+                        <p>
+                            6对1标准化、流程化的管理
+                            模式、确保学生的学习状态
+
+                        </p>
+                    </div>
+                    <div class="eight-content-item">
+                        <h4>三方互动</h4>
+                        <p>学生家长教师三方无缝衔接
+                            即时沟通，家校共进
+                        </p>
+                    </div>
+                    <div class="eight-content-item">
+                        <h4>灵活入学</h4>
+                        <p>随到随学，滚动开班，匹配
+                            合适的班型才能事半功倍
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="eight-content-item">
+                        <h4>教学模式</h4>
+                        <p>独创DSE教学法，不仅传授
+                            知识，更专注学生对知识的
+                            吸收</p>
+                    </div>
+                    <div class="eight-content-item">
+                        <h4>教研团队</h4>
+                        <p>5年以上教龄的团队每周进行
+                            教研活动研究中考考点、命
+                            题趋势</p>
+                    </div>
+                    <div class="eight-content-item">
+                        <h4>心理辅导</h4>
+                        <p>专属心理老师一对一辅导
+                            随时监测、调整学生心理
+                            状态
+                        </p>
+                    </div>
+                    <div class="eight-content-item">
+                        <h4>学习环境</h4>
+                        <p>多媒体教学教室、专用自习
+                            室、图书借阅区
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="xiangqing">028-66060688点解了解详情</div>
+        </div>
+        <!-- 名师部分 -->
+        <div class="teacher">
+            <div class="teacher-name3">
+                <img src="./../images/seaside/zhongkao/zu33-3.png">
+            </div>
+            <div class="teacher-content">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="talk" style="top: 260px;">与TA交流</div>
+            <div class="teacher-choose">
+                <img src="./../images/seaside/zhongkao/liucheng.png" alt="">
+            </div>
+        </div>
+        <!-- 效果好 -->
+        <div class="xiaoguo">
+            <div class="xioaguo-name">
+                <img src="./../images/seaside/zhongkao/zu33-4.png" alt="">
+            </div>
+            <div class="xiaoguo-content">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div style="text-align: center;"><img src="./../images/seaside/zhongkao/choose_21.jpg" alt="" style="width: 283px;height: 46px;"></div>
+            <div class="xiangqing">立即报名：028-66060688</div>
+        </div>
+        <!-- 环境部分 -->
+        <div class="environment">
+            <div class="environment-content">
+                <img src="./../images/seaside/zhongkao/huangjing.png" alt="">
+            </div>
+            <div class="course-price">
+                <span class="course-price-name">&nbsp;10秒免费获取课程报价</span>
+                <div class="shangke-input">
+                    <input type="text" placeholder="请输入孩子的姓名">
+                    <div class="shangke-select1 shangke-div"></div>
+                    <div class="shangke-select2 shangke-div"></div>
+                    <div class="shangke-select3 shangke-div"></div>
+                    <input type="text" placeholder="请输入您的电话">
+                    <input type="text" placeholder="住址（便于就近安排校区）">
+                </div>
+                <div class="course-price-get">立即获取课程报价</div>
             </div>
         </div>
     </div>
+    </div>
     <!-- 固定地步区域 -->
-    <footer>
+    <div>
         <div class="products">
             <img src="./../images/share/footer_03.jpg">
         </div>
         <div class="free">
             <img src="./../images/share/footer2_12.jpg">
         </div>
+    </div>
+    <p class="clear"></p>
+    <footer>
         <ul>
             <li><img src="./../images/share/foot-span_03.jpg"> </li>
             <li><img src="./../images/share/foot-span_05.jpg"> </li>
@@ -110,11 +248,41 @@
             <li><img src="./../images/share/foot-span_09.jpg"> </li>
         </ul>
     </footer>
+    <!-- 遮罩层  -->
+    <div id="bg">
+            <div class="index-nav">
+                <div class="baise">
+                    <div class="baise-name">
+                        <img src="./../images/share/tuceng1.png" alt="">
+                        <h4>029-6606-0688</h4>
+                        <p>点击拨打客服电话</p>
+                    </div>
+                    <div class="baise-content">
+                        <div><img src="./../images/share/zu31@2x(13).png" alt=""><p>首页</p></div>
+                        <div><img src="./../images/share/zu 31@2x(14).png" alt=""><p>社区查询</p></div>
+                        <div><img src="./../images/share/zu 31@2x(15).png" alt=""><p>价格查询</p></div>
+                        <div><img src="./../images/share/zu 31@2x(16).png" alt=""><p>关于我们</p></div>
+                    </div>
+                    <div class="foots">
+                        <div><img src="./../images/share/dianhua-2@2x.png" alt=""><p>电话咨询</p></div>
+                        <div><img src="./../images/share/message-channel@2x.png" alt=""><p>短信咨询</p></div>
+                        <div><img src="./../images/share/kefu@2x.png" alt=""><p>在线咨询</p></div>
+                    </div>
+                </div>
+                <div class="yinying" id="btnclose" onclick="hidediv();">
+                </div>
+            </div>
+        </div>
 </body>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+<script src="./../js/jquery-2.2.4.min.js"></script>
 <script src="./../js/share.js"> </script>
+<script src="../js/select.js"></script>
 <script>
-
+    new TimeCount({
+        parent: document.getElementsByClassName("times2")[0],
+        date: "2020-06-07"
+    })
 </script>
 
 </html>

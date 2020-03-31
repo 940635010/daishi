@@ -36,7 +36,7 @@ header ul li img {
     width: 100%;
     height: 50px;
     color: white;
-    background-color: rgba(199, 204, 205, 0.8);
+    background-color: rgba(23, 23, 23, 0.4);
     z-index: 999;
 }
 
@@ -193,4 +193,95 @@ footer>ul>li img {
 
 .clear {
     height: 60px;
+}
+
+
+/* zhexhao */
+#bg {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+
+#show {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 22%;
+    width: 53%;
+    height: 49%;
+    padding: 8px;
+    border: 8px solid #E8E9F7;
+    z-index: 1002;
+    overflow: auto;
+}
+.index-nav{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    overflow: hidden;
+}
+.index-nav div{
+}
+.baise{
+    background-color: white;
+    height: 100%;
+    width: 50%;
+}
+.yinying{
+    background-color: rgba(0, 0, 0, 0.493);
+    height: 100%;
+    width: 50%;
+}
+.baise .baise-name{
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+}
+.baise .baise-name img{
+    width: 65px;
+    height: 50px;
+}
+.baise .baise-name h4{
+    line-height: 40px;
+}
+.baise .baise-name p{
+    font-size: 12px;
+}
+.baise-content div{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.baise-content img{
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+}
+.baise-content p{
+    margin-left: 20px;
+}
+.foots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 60px auto 0;
+}
+.foots div{
+    text-align: center;
+}
+.foots div img{
+    width: 13px;
+    height: 15px;
+}
+.foots div p{
+    font-size: 12px;
 }

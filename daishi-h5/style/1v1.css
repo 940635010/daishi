@@ -15,8 +15,177 @@
 }
 .person-content-item a{
     line-height: 50px;
+    font-size: 14px;
 }
 .tupo-name{
     text-align: center;
-    
+    margin: 20px 0;
+}
+.tupo-name img{
+    width: 232px;
+    height: 20px;
+}
+.tupo-content{
+    text-align: center;
+    margin: 20px 0;
+}
+.tupo-content img{
+    width: 100%;
+    height: 390px;
+}
+.five-name{
+    text-align: center;
+    margin: 20px 0;
+}
+.five-name img{
+    width: 192px;
+    height: 26px;
+}
+.five-item{
+    text-align: center;
+    margin: 20px auto;
+}
+.five-item select{
+    height: 35px;
+    line-height: 35px;
+    width: 45%;
+    margin-bottom: 20px;
+}
+.five-item img{
+    width: 100%;
+    height: 350px;
+}
+.shangke-input{
+    width: 90%;
+    margin: 0 auto;
+}
+.course-price-get{
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    background:linear-gradient(269deg,rgba(236,88,41,1) 0%,rgba(241,152,72,1) 34%,rgba(241,202,72,1) 100%);
+}
+
+.six-name{
+    text-align: center;
+    margin: 20px 0;
+}
+.six-name img{
+    width: 192px;
+    height: 26px;
+}
+.six-content{
+    width: 100%;
+    /* margin: 20px 0; */
+    background-color: #F3F2F7;
+}
+.six-content-items{
+    padding: 15px;
+    margin: 0px auto;
+}
+.six-content .six-content-item{
+    margin-bottom: 15px;
+    background-image: url("./../images/seaside/zhongxiaoxue/zu 32(1).png");
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.six-content .six-content-item div{
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+    line-height: 30px;
+}
+.six-content .six-content-item p{
+    font-size: 12px;
+}
+.six-content .six-content-item div img{
+    margin-top: 4px;
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+}
+.six-content .six-content-item div h4{
+    font-size: 14px;
+}
+.xiangqing{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    background:linear-gradient(269deg,rgba(236,88,41,1) 0%,rgba(241,152,72,1) 34%,rgba(241,202,72,1) 100%);
+}
+.seven-name{
+    text-align: center;
+    margin: 20px 0;
+}
+.seven-name img{
+    width: 192px;
+    height: 26px;
+}
+
+.seven-content{
+    position: relative;
+    background-image: url("./../images/seaside/zhongxiaoxue/zu 32(2).png");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    box-sizing: border-box;
+    background-color: #F1F4F9;
+}
+.dingwei{
+    position: absolute;
+    bottom: 20px;
+    left: calc(15%);
+}
+.teacher{
+    height: 430px;
+}
+.teacher-name2{
+    text-align: center;
+    margin: 20px 0;
+}
+.teacher-name2 img{
+    width: 162px;
+    height: 20px;
+}
+.teacher .talk{
+    background:linear-gradient(269deg,rgba(236,88,41,1) 0%,rgba(241,152,72,1) 34%,rgba(241,202,72,1) 100%);
+    top: 220px;
+}
+.teacher .teacher-choose{
+    position: relative;
+    top: -102px;
+}
+.home-content{
+    text-align: center;
+    margin: 20px 0;
+}
+.home-content .p1{
+    width: 90%;
+    height: 725px;
+}
+.home-content .p2{
+    width: 192px;
+    height: 26px;
+}
+.environment-name{
+    text-align: center;
+    margin: 20px 0;
+}
+.environment-name img{
+    width: 160px;
+    height: 20px;
+}
+.products{
+    margin-top: 80px;
 }

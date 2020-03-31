@@ -109,7 +109,6 @@
 }
 
 .course-price{
-    height: 460px;
     width: 90%;
     margin: 0 auto;
     /* background-color: hotpink; */
@@ -240,4 +239,21 @@
 .hot .hot-content .hot-tab-content .hot-tab-content-item .hot-icon{
     position: relative;
     right: -138px;
+}
+.shangke-input {
+    margin-top: 21px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.shangke-input>input{
+    width: 48%;
+    height: 35px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.shangke-div{
+    margin-bottom: 15px;
 }

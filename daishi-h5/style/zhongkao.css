@@ -1,0 +1,155 @@
+.settings{
+    top: -40px;
+    background-color: #2192FA;
+}
+.settings .late{
+    background-color: #FEE63B;
+    color: #2192FA;
+}
+.lb{
+    text-align: center;
+    margin-top: 60px;
+}
+.lb img{
+    margin-left: 0;
+}
+.course-price .course-price-name {
+    border-left: 4px solid #2192FA;
+}
+.shangke-input{
+    margin: 20px auto;
+    width: 100%;
+}
+.six{
+    background-image: url("./../images/seaside/zhongkao/zu33-6.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #EAF4FF;
+}
+.six-content .six-content-item{
+    background-image: url("./../images/seaside/zhongkao/zu33.png");
+    color: white;
+}
+.zseven{
+    position: relative;
+    margin-top: 20px;
+    background-image: url("./../images/seaside/zhongkao/7bu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    background-color: white;
+    height: 535px;
+}
+.dingwei{
+    position: absolute;
+    bottom: 20px;
+    left: calc(15%);
+}
+.eight{
+    margin-top: 20px;
+    background-image: url("./../images/seaside/zhongkao/zu33-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    background-color: white;
+    height: 562px;
+}
+.eight .eight-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+.eight .eight-content div{
+    margin-top: 30px;
+}
+.eight div .eight-content-item{
+    width: 150px;
+    height: 90px;
+    margin: 20px 0;
+    background-image: url("./../images/seaside/zhongkao/zu33-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    text-align: center;
+    color: white;
+} 
+.eight div .eight-content-item p{
+    color: #2192F9;
+    font-size: 12px;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.teacher {
+    height: 490px;
+}
+.teacher-name3{
+    text-align: center;
+    margin: 20px 0;
+}
+.teacher-name3 img{
+    width: 140px;
+    height: 61px;
+}
+.teacher .teacher-choose img {
+    width: 90%;
+    height: 170px;
+}
+.teacher .teacher-choose {
+    position: relative;
+    top: -60px;
+}
+.xioaguo-name{
+    text-align: center;
+    margin: 20px 0;
+}
+.xioaguo-name img{
+    width: 140px;
+    height: 61px;
+}
+.environment{
+    margin: 20px 0;
+}
+.environment-content img {
+    height: 587px;
+    width: 100%;
+}
+.course-price {
+    margin-top: 90px;
+}
+.xiaoguo-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.xiaoguo-content div:nth-last-of-type(1){
+    width: 95px;
+    height: 238px;
+    background-image: url("./../images/seaside/zhongkao/fenshu_21.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 90%;
+    text-align: center;
+}
+.xiaoguo-content div:nth-last-of-type(2){
+    width: 165px;
+    height: 290px;
+    background-image: url("./../images/seaside/zhongkao/zu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    text-align: center;
+}
+.xiaoguo-content div:nth-last-of-type(3){
+    width: 95px;
+    height: 238px;
+    background-image: url("./../images/seaside/zhongkao/zu33-5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 10%;
+    text-align: center;
+}
