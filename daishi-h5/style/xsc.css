@@ -9,12 +9,15 @@ header{
 }
 img{
     width: 100%;
+    /* box-shadow:1vw 1vw 2vw lightslategrey; */
 }
 .banner{
     width: 100%;
 }
 .banner>img{
     width: 100%;
+    box-shadow:1vw 1vw 2vw lightslategrey;
+
 }
 /*  
     width: 100%;
@@ -29,6 +32,7 @@ img{
 }
 .reason>img{
     width: 100%;
+    box-shadow:1vw 1vw 2vw lightslategrey;
     
 }
 .tl{
@@ -61,6 +65,9 @@ img{
 }
 .method{
     margin-top: 3vw;
+}
+.method>img{
+    box-shadow:1vw 1vw 2vw lightslategrey;"
 }
 
 /* 公共————计价 */
@@ -106,6 +113,9 @@ img{
 .different{
     margin-top: 3vw;
 }
+.different>img{
+    box-shadow:1vw 1vw 2vw lightslategrey;
+}
 .in{
     width: 80%;
     border: 1px solid rgb(255,80,77);
@@ -115,7 +125,7 @@ img{
     border-radius: 1vw;
     margin: auto;
     text-align: center;
-    margin-top: 1vw;
+    margin-top: 2vw;
 }
 
 /*more*/
@@ -130,6 +140,9 @@ img{
 .plan{
     margin-top: 3vw;
 }
+.plan>img{
+    box-shadow:1vw 1vw 2vw lightslategrey;
+}
 
 /* charge */
 .charge{
@@ -143,6 +156,9 @@ img{
 .price{
     margin-top: 3vw;
 }
+.price>img{
+    box-shadow:1vw 1vw 2vw lightslategrey;
+}
 
 /* teach */
 .teach{
@@ -150,6 +166,9 @@ img{
 }
 .teacher{
     margin-top: 6vw;
+}
+.teacher>img{
+    box-shadow:1vw 1vw 2vw lightslategrey;
 }
 
 /* environment */
@@ -160,4 +179,7 @@ img{
     width: 90%;
     margin: auto;
     margin-top: 3vw;
+}
+.en>img{
+    box-shadow:1vw 1vw 2vw lightslategrey;
 }

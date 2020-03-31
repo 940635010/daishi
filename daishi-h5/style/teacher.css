@@ -8,6 +8,7 @@ html{
 }
 .experience>img{
     width: 100%;
+    box-shadow:1vw 1vw 2vw lightslategrey;
 }
 
 /* team */
@@ -18,28 +19,40 @@ html{
 .team>img{
   width: 90%;
   margin: auto;
+  box-shadow:1vw 1vw 2vw lightslategrey;
+  border-radius: 1vw;
 }
 
 /* know_t */
 .know_t{
-    /* position: absolute; */
     width: 100%;
     margin-top: 6vw;
 }
 .know_t>img{
     width: 100%;
+    box-shadow:1vw 1vw 2vw lightslategrey;
+    display: inline-block;
+    position: absolute;
 }
 .km{
     width: 47vw;
     height: 9vw;
     background-color: rgb(250,203,0);
-    /* position: relative; */
-    margin-bottom: 2vw;
+    position: relative;
+    margin-top: 25vw;
+    margin-left: 2vw;
+    display: inline-block;
+    position: relative;
+}
+.km>p{
+    text-align: center;
+    margin: auto;
 }
 
 /*lunbo  */
 .lunbo{
-    margin-top: 6vw;
+    /* position: absolute; */
+    margin-top: 20vw;
     width: 92vw;
     height: 70vw;
     border: 1px solid #000;
@@ -55,6 +68,7 @@ html{
 .choies>img{
     width: 90%;
     margin: auto;
+    box-shadow:1vw 1vw 2vw lightslategrey;
 }
 
 /* public */

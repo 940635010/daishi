@@ -10,6 +10,7 @@ html{
     display: inline-block;
     width: 100%;
     margin: auto;
+    box-shadow:1vw 1vw 2vw lightslategrey;
 }
 
 /* skill */
@@ -20,4 +21,57 @@ html{
 .skill>img{
     width: 80%;
     margin: auto;
+}
+.xuanze{
+    width: 90%;
+    /* border: 1px solid #000; */
+    /* box-sizing: border-box; */
+    margin: auto;
+    margin-top: 2vw;
+    /* width: 42vw; */
+    height: 10vw;
+    display: flex;
+    justify-content:space-between
+}
+.grade,.subject{
+    display: inline-block;
+    /* border: 1px solid #000;
+    box-sizing: border-box; */
+    width: 42vw;
+    height: 10vw;
+    
+}
+.grade>select{
+    width: 100%;
+    height: 100%;
+}
+.subject>select{
+    width: 100%;
+    height: 100%;
+}
+.yangtu{
+    width: 100%;
+    /* margin-top: 2vw; */
+}
+.yangtu>img{
+    width: 100%;
+    box-shadow:1vw 1vw 2vw lightslategrey;
+}
+
+/* monitor */
+.monitor{
+    margin-top: 6vw;
+    width: 100%;
+}
+.monitor>img{
+    width: 80%;
+    margin: auto;
+    margin-top: 2vw;
+}
+.fenlei{
+    width: 100%;
+}
+.fenlei>img{
+    width: 100%;
+    box-shadow:1vw 1vw 2vw lightslategrey;
 }
