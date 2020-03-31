@@ -183,6 +183,8 @@
     height: 315px;
     position: relative;
     color: #ffffff;
+    box-sizing: border-box;
+    padding: 10px 18px;
     background-color: #1e25e6;
 }
 
@@ -241,6 +243,18 @@
     cursor: pointer;
     height: 41px;
     background-color: #4047ff;
+}
+.xb-grow2>.xb-grow21>button{
+    margin: 45px 0px;
+        width: 230px;
+        height: 57px;
+        color: #1e25e6;
+        font-size: 24px;
+        background-image: linear-gradient(266deg, 
+            #f4de26 0%, 
+            #ffffff 100%);
+        box-shadow: 0px 2px 2px 0px 
+            rgba(253, 250, 221, 0.39);
 }
 .xb-grow3>div>div {
     width: 42px;

@@ -12,7 +12,6 @@
     width: 100%;
     height: 600px;
     position: relative;
-    margin-bottom: 72px;
 }
 /* ===========轮播图========= */
 .banner{
@@ -144,4 +143,348 @@
     width: 100%;
     height: 5px;
     background:gray;
+}
+/* 辅导模式*/
+.xbxian-xia {
+    width: 100%;
+    height: 542px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-image: url("../images/yinxing/fdmsbgt.png");
+    background-size: cover;
+}
+
+.xbxian-ul {
+    list-style: none;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 1200px;
+    height: 399px;
+}
+
+.xbxian-ul>li {
+    width: 398px;
+    float: left;
+    height: 198px;
+    border-right: 1px dotted #d8d8d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xbxian-ul>li:nth-of-type(3n) {
+    border-right: 0px;
+}
+
+.xbxian-ul>li:nth-of-type(1) {
+    border-bottom: 1px dotted #d8d8d8;
+}
+
+.xbxian-ul>li:nth-of-type(2) {
+    border-bottom: 1px dotted #d8d8d8;
+}
+
+.xbxian-ul>li:nth-of-type(3) {
+    border-bottom: 1px dotted #d8d8d8;
+}
+
+.xbli-div {
+    width: 155px;
+    height: 111px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.xbli-div>div {
+    width: 22px;
+    height: 2px;
+    margin-top: -10px;
+    background-color: #5998e7;
+}
+
+.xbli-div>p {
+    font-size: 40px;
+    color: #333333;
+}
+
+.xbli-div>span {
+    font-size: 20px;
+    color: #333333;
+}
+/* 表单 */
+.xb-formx {
+	width: 100%;
+    overflow: hidden;
+}
+.xb-form {
+    width: 1200px;
+    margin: auto;
+}
+.xgfor-div{
+    position: relative;
+        width: 579px;
+        height: 200px;
+        float: left;
+        margin-bottom: 30px;
+        box-shadow:0 0 10px #cadeff;
+        background-color: white;
+        padding: 24px;
+        box-sizing: border-box;
+}
+.xgfor-div>img{
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+}
+.xgfor-div:nth-of-type(2n){
+    margin-left: 42px;
+}
+.xgfor-div:nth-of-type(5){
+    margin-bottom:0px;
+}
+.xgfor-div:nth-of-type(6){
+    margin-bottom:0px;
+}
+
+.xgfor-div>span{
+    position: absolute;
+    font-size: 30px;
+    color: #427ef0;
+    font-weight: 600;
+}
+.xgfor-div>p{
+    letter-spacing: 1px;
+    line-height: 36px;
+    margin-top: 19px;
+    top: 74px;
+}
+.xb-form>img{
+    width: 100%;
+    margin-bottom: 73px;
+}
+
+.xb-insbox {
+    float: left;
+    width: 728px;
+    height: 62px;
+    color: #ffffff;
+        background-color: #f3b819;
+    text-align: center;
+    font-size: 24px;
+    line-height: 62px;
+    margin-left: 236px;
+    margin-top: 42px;
+    cursor: pointer;
+}
+.xb-insbox::after{
+    clear:both;
+}
+/* 精细化流程 */
+.gljxh{
+    height: 1409px;
+    background-color: #eaeffe;
+    margin-top: 105px;
+    position: relative;
+}
+.jxh-flaot{
+    width: 1200px;
+    margin:0 auto;
+}
+.jxh-flaot>img{
+    position: absolute;
+    width: 100%;
+    top: -33px;
+}
+.jxh-flaot>div{
+    float: left;
+    width: 269px;
+    height: 359px;
+    margin-right: 41px;
+    border-radius: 12px;
+    margin-top: 106px;
+    box-shadow: 0 0 13px #d1dbf8;
+}
+.jxh-flaot>div:nth-of-type(4){
+    margin-right: 0px;
+}
+.jxh-flaot>div:nth-of-type(5){
+    margin-top: 42px;
+    margin-left: 154px;
+}
+.jxh-flaot>div:nth-of-type(6){
+    margin-top: 42px;
+}
+.jxh-flaot>div:nth-of-type(7){
+    margin-top: 42px;
+}
+.jxh-flaot>div>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+/* 表单 */
+.xb-form {
+    height: 472px;
+    width: 1200px;
+    margin:0 auto;
+}
+
+.xb-insl {
+    width: 570px;
+    height: 76px;
+    border: solid 1px #333333;
+    padding: 0px 20px;
+    font-size: 24px;
+    box-sizing: border-box;
+    margin-top: 42px;
+}
+
+.xb-inslaa {
+    margin-right: 53px;
+}
+
+.xb-insboxl {
+    width: 100%;
+    height: 79px;
+    color: #ffffff;
+    background-color: #f3b819;
+    text-align: center;
+    font-size: 24px;
+    line-height: 79px;
+    margin-top: 53px;
+    cursor: pointer;
+}
+/* 环境 */
+.xbhuan-jin {
+    width: 1200px;
+    height: 1074px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 73px;
+}
+.xbhuan-jin>img{
+    width: 100%;
+    margin-top: 72px;
+    margin-bottom: 42px;
+}
+.xbhuan-jin>div {
+    float: left;
+}
+.xbhuan-jin>div>img{
+    width: 100%;
+    height: 100%;
+}
+
+.xbhuan-jin>div:nth-of-type(1) {
+    width: 702px;
+    height: 311px;
+    margin-right: 24px;
+}
+
+.xbhuan-jin>div:nth-of-type(2) {
+    width: 474px;
+    height: 311px;
+}
+
+.xbhuan-jin>div:nth-of-type(3) {
+    width: 340px;
+    margin-right: 23px;
+    margin-top: 23px;
+    height: 433px;
+}
+
+.xbhuan-jin>div:nth-of-type(4) {
+    width: 339px;
+    margin-top: 23px;
+    margin-right: 24px;
+    height: 433px;
+}
+
+.xbhuan-jin>div:nth-of-type(5) {
+    margin-top: 23px;
+    width: 474px;
+    height: 433px;
+}
+
+.gl-ins {
+    width: 100%;
+    height: 79px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color:  #f3b819;
+    text-align: center;
+    font-size: 24px;
+    line-height: 79px;
+    margin-top: 44px;
+}
+/* 特色化辅导优势 */
+.gltsh{
+    width: 1200px;
+    height: 670px;
+    position: relative;
+    margin:0 auto;
+    margin-top: 72px;
+}
+.gltsh>img{
+    width: 100%;
+}
+.glfdys{
+    margin-top:70px ;
+}
+.gllisa{
+    float: left;
+    width: 269px;
+    height: 180px;
+    margin-right: 41px;
+    margin-bottom: 69px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #295dfc;
+}
+.gllisa:nth-of-type(4n){
+    margin-right: 0px;
+}
+.gllisa>div{
+    position: absolute;
+    left: 36px;
+    top:-28px;
+    width: 197px;
+	height: 56px;
+    background-color: #e9eeff;
+    border: 1px solid #295dfc;
+    text-align: center;
+    line-height: 56px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    font-size: 30px;
+	color: #295dfc;
+}
+.gllisa>p{
+    width: 226px;
+    line-height: 30px;
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 66px;
+    margin-left: 28px;
+    font-size: 18px;
+    /* letter-spacing: 1px; */
+}
+.glfdan {
+	width: 728px;
+    height: 62px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 62px;
+    left: 251px;
+    bottom: 0px;
+	background-color: #f3b819;
 }

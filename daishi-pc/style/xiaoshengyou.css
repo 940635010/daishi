@@ -1,98 +1,349 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.xiaoshengyou{
-    width: 100%;margin-top: 120px;
-}
-/* 辅导模式*/
-.xbxian-xia {
+.xiaoshengyou {
     width: 100%;
-    height: 542px;
-    overflow: hidden;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    background-image: url("../images/yinxing/fdmsbgt.png");
-    background-size: cover;
+    margin-top: 120px;
 }
 
-.xbxian-ul {
-    list-style: none;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+/* 头部图片 */
+.xsybanner>img {
+    width: 100%;
+}
+
+/* 为什么参加新初一暑假班 */
+.xsysjb {
     width: 1200px;
-    height: 399px;
+    /* height: 1124px; */
+    margin: 0 auto;
+    margin-top: 72px;
+    text-align: center;
 }
 
-.xbxian-ul>li {
-    width: 398px;
-    float: left;
-    height: 198px;
-    border-right: 1px dotted #d8d8d8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.xsysjb>img {
+    width: 610px;
 }
 
-.xbxian-ul>li:nth-of-type(3n) {
-    border-right: 0px;
+.xsysjtj {
+    margin-top: 42px;
+    width: 1200px;
+    position: relative;
+    height: 1166px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0px rgba(243, 130, 25, 0.46);
+    border-radius: 25px;
 }
 
-.xbxian-ul>li:nth-of-type(1) {
-    border-bottom: 1px dotted #d8d8d8;
-}
-
-.xbxian-ul>li:nth-of-type(2) {
-    border-bottom: 1px dotted #d8d8d8;
-}
-
-.xbxian-ul>li:nth-of-type(3) {
-    border-bottom: 1px dotted #d8d8d8;
-}
-
-.xbli-div {
-    width: 155px;
-    height: 111px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.xbli-div>div {
-    width: 22px;
-    height: 2px;
-    margin-top: -10px;
-    background-color: #5998e7;
-}
-
-.xbli-div>p {
-    font-size: 40px;
+.xsysjtj>span {
+    position: absolute;
+    width: 152px;
+    height: 38px;
+    background-color: white;
+    font-size: 30px;
+    left: 534px;
+    top: 42px;
     color: #333333;
 }
 
-.xbli-div>span {
-    font-size: 20px;
-    color: #333333;
+.slio {
+    position: absolute;
+    background-image: url("../images/yinxing/xuxian.png");
+    background-size: cover;
+    width: 471px;
+    left: 364px;
+    top: 42px;
+    height: 38px;
 }
+
+.wh {
+    margin-top: 114px;
+    width: 1116px;
+    height: 522px;
+    border-radius: 23px;
+}
+
+.xsysjtj>p {
+    margin-top: 40px;
+    margin-left: 42px;
+    width: 1105px;
+    font-size: 24px;
+    line-height: 42px;
+    color: #320402;
+    text-align: left;
+}
+
+.jdt {
+    width: 1109px;
+    height: 159px;
+    margin-top: 40px;
+}
+
+.xsyan {
+    margin: 0 auto;
+    line-height: 72px;
+    color: white;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    text-align: center;
+    font-size: 24px;
+    width: 654px;
+    height: 72px;
+    background-color: #f35c19;
+    border-radius: 10px;
+}
+
+/* 优秀始于起跑线 */
+.xsy-qpx {
+    width: 1200px;
+    /* height: 631px; */
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 72px;
+}
+
+.xsybt-s {
+    width: 610px;
+}
+
+.wxa-q1 {
+    width: 100%;
+    margin-top: 42px;
+}
+
+/* 表单 */
+.xb-form {
+    height: 481px;
+    width: 1200px;
+    margin: auto;
+}
+
+.xb-insl {
+    width: 570px;
+    height: 76px;
+    border: solid 1px #333333;
+    padding: 0px 20px;
+    font-size: 24px;
+    box-sizing: border-box;
+    margin-top: 42px;
+}
+
+.xb-inslaa {
+    margin-right: 53px;
+}
+
+.xb-insbox {
+    width: 100%;
+    height: 79px;
+    color: #ffffff;
+    background-color: #f35c19;
+    text-align: center;
+    font-size: 24px;
+    line-height: 79px;
+    margin-top: 53px;
+    cursor: pointer;
+}
+/* 搭配《夏令营雏鹰计划》 */
+.xsyxly-1q {
+    width: 1200px;
+    /* height: 631px; */
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 72px;
+}
+.xmsdfj{
+    background-color: #f3b819;
+}
+.xsyxly-1q>img {
+    width: 610px;
+}
+
+.xsymin {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+
+.xsymin>div {
+        width: 1200px;
+        height: 636px;
+}
+.xsymin>div >div{
+        width: 580px;
+        height: 240px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        float: left;
+        margin-top: 42px;
+        
+}
+.xsymin>div >div:nth-of-type(2n){
+    margin-left: 40px;
+}
+.xsymin>div >div>img{
+    width: 100%;
+    height: 100%;
+}
+.xsymin>img {
+    width: 470px;
+    height: 29px;
+    margin-top: 42px;
+}
+
+
+/* 打破传统机构壁垒 */
+.scydap{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+.scydap>img{
+    width: 100%;
+}
+
+/* 精细化上课流程 */
+.xihuan{
+    width: 100%;
+        height: 784px;
+        background-image: url("../images/yinxing/xihuan2.png");
+        background-size: cover;
+        
+    margin-top: 40px;
+}
+.xihuabs{
+    width: 1200px;
+    height: 796px;
+    background-image: url("../images/yinxing/xihuan1.png");
+    background-size: cover;
+    margin: 0 auto;
+}
+/* 收费标准，组团报名更划算 */
+.sfbz1-w1{
+        width: 1200px;
+        height: 687px;
+        background-color: #ffffff;
+            background-image: url("../images/yinxing/www1.png");
+            background-size: cover;
+        border-radius: 25px;
+        margin: 0 auto;
+        margin-top: 42px;
+        position: relative;
+}
+.www1a{
+    position: absolute;
+    bottom: 10px;
+    left: 271px;
+}
+/* 优秀教师模范 */
+.szxxjsbox1 {
+    width: 100%;
+    margin-top: 46px;
+    background-color: #fefbf6;
+}
+
+.szlsqq {
+    width: 1200px;
+    margin: auto;
+    z-index: 9;
+    position: relative;
+}
+
+.szlsqq img {
+    width: 100%;
+}
+
+.szlsqq>div {
+    position: absolute;
+    width: 315px;
+    height: 63px;
+    border-radius: 41px;
+    border: 1px solid #f3b91a;
+    text-align: center;
+    line-height: 63px;
+    font-size: 24px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.szlsqq>div:hover {
+    background-color: #fff4d6;
+    border: solid 1px #f3b91a;
+}
+
+.szhovers1 {
+    top: 60px;
+    left: 135px;
+}
+
+.szhovers2 {
+    top: 178px;
+    left: 81px;
+}
+
+.szhovers3 {
+    top: 302px;
+    left: 81px;
+}
+
+.szhovers4 {
+    top: 409px;
+    left: 135px;
+}
+
+.szhovers5 {
+    top: 60px;
+    right: 128px;
+}
+
+.szhovers6 {
+    top: 178px;
+    right: 79px;
+}
+
+.szhovers7 {
+    top: 302px;
+    right: 79px;
+}
+
+.szhovers8 {
+    top: 409px;
+    right: 128px;
+}
+
+/* 轮播图 */
+.szlbt-box {
+    width: 100%;
+    margin-top: -60px;
+    background-color: #f3b819;
+}
+
+.szlbtyg {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+}
+
+.szlbtyg img {
+    width: 100%;
+}
+
 /* 环境 */
 .xbhuan-jin {
     width: 1200px;
     height: 889px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 42px;
     margin-bottom: 73px;
 }
 
 .xbhuan-jin>div {
     float: left;
 }
-.xbhuan-jin>div>img{
+
+.xbhuan-jin>div>img {
     width: 100%;
     height: 100%;
 }
@@ -139,23 +390,27 @@
     line-height: 79px;
     margin-top: 44px;
 }
+
 /* 全程监控管理 */
-.quancgl{
+.quancgl {
     width: 1200px;
-    margin: 0 auto ;
+    margin: 0 auto;
     overflow: hidden;
 }
-.xgfor-div{
+
+.xgfor-div {
     width: 579px;
     height: 200px;
     float: left;
     margin-bottom: 30px;
-    box-shadow:0 0 10px #cadeff;
+    box-shadow: 0 0 10px #cadeff;
 }
-.xgfor-div:nth-of-type(2n){
-margin-left: 42px;
+
+.xgfor-div:nth-of-type(2n) {
+    margin-left: 42px;
 }
-.xgfor-div>img{
-width: 100%;
-height: 100%;
+
+.xgfor-div>img {
+    width: 100%;
+    height: 100%;
 }

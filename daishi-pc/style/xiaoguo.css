@@ -16,7 +16,6 @@
     width: 100%;
     height: 600px;
     position: relative;
-    margin-bottom: 72px;
 }
 /* ===========轮播图========= */
 .banner{
@@ -405,9 +404,14 @@
 
 .xgwjieboxan {
     width: 204px;
-    height: 45px;
+    height: 48px;
     position: absolute;
     cursor: pointer;
+    background-color: #fbbf07;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 48px;
     bottom: 25px;
 }
 
@@ -433,7 +437,7 @@
 /* 表单 */
 .xb-formx {
 	width: 100%;
-    height: 1382px;
+    height: 1388px;
     margin-top: 72px;
     overflow: hidden;
 	background-color: #f6f9fe;
@@ -444,11 +448,20 @@
     margin: auto;
 }
 .xgfor-div{
+    position: relative;
         width: 579px;
         height: 200px;
         float: left;
         margin-bottom: 30px;
         box-shadow:0 0 10px #cadeff;
+        background-color: white;
+        padding: 24px;
+        box-sizing: border-box;
+}
+.xgfor-div>img{
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
 }
 .xgfor-div:nth-of-type(2n){
     margin-left: 42px;
@@ -459,9 +472,17 @@
 .xgfor-div:nth-of-type(6){
     margin-bottom:0px;
 }
-.xgfor-div>img{
-    width: 100%;
-    height: 100%;
+.xgfor-div>span{
+    position: absolute;
+    font-size: 30px;
+    color: #427ef0;
+    font-weight: 600;
+}
+.xgfor-div>p{
+    letter-spacing: 1px;
+    line-height: 36px;
+    margin-top: 19px;
+    top: 74px;
 }
 .xb-form>p{
     margin-top: 71px;
@@ -491,8 +512,104 @@
     text-align: center;
     font-size: 24px;
     line-height: 79px;
-    margin-top: 53px;
+    margin-top: 42px;
     cursor: pointer;
+}
+/* 好口碑邀您见证 */
+.xgkbyn{
+    width: 100%;
+    height: 987px;
+    background-image: url("../images/yinxing/xgsjbj.png");
+    background-size: cover;
+}
+.xgsjbox{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.xgsjbox>p{
+    font-size: 36px;
+    margin-top: 72px;
+    text-align: center;
+}
+.xgsjbox>img{
+    height: 565px;
+    margin-top: 72px;
+}
+.xgsjbox>span{
+    font-family: HYYaKuHeiW;
+    margin-top: 41px;
+	font-size: 30px;
+	line-height: 24px;
+}
+.xgsjbox>div{
+    width: 472px;
+	height: 72px;
+    margin-top: 24px;
+	font-size: 30px;
+    line-height: 72px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f3b819;
+    color: #275bfd;
+}
+/* 进步效果看得见 */
+
+.xgbaox{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 71px;
+    position: relative;
+}
+.xgbaox>p{
+    text-align: center;
+    font-size: 36px;
+}
+.xgbaox>div{
+    width: 1200px;
+    height: 438px;
+    margin-top: 71px;
+    overflow: hidden;
+}
+.xgbaox>span{
+    position: absolute;
+    bottom: 221px;
+    width: 38px;
+    height: 41px;
+    cursor: pointer;
+    background-size: cover;
+}
+.xgle{
+    margin-left: -58px;
+    background-image: url("../images/yinxing/xgle.png");
+}
+.xgri{
+    margin-left: 1220px;
+    background-image: url("../images/yinxing/xgri.png");
+}
+.xgxblba{
+    position: relative;
+    left: -307px;
+    width: 1814px;
+    list-style: none;
+    height: 438px;
+}
+.xgxblba>li{
+    float: left;
+    margin-right: 32px;
+    width: 275px;
+    height: 100%;
+}
+.xgxblba>li>img{
+    width: 100%;
+    height: 100%;
+}
+.xgxblba>li:last-child{
+    margin-right: 0px;
 }
 
 /* 底部图片 */
