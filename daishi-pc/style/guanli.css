@@ -295,9 +295,10 @@
 .jxh-flaot{
     width: 1200px;
     margin:0 auto;
+
 }
 .jxh-flaot>img{
-    position: absolute;
+    position: relative;
     width: 100%;
     top: -33px;
 }
@@ -307,7 +308,7 @@
     height: 359px;
     margin-right: 41px;
     border-radius: 12px;
-    margin-top: 106px;
+    margin-top: 54px;
     box-shadow: 0 0 13px #d1dbf8;
 }
 .jxh-flaot>div:nth-of-type(4){
