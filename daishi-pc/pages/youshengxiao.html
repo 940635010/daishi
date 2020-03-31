@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/youshengxiao.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .timeItem {
+            font-size: 20px;
+            padding: 6px 8px;
+            color: #fff;
+            background: #438ae4;
+            display: inline-block;
+        }
+
+        .dot {
+            display: inline-block;
+            padding: 5px 4px;
+            font-size: 20px;
+            font-weight: bold;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div class="entra-wrap">
+        <!-- 头部 -->
+        <div class="index-header">
+            <div class="index-head">
+                <a href="#">
+                    <img src="../images/index/logo.png" alt="">
+                </a>
+                <div class="index-right">
+                    <div class="index-top">
+                        <div class="top-zk">
+                            <p class="top-zk-txt">中考倒计时</p>
+                            <div class="top-zk-time"></div>
+                        </div>
+                        <div class="top-zk">
+                            <p class="top-zk-txt">高考倒计时</p>
+                            <div class="top-gk-time"></div>
+                        </div>
+                    </div>
+                    <div class="index-bom">
+                        <div class="bom-nav">
+                            <ul>
+                                <li class="li-active">首页</li>
+                                <li>师资力量</li>
+                                <li>校区查询</li>
+                                <li>热点资讯</li>
+                                <li>关于我们</li>
+                            </ul>
+                            <div class="nav-line"></div>
+                        </div>
+                        <div class="bom-phone">
+                            <div class="phone-one">
+                                <img src="../images/index/phone.png" alt="">
+                                <p>028-66060688</p>
+                            </div>
+                            <div class="phone-two">
+                                <img src="../images/index/wx.png" alt="">
+                                <p>微信</p>
+                                <div class="index-erweima"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- 主体 -->
+         <div class="entra-main">
+
+            <!-- 图片展示 -->
+            <div class="entra-banner">
+                <img src='../images/youshengxiao/banner.png'>
+                
+            </div>
+            <div class="picbanner">
+                <img src='../images/youshengxiao/1717_05.png'>
+            </div>
+            <div class="picbanners">
+                <img src='../images/youshengxiao/1616_06.png'>
+                <div class="sixtwo"></div>
+            </div>
+            <div class="picban">
+                <img src='../images/youshengxiao/1260_08.png'>
+            </div>
+            <div class="fivehun">
+                <img src='../images/youshengxiao/1717_09.png'>
+                <div class="forminput"><input type="text" placeholder="请输入您孩子的姓名">
+                    <input type="text" placeholder="请输入您的电话"></div>
+                <div id='redbtn'></div>
+            </div>
+        <!-- 问题部分 -->
+           <div class="question">
+               <img src="../images/youshengxiao/title.png" alt="" id='pcqueone'>
+               <img src="../images/youshengxiao/3.png" alt="" id='pcquetwo'>
+               <img src="../images/youshengxiao/2.png" alt="" id='pcquethree'>
+               <img src="../images/youshengxiao/1.png" alt="" id='pcquefour'>
+               <div id='yuyuebtn'>028-66060688立即预约提升课程</div>
+           </div>
+        <!-- 优秀学员 -->
+        <div class="goodstu">
+            <img src="../images/youshengxiao/8989.png" alt="" id='pctitles'>
+            <img src="../images/youshengxiao/8888.png" alt="" id='picpic'>
+        </div>
+        <!-- 训练 -->
+        <div class='training'>
+            <img src="../images/youshengxiao/615_12.png" alt="">
+            <div></div>
+        </div>
+        <!-- 时间 -->
+        <div class='timing'>
+            <img src="../images/youshengxiao/1798_14.png" alt="">
+        </div>
+        <!-- 小区环境 -->
+        <div class='huanj'>
+            <img src="../images/youshengxiao/956_15.png" alt="">
+            <div></div>
+        </div>
+        <!-- 底部 -->
+        <div class="index-footer">
+            <div class="footer-back">
+                <img src="../images/youshengxiao/005_16.png" alt="" id='fotimg'>
+                <img src="../images/gaokao/1818_10.png" alt="" id='fotimgtw'>
+            </div>
+            <div class="footer-pic">
+                <div class="pic-logo center">
+                    <img src="../images/index/f1.jpg" alt="">
+                    <img src="../images/index/f2.jpg" alt="">
+                    <img src="../images/index/f3.jpg" alt="">
+                    <img src="../images/index/f4.jpg" alt="">
+                    <img src="../images/index/f5.jpg" alt="">
+                    <img src="../images/index/f6.jpg" alt="">
+                </div>
+                <div class="pic-txt center">
+                    <p>网站经案号</p>
+                    <p>联电话：028-66060688</p>
+                    <p>校区地址：顺城街，顺吉大厦3楼</p>
+                </div>
+                <div class="pic-back">
+                    <img src="../images/index/ren.png" alt="">
+                </div>
+                <div class="footer-inpt">
+                    <input type="text" placeholder="请输入您孩子的姓名">
+                    <input type="text" placeholder="请输入您的电话">
+                    <select name="" id="">
+                        <option value="" selected disabled style="display: none;">年级</option>
+                        <option value="">初三</option>
+                        <option value="">六年级</option>
+                        <option value="">高三</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="" selected disabled style="display: none;">科目</option>
+                        <option value="">数学</option>
+                        <option value="">英语</option>
+                        <option value="">物理</option>
+                        <option value="">化学</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="" selected disabled style="display: none;">班级</option>
+                        <option value="">个性化一对一</option>
+                        <option value="">精品小班</option>
+                        <option value="">春季学霸班</option>
+                        <option value="">雏鹰计划</option>
+                        <option value=""> 中考密训</option>
+                    </select>
+                    <p>立即获取课程报价</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    /*
+        date:未来的时间，
+        style: 样式类名,
+        pre: 前缀
+    */
+
+
+
+
+    function checkTime(i) { //将0-9的数字前面加上0，例1变为01 
+        return i < 10 ? "0" + i : i
+    }
+
+
+    function TimeCount(options) {
+
+        this.dom = document.createElement("section"),
+            this.parent = options.parent;
+        this.date = options.date || new Date();
+        this.style = options.style;
+        this.pre = options.pre;
+        this.dot = options.dot
+        this.init();//初始化数据
+
+    }
+
+
+    TimeCount.prototype.init = function () {
+
+        this.dayDom = document.createElement("div");
+        var dot = document.createElement("span");
+        dot.classList.add("dot")
+        var text = this.dot ? document.createTextNode(this.dot) : document.createTextNode(":")
+        dot.appendChild(text)
+
+        if (this.style) {
+            this.dayDom.classList.add(this.style)
+        } else {
+            this.dayDom.classList.add("timeItem")
+        }
+        this.hourDom = this.dayDom.cloneNode();
+        this.minuteDom = this.dayDom.cloneNode();
+
+        var { days,
+            hours,
+            minutes } = this.updateTime()
+        this.render(days, hours, minutes)
+
+        this.dom.appendChild(this.dayDom)
+        this.dom.appendChild(dot.cloneNode(true))
+        this.dom.appendChild(this.hourDom)
+        this.dom.appendChild(dot.cloneNode(true))
+        this.dom.appendChild(this.minuteDom)
+        this.parent.appendChild(this.dom)
+
+        //开启定时
+
+        this.time = setInterval(() => {
+
+            var { days, hours, minutes } = this.updateTime()
+            this.render(days, hours, minutes)
+
+        }, 1000)
+
+
+    }
+
+    TimeCount.prototype.render = function (days, hours, minutes) {
+
+        this.dayDom.innerHTML = checkTime(days) + "天";
+        this.hourDom.innerHTML = checkTime(hours) + "时";
+        this.minuteDom.innerHTML = checkTime(minutes) + "分"
+
+
+
+    }
+
+    TimeCount.prototype.updateTime = function () {
+
+        var leftTime = (new Date(this.date)) - (new Date()); //计算剩余的毫秒数 
+        var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数 
+        var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时 
+        var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟 
+        return {
+            days,
+            hours,
+            minutes
+        }
+
+    }
+
+
+    new TimeCount({
+        parent: document.getElementsByClassName("top-zk-time")[0],
+        date: "2020-06-12"
+    })
+    new TimeCount({
+        parent: document.getElementsByClassName("top-gk-time")[0],
+        date: "2020-07-6"
+    })
+    
+</script>
+</html>

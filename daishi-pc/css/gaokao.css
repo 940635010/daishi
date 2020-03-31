@@ -146,12 +146,19 @@
     width: 100%;
     height: 600px;
     position: relative;
-    background-image: url('../images/gaokao/gaokao.png');
+    background-image: url('../images/gaokao/11112_02.png');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.entra-banner img{
+    width:1200px;
+    height:600px;
+    position:absolute;
+    left:50%;
+    margin-left:-600px;
+    top:0;
+}
 /* ==========中考倒计时========= */
 .entra-countdown{
     width: 1200px;
@@ -300,37 +307,90 @@
     margin-top:72px;    
     position:relative;
 }
-.studyState img{
-   width:100%;
-   height:100%;
+.studyState #picone{
+   width:1200px;
+   height:847px;
+   position:absolute;
+   left:50%;
+   margin-left:-600px;
+   top:0;
    object-fit: cover;
 }
+.studyState #pictwo{
+    width:600px;
+    height:439px;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    object-fit: cover;
+ }
+ .studyState #picthree{
+    width:600px;
+    height:200px;
+    position:absolute;
+    right:50%;
+    bottom:0;
+    object-fit: cover;
+ }
 .studyState div{
-  width:285px;
-  height:70px;
-  background-color:rgba(255,239,90,0);
+  width:100%;
+  height:200px;
+  background-image: url('../images/gaokao/44443_13.png');
+  background-size: 100% 100%;
   position: absolute;
-  bottom:45px;
-  right:340px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  text-align: center;
-  line-height: 70px;
-  cursor:pointer;
+  bottom:0;
+  right:0;
+  z-index: -1;
 }
+.studybtn{
+    cursor: pointer;
+    width:290px;
+    height:72px;
+    background-color: rgba(2,2,2,0);
+    position: absolute;
+    bottom:41px;
+    left:53%;
 
+}
 /* 底部表单部分 */
 .formpart{
-    height:1100px;
+    height:946px;
     width:100%;
-    margin-top: 72px;
-    background-image: url('../images/gaokao/gaokaoform_04.png');
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-top: 42px;
+    position: relative;
+    background-color: rgb(254,245,245);
+}
+#pictureone{
+    height:400px;
+    width:1200px;
+    position: absolute;
+    top:0px;
+    left:50%;
+    margin-left:-600px;
+    z-index: 12;
+}
+#picture2{
+    height:946px;
+    width:1200px;
+    position: absolute;
+    bottom:0px;
+    left:50%;
+    margin-left:-600px;
+    z-index: 2;
+}
+.footer_service{
+    height:110px;
+    width:100%;
     position: relative;
 }
-
+.footer_service img{
+    height:110px;
+    width:1200px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-600px;
+}
 .footer-inp{
     width:1200px;
     height:350px;
@@ -341,6 +401,7 @@
     bottom:146px;
     left:50%;
     margin-left:-600px;
+    z-index: 5;
 }
 .footer-inp>input,.footer-inp>select{
     width: 579px;
@@ -364,22 +425,28 @@
     left:50%;
     margin-left:-600px;
     bottom:72px;
+    z-index: 8;
 }
 /* 课程特色 */
 .speciallesson{
     height:1850px;
     width:100%;
-    background-image: url('../images/gaokao/siren_07.png');
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #fff;
     position: relative;
+}
+.speciallesson img{
+    height:1780px;
+    width:1200px;
+    position: absolute;
+    left:50%;
+    margin-left:-600px;
+    top:0;
 }
 .speciallesson div{
     width:700px;
     height:70px;
     position: absolute;
-    bottom:0;
+    bottom:70px;
     left:50%;
     margin-left:-350px;
     color: #fff;
@@ -391,20 +458,45 @@
 }
 .circlecenter{
     width:100%;
-    height:765px;
-    background-image: url('../images/gaokao/circleteacher_02.png');
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height:557px;
+    background-color: rgb(254,245,245);
     position: relative;
-    margin-top:72px;
+}
+.circletitle{
+    height:112px;
+    width:100%;
+    background-color: #fff;
+    position: relative;
+}
+.circletitle img{
+    height:112px;
+    width:1200px;
+    position: absolute;
+    left:50%;
+    margin-left:-600px;
+    top:0;
+}
+#lessons{
+    width:1200px;
+    height:520px;
+    position: absolute;
+    top:0px;
+    left:50%;
+    margin-left:-600px;
+    z-index: 1;
+}
+#study{
+    height:72px;
+    width:470px;
+    position: absolute;
+    left:50%;
+    bottom:0;
 }
 .szlsqq{
     width: 1200px;
     margin: auto;
     z-index: 9;
     position: relative;
-    top:190px;
 }
 .szlsqq>div{
     position: absolute;
@@ -460,12 +552,17 @@
 .entra-tutor{
     width: 100%;
     height: 600px;
-    background-image: url('../images/gaokao/bioteacher_03.png');
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(197,13,14);
     position: relative;
     margin-top:-36px;
+}
+.entra-tutor img{
+    height:600px;
+    width:1200px;
+    position: absolute;
+    left:50%;
+    margin-left:-600px;
+    bottom:0px;
 }
 .tutor_innerBox{
     width: 1200px;
@@ -476,18 +573,18 @@
 }
 
 .swiper_box{
-    width:330px;
+    width:350px;
     height:6px;
     position:absolute;
-    right:70px;
-    bottom:40px;
+    right:73px;
+    bottom:42px;
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
 .swiper_box .swiper_line{
     height:8px;
-    width:40px;
+    width:42px;
     background-color:rgb(209,61,62);
     border-radius: 5px;
 }
@@ -496,13 +593,28 @@
 }
 /* 优越的环境 */
 .envi{
-    height:1115px;
+    height:1042px;
     width:100%;
-    background-image: url('../images/gaokao/environment_05.png');
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #fff;
     position: relative;
+    margin-top:72px;
+}
+#envione{
+    position: absolute;
+    height:110px;
+    width:1200px;
+    top:0;
+    left:50%;
+    margin-left:-600px;
+    
+}
+#envitwo{
+    position: absolute;
+    height:932px;
+    width:1200px;
+    top:110px;
+    left:50%;
+    margin-left:-600px;
 }
 .envi div{
     width:700px;
@@ -527,12 +639,28 @@
 .footer-back{
     width: 100%;
     height: 420px;
-    background-image: url(../images/gaokao/footimg_07.png);
+    background-image: url(../images/gaokao/1616_10.png);
     background-size: 100% 100%;
     padding-top: 55px;
     box-sizing: border-box;
+    position:relative;
 }
-
+#fotimg{
+    width:1200px;
+    height:420px;
+    position:absolute;
+    top:0px;
+    left:50%;
+    margin-left:-600px;
+}
+#fotimgtw{
+    width:1200px;
+    height:420px;
+    position:absolute;
+    top:0px;
+    left:50%;
+    margin-left:-600px;
+}
 .footer-pic{
     width: 100%;
     height: 374px;

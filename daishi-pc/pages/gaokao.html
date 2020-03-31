@@ -79,7 +79,7 @@
 
             <!-- 图片展示 -->
             <div class="entra-banner">
-                
+                <img src='../images/gaokao/111_03.png'>
                 <div class="entra-countdown center">
                     <div class="countdown-time"></div>
                     <div class="entra-btn">早报名早提升</div>
@@ -151,11 +151,19 @@
             </div>
           <!-- 详情 -->
           <div class="studyState"> 
-               <img src="../images/gaokao/pcgaokaostudy_02.png" alt="">
+               <img src="../images/gaokao/222_05.png" alt="" id='picone'>
+               <img src="../images/gaokao/22_12.png" alt="" id='pictwo'>
+               <img src="../images/gaokao/444_14.png" alt="" id='picthree'>
                <div></div>
+               <span class="studybtn"></span>
           </div>
           <!-- 表单部分 -->
+          <div class="footer_service">
+            <img src="../images/gaokao/555_20.png" alt="">
+          </div>
           <div class="formpart">
+            <img src="../images/gaokao/77_24.png" alt="" id='pictureone'> 
+            <img src="../images/gaokao/6_25.png" alt="" id='picture2'> 
             <div class="footer-inp">
                 <input type="text" placeholder="请输入您孩子的姓名">
                 <select name="" id="">
@@ -186,10 +194,15 @@
           </div>
          <!-- 课程特色 -->
          <div class='speciallesson'>
+             <img src="../images/gaokao/88_33.png" alt="">
              <div>点击了解详情</div>
          </div>
          <!-- 详情老师圆圈中心部分 -->
+         <div class="circletitle">
+            <img src="../images/gaokao/999_36.png" alt="">
+        </div>
          <div class="circlecenter">
+             <img src="../images/gaokao/1212_37.png" alt="" id='lessons'>            
             <div class="szlsqq">
                 <div class="szhovers1">04.培训：教学技巧培训</div>
                 <div class="szhovers2">03.面试：专业知识面试</div>
@@ -200,10 +213,11 @@
                 <div class="szhovers7">07.授课：安排首次授课</div>
                 <div class="szhovers8">戴氏中考中心合格教师</div>
             </div>
-            <img src="../images/gaokao/yellowbox_03.png" alt="">
+            <img src="../images/gaokao/yellowbox_03.png" alt="" id='study'>
          </div>
          <!-- 教师团队部分 -->
          <div class="entra-tutor">  
+                <img src="../images/gaokao/1313_39.png" alt="" id='teacher'>
                 <div class="swiper_box">
                 <span class='swiper_line current_swiper_line'></span>
                 <span class='swiper_line'></span>
@@ -215,13 +229,16 @@
         </div>
         <!-- 优越的环境 -->
         <div class="envi">
+             <img src="../images/gaokao/1515_03.png" alt="" id='envione'>
+             <img src="../images/gaokao/1414_06.png" alt="" id='envitwo'>
             <div>点击了解详情</div>
         </div>
         </div>
         <!-- 底部 -->
         <div class="index-footer">
             <div class="footer-back">
-                
+                <img src="../images/gaokao/1717_13.png" alt="" id='fotimg'>
+                <img src="../images/gaokao/1818_10.png" alt="" id='fotimgtw'>
             </div>
             <div class="footer-pic">
                 <div class="pic-logo center">
@@ -379,9 +396,12 @@
         date: "2020-07-6"
     })
     window.onload=function(){
-    $('.swiper_box').delegate('span','click',function(){
+    $('.swiper_box').delegate('span','click',function(e){
                 $(this).addClass('current_swiper_line')
                 $(this).siblings().removeClass('current_swiper_line')
+                var i=$(this).index()
+                $(this).parent().parent().find('#teacher').css("src", `../images/gaokao/${i}.jpg`)
+                console.log($(this).parent().parent().find('#teacher')[0])
             })
     
    }

@@ -1,0 +1,500 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.entra-wrap{
+    width: 100%;
+    height: 100%;
+}
+/* =======居中类======= */
+.center{
+    margin: 0 auto;
+}
+/* =========头部========= */
+.index-header{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    background-color: white;
+}
+.index-head{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.index-head>a>img{
+    width: 357px;
+    height: 77px;
+}
+.index-right{
+    width: 803px;
+    height: 100px;
+}
+.index-top{
+    width: 803px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-zk{
+    width: 330px;
+    height: 38px;
+    display: flex;
+    justify-content: space-around;
+}
+.top-zk-txt{
+    width: 105px;
+    height: 38px;
+    background:#438ae4;
+    color: white;
+    text-align: center;
+    line-height: 38px;
+    font-size: 18px;
+}
+.index-bom{
+    width:803px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+.bom-nav{
+    position: relative;
+}
+.bom-nav>ul{
+    width: 440px;
+    height: 45px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+/* =======点击时字体的颜色 */
+.bom-nav .li-active{
+    color:#438ae4 ;
+}
+.nav-line{
+    position: absolute;
+    bottom: 0px;
+    width: 35px;
+    height: 2px;
+    background:#438ae4 ;
+    margin-left: 15px;
+}
+.bom-phone{
+    width: 276px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.phone-one{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    color: #438ae4;
+}
+.phone-one>img{
+    width: 30px;
+    height: 25px;
+    margin-right: 5px;
+}
+.phone-two{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    color: #438ae4;
+    cursor: pointer;
+}
+.phone-two>img{
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+}
+.index-erweima{
+    width: 123px;
+    height: 137px;
+    position: absolute;
+    bottom: -137px;
+    right: -36px;
+    background-image: url(../images/index/erweima.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: none;
+}
+.phone-two:hover .index-erweima{
+    display: block;
+}
+/* ===========主体=========== */
+.entra-main{
+    width: 100%;
+    height: 100%;
+    margin-top: 117px;
+}
+/* =========图片展示======== */
+.entra-banner{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.entra-banner img{
+    width:100%;
+    height:600px;
+    object-fit: cover;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.picbanner{
+    height:998px;
+    width:100%;
+    background-color: #fff;
+    position:relative;
+}
+.picbanner img{
+    height:998px;
+    width:1260px;
+    position:absolute;
+    left:50%;
+    top:0;
+    margin-left:-630px;
+}
+.picbanners{
+    height:884px;
+    width:100%;
+    background-color: #fff;
+    position:relative;
+}
+.picbanners img{
+    height:884px;
+    width:1260px;
+    position:absolute;
+    left:50%;
+    top:0;
+    margin-left:-630px;
+}
+.sixtwo{
+    width:620px;
+    height:72px;
+    position: absolute;
+    left:50%;
+    top:679px;
+    margin-left:-310px;
+    cursor:pointer;
+}
+.picban{
+    height:652px;
+    width:100%;
+    background-color: rgb(241,74,55);
+    position:relative;
+}
+.picban img{
+    height:652px;
+    width:1260px;
+    position:absolute;
+    left:50%;
+    top:0;
+    margin-left:-630px;
+}
+.fivehun{
+    height:562px;
+    width:100%;
+    background-color: #fff;
+    position:relative;
+}
+.fivehun img{
+    height:562px;
+    width:1260px;
+    position: absolute;
+    left:50%;
+    top:0;
+    margin-left:-630px;
+}
+.forminput{
+    height:200px;
+    width:1200px;
+    z-index:5;
+    position: absolute;
+    left:50%;
+    margin-left:-600px;
+    top:172px;
+}
+.forminput input{
+    height:72px;
+    width:1200px;
+    margin-bottom: 45px;
+    border-radius: 5px;
+    border:1px solid gray;
+    text-indent: 2em;
+    font-size: 18px;
+    color:rgb(207,207,207);
+}
+#redbtn{
+    height:72px;
+    width:1200px;
+    cursor:pointer;
+    z-index: 5;
+    position: absolute;
+    bottom:72px;
+    left:50%;
+    margin-left:-600px;
+}
+/* 问题部分 */
+.question{
+    width:100%;
+    height:1800px;
+    background-color: #fff;
+    position:relative;
+}
+#pcqueone{
+    width:400px;
+    height:50px;
+    position: absolute;
+    left:50%;
+    top:0;
+    margin-left:-200px;
+}
+#pcquetwo{
+    width:1200px;
+    height:500px;
+    position: absolute;
+    left:50%;
+    top:90px;
+    margin-left:-600px;
+}
+#pcquethree{
+    width:1200px;
+    height:500px;
+    position: absolute;
+    left:50%;
+    top:630px;
+    margin-left:-600px;
+}
+#pcquefour{
+    width:1200px;
+    height:500px;
+    position: absolute;
+    left:50%;
+    top:1170px;
+    margin-left:-600px;
+}
+#yuyuebtn{
+    width:700px;
+    height:76px;
+    background-color: rgb(241,74,55);
+    color:white;
+    text-align:center;
+    position:absolute;
+    left:50%;
+    margin-left:-350px;
+    bottom:0;
+    /* top:1722px; */
+    cursor:pointer;
+    line-height: 76px;
+    font-size: 18px;
+    border-radius:10px;
+}
+/* 优秀学员 */
+.goodstu{
+    width:100%;
+    height:600px;
+    background-color: #fff;
+    position:relative; 
+    margin-top:72px;
+}
+#pctitles{
+    width:400px;
+    height:50px;
+    position: absolute;
+    left:50%;
+    top:0;
+    margin-left:-200px;
+}
+#picpic{
+    width:1200px;
+    height:500px;
+    position: absolute;
+    left:50%;
+    top:90px;
+    margin-left:-600px;
+}
+/* 训练 */
+.training{
+    height:1247px;
+    width:100%;
+    background-image: url('../images/youshengxiao/156.png');
+    background-size: cover;
+    background-position: center bottom;
+    position:relative;
+    margin-top:72px;
+}
+.training img{
+    height:1247px;
+    width:1200px;
+    position: absolute;
+    left:50%;
+    margin-left:-600px;
+    top:0;
+}
+.training div{
+    height:60px;
+    width:600px;
+    position: absolute;
+    left:50%;
+    margin-left:-300px;
+    bottom:40px;
+    cursor:pointer;
+}
+/* 时间 */
+.timing{
+    height:512px;
+    width:100%;
+    background-color: #fff;
+    position:relative;
+}
+.timing img{
+    height:512px;
+    width:1260px;
+    position: absolute;
+    left:50%;
+    margin-left:-630px;
+    top:0;
+}
+/* 环境 */
+.huanj{
+    height:1036px;
+    width:100%;
+    background-color: #fff;
+    position:relative;
+}
+.huanj img{
+    height:1036px;
+    width:1260px;
+    position: absolute;
+    left:50%;
+    margin-left:-630px;
+    top:0;
+}
+.huanj div{
+    height:60px;
+    width:700px;
+    position: absolute;
+    left:50%;
+    margin-left:-350px;
+    bottom:72px;
+    cursor:pointer;
+}
+/* ============底部=========== */
+.index-footer{
+    width: 100%;
+    height: 793px;
+}
+.footer-back{
+    width: 100%;
+    height: 420px;
+    background-image: url(../images/gaokao/1616_10.png);
+    background-size: 100% 100%;
+    padding-top: 55px;
+    box-sizing: border-box;
+    position:relative;
+}
+#fotimg{
+    width:1200px;
+    height:420px;
+    position:absolute;
+    top:0px;
+    left:50%;
+    margin-left:-600px;
+}
+#fotimgtw{
+    width:1200px;
+    height:420px;
+    position:absolute;
+    top:0px;
+    left:50%;
+    margin-left:-600px;
+}
+.footer-pic{
+    width: 100%;
+    height: 374px;
+    position: relative;
+    padding-top: 72px;
+    box-sizing: border-box;
+}
+.pic-logo{
+    width: 1200px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pic-txt{
+    width: 1200px;
+    height: 150px;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    padding-top: 42px;
+    box-sizing: border-box;
+}
+.pic-txt>p{
+    margin-bottom: 9px;
+}
+.pic-back{
+    width: 100%;
+    height: 95px;
+    background-image: url(../images/index/footerdibuback.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+.pic-back>img{
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+}
+.footer-inpt{
+    position: absolute;
+    bottom: 20px;
+    left: 191px;
+    width:1012px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-inpt>input{
+    width: 161px;
+    height: 42px;
+    border: none;
+    padding: 0px 0px 0px 10px;
+    box-sizing: border-box;
+}
+.footer-inpt>select{
+    width: 136px;
+    height: 42px;
+    border: none;
+    font-weight: bold;
+    padding: 0px 0px 0px 10px;
+    box-sizing: border-box;
+}
+.footer-inpt>p{
+    width: 199px;
+    height: 42px;
+    background-color: #f3b819;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    line-height:42px ;
+    font-weight: bold;
+    cursor:pointer;
+}
