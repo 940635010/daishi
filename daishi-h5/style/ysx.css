@@ -8,6 +8,8 @@ html{
 .banner_ysx>img{
   
     width: 100%;
+    box-shadow:1vw 1vw 2vw lightslategrey;
+
 }
 /* charts */
 .charts{
@@ -21,6 +23,7 @@ html{
 }
 .chart1>img{
     width: 100%;
+    box-shadow:1vw 1vw 2vw lightslategrey;
 }
 .chart2,.chart3,.chart4,.chart5,.chart6,.chart7{
     margin-top: 6vw;
@@ -28,9 +31,11 @@ html{
 }
 .chart2>img,.chart3>img,.chart4>img{
     width: 100%;
+    box-shadow:1vw 1vw 2vw lightslategrey;
 }
 .chart5>img,.chart6>img,.chart7>img{
     width: 100%;
+    box-shadow:1vw 1vw 2vw lightslategrey;
 }
 
 .chart4 input{
@@ -43,19 +48,36 @@ html{
     border: 1px solid darkgrey;
     border-radius: 2vw;
 }
-
+.shu{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
 .get{
     border: 1px solid rgb(255,80,77);
     background-color: rgb(255,80,77);
     box-sizing: border-box;
     color: white;
     text-align: center;
+    margin: auto;
     width: 46vw;
     height: 10vw;
     border-radius: 2vw;
     margin-top:5vw;
-    font-size: 5vw ;        
+    font-size: 5vw;
+    text-align: center;        
 }
 .get>p{
     margin-top:1.5vw;
+    margin:auto;
 }
+.kname{
+    margin-top: 5vw;
+}
+.chart4>input{
+    margin: auto;
+    margin-top: 1vw;
+    text-align: center;
+    vertical-align:middle;
+}
+
