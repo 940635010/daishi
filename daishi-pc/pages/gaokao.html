@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/gaokao.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> 
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="../js/swiper.min.js"></script>
     <style>
         * {
             padding: 0;
             margin: 0;
         }
-
-        .timeItem {
+        .timeItem{
             font-size: 20px;
             padding: 6px 8px;
             color: #fff;
@@ -26,6 +27,10 @@
             font-size: 20px;
             font-weight: bold;
             vertical-align: top;
+        }
+        
+        .shangke-ys{
+            margin-bottom: 42px;
         }
     </style>
 </head>
@@ -123,27 +128,9 @@
                <div class="entra-form center">
                 <div class="entra-inp">
                     <input type="text" placeholder="请输入您孩子的姓名">
-                    <select name="" id="">
-                        <option value="" selected disabled style="display: none;">年级</option>
-                        <option value="">初三</option>
-                        <option value="">六年级</option>
-                        <option value="">高三</option>
-                    </select>
-                    <select name="" id="">
-                        <option value="" selected disabled style="display: none;">班级</option>
-                        <option value="">个性化一对一</option>
-                        <option value="">精品小班</option>
-                        <option value="">春季学霸班</option>
-                        <option value="">雏鹰计划</option>
-                        <option value=""> 中考密训</option>
-                    </select>
-                    <select name="" id="">
-                        <option value="" selected disabled style="display: none;">科目</option>
-                        <option value="">数学</option>
-                        <option value="">英语</option>
-                        <option value="">物理</option>
-                        <option value="">化学</option>
-                    </select>
+                    <div class='inp1 shangke-ys'></div>
+                    <div class='inp2 shangke-ys'></div>
+                    <div class='inp3 shangke-ys'></div>
                     <input type="text" placeholder="请输入您的电话">
                     <input type="text" placeholder="住址（便于就近安排校区）">
                 </div>
@@ -159,34 +146,16 @@
           </div>
           <!-- 表单部分 -->
           <div class="footer_service">
-            <img src="../images/gaokao/555_20.png" alt="">
+            <img src="../images/gaokao/xiuagi_03.png" alt="">
           </div>
           <div class="formpart">
             <img src="../images/gaokao/77_24.png" alt="" id='pictureone'> 
             <img src="../images/gaokao/6_25.png" alt="" id='picture2'> 
             <div class="footer-inp">
                 <input type="text" placeholder="请输入您孩子的姓名">
-                <select name="" id="">
-                    <option value="" selected disabled style="display: none;">年级</option>
-                    <option value="">初三</option>
-                    <option value="">六年级</option>
-                    <option value="">高三</option>
-                </select>
-                <select name="" id="">
-                    <option value="" selected disabled style="display: none;">班级</option>
-                    <option value="">个性化一对一</option>
-                    <option value="">精品小班</option>
-                    <option value="">春季学霸班</option>
-                    <option value="">雏鹰计划</option>
-                    <option value=""> 中考密训</option>
-                </select>
-                <select name="" id="">
-                    <option value="" selected disabled style="display: none;">科目</option>
-                    <option value="">数学</option>
-                    <option value="">英语</option>
-                    <option value="">物理</option>
-                    <option value="">化学</option>
-                </select>
+                <div class='inp4 shangke-ys'></div>
+                    <div class='inp5 shangke-ys'></div>
+                    <div class='inp6 shangke-ys'></div>
                 <input type="text" placeholder="请输入您的电话">
                 <input type="text" placeholder="住址（便于就近安排校区）">
             </div>
@@ -215,18 +184,22 @@
             </div>
             <img src="../images/gaokao/yellowbox_03.png" alt="" id='study'>
          </div>
-         <!-- 教师团队部分 -->
-         <div class="entra-tutor">  
-                <img src="../images/gaokao/1313_39.png" alt="" id='teacher'>
-                <div class="swiper_box">
-                <span class='swiper_line current_swiper_line'></span>
-                <span class='swiper_line'></span>
-                <span class='swiper_line'></span>
-                <span class='swiper_line'></span>
-                <span class='swiper_line'></span>   
-            </div>
+         <!-- 教师团队部分 --> 
+                 <!-- 轮播图的切换按钮 -->
+                 <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <img src="../images/gaokao/0.jpg" alt=""></div>
+                        <div class="swiper-slide"> <img src="../images/gaokao/1.jpg" alt=""></div>
+                        <div class="swiper-slide"> <img src="../images/gaokao/2.jpg" alt=""></div>
+                        <div class="swiper-slide"> <img src="../images/gaokao/3.jpg" alt=""></div>
+                        <div class="swiper-slide"> <img src="../images/gaokao/4.jpg" alt=""></div>
+                    </div>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    </div>
             <!-- <div class="tutor-btn">优秀模范导师</div> -->
-        </div>
+        
         <!-- 优越的环境 -->
         <div class="envi">
              <img src="../images/gaokao/1515_03.png" alt="" id='envione'>
@@ -286,8 +259,24 @@
             </div>
         </div>
     </div>
-
+<script>
+ var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: false, // 循环模式选项
+    
+    
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    
+  })       
+</script>
 </body>
+<script src="../js/select.js"></script>
 <script>
 
     /*
@@ -295,7 +284,7 @@
         style: 样式类名,
         pre: 前缀
     */
-
+   
 
 
 
@@ -395,15 +384,47 @@
         parent: document.getElementsByClassName("countdown-time")[0],
         date: "2020-07-6"
     })
-    window.onload=function(){
-    $('.swiper_box').delegate('span','click',function(e){
-                $(this).addClass('current_swiper_line')
-                $(this).siblings().removeClass('current_swiper_line')
-                var i=$(this).index()
-                $(this).parent().parent().find('#teacher').css("src", `../images/gaokao/${i}.jpg`)
-                console.log($(this).parent().parent().find('#teacher')[0])
-            })
-    
-   }
+    new Select({
+            position:$('.inp1'),
+            arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.inp2'),
+            arr:["科目",'语文','数学','英语','物理','化学','语言表演','情商美术'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.inp3'),
+            arr:["班级",'一对一','3~6人精品','15人大师班'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.inp4'),
+            arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.inp5'),
+            arr:["科目",'语文','数学','英语','物理','化学','语言表演','情商美术'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.inp6'),
+            arr:["班级",'一对一','3~6人精品','15人大师班'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
 </script>
 </html>

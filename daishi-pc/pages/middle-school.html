@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> 
     <link rel="stylesheet" href="../templet/head.css">
     <link rel="stylesheet" href="../templet/footer.css">
     <link rel="stylesheet" href="../css/middle-school.css">
+    <script src="../js/swiper.min.js"></script>
     <style>
         * {
             padding: 0;
@@ -228,16 +230,35 @@
         
 
         <!-- 优秀模范导师 -->
-        <div class="middle-exc">
-            <!-- <div class="tutor-btn">优秀模范导师</div> -->
-        </div>
+         <!-- 轮播图的切换按钮 -->
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img src="../images/middle/0.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/middle/1.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/middle/2.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/middle/3.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/middle/4.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/middle/5.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/middle/6.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/middle/7.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/middle/8.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/middle/9.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/middle/10.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/middle/11.jpg" alt=""></div>
+            </div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            </div>
 
         <!-- 好口碑 -->
         <div class="middle-word center">
             <div class="word-title">
                 <img src="../images/middle/title06.png" alt="">
             </div>
-            <div class="word-phone"></div>
+            <div class="word-phone">
+                <img src="../images/middle/myphone_03.png" alt="">
+            </div>
             <div class="word-txt">
                 <img src="../images/middle/title07.png" alt="">
             </div>
@@ -406,7 +427,20 @@
         date: "2020-07-6"
     })
 
-
+    var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: false, // 循环模式选项
+    
+    
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    
+  }) 
 </script>
 
 </html>

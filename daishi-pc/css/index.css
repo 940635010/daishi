@@ -149,18 +149,23 @@
 .banner{
     width: 100%;
     height: 600px;
+    background-image: url('../images/index/indexbannerbg_02.png');
+    background-size: cover;
+    background-position: center bottom;
+    position:relative;
 }
 .banner>img{
-    width: 100%;
-    height: 100%;
+    height:600px;
+    width:100%;
+    object-fit:cover;
 }
 /* =======轮播图切换按钮========= */
 .banner-switch{
     width: 96px;
     height: 42px;
     position: absolute;
-    top: 87%;
-    left: 84%;
+    bottom:18px;
+    left: 87%;
     display: flex;
     justify-content: space-between;
 }
@@ -178,7 +183,7 @@
     width: 370px;
     height: 540px;
     background-color: white;
-    margin-left: 165px;
+    margin-left: 48px;
     padding: 20px 0px 0px 20px;
     box-sizing: border-box;
     position: absolute;
@@ -208,7 +213,9 @@
     height: 20px;
     margin-right: 10px;
 }
-
+#iq{
+    margin-right:0;
+}
 .one-1-img>img{
     width: 24px;
     height: 20px;
@@ -224,7 +231,9 @@
 .course-one-2>span,.course-one-3>span{
     margin-right: 23px;
 }
-
+.course-one-2 >.specialtext{
+    margin-right:16px;
+}
 
 /* ============课程========= */
 .course{
@@ -237,7 +246,7 @@
 .course-1{
     width: 180px;
     height: 232px;
-    padding-top: 63px;
+    padding-top: 30px;
     box-sizing: border-box;
     box-shadow: 0px 2px 5px #b0cef3;
 }
@@ -257,8 +266,8 @@
     height: 28px;
     font-size: 20px;
     text-align: center;
-    margin-top: 13px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .course-1-link{
     width: 104px;
@@ -269,7 +278,7 @@
     color: #BCBCBC;
     border: 1px solid #BCBCBC;
     border-radius: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 .course-1-line{
     width: 100%;
@@ -279,12 +288,12 @@
 
 /* =======移入盒子时了解详解的样式 */
 .course-1:hover .course-1-link{
-    background: #275bfd;
+    background: rgb(39,91,253);
     color: #ffffff;
 }
 /* =====移入课程盒子时下划线的颜色 */
 .course-1:hover .course-1-line{
-    background: #275bfd;
+    background: rgb(39,91,253);
 }
 
 /* ========推销========= */
@@ -331,6 +340,7 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .xb-grow>div {
@@ -350,28 +360,168 @@
 .xb-grow11 {
     height: 215px;
     color: #ffffff;
-    background-color: #1e25e6;
+    background-color: rgb(67,138,228);
+    cursor:pointer;
+    z-index: 10;
 }
 
 .xb-grow12 {
     height: 215px;
     color: #ffffff;
     box-shadow: 0 0 8px #d9e4f1;
+    cursor:pointer;
+    z-index: 10;
 }
-
 .xb-grow31 {
     height: 226px;
     color: #ffffff;
     box-sizing: border-box;
     padding: 10px 18px;
-    background-color: #1e25e6;
+    background-color: rgb(67,138,228);
 }
-
+#higherindex{
+    height:728px;
+    width:1200px;
+    position: absolute;
+    left:50%;
+    top:0;
+    margin-left:-600px;
+    overflow:hidden;
+}
+#higherindex span{
+    width:300px;
+    height:728px;
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: #fff;
+    z-index: 1;
+}
+#innerbtn{
+    width:858px;
+    height:100%;
+    position: absolute;
+    top:0;
+    right:0;
+    display:none;
+}
+#innerbtn>.bigger{
+    width: 230px;
+    height: 56px;
+    position:absolute;
+    left:20px;
+    top:188px;
+    cursor:pointer;
+}
+#innerbtn>.btn-1{
+    width: 165px;
+    height: 41px;
+    position:absolute;
+    left:20px;
+    top:460px;
+    cursor:pointer;
+}
+#innerbtn>.btn-2{
+    width: 165px;
+    height: 41px;
+    position:absolute;
+    left:20px;
+    top:666px;
+    cursor:pointer;
+}
+#innerbtn>.btn-3{
+    width: 165px;
+    height: 41px;
+    position:absolute;
+    right:120px;
+    top:160px;
+    cursor:pointer;
+}
+#innerbtn>.btn-4{
+    width: 165px;
+    height: 41px;
+    position:absolute;
+    right:120px;
+    top:406px;
+    cursor:pointer;
+}
+#innerbtn>.btn-5{
+    width: 165px;
+    height: 41px;
+    position:absolute;
+    right:120px;
+    top:658px;
+    cursor:pointer;
+}
+#innerbt{
+    width:858px;
+    height:100%;
+    position: absolute;
+    top:0;
+    right:0;
+    display:none;
+}
+#innerbt>.smaller{
+    width: 230px;
+    height: 56px;
+    position:absolute;
+    left:20px;
+    top:188px;
+    cursor:pointer;
+}
+#innerbt>.bt-1{
+    width: 165px;
+    height: 41px;
+    position:absolute;
+    left:34px;
+    top:658px;
+    cursor:pointer;
+}
+#innerbt>.bt-2{
+    width: 165px;
+    height: 41px;
+    position:absolute;
+    right:160px;
+    top:240px;
+    cursor:pointer;
+}
+#innerbt>.bt-3{
+    width: 165px;
+    height: 41px;
+    position:absolute;
+    right:368px;
+    top:658px;
+    cursor:pointer;
+}
+#innerbt>.bt-4{
+    width: 165px;
+    height: 41px;
+    position:absolute;
+    right:74px;
+    top:658px;
+    cursor:pointer;
+}
+#seeblue{
+    height:728px;
+    width:1200px;
+    position: absolute;
+    left:0;
+    top:0;
+    display:none;
+}
+#anotherpic{
+    height:728px;
+    width:1200px;
+    position: absolute;
+    left:0;
+    top:0;
+    display:none;
+}
 .xb-grow21 {
     height: 315px;
     position: relative;
     color: #ffffff;
-    background-color: #1e25e6;
+    background-color: rgb(67,138,228);
 }
 
 .xb-grow22 {
@@ -379,7 +529,7 @@
     box-sizing: border-box;
     padding: 10px 18px;
     color: #ffffff;
-    background-color: #1e25e6;
+    background-color: rgb(67,138,228);
 }
 .xb-grow1 {
     width: 303px;
@@ -387,6 +537,7 @@
 
 .xb-grow2 {
     width: 518px;
+    z-index: 2;
 }
 .xb-grow2>div>span{
     font-size: 24px;
@@ -397,20 +548,22 @@
 }
 .xb-grow2>div>button{
     border: 0px;
-    color: #a3a6ff;
+    color: rgb(171,202,253);
     font-size: 20px;
     width: 165px;
     height: 41px;
-    background-color: #4047ff;
+    background-color: rgb(64,128,237);
+    cursor:pointer;
 }
 .xb-grow2>div>div {
     width: 42px;
     height: 3px;
-    background-color: #f4df30;
+    background-color: rgb(77,218,244);
 }
 
 .xb-grow3 {
     width: 318px;
+    z-index: 2;
 }
 .xb-grow3>div>span{
     font-size: 24px;
@@ -422,16 +575,17 @@
 }
 .xb-grow3>div>button{
     border: 0px;
-    color: #a3a6ff;
+    color: rgb(171,202,253);
     font-size: 20px;
     width: 165px;
     height: 41px;
-    background-color: #4047ff;
+    background-color: rgb(64,128,237);
+    cursor:pointer;
 }
 .xb-grow3>div>div {
     width: 42px;
     height: 3px;
-    background-color: #f4df30;
+    background-color: rgb(77,218,244);
     
 }
 .xb-grow1>div>p {
@@ -481,7 +635,7 @@
     margin-top: 65px;
     padding-top: 72px;
     box-sizing: border-box;
-    background-image: url(../images/index/back.jpg);
+    background-image: url(../images/index/bluebg_06.png);
     background-size: 100% 100%;
 }
 .step{
@@ -496,7 +650,12 @@
 }
 .active{
     font-size: 32px;
+    padding-bottom:12px;
 }
+.specili{
+    margin-left:80px;
+}
+
 .step-nav>ul{
     display: flex;
     justify-content: space-around;
@@ -505,28 +664,89 @@
     font-size: 25px;
     color:white;
 }
+.innerline{
+    height:4px;
+    width:1200px;
+    position: absolute;
+    left:0;
+    top:54px;
+}
+.innerline .step-line{
+   display: none;
+}
+.innerline .step-line:nth-of-type(1){
+    height:4px;
+    width:140px;
+    background-color: #fff;
+    position: absolute;
+    left:110px;
+}
+.innerline .step-line:nth-of-type(2){
+    height:4px;
+    width:180px;
+    background-color: #fff;
+    position: absolute;
+    left:510px;
+}
+.innerline .step-line:nth-of-type(3){
+    height:4px;
+    width:200px;
+    background-color: #fff;
+    position: absolute;
+    left:868px;
+}
+.innerline>.flow{
+    display:block;
+}
 .step-nav>ul>li{
     cursor: pointer;
 }
-.step-line{
-    position: absolute;
-    width: 179px;
-    height: 2px;
-    background: white;
-    top: 47px;
-    left: 109px;
-}
+
 .step-content{
     width: 1200px;
     height: 746px;
     position: absolute;
     display: none;
 }
+
+
 .cor{
     background-color: pink;
 }
+.cor img{
+    width: 1200px;
+    height: 746px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.cor div{
+    width: 726px;
+    height: 60px;
+    position: absolute;
+    left:50%;
+    margin-left:-363px;
+    bottom:0;
+    cursor:pointer;
+}
 .colo{
-    background-color: palegoldenrod;
+    height:818px;
+}
+.colo img{
+    height:818px;
+    width:1200px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.colo div{
+    width: 726px;
+    height: 60px;
+    position: absolute;
+    left:50%;
+    margin-left:-363px;
+    bottom:72px;
+    cursor:pointer;
 }
 .show{
     display: block;
@@ -559,6 +779,23 @@
 }
 .con-text{
     margin-top: 40px;
+}
+.con-text div{
+    height:42px;
+    width:1163px;
+    position: absolute;
+    left:50%;
+    top:684px;
+    margin-left:-581px;
+    z-index: 10;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con-text>div>span{
+   height:100%;
+   width:206px;
+   cursor:pointer;
 }
 /* ==========关注======== */
 .index-att{
@@ -612,6 +849,7 @@
 .content-1:hover .attp{
     color: #ffffff;
     background: #f3b819;
+    cursor:pointer;
 }
 
 /* ============资讯========= */

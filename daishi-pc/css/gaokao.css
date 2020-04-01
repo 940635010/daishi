@@ -263,7 +263,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.entra-inp>input,.entra-inp>select{
+.entra-inp>input{
     width: 579px;
     height: 76px;
     margin-bottom: 39px;
@@ -382,6 +382,7 @@
     height:110px;
     width:100%;
     position: relative;
+    margin-top:72px;
 }
 .footer_service img{
     height:110px;
@@ -433,6 +434,15 @@
     width:100%;
     background-color: #fff;
     position: relative;
+    margin-top:72px;
+}
+.speciallesson img{
+    height:1780px;
+    width:1200px;
+    position: absolute;
+    left:50%;
+    margin-left:-600px;
+    top:0;
 }
 .speciallesson img{
     height:1780px;
@@ -549,48 +559,41 @@
     z-index:50;
 }
 /* 教师团队部分 */
-.entra-tutor{
+
+
+.swiper-container {
     width: 100%;
     height: 600px;
-    background-color: rgb(197,13,14);
     position: relative;
     margin-top:-36px;
-}
-.entra-tutor img{
-    height:600px;
-    width:1200px;
-    position: absolute;
-    left:50%;
-    margin-left:-600px;
-    bottom:0px;
-}
-.tutor_innerBox{
-    width: 1200px;
-    height: 600px;
-    margin:0 auto;
     overflow: hidden;
-    position:relative;
+} 
+.swiper-slide img{
+    width:100%;
+    height:600px;
+    object-fit: cover;
 }
-
-.swiper_box{
-    width:350px;
-    height:6px;
-    position:absolute;
-    right:73px;
-    bottom:42px;
-    display:flex;
+.swiper-wrapper{
+    width: 100%;
+    height: 600px;
+}
+/* .banner-switch{
+    width: 96px;
+    height: 42px;
+    position: absolute;
+    bottom:18px;
+    left: 87%;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
-.swiper_box .swiper_line{
-    height:8px;
-    width:42px;
-    background-color:rgb(209,61,62);
-    border-radius: 5px;
+.banner-switch>div{
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.527);
 }
-.swiper_box .current_swiper_line{
-    background-color: #fff;
-}
+.switch-left>img,.switch-right>img{
+   margin: 14px;
+} */
 /* 优越的环境 */
 .envi{
     height:1042px;
