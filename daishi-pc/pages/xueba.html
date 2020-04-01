@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../style/xueba.css">
     <link rel="stylesheet" href="../templet/head.css">
     <link rel="stylesheet" href="../templet/footer.css">
+    <link rel="stylesheet" href="../style/select.css">
+    <link rel="stylesheet" href="../style/slggys.css">
+
 </head>
 <style>
     * {
@@ -34,6 +37,10 @@
         margin-top: 0;
          height: 374px;
 
+    }
+    .shangke-ys{
+        background-color: white;  
+          font-size: 24px;
     }
 </style>
 
@@ -144,39 +151,29 @@
             <img src="../images/yinxing/page6-2.png">
         </div>
         <!-- 表单 -->
-        <div class="xb-form">
-            <input class="xb-insl xb-inslaa" placeholder="请输入您孩子的姓名" type="text">
-            <select class="xb-insl" name="">
-                <option value="初一">年级</option>
-                <option value="初二">初二</option>
-                <option value="初三">初三</option>
-            </select>
-            <select class="xb-insl xb-inslaa" name="">
-                <option value="初一">科目</option>
-                <option value="初二">初二</option>
-                <option value="初三">初三</option>
-            </select>
-            <select class="xb-insl" name="">
-                <option value="初一">班型</option>
-                <option value="初二">初二</option>
-                <option value="初三">初三</option>
-            </select>
-            <input class="xb-insl xb-inslaa" placeholder="请输入您的电话" type="text">
-            <input class="xb-insl" placeholder="住址（便于就近安排校区）" type="text">
-            <div class="xb-insbox">立即获取课程报价</div>
+        <div class="shangke-input">
+            <input type="text" placeholder="请输入您孩子的姓名">
+            <div class="shangke-ys shangke-select1"></div>
+            <div class="shangke-ys shangke-select2"></div>
+            <div class="shangke-ys shangke-select3"></div>
+            <input type="text" placeholder="请输入您的电话">
+            <input type="text" placeholder="住址（方便就近安排校区）">
+           <button class="lyb shangke-btn">立即获取课程价格 </button>
         </div>
         <!-- 方格布局 课程 -->
+        <div class="xbwa">
+            
         <div class="xb-grow">
             <div class="xb-grow1">
-                <div class="xb-grow11">
+                <div data-ys="#1e25e6" data-id="1" class="xb-grow11 xbxzs">
                     <p>VIP一对一</p>
                     <span>环环相扣 步步精心</span>
                 </div>
-                <div class="xb-grow12">
+                <div data-ys="#5c62f8" data-id="2" class="xb-grow11">
                     <p>3~6人精品班</p>
                     <span>授人以鱼 授人以渔</span>
                 </div>
-                <div class="xb-grow12">
+                <div data-ys="#275aff" data-id="3" class="xb-grow11">
                     <p>15人大师班</p>
                     <span>循序渐进 定向攻克</span>
                 </div>
@@ -225,6 +222,77 @@
                 </div>
             </div>
         </div>
+        <div class="xbzzc1">
+            <div class="xbzzc12">
+                <div class="xbzzc121">
+                    <span>第一步【诊】</span>
+                    <p>诊断知识 调整心态</p>
+                    <button>点击了解 ></button>
+                </div>
+                <div class="xb-grtie xbzzc122">
+                    <span>第二步【查】</span>
+                    <p>首课学习 查找不足</p>
+                    <button>点击了解 ></button>
+                </div>
+                <div class="xbzzc122">
+                    <span>第三步【定】
+                    </span>
+                    <p>综合表现 定制计划</p>
+                    <button>点击了解 ></button>
+                </div>
+            </div>
+            <div class="xbzzc13">
+                <div class="xbzzc131">
+                    <span>第四步【讲】</span>
+                    <p>根据学生特点、 学科需求定制个性化方案
+                    </p>
+                    <button>点击了解 ></button>
+                </div>
+                <div class="xbzzc131">
+                    <span>第五步【访】</span>
+                    <p>授课老师、助教老师，双师合璧因材施教
+                    </p>
+                    <button>点击了解 ></button>
+                </div>
+                <div class="xbzzc131">
+                    <span>第六步【固】</span>
+                    <p>6对1全程监测，家校及时沟通，严格过手</p>                    </p>
+                    <button>点击了解 ></button>
+                </div>
+            </div>
+        </div>
+        <div class="xbzzc2">
+                <div class="xbzzc221 ydy1">
+                    <span>科学完善测评</span>
+                    <p>对学科知识进行科学的测评， 找到“短板”</p>
+                    <button id="ydy1q">点击免费咨询</button>
+                </div>
+                <div class="xb-grtie ydy2 xbzzc222">
+                    <span>科学完善测评</span>
+                    <p>对学科知识进行科学的测评， 找到“短板”</p>
+                    <button>点击了解 ></button>
+                </div>
+                <div class="xbzzc222 ydy3">
+                    <span>建立学生档案
+                    </span>
+                    <p>建立学情档案，为制定学习方案提供依据</p>
+                    <button>点击了解 ></button>
+                </div>
+                <div class="xbzzc231 ydy4">
+                    <span>私人定制方案</span>
+                    <p>根据学生特点、 学科需求定制个性化方案
+                    </p>
+                    <button>点击了解 ></button>
+                </div>
+                <div class="xbzzc231 ydy5">
+                    <span>匹配双师授课</span>
+                    <p>授课老师、助教老师，双师合璧因材施教
+                    </p>
+                    <button>点击了解 ></button>
+                </div>
+        </div>
+        
+    </div>
         <!-- 描述分割 -->
         <div class="xbimgs-2">
             <img src="../images/yinxing/xbmscgt.png">
@@ -308,21 +376,39 @@
 
 </body>
 
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/select.js"></script>
 <script>
-
+         new Select({
+            position:$('.shangke-select1'),
+            arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select2'),
+            arr:["科目",'语文','数学','英语','物理','化学','语言表演','情商美术'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select3'),
+            arr:["班级",'一对一','3~6人精品','15人大师班'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
     /*
         倒计时的封装
         date:未来的时间，
         style: 样式类名,
         pre: 前缀
     */
-
-
     function checkTime(i) { //将0-9的数字前面加上0，例1变为01 
         return i < 10 ? "0" + i : i
     }
-
-
     function TimeCount(options) {
 
         this.dom = document.createElement("section"),
@@ -334,8 +420,6 @@
         this.init();//初始化数据
 
     }
-
-
     TimeCount.prototype.init = function () {
 
         this.dayDom = document.createElement("div");
@@ -411,6 +495,47 @@
         date: "2020-07-6"
     })
 
+// 切换一对一
+    $(".xb-grow1").on("click",".xb-grow11",function(e){
+        if(e.target.className=="xb-grow11"){
+            $(e.target).addClass("xbxzs")
+            $(e.target)[0].style.backgroundColor=''+e.target.dataset.ys+''
+            $($(e.target).siblings()[0]).removeClass("xbxzs")
+            $($(e.target).siblings()[0])[0].style.backgroundColor=''
+            $($(e.target).siblings()[1]).removeClass("xbxzs")
+            $($(e.target).siblings()[1])[0].style.backgroundColor=''
+            console.log(e.target.dataset.id)
 
+            if(e.target.dataset.id=='1'){
+                $(".xbzzc1")[0].style.display='none'
+                $(".xbzzc2")[0].style.display='none'
+            }else if(e.target.dataset.id=='2'){
+                $(".xbzzc1")[0].style.display='flex'
+                $(".xbzzc2")[0].style.display='none'
+            }else if(e.target.dataset.id=='3'){
+                $(".xbzzc2")[0].style.display='block'    
+            }
+        }else if($(e.target).parent()[0].className=="xb-grow11"){
+            let dal=$($(e.target).parent()[0]).siblings()
+            $($(e.target).parent()[0]).addClass("xbxzs")
+            $($(e.target).parent()[0])[0].style.backgroundColor=''+$($(e.target).parent()[0])[0].dataset.ys+''
+            $(dal[0]).removeClass("xbxzs")
+            $(dal[0])[0].style.backgroundColor=''
+            $(dal[1]).removeClass("xbxzs")
+            $(dal[1])[0].style.backgroundColor=''
+            if($($(e.target).parent()[0])[0].dataset.id=='1'){
+                $(".xbzzc1")[0].style.display='none'
+                $(".xbzzc2")[0].style.display='none'
+
+            }else if($($(e.target).parent()[0])[0].dataset.id=='2'){
+                $(".xbzzc1")[0].style.display='flex'
+                $(".xbzzc2")[0].style.display='none'
+
+            }else if($($(e.target).parent()[0])[0].dataset.id=='3'){
+                $(".xbzzc2")[0].style.display='block'
+                
+            }
+        }
+    })
 </script>
 </html>

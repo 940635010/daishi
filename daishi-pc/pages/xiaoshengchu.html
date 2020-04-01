@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../style/xiaoshengyou.css">
     <link rel="stylesheet" href="../templet/head.css">
     <link rel="stylesheet" href="../templet/footer.css">
+    <link rel="stylesheet" href="../style/select.css">
+    <link rel="stylesheet" href="../style/slggys.css">
+
 </head>
 <style>
     * {
@@ -36,6 +39,12 @@
     }
     .footer-back{
         background-image: url("../images/yinxing/wqa1.png");
+    }.shangke-ys{
+        background-color: white;  
+          font-size: 24px;
+    }
+    .shangke-btn{
+        background-color: #f35c19;
     }
 </style>
 </head>
@@ -108,7 +117,7 @@
             <img class="wxa-q1" src="../images/yinxing/xscyx-q.png" alt="">
         </div>
        <!-- 表单 -->
-       <div class="xb-form">
+       <!-- <div class="xb-form">
         <input class="xb-insl xb-inslaa" placeholder="请输入您孩子的姓名" type="text">
         <select class="xb-insl" name="">
             <option value="初一">年级</option>
@@ -128,8 +137,16 @@
         <input class="xb-insl xb-inslaa" placeholder="请输入您的电话" type="text">
         <input class="xb-insl" placeholder="住址（便于就近安排校区）" type="text">
         <div class="xb-insbox">立即获取课程报价</div>
+    </div> -->
+    <div class="shangke-input">
+        <input type="text" placeholder="请输入您孩子的姓名">
+        <div class="shangke-ys shangke-select1"></div>
+        <div class="shangke-ys shangke-select2"></div>
+        <div class="shangke-ys shangke-select3"></div>
+        <input type="text" placeholder="请输入您的电话">
+        <input type="text" placeholder="住址（方便就近安排校区）">
+        <button class="shangke-btn">立即获取课程价格</button>
     </div>
-
     <!-- 搭配《夏令营雏鹰计划》 -->
     <div class="xsyxly-1q">
         <img src="../images/yinxing/xsy-bt3.png" alt="">
@@ -249,8 +266,31 @@
         </div>
     </div>
 </body>
-<script>
 
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/select.js"></script>
+<script>
+         new Select({
+            position:$('.shangke-select1'),
+            arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select2'),
+            arr:["科目",'语文','数学','英语','物理','化学','语言表演','情商美术'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select3'),
+            arr:["班级",'一对一','3~6人精品','15人大师班'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
     /*
         倒计时的封装
         date:未来的时间，

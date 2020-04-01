@@ -1,0 +1,55 @@
+.shangke-content{
+    width: 100%;
+}
+.shangke-content>img{
+    width: 100%;
+}
+.shangke-lunbo{
+    margin-top: 120px;
+    width: 100%;
+    height: 600px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.shangke-input{
+    width: 1200px;
+    margin: 72px auto;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.shangke-input>input{
+    width: 578px;
+    height: 75px;
+    box-sizing: border-box;
+    font-size: 24px;
+    padding-left: 25px;
+    margin-bottom: 42PX;
+}
+.shangke-input>input::-webkit-input-placeholder{
+    color: #cccccc;
+}
+.shangke-ys{
+    margin-bottom: 42px;
+}
+.shangke-btn{
+    width: 100%;
+    height: 75px;
+    background-color: #2558ff;
+    border: 0px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+.shangke-img{
+    width: 1200px;
+    margin: 0 auto;
+}
+.shangke-congfu{
+    width: 1200px;
+    height: 726px;
+    margin: 0 auto;
+}
+.shangke-style{
+    margin-top: 42px;
+}

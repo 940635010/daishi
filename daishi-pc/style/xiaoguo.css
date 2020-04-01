@@ -388,20 +388,23 @@
 .xgxxwj>ul>li:last-child {
     margin-right: 0px;
 }
-
-.xgxxwj>ul>li:nth-of-type(5) {
-    margin-right: 0px;
+.xgxxwj>.xians{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .xgxxwj>ul>li:hover {
     color: white;
     background-color: #438ae4;
 }
-
+.xgxxwj>ul>.tabsll{
+    color: white;
+    background-color: #438ae4;
+}
 .xgwjiebox>img {
     width: 100%;
 }
-
 .xgwjieboxan {
     width: 204px;
     height: 48px;
@@ -593,8 +596,8 @@
 }
 .xgxblba{
     position: relative;
-    left: -307px;
-    width: 1814px;
+    left: -614px;
+    width: 2456px;
     list-style: none;
     height: 438px;
 }

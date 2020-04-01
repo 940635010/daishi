@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../style/xiaoguo.css">
     <link rel="stylesheet" href="../templet/head.css">
     <link rel="stylesheet" href="../templet/footer.css">
+    <link rel="stylesheet" href="../style/select.css">
+    <link rel="stylesheet" href="../style/slggys.css">
 </head>
 <style>
     * {
@@ -28,6 +30,18 @@
         font-size: 20px;
         font-weight: bold;
         vertical-align: top;
+    }
+    .shangke-input{
+        padding-top: 42px;
+        
+    }
+    .shangke-ys{
+        background-color: white;  
+          font-size: 24px;
+    }
+    
+    .shangke-btn{
+        background-color: #f3b819;
     }
 </style>
 </head>
@@ -237,12 +251,14 @@
         <div class="xgwjiebox">
             <p>5阶教学标准</p>
             <div class="xgxxwj">
-                <ul>
+                <ul class="tabouls">
                     <li>小学</li>
                     <li class="xgcdli">初一丨初二</li>
                     <li>初三</li>
                     <li class="xgcdli">高一 | 高二</li>
                     <li>高三</li>
+                </ul>
+                <ul class="xians">
                     <li>语文</li>
                     <li>英语</li>
                     <li>数学</li>
@@ -299,25 +315,15 @@
                  <p>专职老师每周集中讨论哪一种学生适合哪一种教学方式及中考命题趋势、政策等</p>
              </div>
 
-            <input class="xb-insl xb-inslaa" placeholder="请输入您孩子的姓名" type="text">
-            <select class="xb-insl" name="">
-                <option value="初一">年级</option>
-                <option value="初二">初二</option>
-                <option value="初三">初三</option>
-            </select>
-            <select class="xb-insl xb-inslaa" name="">
-                <option value="初一">科目</option>
-                <option value="初二">初二</option>
-                <option value="初三">初三</option>
-            </select>
-            <select class="xb-insl" name="">
-                <option value="初一">班型</option>
-                <option value="初二">初二</option>
-                <option value="初三">初三</option>
-            </select>
-            <input class="xb-insl xb-inslaa" placeholder="请输入您的电话" type="text">
-            <input class="xb-insl" placeholder="住址（便于就近安排校区）" type="text">
-            <div class="xb-insbox">立即获取课程报价</div>
+             <div class="shangke-input">
+                <input type="text" placeholder="请输入您孩子的姓名">
+                <div class="shangke-ys shangke-select1"></div>
+                <div class="shangke-ys shangke-select2"></div>
+                <div class="shangke-ys shangke-select3"></div>
+                <input type="text" placeholder="请输入您的电话">
+                <input type="text" placeholder="住址（方便就近安排校区）">
+                <button class="shangke-btn">立即获取课程价格</button>
+            </div>
           </div>
         </div>
         <!-- 好口碑邀您见证 -->
@@ -334,12 +340,14 @@
             <p>进步效果看得见</p>
             <div class="xglbbx">
                 <ul class="xgxblba">
-                    <li><img src="../images/yinxing/xgxb4.png" alt=""></li>
                     <li><img src="../images/yinxing/xgxb1.png" alt=""></li>
                     <li><img src="../images/yinxing/xgxb2.png" alt=""></li>
                     <li><img src="../images/yinxing/xgxb3.png" alt=""></li>
                     <li><img src="../images/yinxing/xgxb4.png" alt=""></li>
                     <li><img src="../images/yinxing/xgxb1.png" alt=""></li>
+                    <li><img src="../images/yinxing/xgxb2.png" alt=""></li>
+                    <li><img src="../images/yinxing/xgxb3.png" alt=""></li>
+                    <li><img src="../images/yinxing/xgxb4.png" alt=""></li>
                 </ul>
             </div>
             <span class="xgle"></span>
@@ -390,8 +398,30 @@
         </div>
     </div>
 </body>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/select.js"></script>
 <script>
-
+         new Select({
+            position:$('.shangke-select1'),
+            arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select2'),
+            arr:["科目",'语文','数学','英语','物理','化学','语言表演','情商美术'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select3'),
+            arr:["班级",'一对一','3~6人精品','15人大师班'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
     /*
         倒计时的封装
         date:未来的时间，
@@ -492,7 +522,113 @@
         parent: document.getElementsByClassName("top-gk-time")[0],
         date: "2020-07-6"
     })
+//tab切换
+$('.tabouls>li').on('click',function(e){
+    $(e.target).addClass('tabsll')
+    $(e.target).siblings().removeClass("tabsll")
+    var text=e.target.innerHTML
+    switch(text){
+        case '小学':
+            $('.xians')[0].innerHTML=`
+                    <li>语文</li>
+                    <li>英语</li>
+                    <li>数学</li>`;
+        break; 
+        case '初一丨初二':
+            $('.xians')[0].innerHTML=`
+                    <li>语文</li>
+                    <li>英语</li>
+                    <li>数学</li>`;
+        break;
+        case '初三':
+            $('.xians')[0].innerHTML=`
+                    <li>语文</li>
+                    <li>英语</li>
+                    <li>数学</li>
+                    <li>物理</li>
+                    <li>化学</li>`;
+        break;
+        case '高一丨高二':
+            $('.xians')[0].innerHTML=`
+                    <li>语文</li>
+                    <li>英语</li>
+                    <li>数学</li>
+                    <li>物理</li>
+                    <li>化学</li>
+                    <li>生物</li>`;
+        break;
+        case '高三':
+            $('.xians')[0].innerHTML=`
+                    <li>语文</li>
+                    <li>英语</li>
+                    <li>数学</li>
+                    <li>物理</li>
+                    <li>化学</li>
+                    <li>生物</li>`;
+        break; 
+        default:console.log(1)
+    }
+})
 
+$(".xgri").click(throttle(function(){
+    var le=$(".xgxblba").position().left
+    if(le>=0){
+        $(".xgxblba").css('left','0px')
+        le=-1228
+      }
+      var ls=le+307;
+    var les=le+307+'px'
+    console.log(les)
+  $(".xgxblba").animate({left:les}, 500,function(){
+      if(ls>='0'){
+        $(".xgxblba").css('left','-1228px')
+      }
+  });
+},500));
+function throttle(fn,gapTime){
+          let _lastTime = null;
+          return function(){
+            let _nowTime = + new Date();
+            if(_nowTime-_lastTime > gapTime || !_lastTime){
+               fn()
+               _lastTime = _nowTime;
+            }
+          }
+     }
+$(".xgle").click(throttle(function(){
+    var le=$(".xgxblba").position().left
+    if(le<='-1228'){
+        $(".xgxblba").css('left','0px')
+        le=0
+      }
+    console.log($(".xgxblba").position().left)
+      var ls=le-307;
+    var les=le-307+'px'
+    console.log(les)
+$(".xgxblba").animate({left:les}, 500,function(){
+      if(ls<='-1228px'){
+        $(".xgxblba").css('left','0px')
+      }
+  });
+},500));
+
+function sss(){
+    var le=$(".xgxblba").position().left
+    if(le<='-1228'){
+        $(".xgxblba").css('left','0px')
+        le=0
+      }
+    console.log($(".xgxblba").position().left)
+      var ls=le-307;
+    var les=le-307+'px'
+    console.log(les)
+$(".xgxblba").animate({left:les}, 500,function(){
+      if(ls<='-1228px'){
+        $(".xgxblba").css('left','0px')
+      }
+  });
+}
+setInterval(function(){sss()},3000)
 
 </script>
 </html>

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../style/guanli.css">
     <link rel="stylesheet" href="../templet/head.css">
     <link rel="stylesheet" href="../templet/footer.css">
+    <link rel="stylesheet" href="../style/select.css">
+    <link rel="stylesheet" href="../style/slggys.css">
 </head>
 <style>
     * {
@@ -33,6 +35,16 @@
         margin-top: 0;
          height: 374px;
 
+    }  .shangke-input{
+        padding-top: 42px;
+        
+    }
+    .shangke-ys{
+        background-color: white;  
+          font-size: 24px;
+    }
+    .shangke-btn{
+        background-color: #f3b819;
     }
 </style>
 </head>
@@ -269,27 +281,16 @@
                     <div><img src="../images/yinxing/glxh7.png" alt=""></div>
                </div>
                 <!-- 表单 -->
-                <div class="xb-form">
-                    <input class="xb-insl xb-inslaa" placeholder="请输入您孩子的姓名" type="text">
-                    <select class="xb-insl" name="">
-                        <option value="初一">年级</option>
-                        <option value="初二">初二</option>
-                        <option value="初三">初三</option>
-                    </select>
-                    <select class="xb-insl xb-inslaa" name="">
-                        <option value="初一">科目</option>
-                        <option value="初二">初二</option>
-                        <option value="初三">初三</option>
-                    </select>
-                    <select class="xb-insl" name="">
-                        <option value="初一">班型</option>
-                        <option value="初二">初二</option>
-                        <option value="初三">初三</option>
-                    </select>
-                    <input class="xb-insl xb-inslaa" placeholder="请输入您的电话" type="text">
-                    <input class="xb-insl" placeholder="住址（便于就近安排校区）" type="text">
-                    <div class="xb-insboxl">立即获取课程报价</div>
-                </div>
+               
+    <div class="shangke-input">
+        <input type="text" placeholder="请输入您孩子的姓名">
+        <div class="shangke-ys shangke-select1"></div>
+        <div class="shangke-ys shangke-select2"></div>
+        <div class="shangke-ys shangke-select3"></div>
+        <input type="text" placeholder="请输入您的电话">
+        <input type="text" placeholder="住址（方便就近安排校区）">
+        <button class="shangke-btn">立即获取课程价格</button>
+    </div>
            </div>
            <!-- 特色化辅导优势 -->
            <div class="gltsh">
@@ -388,8 +389,30 @@
         </div>
     </div>
 </body>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/select.js"></script>
 <script>
-
+         new Select({
+            position:$('.shangke-select1'),
+            arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select2'),
+            arr:["科目",'语文','数学','英语','物理','化学','语言表演','情商美术'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select3'),
+            arr:["班级",'一对一','3~6人精品','15人大师班'],
+            width:'578px',
+            height:'75px',
+            drop:'180px'
+        })
     /*
         倒计时的封装
         date:未来的时间，
