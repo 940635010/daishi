@@ -124,6 +124,196 @@
             margin-top: 72px;
             margin-bottom: 42px;
         }
+
+
+
+        /* tab */
+        .shang-tab{
+            width: 1200px;
+            height: 728px;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-bottom: 50px;
+            /* display: flex;
+            justify-content: space-between; */
+        }
+        .tab-active{
+            height: 215px;
+            color: black;
+            box-shadow: 0 0 8px #d9e4f1;
+            margin-bottom: 40px;
+        }
+        .shang-tab>.tab-one>.avtive{
+            background-color: #438ae4;
+            color: white;
+        }
+        .tab-one{
+            width: 303px;
+            text-align: center;
+            display: inline-block;
+        }
+        .tab-active>span{
+            display: inline-block;
+            margin-top: 64px;
+            margin-bottom: 34px;
+            font-size: 36px;
+        }
+        .tab-active>p{
+            font-size: 24px;
+        }
+
+        .tab-two{
+            width: 518px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 27px;
+            margin-right: 24px;
+        }
+        .tab-three{
+            width: 318px;
+            display: inline-block;
+        }
+        .tab-two1{
+            padding-left: 20px;
+            height: 315px;
+            background-image: url(../images/shangke/mig2.png);
+        }
+        .tab-two1>span{
+            font-size: 32px;
+            margin: 30px 0;
+            display: inline-block;
+            color: white;
+        }
+        .tab-two1>p{
+            font-size: 24px;
+            color: white;
+            
+        }
+        .tab-three1>p{
+            font-size: 24px;
+            color: white;
+            margin-bottom: 22px;
+        }
+        .tab-two1>button{
+            width: 230px;
+            height: 57px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 24px;
+            border: 0;
+            background-color: yellow;
+            margin-top: 58px;
+        }
+        .tab-two2{
+            height: 180px;
+            background-color: #5c62f8;
+            margin: 24px 0;
+            padding-left: 20px;
+        }
+        .span{
+            font-size: 32px;
+            margin: 30px 0;
+            display: inline-block;
+            color: white;
+        }
+        .span1{
+            font-size: 24px;
+            color: white;
+        }
+        .btn-tab{
+            border: 0px;
+            color: #a3a6ff;
+            font-size: 20px;
+            width: 165px;
+            height: 41px;
+            background-color: #4047ff;
+        }
+        .tab-three1{
+            height: 226px;
+            color: #ffffff;
+            box-sizing: border-box;
+            padding-left: 20px;
+            background-color: #5c62f8;
+            margin-bottom: 23px;
+        }
+        .quxiao{
+            display: none;
+        }
+        .tab3-img1{
+            background-image: url(../images/shangke/tab1.png);
+            width: 477px;
+            height: 356px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin-right: 25px;
+            margin-bottom: 20px;
+            vertical-align: top;
+        }
+        .tab3-box{
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 26px;
+        }
+        .tab3-box h2{
+            padding-left: 20px;
+            color: white;
+            font-size: 34px;
+            margin: 30px 0;
+        }
+        .tab3-box p{
+            padding: 0 30px 0 20px;
+            color: white;
+            font-size: 21px;
+            line-height: 36px;
+        }
+        .tab3-img2{
+            background-image: url(../images/shangke/tab2.png);
+            height: 356px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 354px;
+            margin-bottom: 20px;
+        }
+        .tab3-img3{
+            background-image: url(../images/shangke/tab3.png);
+            width: 269px;
+            height: 342px;
+            background-repeat: no-repeat;
+        }
+        .tab3-img4{
+            background-image: url(../images/shangke/tab4.png);
+            width: 269px;
+            height: 342px;
+            background-repeat: no-repeat;
+        }
+        .tab3-img5{
+            background-image: url(../images/shangke/tab5.png);
+            width: 269px;
+            height: 342px;
+            background-repeat: no-repeat;
+        }
+        .tab3-box1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .tab3-img1>button{
+            width: 232px;
+            height: 60px;
+            border: 0 ;
+            background-color: yellow;
+            margin-left: 20px;
+            font-size: 24px;
+            color: black;
+            margin-top: 10px;
+        }
+        .tabtop{
+            margin-top: 30px;
+            margin-left: 21px;
+        }
+        .tableft{
+            margin-left: 21px;
+            margin-top: 34px;
+        }
         </style>
 </head>
 <body>
@@ -324,63 +514,166 @@
         <div class="shangke-congfu">
 
             <!-- 方格布局 课程 -->
+            <div class="shang-tab quxiao">
+                <div class="tab-one">
+                    <div class="tab-active dianji1">
+                        <span>VIP一对一</span>
+                        <p>环环相扣 步步精心</p>
+                    </div>
+                    <div class="tab-active avtive">
+                        <span>3~6人精品班</span>
+                        <p>授人以鱼 授人以渔</p>
+                    </div>
+                    <div class="tab-active dianji2">
+                        <span>15人大师班</span>
+                        <p>循序渐进 定向攻克</p>
+                    </div>
+                </div>
+                <div class="tab-two">
+                    <div class="tab-two1">
+                        <span>第一步【诊】</span>
+                        <p>诊断知识 调整心态</p>
+                        <button class="btn-tab">点击免费咨询</button>
+                    </div>
+                    <div class="tab-two2">
+                        <span class="span">第二步【查】</span>
+                        <span class="span1">首课学习 查找不足</span>
+                        <br>
+                        <button class="btn-tab">点击了解&nbsp;&nbsp;&nbsp;&nbsp; ></button>
+                    </div>
+                    <div class="tab-two2">
+                        <span class="span">第三步【定】</span>
+                        <span class="span1">综合表现 定制计划</span>
+                        <br>
+                        <button class="btn-tab">点击了解&nbsp;&nbsp;&nbsp;&nbsp; ></button>
+                    </div>
+                </div>
+                <div class="tab-three">
+                    <div class="tab-three1">
+                        <span class="span">第四步【讲】</span>
+                        <p>讲解知识 传授方法</p>
+                        <button class="btn-tab">点击了解&nbsp;&nbsp;&nbsp;&nbsp; ></button>
+                    </div>
+                    <div class="tab-three1">
+                        <span class="span">第四步【讲】</span>
+                        <p>讲解知识 传授方法</p>
+                        <button class="btn-tab">点击了解&nbsp;&nbsp;&nbsp;&nbsp; ></button>
+                    </div>
+                    <div class="tab-three1">
+                        <span class="span">第四步【讲】</span>
+                        <p>讲解知识 传授方法</p>
+                        <button class="btn-tab">点击了解&nbsp;&nbsp;&nbsp;&nbsp; ></button>
+                    </div>
+                </div>
+            </div>
+
         <div class="xb-grow">
             <div class="xb-grow1">
-                <div class="xb-grow11">
+                <div class="xb-grow12 xb-grow11">
                     <p>VIP一对一</p>
                     <span>环环相扣 步步精心</span>
                 </div>
-                <div class="xb-grow12">
+                <div class="xb-grow12 dianji">
                     <p>3~6人精品班</p>
                     <span>授人以鱼 授人以渔</span>
                 </div>
-                <div class="xb-grow12">
+                <div class="xb-grow12 dianji2">
                     <p>15人大师班</p>
                     <span>循序渐进 定向攻克</span>
                 </div>
             </div>
-            <div class="xb-grow2">
-                <div class="xb-grow21">
-                    <img src="../images/yinxing/page6-4.png" alt="">
-                    <button class="xbmfzx"></button>
+            
+                <div class="xb-grow2">
+                    <div class="xb-grow21">
+                        <img src="../images/yinxing/page6-4.png" alt="">
+                        <button class="xbmfzx"></button>
+                    </div>
+                    <div class="xb-grtie xb-grow22">
+                        <span>02·科学完善测评</span>
+                        <div></div>
+                        <p>对学科知识进行科学的测评， 找到“短板”</p>
+                        <button>点击了解 ></button>
+                    </div>
+                    <div class="xb-grow22">
+                        <span>03·建立学生档案
+                        </span>
+                        <div></div>
+                        <p>建立学情档案，为制定学习方案提供依据</p>
+                        <button>点击了解 ></button>
+                    </div>
                 </div>
-                <div class="xb-grtie xb-grow22">
-                    <span>02·科学完善测评</span>
-                    <div></div>
-                    <p>对学科知识进行科学的测评， 找到“短板”</p>
-                    <button>点击了解 ></button>
+                <div class="xb-grow3">
+                    <div class="xb-grow31">
+                        <span>04·私人定制方案</span>
+                        <div></div>
+                        <p>根据学生特点、 学科需求定制个性化方案
+                        </p>
+                        <button>点击了解 ></button>
+                    </div>
+                    <div class="xb-grow31">
+                        <span>05·匹配双师授课</span>
+                        <div></div>
+                        <p>授课老师、助教老师，双师合璧因材施教
+                        </p>
+                        <button>点击了解 ></button>
+                    </div>
+                    <div class="xb-grow31">
+                        <span>06·效果监测评估</span>
+                        <div></div>
+                        <p>6对1全程监测，家校及时沟通，严格过手</p>                    </p>
+                        <button>点击了解 ></button>
+                    </div>
                 </div>
-                <div class="xb-grow22">
-                    <span>03·建立学生档案
-                    </span>
-                    <div></div>
-                    <p>建立学情档案，为制定学习方案提供依据</p>
-                    <button>点击了解 ></button>
-                </div>
-            </div>
-            <div class="xb-grow3">
-                <div class="xb-grow31">
-                    <span>04·私人定制方案</span>
-                    <div></div>
-                    <p>根据学生特点、 学科需求定制个性化方案
-                    </p>
-                    <button>点击了解 ></button>
-                </div>
-                <div class="xb-grow31">
-                    <span>05·匹配双师授课</span>
-                    <div></div>
-                    <p>授课老师、助教老师，双师合璧因材施教
-                    </p>
-                    <button>点击了解 ></button>
-                </div>
-                <div class="xb-grow31">
-                    <span>06·效果监测评估</span>
-                    <div></div>
-                    <p>6对1全程监测，家校及时沟通，严格过手</p>                    </p>
-                    <button>点击了解 ></button>
-                </div>
-            </div>
         </div>
+        <!-- tab3 -->
+        <div class="shang-tab quxiao shang-tab1">
+            <div class="tab-one">
+                <div class="tab-active dianji1">
+                    <span>VIP一对一</span>
+                    <p>环环相扣 步步精心</p>
+                </div>
+                <div class="tab-active dianji">
+                    <span>3~6人精品班</span>
+                    <p>授人以鱼 授人以渔</p>
+                </div>
+                <div class="tab-active avtive">
+                    <span>15人大师班</span>
+                    <p>循序渐进 定向攻克</p>
+                </div>
+            </div>
+            <div class="tab3-box">
+                <div class="tab3-img1">
+                    <h2>心里调整</h2>
+                    <p>对学生的心里进行调节，树立学习目标，激发学习斗志，培养自主学习力</p>
+                    <button>点击免费咨询</button>
+                </div>
+                <div class="tab3-img2">
+                    <h2>夯实基础</h2>
+                    <p>帮助学生解决基础知识薄弱，零散，缺乏知识脉络，不能交叉运用等问题</p>
+                    <button class="btn-tab tableft">点击了解  ></button>
+                </div>
+                <br>
+                <div class="tab3-box1">
+                    <div class="tab3-img3">
+                        <h2>巩固训练</h2>
+                        <p>锻炼学生思维能力及解题能力，点拨技巧，对知识点熟练掌握运用并举一反三</p>
+                        <button class="btn-tab tabtop">点击了解  ></button>
+                    </div>
+                    <div class="tab3-img4">
+                        <h2>拓展优化</h2>
+                        <p>培养学生思牌力、慧志力和解决困难的能力，深化各知识点间的内在联系</p>
+                        <button class="btn-tab tabtop">点击了解  ></button>
+                    </div>
+                    <div class="tab3-img5">
+                        <h2>全面拔高</h2>
+                        <p>运用技巧和方法取得优异成续并产生多条思路向外扩展为多角度思维空间</p>
+                        <button class="btn-tab tabtop">点击了解  ></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- img -->
         </div>
         <div class="shangke-img">
             <img src="../images/shangke/biaoti.png">
@@ -433,6 +726,7 @@
     </div>
     <script src="../js/jquery-1.8.3.min.js"></script>
     <script src="../js/select.js"></script>
+    <script src="../js/tab.js"></script>
     <script>
         /*
         倒计时的封装
