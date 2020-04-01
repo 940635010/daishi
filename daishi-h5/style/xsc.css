@@ -4,8 +4,8 @@ html{
 header{
     width: 100%;
     height: 79vw;
-    border: 1px solid #000;
-    box-sizing: border-box;
+    /* border: 1px solid #000;
+    box-sizing: border-box; */
 }
 img{
     width: 100%;
@@ -67,18 +67,10 @@ img{
     margin-top: 3vw;
 }
 .method>img{
-    box-shadow:1vw 1vw 2vw lightslategrey;"
+    box-shadow:1vw 1vw 2vw lightslategrey;
 }
 
 /* 公共————计价 */
-.ly{
-    border: 1px solid #000;
-    box-sizing: border-box;
-    width: 93vw;
-    height: 40vw;
-    margin: auto;
-    margin-top: 6vw;
-}
 .git{
     width: 80%;
     border: 1px solid rgb(255,80,77);
@@ -169,6 +161,10 @@ img{
 }
 .teacher>img{
     box-shadow:1vw 1vw 2vw lightslategrey;
+}
+.teacher .talk{
+    background:linear-gradient(269deg,rgba(236,88,41,1) 0%,rgba(241,152,72,1) 34%,rgba(241,202,72,1) 100%);
+    top: 220px;
 }
 
 /* environment */

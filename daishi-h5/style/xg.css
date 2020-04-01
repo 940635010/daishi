@@ -66,12 +66,35 @@ html{
 .monitor>img{
     width: 80%;
     margin: auto;
-    margin-top: 2vw;
+    margin-top: 3vw;
 }
 .fenlei{
     width: 100%;
 }
 .fenlei>img{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     box-shadow:1vw 1vw 2vw lightslategrey;
+    margin-top: 2vw;
+}
+.fenlei_p{
+    width: 80%;
+    height: 9vw;   
+    margin: auto;
+    margin-top: 3vw;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    background: linear-gradient(-30deg,rgba(37,88,255,1) 0%, rgba(74,143,230,1) 98.7060546875%);
+}
+.pl{
+    background:linear-gradient(-30deg,rgba(37,88,255,1) 0%, rgba(74,143,230,1) 98.7060546875%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    /* margin: auto; */
+    font-size: 5vw;
+    font-weight: 5vw;
+    font-family:HYYaKuHeiW;
+    text-align: center;
+    margin-top: 2vw;
 }

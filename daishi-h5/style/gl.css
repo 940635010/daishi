@@ -44,22 +44,17 @@ html{
 }
 
 /* public */
-.ly{
-    border: 1px solid #000;
-    box-sizing: border-box;
-    width: 93vw;
-    height: 40vw;
-    margin: auto;
-    margin-top: 6vw;
+.shangke-input{
+    width: 90%;
+    margin: 0 auto;
 }
-.git{
-    width: 80%;
-    border: 1px solid rgb(255,80,77);
-    background-color: rgb(255,80,77);
-    box-sizing: border-box;
-    color: white;
-    border-radius: 1vw;
-    margin: auto;
+.course-price-get{
+    width: 90%;
+    margin: 20px auto;
     text-align: center;
-    margin-top: 1vw;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    background:linear-gradient(269deg,rgba(236,88,41,1) 0%,rgba(241,152,72,1) 34%,rgba(241,202,72,1) 100%);
 }
+

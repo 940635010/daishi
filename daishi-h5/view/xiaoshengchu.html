@@ -8,9 +8,22 @@
     <title>小升初 </title>
     <link rel="stylesheet" href="../style/base.css">
     <link rel="stylesheet" href="../style/xsc.css">
+    <link rel="stylesheet" href="./../style/share.css">
+    <link rel="stylesheet" href="../style/select.css">
+    <link rel="stylesheet" href="./../style/index.css">
+    <link rel="stylesheet" href="./../style/chunji.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
 <body>
-    <header></header>
+    <header>
+        <ul>
+            <li id="bgone" onclick="showdiv();" style="margin-left: 10px;cursor: pointer;"><img
+                    src="./../images/share/top_03.jpg" style="width:43px;height:30px;line-height:50px;"></li>
+            <li><img src="./../images/share/top_05.jpg" style="width:150px;height:30px;line-height:50px;"></li>
+            <li style="margin-right: 10px;"><img src="./../images/share/top_07.jpg"
+                    style="width:150px;height:30px;line-height:50px;"></li>
+        </ul>
+    </header>
     <div class="banner">
         <img src="../images/images_xsc/xsc (1).jpg" alt="">
     </div>
@@ -37,11 +50,16 @@
         </div>
     </div>
     <div class="public">
-        <div class="ly">
-
-        </div>
-        <div class="git">
-            <p>立即获取课程报价</p>
+        <div class="course-price">
+            <div class="shangke-input">
+                <input type="text" placeholder="请输入孩子的姓名">
+                <div class="shangke-select1 shangke-div"></div>
+                <div class="shangke-select2 shangke-div"></div>
+                <div class="shangke-select3 shangke-div"></div>
+                <input type="text" placeholder="请输入您的电话">
+                <input type="text" placeholder="住址（便于就近安排校区）">
+            </div>
+            <div class="course-price-get">立即获取课程报价</div>
         </div>
     </div>
     <div class="cammp">
@@ -90,11 +108,20 @@
         </div>
     </div>
     <div class="teach">
-        <div>
-            <img src="../images/images_xsc/xsc (14).jpg" alt="">
+        <div class="teacher-content">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                    <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                    <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                    <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
+        <div class="talk" style="top: 260px;">与TA交流</div>
         <div class="teacher">
-            <img src="../images/images_xsc/xsc_11.jpg" alt="">
+            <img src="../images/images_xsc/xsc_11.jpg.lnk" alt="">
         </div>
     </div>
     <div class="environment">
@@ -106,12 +133,79 @@
         </div>
     </div>
     <div class="public">
-        <div class="ly">
-        </div>
-        <div class="git">
-            <p>立即获取课程报价</p>
+        <div class="course-price">
+            <span class="course-price-name">&nbsp;10秒免费获取课程报价</span>
+            <div class="shangke-input">
+                <input type="text" placeholder="请输入孩子的姓名">
+                <div class="shangke-select1 shangke-div"></div>
+                <div class="shangke-select2 shangke-div"></div>
+                <div class="shangke-select3 shangke-div"></div>
+                <input type="text" placeholder="请输入您的电话">
+                <input type="text" placeholder="住址（便于就近安排校区）">
+            </div>
+            <div class="course-price-get">立即获取课程报价</div>
         </div>
     </div>
+    <div>
+        <div class="products">
+            <img src="./../images/share/footer_03.jpg">
+        </div>
+        <div class="free">
+            <img src="./../images/share/footer2_12.jpg">
+        </div>
+    </div>
+    <p class="clear"></p>
+    <footer>
+        <ul>
+            <li><img src="./../images/share/foot-span_03.jpg"> </li>
+            <li><img src="./../images/share/foot-span_05.jpg"> </li>
+            <li><img src="./../images/share/foot-span_07.jpg"> </li>
+            <li><img src="./../images/share/foot-span_09.jpg"> </li>
+        </ul>
+    </footer>
+    <!-- 遮罩层  -->
+    <div id="bg">
+        <div class="index-nav">
+            <div class="baise">
+                <div class="baise-name">
+                    <img src="./../images/share/tuceng1.png" alt="">
+                    <h4>029-6606-0688</h4>
+                    <p>点击拨打客服电话</p>
+                </div>
+                <div class="baise-content">
+                    <div><img src="./../images/share/zu31@2x(13).png" alt="">
+                        <p>首页</p>
+                    </div>
+                    <div><img src="./../images/share/zu 31@2x(14).png" alt="">
+                        <p>社区查询</p>
+                    </div>
+                    <div><img src="./../images/share/zu 31@2x(15).png" alt="">
+                        <p>价格查询</p>
+                    </div>
+                    <div><img src="./../images/share/zu 31@2x(16).png" alt="">
+                        <p>关于我们</p>
+                    </div>
+                </div>
+                <div class="foots">
+                    <div><img src="./../images/share/dianhua-2@2x.png" alt="">
+                        <p>电话咨询</p>
+                    </div>
+                    <div><img src="./../images/share/message-channel@2x.png" alt="">
+                        <p>短信咨询</p>
+                    </div>
+                    <div><img src="./../images/share/kefu@2x.png" alt="">
+                        <p>在线咨询</p>
+                    </div>
+                </div>
+            </div>
+            <div class="yinying" id="btnclose" onclick="hidediv();">
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+    <script src="./../js/jquery-2.2.4.min.js"></script>
+    <script src="./../js/share.js"> </script>
+    <script src="../js/select.js"></script>
 </body>
 
 </html>
