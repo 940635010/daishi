@@ -53,6 +53,12 @@
     .swiper-button-next{
         color: white;
     }
+    .xsyan{
+        cursor: pointer;
+    }
+.banner-course{
+    margin-left: 0px;
+}
 </style>
 </head>
 <body>
@@ -192,11 +198,9 @@
      <!-- 轮播图  -->
      <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"> <img src="../images/yinxing/xscbjm.png" alt=""></div>
-            <div class="swiper-slide"> <img src="../images/yinxing/xscbjm.png" alt=""></div>
-            <div class="swiper-slide"> <img src="../images/yinxing/xscbjm.png" alt=""></div>
-            <div class="swiper-slide"> <img src="../images/yinxing/xscbjm.png" alt=""></div>
-            <div class="swiper-slide"> <img src="../images/yinxing/xscbjm.png" alt=""></div>
+            <div class="swiper-slide"> <img src="../images/yinxing/xsc01.jpg" alt=""></div>
+            <div class="swiper-slide"> <img src="../images/yinxing/xsc02.jpg" alt=""></div>
+            <div class="swiper-slide"> <img src="../images/yinxing/xsc03.jpg" alt=""></div>
         </div>
         <!-- 如果需要导航按钮 -->
         <div class="swiper-button-prev"></div>
@@ -246,13 +250,25 @@
                 <input type="text" placeholder="请输入您孩子的姓名">
                 <input type="text" placeholder="请输入您的电话">
                 <select name="" id="">
-                    <option value="">年级</option>
+                    <option value="" selected disabled style="display: none;">年级</option>
+                    <option value="">初三</option>
+                    <option value="">六年级</option>
+                    <option value="">高三</option>
                 </select>
                 <select name="" id="">
-                    <option value="">科目</option>
+                    <option value="" selected disabled style="display: none;">科目</option>
+                    <option value="">数学</option>
+                    <option value="">英语</option>
+                    <option value="">物理</option>
+                    <option value="">化学</option>
                 </select>
                 <select name="" id="">
-                    <option value="">班级</option>
+                    <option value="" selected disabled style="display: none;">班级</option>
+                    <option value="">个性化一对一</option>
+                    <option value="">精品小班</option>
+                    <option value="">春季学霸班</option>
+                    <option value="">雏鹰计划</option>
+                    <option value=""> 中考密训</option>
                 </select>
                 <p>立即获取课程报价</p>
             </div>
@@ -270,6 +286,9 @@ var mySwiper = new Swiper ('.swiper-container', {
     loop: true, // 循环模式选项
     
     
+    autoplay: {
+            disableOnInteraction: false,
+        },
     
     // 如果需要前进后退按钮
     navigation: {
