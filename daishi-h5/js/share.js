@@ -145,6 +145,17 @@ $('.hot-tab-title-item').on('click', function () {
     $('.hot-tab-content-item').eq(index).addClass('current').siblings().removeClass('current')
 })
 
+$('.chunji-tab span').on('click', function () {
+    var index = $(this).index()
+    $(this).addClass('show1').siblings().removeClass('show1')
+    $('.chunji-tab-items').eq(index).addClass('show2').siblings().removeClass('show2')
+})
+$('.hot-tab-title-item').on('click', function () {
+    var index = $(this).index()
+    $(this).addClass('show').siblings().removeClass('show')
+    $('.hot-tab-content-item').eq(index).addClass('current').siblings().removeClass('current')
+})
+
 
 /* zhezhao */
 function showdiv() {

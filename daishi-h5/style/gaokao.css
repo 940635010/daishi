@@ -3,11 +3,13 @@
     height: 460px;
 }
 .settings{
-    position: relative;
-    top: 30px;
+    top: -10px;
     background-color: #FFEF29;
     height: 70px;
     width: 90%;
+}
+.cs{
+    height: 440px;
 }
 .settings .title{
     position: absolute;
@@ -65,7 +67,8 @@
 }
 .study{
     width: 100%;
-    padding: 20px 0;
+    /* padding: 10px 0;
+    box-sizing: border-box; */
 }
 .study-name{
     text-align: center;
@@ -302,9 +305,24 @@
     height: 60px;
 
 }
+.teacher-content {
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+}
 .teacher .talk{
     background-color: #FF5A56;
-    top: 240px;
+    top: 25px;
+    position: relative; 
+    left: 70px;
+    width: 235px;
+    height: 35px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 9;
 }
 .teacher .teacher-choose{
     text-align: center;
@@ -317,7 +335,7 @@
 .environment-name{
     width: 100%;
     text-align: center;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 .environment-name img{
     width: 90%;
@@ -327,7 +345,7 @@
 .environment-content{
     width: 100%;
     text-align: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .environment-content img{
     width: 90%;
