@@ -36,8 +36,9 @@
     }
     // 打开选项
     Select.prototype.click=function(){
+        console.log(1)
         if(this.position.css('overflow')=='hidden'){
-            this.position.css({'overflow':'visible','height':'100%'})
+            this.position.css({'overflow':'visible'})
         }else{
             this.position.css({'overflow':'hidden','height':this.hei})
         }

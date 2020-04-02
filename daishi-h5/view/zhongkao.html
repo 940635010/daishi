@@ -5,14 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="./../style/share.css">
     <link rel="stylesheet" href="../style/select.css">
-    <link rel="stylesheet" href="./../style/index.css">
-    <link rel="stylesheet" href="./../style/chunji.css">
-    <link rel="stylesheet" href="./../style/gaokao.css">
-    <link rel="stylesheet" href="./../style/1v1.css">
     <link rel="stylesheet" href="./../style/zhongkao.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <title>中考</title>
 </head>
 
@@ -33,7 +29,7 @@
         <div class="time-title time2"><span>2020中考倒计时</span></div>
     </div>
     <div class="cs">
-        <div class="ML-xuanchuan"><img src="./../images/seaside/zhongxiaoxue/banner.png"> </div>
+        <div class="ML-xuanchuan"><img src="./../images/seaside/zhongkao/banner@2x.png"> </div>
         <div class="settings">
             <div class="settings-item title">2020中考倒计时</div>
             <div class="settings-item times2"></div>
@@ -60,9 +56,6 @@
         </div>
         <!-- 6对1 -->
         <div class="six">
-            <div class="six-name">
-
-            </div>
             <div class="six-content">
                 <div class="six-content-items">
                     <div class="six-content-item">
@@ -184,15 +177,18 @@
             <div class="teacher-content">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
-                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
-                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
-                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/zhongkao/t1.jpg" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/zhongkao/t2.jpg" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/zhongkao/t3.jpg" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/zhongkao/t4.jpg" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/zhongkao/t5.jpg" /></div>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <div class="talk" style="top: 260px;">与TA交流</div>
+            <div class="talk" style="top: 25px;">与TA交流</div>
             <div class="teacher-choose">
                 <img src="./../images/seaside/zhongkao/liucheng.png" alt="">
             </div>
@@ -298,6 +294,15 @@
         parent: document.getElementsByClassName("times2")[0],
         date: "2020-06-07"
     })
+    new TimeCount({
+    parent: document.getElementsByClassName("time1")[0],
+    date: "2020-06-01"
+})
+
+new TimeCount({
+    parent: document.getElementsByClassName("time2")[0],
+    date: "2020-06-07"
+})
 </script>
 
 </html>

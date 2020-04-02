@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../templet/footer.css">
     <link rel="stylesheet" href="../style/select.css">
     <link rel="stylesheet" href="../style/slggys.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> 
 </head>
 <style>
     * {
@@ -46,6 +48,11 @@
     .shangke-btn{
         background-color: #f3b819;
     }
+
+.banner-course{
+    margin-left: 0px;
+}
+
 </style>
 </head>
 <body>
@@ -97,10 +104,22 @@
         <!-- 轮播图+课程 -->
         <div class="index-banner">
             <!-- 轮播图 -->
-            <div class="banner">
-                <img src="../images/index/banner5.jpg" alt="">
-            </div>
+           
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <img src="../images/index/banner5.jpg" alt=""></div>
+                        <div class="swiper-slide"> <img src="../images/index/banner.png" alt=""></div>
+                        <div class="swiper-slide"> <img src="../images/index/banner3_02.png" alt=""></div>
+                        <div class="swiper-slide"> <img src="../images/index/banner2.png" alt=""></div>
+                        <div class="swiper-slide"> <img src="../images/index/banner1.png" alt=""></div>
+                    </div>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    </div>
+            
             <!-- 各种课程 -->
+           <div class='boxx'>
             <div class="banner-course">
                 <div class="course-one">
                     <div class="course-one-1">
@@ -158,23 +177,18 @@
                         <p>小学课程</p>
                     </div>
                     <div class="course-one-2">
-                        <span>语文</span>
-                        <span>数学</span>
-                        <span>英语</span>
-                        <span>语言表演</span>
-                        <span>情商美术</span>
+                        <span class='specialtext'>语文</span>
+                        <span class='specialtext'>数学</span>
+                        <span class='specialtext'>英语</span>
+                        <span class='specialtext'>语言表演</span>
+                        <span id='iq'>情商美术</span>
                     </div>
                 </div>
             </div>
+           </div>
+
             <!-- 轮播图的切换按钮 -->
-            <div class="banner-switch">
-                <div class="switch-left">
-                    <img src="../images/index/u140.png" alt="">
-                </div>
-                <div class="switch-right">
-                    <img src="../images/index/u145.png" alt="">
-                </div>
-            </div>
+            
         </div>
          <!-- 辅导模式 -->
          <div class="xbxian-xia">
@@ -289,7 +303,7 @@
         <div class="shangke-ys shangke-select3"></div>
         <input type="text" placeholder="请输入您的电话">
         <input type="text" placeholder="住址（方便就近安排校区）">
-        <button class="shangke-btn">立即获取课程价格</button>
+        <button class="shangke-btn"  onclick="window.location.href = 'liuyan.html'">立即获取课程价格</button>
     </div>
            </div>
            <!-- 特色化辅导优势 -->
@@ -342,7 +356,7 @@
             <div><img src="../images/yinxing/xbhj3.png"></div>
             <div><img src="../images/yinxing/xbhj4.png"></div>
             <div><img src="../images/yinxing/xbhj5.png"></div>
-            <div class="gl-ins">立即获取课程报价</div>
+            <div class="gl-ins" >立即获取课程报价</div>
         </div>
     </div>
     <!-- 底部 -->
@@ -376,13 +390,25 @@
                 <input type="text" placeholder="请输入您孩子的姓名">
                 <input type="text" placeholder="请输入您的电话">
                 <select name="" id="">
-                    <option value="">年级</option>
+                    <option value="" selected disabled style="display: none;">年级</option>
+                    <option value="">初三</option>
+                    <option value="">六年级</option>
+                    <option value="">高三</option>
                 </select>
                 <select name="" id="">
-                    <option value="">科目</option>
+                    <option value="" selected disabled style="display: none;">科目</option>
+                    <option value="">数学</option>
+                    <option value="">英语</option>
+                    <option value="">物理</option>
+                    <option value="">化学</option>
                 </select>
                 <select name="" id="">
-                    <option value="">班级</option>
+                    <option value="" selected disabled style="display: none;">班级</option>
+                    <option value="">个性化一对一</option>
+                    <option value="">精品小班</option>
+                    <option value="">春季学霸班</option>
+                    <option value="">雏鹰计划</option>
+                    <option value=""> 中考密训</option>
                 </select>
                 <p>立即获取课程报价</p>
             </div>
@@ -391,6 +417,7 @@
 </body>
 <script src="../js/jquery-1.8.3.min.js"></script>
 <script src="../js/select.js"></script>
+<script src="../js/swiper.min.js"></script>
 <script>
          new Select({
             position:$('.shangke-select1'),
@@ -419,7 +446,23 @@
         style: 样式类名,
         pre: 前缀
     */
-
+    var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+    
+    autoplay: {
+            disableOnInteraction: false,
+        },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    
+  })
 
     function checkTime(i) { //将0-9的数字前面加上0，例1变为01 
         return i < 10 ? "0" + i : i

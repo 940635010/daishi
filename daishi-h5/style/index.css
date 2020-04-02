@@ -1,10 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-}
-
 #content {
     position: relative;
     top: -4px;
@@ -13,18 +6,25 @@
 
 .tab-bar {
     width: 100%;
-    margin: 0 auto;
-    height: 430px;
+    margin: 10px auto;
     background-color: white;
 }
-
+.cs{
+    top: 50px;
+    height: 320px;
+}
+.settings{
+    width: 90%;
+    top: -30px;
+    background-color: white;
+}
 .tab {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
     margin: 0px auto 10px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .tab-bar>span {
@@ -72,74 +72,165 @@
     line-height: 30px;
 }
 
-.tab-item-content {
+.tab-item-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    height: 310px;
-    margin: 0px auto;
+    padding: 10px 6px;
+    box-sizing: border-box;
+}
+.tab-item-content div{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 157px;
+    margin-bottom: 10px;
+}
+.bubu .tab-item-content1 div:nth-of-type(1){
+    background-image: url("./../images/seaside/tab-content_03.jpg");
+    height: 130px;
+}
+.bubu .tab-item-content1 div:nth-of-type(2){
+    background-image: url("./../images/seaside/tab-content_10.jpg");
+    height: 78px;
+}
+.bubu .tab-item-content1 div:nth-of-type(3){
+    background-image: url("./../images/seaside/tab-content_15.jpg");
+    height: 78px;
+}
+.bubu .tab-item-content2 div:nth-of-type(1){
+    background-image: url("./../images/seaside/tab-content_05.jpg");
+    height: 78px;
+}
+.bubu .tab-item-content2 div:nth-of-type(2){
+    background-image: url("./../images/seaside/tab-content_08.jpg");
+    height: 78px;
+}
+.bubu .tab-item-content2 div:nth-of-type(3){
+    background-image: url("./../images/seaside/tab-content_13.jpg");
+    height: 130px;
+}
+/*  */
+.shouren .tab-item-content1 div:nth-of-type(1){
+    background-image: url("./../images/seaside/vip_03.jpg");
+    height: 130px;
+}
+.shouren .tab-item-content1 div:nth-of-type(2){
+    background-image: url("./../images/seaside/vip_12.jpg");
+    height: 78px;
+}
+.shouren .tab-item-content1 div:nth-of-type(3){
+    background-image: url("./../images/seaside/vip_18.jpg");
+    height: 78px;
+}
+.shouren .tab-item-content2 div:nth-of-type(1){
+    background-image: url("./../images/seaside/vip_05.jpg");
+    height: 78px;
+}
+.shouren .tab-item-content2 div:nth-of-type(2){
+    background-image: url("./../images/seaside/vip_08.jpg");
+    height: 78px;
+}
+.shouren .tab-item-content2 div:nth-of-type(3){
+    background-image: url("./../images/seaside/vip_15.jpg");
+    height: 130px;
+}
+/*  */
+.dingxiang .tab-item-content1 div:nth-of-type(1){
+    background-image: url("./../images/seaside/zu.png");
+    height: 130px;
+}
+.dingxiang .tab-item-content1 div:nth-of-type(2){
+    background-image: url("./../images/seaside/zu3.png");
+    height: 169px;
+}
+.dingxiang .tab-item-content2 div:nth-of-type(1){
+    background-image: url("./../images/seaside/zu1.png");
+    height: 78px;
+}
+.dingxiang .tab-item-content2 div:nth-of-type(2){
+    background-image: url("./../images/seaside/zu2.png");
+    height: 78px;
+}
+.dingxiang .tab-item-content2 div:nth-of-type(3){
+    background-image: url("./../images/seaside/zu4.png");
+    height: 130px;
+}
+/* .tab-item-content  */
+
+.shouren .shouren-name{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+    padding-left: 10px;
+}
+.shouren p{
+    color: white;
+    font-size: 10px;
+    padding-left: 10px;
+}
+.dingxiang p{
+    color: white;
+    font-size: 10px;
+    line-height: 16px;
+    margin-left: 10px;
+    font-weight: normal;
+}
+.dingxiang span{
+    
+    margin-left: 10px;
+}
+.dingxiang .dingxiang-name{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
 }
 
-.tab-item-content>div {
-    width: 38vw;
-    height: 310px;
-}
-
-.tab-item-content span img {
-    width: 38vw;
-    margin-bottom: 20px;
-}
-
-.zixun {
+.bubu .zixun {
+    display: inline-block;
+    background-color: #00deea;
+    color: white;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
     width: 87px;
     height: 24px;
+    margin-top: 80px;
+    margin-left: 10px;
 }
 
-.tab-item-content .zixun1 {
-    position: relative;
-    top: -259px;
-    left: 9px;
-}
-
-.tab-item-content .zixun2 {
-    position: relative;
-    bottom: 68px;
-    right: -9px;
-}
-
-.course-price{
-    width: 90%;
-    margin: 0 auto;
-    /* background-color: hotpink; */
-}
-.course-price .course-price-name{
-    margin: 10px 0;
-    font-size: 18px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    border-left: 4px solid #228AEC;
-}
-.course-price .course-price-content{
-    height: 320px;
-    width: 100%;
-    margin: 10px 0;
-    text-align: center;
-    line-height: 320px;
-
-}
-.course-price .course-price-get{
-    width: 100%;
-    height: 40px;
-    font-size: 12px;
+.shouren .zixun {
+    display: inline-block;
+    background-color: #00deea;
     color: white;
-    font-weight: bold;
-    line-height: 40px;
-    margin: 10px 0;
+    line-height: 24px;
+    font-size: 12px;
     text-align: center;
-    background-color: #2D8FED;
+    border-radius: 10px;
+    width: 87px;
+    height: 24px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
+.dingxiang .zixun {
+    display: inline-block;
+    background-color: #d6d152;
+    color: white;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    width: 87px;
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/*  */
+
+
 .about{
     width: 90%;
     margin: 0 auto;
@@ -240,20 +331,11 @@
     position: relative;
     right: -138px;
 }
-.shangke-input {
-    margin-top: 21px;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.shangke-input>input{
-    width: 48%;
-    height: 35px;
-    margin-bottom: 20px;
-    border: 1px solid black;
-    box-sizing: border-box;
-}
-.shangke-div{
-    margin-bottom: 15px;
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 20%;
+    background: #000;
+    opacity: .2;
 }

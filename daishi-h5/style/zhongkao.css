@@ -1,14 +1,54 @@
+.ML-xuanchuan img {
+    width: 100%;
+    height: 460px;
+}
+.cs{
+    height: 500px;
+}
 .settings{
     top: -40px;
+        height: 70px;
+        width: 90%;
     background-color: #2192FA;
 }
-.settings .late{
+.settings .title {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+    background-color: #70FFFF;
+}
+.settings .times2 {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    width: 170px;
+    height: 25px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.settings .late {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 130px;
+    height: 35px;
+    border-radius: 17px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
     background-color: #FEE63B;
     color: #2192FA;
 }
 .lb{
     text-align: center;
-    margin-top: 60px;
 }
 .lb img{
     margin-left: 0;
@@ -21,18 +61,63 @@
     width: 100%;
 }
 .six{
+    padding: 14px;
+    box-sizing: border-box;
+}
+.six-content {
     background-image: url("./../images/seaside/zhongkao/zu33-6.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #EAF4FF;
+    background-size: cover;
+    background-position-x: 50%;
+    padding-top: 40px;
+    width: 100%;
+}
+.six-content-items {
+    margin: 0px auto;
+}
+.six-content .six-content-item {
+    margin-bottom: 15px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.six-content .six-content-item div {
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+    line-height: 30px;
+}
+.six-content .six-content-item div img {
+    margin-top: 4px;
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+}
+.six-content .six-content-item div h4 {
+    font-size: 14px;
+}
+.six-content .six-content-item p {
+    font-size: 12px;
 }
 .six-content .six-content-item{
     background-image: url("./../images/seaside/zhongkao/zu33.png");
     color: white;
 }
+.xiangqing {
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    background: linear-gradient(269deg,rgba(236,88,41,1) 0%,rgba(241,152,72,1) 34%,rgba(241,202,72,1) 100%);
+}
 .zseven{
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
     background-image: url("./../images/seaside/zhongkao/7bu.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -82,6 +167,41 @@
     padding: 10px;
     box-sizing: border-box;
 }
+.teacher-name2{
+    text-align: center;
+}
+.teacher-name2 img{
+    width: 50%;
+    height: 60px;
+
+}
+.teacher-content {
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+}
+.teacher .talk{
+    background-color: #FF5A56;
+    top: 25px;
+    position: relative; 
+    left: 70px;
+    width: 235px;
+    height: 35px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 9;
+}
+.teacher .teacher-choose{
+    text-align: center;
+    margin-top: 40px;
+}
+.teacher .teacher-choose img{
+    width: 90%;
+    height: 190px;
+}
 .teacher {
     height: 490px;
 }
@@ -99,7 +219,7 @@
 }
 .teacher .teacher-choose {
     position: relative;
-    top: -60px;
+    /* top: -60px; */
 }
 .xioaguo-name{
     text-align: center;
@@ -117,7 +237,7 @@
     width: 100%;
 }
 .course-price {
-    margin-top: 90px;
+    margin-top: 20px;
 }
 .xiaoguo-content{
     display: flex;
@@ -152,4 +272,12 @@
     background-size: cover;
     background-position-x: 10%;
     text-align: center;
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 20%;
+    background: #000;
+    opacity: .2;
 }

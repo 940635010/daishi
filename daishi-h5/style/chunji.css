@@ -1,11 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-}
 
 .chunji-xuanchuan img {
-    width: 100%;
-    height: 375px;
+    width: 100vw;
+    height: 490px;
 }
 
 .time-out {
@@ -13,7 +9,7 @@
 }
 
 .cs {
-    top: -50px;
+    /* top: -50px; */
 }
 
 .online {
@@ -45,35 +41,31 @@
     margin-bottom: 20px;
     background-repeat: no-repeat;
 }
+.online-content div{
+    width: 270px;
+}
 .online-content .txt1{
-    position: absolute;
+    position: relative;
     left: 70px;
-    top: 265px;
+    top: 20px;
 }
 .online-content .txt2{
-    position: absolute;
+    position: relative;
     left: 70px;
-    top: 370px;
+    top: 95px;
 }
 .online-content .txt3{
-    position: absolute;
+    position: relative;
     left: 70px;
-    top: 470px;
+    top: 60px;
 }
 .online-content p{
     font-size: 12px;
     color: rgb(50, 80, 233);
+    width: 270px;
+    display: inline-block;
 }
-.lb{
-    width: 100%;
-    height: 160px;
-    margin-bottom: 20px;
-}
-.lb img{
-    height: 160px;
-    width: 90%;
-    margin-left: 15px;
-}
+
 .teacher{
     position: relative;
     height: 480px;
@@ -145,4 +137,275 @@
     margin: 10px auto;
     text-align: center;
     background-color: #2D8FED;
+}
+
+/* tab选项卡 */
+.chunji-tab-bar {
+    width: 100%;
+    margin: 0 auto;
+    height: 430px;
+    background-color: white;
+}
+
+.chunji-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto 10px;
+    padding-top: 20px;
+}
+
+.chunji-tab-bar>span {
+    width: 85px;
+    height: 24px;
+    font-size: 12px;
+}
+
+.chunji-tab-content {
+    width: 90%;
+    height: 370px;
+    margin: 0 auto;
+    box-shadow: 2px -3px 2px 4px rgba(247, 247, 247);
+    border-radius: 10px;
+    background-color: rgba(250, 250, 250);
+}
+
+.chunji-tab>span {
+    font-size: 12px;
+}
+
+.chunji-tab>.show1 {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(255, 139, 76);
+}
+
+.chunji-tab-items {
+    display: none;
+}
+
+.show2 {
+    display: block;
+}
+
+.chunji-tab-items-title {
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: 8px auto;
+    height: 30px;
+    line-height: 30px;
+}
+
+.chunji-tab-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 310px;
+    margin: 0px auto;
+}
+
+.chunji-tab-item-content>div {
+    width: 38vw;
+    height: 310px;
+}
+
+.chunji-tab-item-content span img {
+    width: 40vw;
+    margin-bottom: 10px;
+}
+
+.zixun {
+    width: 87px;
+    height: 24px;
+}
+
+.chunji-tab-item-content .zixun1 {
+    position: relative;
+    top: -240px;
+    left: 9px;
+}
+
+.chunji-tab-item-content .zixun2 {
+    position: relative;
+    bottom: 60px;
+    right: -10px;
+}
+.shouren .tab-item-content1 div:nth-of-type(1){
+    background-image: url("./../images/seaside/vip_03.jpg");
+    height: 130px;
+}
+.shouren .tab-item-content1 div:nth-of-type(2){
+    background-image: url("./../images/seaside/vip_12.jpg");
+    height: 78px;
+}
+.shouren .tab-item-content1 div:nth-of-type(3){
+    background-image: url("./../images/seaside/vip_18.jpg");
+    height: 78px;
+}
+.shouren .tab-item-content2 div:nth-of-type(1){
+    background-image: url("./../images/seaside/vip_05.jpg");
+    height: 78px;
+}
+.shouren .tab-item-content2 div:nth-of-type(2){
+    background-image: url("./../images/seaside/vip_08.jpg");
+    height: 78px;
+}
+.shouren .tab-item-content2 div:nth-of-type(3){
+    background-image: url("./../images/seaside/vip_15.jpg");
+    height: 130px;
+}
+/*  */
+.dingxiang .tab-item-content1 div:nth-of-type(1){
+    background-image: url("./../images/seaside/zu.png");
+    height: 130px;
+}
+.dingxiang .tab-item-content1 div:nth-of-type(2){
+    background-image: url("./../images/seaside/zu3.png");
+    height: 169px;
+}
+.dingxiang .tab-item-content2 div:nth-of-type(1){
+    background-image: url("./../images/seaside/zu1.png");
+    height: 78px;
+}
+.dingxiang .tab-item-content2 div:nth-of-type(2){
+    background-image: url("./../images/seaside/zu2.png");
+    height: 78px;
+}
+.dingxiang .tab-item-content2 div:nth-of-type(3){
+    background-image: url("./../images/seaside/zu4.png");
+    height: 130px;
+}
+.bubu .tab-item-content1 div:nth-of-type(1){
+    background-image: url("./../images/seaside/tab0.jpg");
+    height: 130px;
+}
+.bubu .tab-item-content1 div:nth-of-type(2){
+    background-image: url("./../images/seaside/tab3.jpg");
+    height: 78px;
+}
+.bubu .tab-item-content1 div:nth-of-type(3){
+    background-image: url("./../images/seaside/tab5.jpg");
+    height: 78px;
+}
+.bubu .tab-item-content2 div:nth-of-type(1){
+    background-image: url("./../images/seaside/tab1.jpg");
+    height: 78px;
+}
+.bubu .tab-item-content2 div:nth-of-type(2){
+    background-image: url("./../images/seaside/tab2.jpg");
+    height: 78px;
+}
+.bubu .tab-item-content2 div:nth-of-type(3){
+    background-image: url("./../images/seaside/tab4.jpg");
+    height: 130px;
+}
+/* .tab-item-content  */
+
+.shouren .shouren-name{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+    padding-left: 10px;
+}
+.shouren p{
+    color: white;
+    font-size: 10px;
+    padding-left: 10px;
+}
+.dingxiang p{
+    color: white;
+    font-size: 10px;
+    line-height: 16px;
+    margin-left: 10px;
+    font-weight: normal;
+}
+.dingxiang span{
+    
+    margin-left: 10px;
+}
+.dingxiang .dingxiang-name{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.bubu .zixun {
+    display: inline-block;
+    background:linear-gradient(270deg,rgba(244,222,38,1) 0%,rgb(239, 240, 178) 100%);
+    color: white;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    width: 87px;
+    height: 24px;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.shouren .zixun {
+    display: inline-block;
+    background-color: #00deea;
+    color: white;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    width: 87px;
+    height: 24px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.dingxiang .zixun {
+    display: inline-block;
+    background-color: #d6d152;
+    color: white;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    width: 87px;
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.tab-item-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6px;
+    box-sizing: border-box;
+}
+.tab-item-content div{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 157px;
+    margin-bottom: 10px;
+}
+.tab-items-title {
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: 8px auto;
+    height: 30px;
+    line-height: 30px;
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 20%;
+    background: #000;
+    opacity: .2;
 }

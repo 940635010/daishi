@@ -24,6 +24,10 @@
                     style="width:150px;height:30px;line-height:50px;"></li>
         </ul>
     </header>
+    <div class="time-out">
+        <div class="time-title time1"><span>2020高考倒计时</span></div>
+        <div class="time-title time2"><span>2020中考倒计时</span></div>
+    </div>
     <div class="experience">
         <img src="../images/images_gl/gl (1).jpg" alt="">
     </div>
@@ -53,8 +57,8 @@
         </div>
         <div class="course-price-get">立即获取课程报价</div>
     </div>
-     <!-- 遮罩层  -->
-     <div id="bg">
+    <!-- 遮罩层  -->
+    <div id="bg">
         <div class="index-nav">
             <div class="baise">
                 <div class="baise-name">
@@ -93,9 +97,20 @@
         </div>
     </div>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
-<script src="./../js/jquery-2.2.4.min.js"></script>
-<script src="./../js/share.js"> </script>
-<script src="../js/select.js"></script>
+    <script src="./../js/jquery-2.2.4.min.js"></script>
+    <script src="./../js/share.js"> </script>
+    <script src="../js/select.js"></script>
+    <script>
+        new TimeCount({
+    parent: document.getElementsByClassName("time1")[0],
+    date: "2020-06-01"
+})
+
+new TimeCount({
+    parent: document.getElementsByClassName("time2")[0],
+    date: "2020-06-07"
+})
+    </script>
 </body>
 
 </html>

@@ -137,6 +137,7 @@
     width: 100%;
     height: 100%;
     margin-top: 117px;
+    position:relative;
 }
 /* ==========轮播图+课程========== */
 .index-banner{
@@ -146,50 +147,48 @@
     margin-bottom: 72px;
 }
 /* ===========轮播图========= */
-.banner{
+.swiper-container {
     width: 100%;
     height: 600px;
-    background-image: url('../images/index/indexbannerbg_02.png');
-    background-size: cover;
-    background-position: center bottom;
-    position:relative;
-}
-.banner>img{
-    height:600px;
+    position: relative;
+    margin-top:-36px;
+    overflow: hidden;
+    margin-top:72px;
+} 
+.swiper-slide>img{
     width:100%;
-    object-fit:cover;
+    height:600px;
+    object-fit: cover;
 }
-/* =======轮播图切换按钮========= */
-.banner-switch{
-    width: 96px;
-    height: 42px;
-    position: absolute;
-    bottom:18px;
-    left: 87%;
-    display: flex;
-    justify-content: space-between;
-}
-.banner-switch>div{
-    width: 42px;
-    height: 42px;
-    background: rgba(255, 255, 255, 0.527);
-}
-.switch-left>img,.switch-right>img{
-   margin: 14px;
+.swiper-wrapper{
+    width: 100%;
+    height: 600px;
 }
 
+/* =======轮播图切换按钮========= */
+
 /* ===========课程类型========== */
+.boxx{
+    height:540px;
+    width:1200px;
+    position: absolute;
+    left:50%;
+    margin-left:-600px;
+    top:21px;
+    z-index:50;
+}
 .banner-course{
     width: 370px;
     height: 540px;
     background-color: white;
-    margin-left: 48px;
     padding: 20px 0px 0px 20px;
     box-sizing: border-box;
     position: absolute;
-    top: 21px;
-    left: 26px;
+    top: 0;
+    left: 0;
+    z-index:50;
 }
+
 .course-one{
     font-size: 16px;
     color: #999999;
@@ -1055,4 +1054,5 @@ margin-left:125px ;
     text-align: center;
     line-height:42px ;
     font-weight: bold;
+    cursor:pointer;
 }
