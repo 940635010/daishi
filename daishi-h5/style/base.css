@@ -223,10 +223,6 @@ a {
   text-align: center
 }
 
-img {
-  display: block
-}
-
 .btn-group {
   display: -webkit-box;
   display: flex
