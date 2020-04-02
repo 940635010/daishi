@@ -273,3 +273,11 @@
     background-position-x: 10%;
     text-align: center;
 }
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 20%;
+    background: #000;
+    opacity: .2;
+}

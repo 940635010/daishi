@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="./../style/share.css">
     <link rel="stylesheet" href="../style/select.css">
     <link rel="stylesheet" href="./../style/zhongkao.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <title>中考</title>
 </head>
 
@@ -177,11 +177,14 @@
             <div class="teacher-content">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
-                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
-                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
-                        <div class="swiper-slide"><img src="./../images/seaside/swiper1.png" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/zhongkao/t1.jpg" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/zhongkao/t2.jpg" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/zhongkao/t3.jpg" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/zhongkao/t4.jpg" /></div>
+                        <div class="swiper-slide"><img src="./../images/seaside/zhongkao/t5.jpg" /></div>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
@@ -291,6 +294,15 @@
         parent: document.getElementsByClassName("times2")[0],
         date: "2020-06-07"
     })
+    new TimeCount({
+    parent: document.getElementsByClassName("time1")[0],
+    date: "2020-06-01"
+})
+
+new TimeCount({
+    parent: document.getElementsByClassName("time2")[0],
+    date: "2020-06-07"
+})
 </script>
 
 </html>

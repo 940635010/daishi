@@ -98,7 +98,7 @@ TimeCount.prototype.updateTime = function () {
 }
 
 
-new TimeCount({
+/* new TimeCount({
     parent: document.getElementsByClassName("time1")[0],
     date: "2020-06-01"
 })
@@ -106,7 +106,7 @@ new TimeCount({
 new TimeCount({
     parent: document.getElementsByClassName("time2")[0],
     date: "2020-06-07"
-})
+}) */
 
 /* 轮播图swiper */
 

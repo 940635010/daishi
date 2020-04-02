@@ -54,13 +54,15 @@ header ul li img {
 }
 
 .timeItem {
-
     display: inline-block;
     font-size: 12px;
-    padding: 0px 8px;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
     color: black;
-    border-radius: 5px;
+    border-radius: 4px;
     background: white;
+    font-weight: bold;
 }
 
 .dot {
@@ -69,6 +71,7 @@ header ul li img {
     font-size: 11px;
     color: white;
     font-weight: bold;
+    line-height: 20px;
     vertical-align: top;
 }
 
@@ -80,7 +83,10 @@ header ul li img {
 }
 
 .time-title>span {
-    font-size: 11px;
+    padding-left: 6px;
+    font-size: 12px;
+    line-height: 20px;
+    width: 50%;
     display: block;
 }
 
