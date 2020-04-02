@@ -135,11 +135,6 @@
             line-height: 60px;
             font-size: 13px;
         }
-        footer>ul>li img{
-            margin-top: 25px;
-            width: 50px;
-            height: 50px;
-        }
         .shangke-products{
             margin-top: 21px;
             width: 100%;
@@ -189,12 +184,14 @@
             font-size: 10px;
         }
         .tab-item-content button{
-            width:94px;
-            height:23px;
+            width:87px;
+            height:24px;
             background:linear-gradient(270deg,rgba(244,222,38,1) 0%,rgba(255,255,255,1) 100%);
             box-shadow:0px 4px 3px 0px rgba(253,250,221,0.39);
             border-radius:24px;
             margin-top: 15px;
+            border: 0;
+            font-size: 10px;
         }
         .tab-box1 span{
             margin-left: 20px;
@@ -206,19 +203,49 @@
             margin-left: 20px;
         }
         .tab-img1{
-            background-image: url(../images/shangke/img5.png);
+            background-image: url(../images/shangke/img6.png);
             width: 40vw;
             height: 124px;
             background-repeat: no-repeat;
             background-size: contain;
+            position: relative;
+        }
+        .tab-img1>span{
+            margin-top: 10px;
+            margin-left: 15px;
         }
         .tab-img2{
             margin-top: 23px;
-            background-image: url(../images/shangke/img3.png);
+            background-image: url(../images/shangke/img7.png);
             width: 40vw;
             height: 161px;
             background-repeat: no-repeat;
             background-size: contain;
+            position: relative;
+        }
+        .tab-img3{
+            background-image: url(../images/shangke/img8.png);
+            width: 40vw;
+            height: 75px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 17px;
+        }
+        .tab-img4{
+            background-image: url(../images/shangke/img9.png);
+            width: 40vw;
+            height: 75px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 17px;
+        }
+        .tab-img5{
+            background-image: url(../images/shangke/img10.png);
+            width: 40vw;
+            height: 123px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
         }
         .tab-imgbox span{
             margin-top: 10px;
@@ -235,6 +262,66 @@
             margin-left: 12px;
             font-size: 8px;
         }
+        .tab-shangimg{
+            position: absolute;
+            top: -47px;
+            width: 87px;
+            height: 24px;
+            left: 9px;
+         }
+         #img-shangke{
+             width: 100%;
+         }
+         .tab3-shangke span{
+             color: white;
+             font-size: 15px;
+         }
+         .tab-btn1{
+             position: absolute;
+             width: 84px;
+            height: 22px;
+            top: 86px;
+            left: 10px;
+         }
+         .tab-btn1 a{
+            display: inline-block;
+            width: 84px;
+            height: 22px;
+         }
+         .tab-btn2{
+             position: absolute;
+             width: 84px;
+            height: 22px;
+            top: 103px;
+            left: 10px;
+         }
+         .tab-btn2 a{
+            display: inline-block;
+            width: 84px;
+            height: 22px;
+         }
+         .tab-btn3{
+             position: absolute;
+             width: 84px;
+            height: 22px;
+            top: 85px;
+            left: 10px;
+         }
+         .tab-btn3 a{
+            display: inline-block;
+            width: 84px;
+            height: 22px;
+         }
+         #shangke-imgbug{
+            position: absolute;
+            bottom: 118px;
+            left: 9px;
+            width: 87px;
+            height: 24px;
+         }
+         .shang-span{
+             position: relative;
+         }
     </style>
 </head>
 <body>
@@ -312,10 +399,13 @@
                     <span class="tab-items-title">环环相扣 步步精心</span>
                     <div class="tab-item-content">
                         <div>
-                            <span><img src="./../images/seaside/tab-content_03.jpg" alt=""></span>
+                            <span class="shang-span">
+                                <img src="./../images/seaside/tab-content_03.jpg" alt="">
+                                <a href="#"><img id="shangke-imgbug" src="./../images/seaside/tab-zixun_03.jpg"></a>
+                            </span>
                             <span><img src="./../images/seaside/tab-content_10.jpg" alt=""></span>
                             <span><img src="./../images/seaside/tab-content_15.jpg" alt=""></span>
-                            <a href="#"><img class="zixun zixun1" src="./../images/seaside/tab-zixun_03.jpg"></a>
+                            
                         </div>
                         <div>
                             <span><img src="./../images/seaside/tab-content_05.jpg" alt=""></span>
@@ -361,19 +451,33 @@
                     </div>
                 </div>
                 <div class="tab-items">
-                    <span class="tab-items-title">环环相扣 步步精心</span>
+                    <span class="tab-items-title">循序渐进 定向攻克</span>
                     <div class="tab-item-content">
-                        <div>
-                            <span><img src="./../images/seaside/tab-content_03.jpg" alt=""></span>
-                            <span><img src="./../images/seaside/tab-content_10.jpg" alt=""></span>
-                            <span><img src="./../images/seaside/tab-content_15.jpg" alt=""></span>
-                            <a href="#"><img class="zixun zixun1" src="./../images/seaside/tab-zixun_03.jpg"></a>
+                        
+                        <div class="tab3-shangke">
+                            <div class="tab-img1">
+                                <div class="tab-btn1">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="tab-img2">
+                                <div class="tab-btn2">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <span><img src="./../images/seaside/tab-content_05.jpg" alt=""></span>
-                            <span><img src="./../images/seaside/tab-content_08.jpg" alt=""></span>
-                            <span><img src="./../images/seaside/tab-content_13.jpg" alt=""></span>
-                            <a href="#"><img class="zixun zixun2" src="./../images/seaside/tab-zixun_03.jpg"> </a>
+                        <div class="tab3-shangke">
+                            <div class="tab-img3">
+                                
+                            </div>
+                            <div class="tab-img4">
+                                
+                            </div>
+                            <div class="tab-img5">
+                                <div class="tab-btn3">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -396,14 +500,18 @@
     <div class="shangke-products">
         <img src="../images/ly/zu 24(2).png">
     </div>
-    <div class="products">
-        <img src="./../images/share/footer_03.jpg">
+    <!-- 固定地步区域 -->
+    <div>
+        <div class="products">
+            <img src="./../images/share/footer_03.jpg">
+        </div>
+        <div class="free">
+            <img src="./../images/share/footer2_12.jpg">
+        </div>
     </div>
-    <div class="free">
-        <img src="./../images/share/footer2_12.jpg" >
-    </div>
-    <footer>
-        <ul>
+    <p class="clear"></p>
+    <footer style="z-index: 999;">
+        <ul style="z-index: 999;">
             <li><img src="./../images/share/foot-span_03.jpg"> </li>
             <li><img src="./../images/share/foot-span_05.jpg"> </li>
             <li><img src="./../images/share/foot-span_07.jpg"> </li>
@@ -413,8 +521,13 @@
     <script src="../js/jquery-2.2.4.min.js"></script>
     <script src="../js/select.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
-    <script src="./../js/share.js"> </script>
+    <!-- <script src="./../js/share.js"> </script> -->
     <script>
+        $('.tab span').on('click', function () {
+            var index = $(this).index()
+            $(this).addClass('show1').siblings().removeClass('show1')
+            $('.tab-items').eq(index).addClass('show2').siblings().removeClass('show2')
+        })
         new Select({
             position:$('.shangke-select1'),
             arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
@@ -436,6 +549,115 @@
             height:'35px',
             drop:'180px'
         })
+        /*
+        date:未来的时间，
+        style: 样式类名,
+        pre: 前缀
+    */
+
+
+
+function checkTime(i) { //将0-9的数字前面加上0，例1变为01 
+    return i < 10 ? "0" + i : i
+}
+
+
+function TimeCount(options) {
+
+    this.dom = document.createElement("div"),
+        this.parent = options.parent;
+    this.date = options.date || new Date();
+    this.style = options.style;
+    this.pre = options.pre;
+    this.dot = options.dot
+    this.init(); //初始化数据
+
+}
+
+
+TimeCount.prototype.init = function () {
+
+    this.dom.classList.add("times")
+    this.dayDom = document.createElement("div");
+
+    var dot = document.createElement("span");
+    dot.classList.add("dot")
+    var text = this.dot ? document.createTextNode(this.dot) : document.createTextNode(":")
+    dot.appendChild(text)
+
+    if (this.style) {
+        this.dayDom.classList.add(this.style)
+    } else {
+        this.dayDom.classList.add("timeItem")
+    }
+    this.hourDom = this.dayDom.cloneNode();
+    this.minuteDom = this.dayDom.cloneNode();
+
+    var {
+        days,
+        hours,
+        minutes
+    } = this.updateTime()
+    this.render(days, hours, minutes)
+
+    this.dom.appendChild(this.dayDom)
+    this.dom.appendChild(dot.cloneNode(true))
+    this.dom.appendChild(this.hourDom)
+    this.dom.appendChild(dot.cloneNode(true))
+    this.dom.appendChild(this.minuteDom)
+
+    this.parent.appendChild(this.dom)
+
+    //开启定时
+
+    this.time = setInterval(() => {
+
+        var {
+            days,
+            hours,
+            minutes
+        } = this.updateTime()
+        this.render(days, hours, minutes)
+
+    }, 1000)
+
+
+}
+
+TimeCount.prototype.render = function (days, hours, minutes) {
+
+    this.dayDom.innerHTML = checkTime(days) + "天";
+    this.hourDom.innerHTML = checkTime(hours) + "时";
+    this.minuteDom.innerHTML = checkTime(minutes) + "分"
+
+
+
+}
+
+TimeCount.prototype.updateTime = function () {
+
+    var leftTime = (new Date(this.date)) - (new Date()); //计算剩余的毫秒数 
+    var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数 
+    var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时 
+    var minutes = parseInt(leftTime / 1000 / 60 % 60, 10); //计算剩余的分钟 
+    return {
+        days,
+        hours,
+        minutes
+    }
+
+}
+
+
+new TimeCount({
+    parent: document.getElementsByClassName("time1")[0],
+    date: "2020-06-01"
+})
+
+new TimeCount({
+    parent: document.getElementsByClassName("time2")[0],
+    date: "2020-06-07"
+})
     </script>
 </body>
 </html>
