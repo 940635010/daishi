@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../templet/footer.css">
     <link rel="stylesheet" href="../style/select.css">
     <link rel="stylesheet" href="../style/slggys.css">
-
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> 
 </head>
 <style>
     * {
@@ -45,6 +46,12 @@
     }
     .shangke-btn{
         background-color: #f35c19;
+    }
+    .swiper-button-prev{
+        color: white;
+    }
+    .swiper-button-next{
+        color: white;
     }
 </style>
 </head>
@@ -117,27 +124,6 @@
             <img class="wxa-q1" src="../images/yinxing/xscyx-q.png" alt="">
         </div>
        <!-- 表单 -->
-       <!-- <div class="xb-form">
-        <input class="xb-insl xb-inslaa" placeholder="请输入您孩子的姓名" type="text">
-        <select class="xb-insl" name="">
-            <option value="初一">年级</option>
-            <option value="初二">初二</option>
-            <option value="初三">初三</option>
-        </select>
-        <select class="xb-insl xb-inslaa" name="">
-            <option value="初一">科目</option>
-            <option value="初二">初二</option>
-            <option value="初三">初三</option>
-        </select>
-        <select class="xb-insl" name="">
-            <option value="初一">班型</option>
-            <option value="初二">初二</option>
-            <option value="初三">初三</option>
-        </select>
-        <input class="xb-insl xb-inslaa" placeholder="请输入您的电话" type="text">
-        <input class="xb-insl" placeholder="住址（便于就近安排校区）" type="text">
-        <div class="xb-insbox">立即获取课程报价</div>
-    </div> -->
     <div class="shangke-input">
         <input type="text" placeholder="请输入您孩子的姓名">
         <div class="shangke-ys shangke-select1"></div>
@@ -145,7 +131,7 @@
         <div class="shangke-ys shangke-select3"></div>
         <input type="text" placeholder="请输入您的电话">
         <input type="text" placeholder="住址（方便就近安排校区）">
-        <button class="shangke-btn">立即获取课程价格</button>
+        <button class="shangke-btn"  onclick="window.location.href = 'liuyan.html'">立即获取课程价格</button>
     </div>
     <!-- 搭配《夏令营雏鹰计划》 -->
     <div class="xsyxly-1q">
@@ -204,10 +190,17 @@
         </div>
     </div>
      <!-- 轮播图  -->
-     <div class="szlbt-box">
-        <div class="szlbtyg">
-            <img src="../images/yinxing/xsylbt1.png" alt="">
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> <img src="../images/yinxing/xscbjm.png" alt=""></div>
+            <div class="swiper-slide"> <img src="../images/yinxing/xscbjm.png" alt=""></div>
+            <div class="swiper-slide"> <img src="../images/yinxing/xscbjm.png" alt=""></div>
+            <div class="swiper-slide"> <img src="../images/yinxing/xscbjm.png" alt=""></div>
+            <div class="swiper-slide"> <img src="../images/yinxing/xscbjm.png" alt=""></div>
         </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
      <!-- 环境 -->
      <div class="xsyxly-1q">
@@ -269,7 +262,23 @@
 
 <script src="../js/jquery-1.8.3.min.js"></script>
 <script src="../js/select.js"></script>
+<script src="../js/swiper.min.js"></script>
 <script>
+
+var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+    
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    
+  })
          new Select({
             position:$('.shangke-select1'),
             arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
