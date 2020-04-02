@@ -7,16 +7,16 @@ header{
     /* border: 1px solid #000;
     box-sizing: border-box; */
 }
-img{
+/* img{
     width: 100%;
     /* box-shadow:1vw 1vw 2vw lightslategrey; */
-}
+} */
 .banner{
     width: 100%;
 }
 .banner>img{
     width: 100%;
-    box-shadow:1vw 1vw 2vw lightslategrey;
+    /* box-shadow:1vw 1vw 2vw lightslategrey; */
 
 }
 /*  
@@ -32,31 +32,55 @@ img{
 }
 .reason>img{
     width: 100%;
-    box-shadow:1vw 1vw 2vw lightslategrey;
+    /* box-shadow:1vw 1vw 2vw lightslategrey; */
     
 }
 .tl{
     margin-top: 6vw;
 }
-.reason p{
-    width: 100%;
+.tl>img{
+    width: 70%;
+    margin: auto;
+}
+/* .reason p{
+    width: 85%;
     margin: auto ;
     color: darkgray;
     text-align: center;
     margin-top: 2vw;
+    font-size: 2px;
+} */
+.zhuang{
+    width: 100%;
+    position: relative;
+}
+.zhuang>img{
+    width: 100%;
 }
 .jion{
-    width: 80%;
-    border: 1px solid rgb(255,80,77);
-    background-color: rgb(255,80,77);
-    box-sizing: border-box;
+    position: absolute;
+    width: 90%;
+    height: 9vw;
+    text-align: center;
     color: white;
-    border-radius: 1vw;
+    bottom: 8vw;
+    left: 5vw;
+    line-height: 30px;
+   background-color: rgb(255,78,0);
+   border-radius: 2vw;
 }
 
 /* start */
 .start{
+    width: 100%;
     margin-top: 6vw;
+}
+.sf{
+    width: 100%;
+}
+.sf>img{
+    width: 70%;
+    margin: auto;
 }
 .start>p{
     color: darkgray;
@@ -64,13 +88,19 @@ img{
     margin-top: 2vw;
 }
 .method{
+    width: 100%;
     margin-top: 3vw;
 }
 .method>img{
-    box-shadow:1vw 1vw 2vw lightslategrey;
+    width: 90%;
+    margin: auto;
+    /* box-shadow:1vw 1vw 2vw lightslategrey; */
 }
 
 /* 公共————计价 */
+.course-price-get{
+    background: rgb(255,78,0);
+}
 .git{
     width: 80%;
     border: 1px solid rgb(255,80,77);
@@ -85,28 +115,58 @@ img{
 
 /* cammp */
 .cammp{
+    width: 100%;
     margin-top: 6vw;
 }
-.cammp>p{
-    color: darkgray;
-    text-align: center;
-    margin-top: 2vw;
+.cammp>img{
+    width: 90%;
+    margin: auto;
 }
-
+.dl{
+    width: 70%;
+    margin: auto;
+}
+.dl>img{
+    width: 100%;
+    margin: auto;
+}
 /* broke */
 .broke{
+    width: 100%;
     margin-top: 6vw;
+    position: relative;
 }
-.broke>p{
-    color: darkgray;
+.broke>img{
+    width: 70%;
+    margin: auto;
+}
+.bro_p{
+    position: absolute;
+    width: 80%;
+    height: 9vw;
     text-align: center;
-    margin-top: 2vw;
+    color: white;
+    bottom: -10vw;
+    left: 10vw;
+    line-height: 30px;
+    background-color: rgb(255,78,0);
+    border-radius: 2vw;
 }
 .different{
-    margin-top: 3vw;
+    width: 100%;
+    margin-top: 15vw;
 }
 .different>img{
-    box-shadow:1vw 1vw 2vw lightslategrey;
+    width: 70%;
+    margin: auto;
+    /* box-shadow:1vw 1vw 2vw lightslategrey; */
+}
+.dm{
+    width: 100%;
+}
+.dm>img{
+    width: 90%;
+    margin:auto;
 }
 .in{
     width: 80%;
@@ -122,18 +182,42 @@ img{
 
 /*more*/
 .more{
+    width: 100%;
     margin-top: 6vw;
+    position: relative;
 }
-.more>p{
-    color: darkgray;
+.more>img{
+    width: 100%;
+
+}
+.on{
+    position: absolute;
+    width: 90%;
+    height: 9vw;
     text-align: center;
-    margin-top: 2vw;
+    color: white;
+    bottom: 8vw;
+    left: 5vw;
+    line-height: 30px;
+   background-color: rgb(255,78,0);
+   border-radius: 2vw;
 }
 .plan{
+    width: 100%;
     margin-top: 3vw;
 }
 .plan>img{
-    box-shadow:1vw 1vw 2vw lightslategrey;
+    width: 100%;
+    /* box-shadow:1vw 1vw 2vw lightslategrey; */
+}
+
+/* 轮播 */
+.lunbo_s{
+    width: 100%;
+    width: 350px;
+    height: 250px;
+    border: 1px solid #000;
+    box-sizing: border-box;
 }
 
 /* charge */
@@ -149,7 +233,7 @@ img{
     margin-top: 3vw;
 }
 .price>img{
-    box-shadow:1vw 1vw 2vw lightslategrey;
+    /* box-shadow:1vw 1vw 2vw lightslategrey; */
 }
 
 /* teach */
@@ -160,7 +244,8 @@ img{
     margin-top: 6vw;
 }
 .teacher>img{
-    box-shadow:1vw 1vw 2vw lightslategrey;
+    width: 100%;
+    /* box-shadow:1vw 1vw 2vw lightslategrey; */
 }
 .teacher .talk{
     background:linear-gradient(269deg,rgba(236,88,41,1) 0%,rgba(241,152,72,1) 34%,rgba(241,202,72,1) 100%);
@@ -169,7 +254,12 @@ img{
 
 /* environment */
 .environment{
+    width: 100%;
     margin-top: 6vw;
+}
+.environment>img{
+    width: 100%;
+    /* margin: auto; */
 }
 .en{
     width: 90%;
@@ -177,5 +267,5 @@ img{
     margin-top: 3vw;
 }
 .en>img{
-    box-shadow:1vw 1vw 2vw lightslategrey;
+    /* box-shadow:1vw 1vw 2vw lightslategrey; */
 }
