@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> 
+    <script src="../js/swiper.min.js"></script>
     <style>
         * {
             padding: 0;
@@ -84,10 +86,22 @@
             <!-- 轮播图+课程 -->
             <div class="index-banner">
                 <!-- 轮播图 -->
-                <div class="banner">
-                    <img src="../images/index/bgbg_02.jpg" alt="">
-                </div>
+               
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img src="../images/index/banner5.jpg" alt=""></div>
+                            <div class="swiper-slide"> <img src="../images/index/banner.png" alt=""></div>
+                            <div class="swiper-slide"> <img src="../images/index/banner3_02.png" alt=""></div>
+                            <div class="swiper-slide"> <img src="../images/index/banner2.png" alt=""></div>
+                            <div class="swiper-slide"> <img src="../images/index/banner1.png" alt=""></div>
+                        </div>
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        </div>
+                
                 <!-- 各种课程 -->
+               <div class='boxx'>
                 <div class="banner-course">
                     <div class="course-one">
                         <div class="course-one-1">
@@ -153,6 +167,8 @@
                         </div>
                     </div>
                 </div>
+               </div>
+
                 <!-- 轮播图的切换按钮 -->
                 
             </div>
@@ -508,13 +524,25 @@
                         <input type="text" placeholder="请输入您孩子的姓名">
                         <input type="text" placeholder="请输入您的电话">
                         <select name="" id="">
-                            <option value="">年级</option>
+                            <option value="" selected disabled style="display: none;">年级</option>
+                            <option value="">初三</option>
+                            <option value="">六年级</option>
+                            <option value="">高三</option>
                         </select>
                         <select name="" id="">
-                            <option value="">科目</option>
+                            <option value="" selected disabled style="display: none;">科目</option>
+                            <option value="">数学</option>
+                            <option value="">英语</option>
+                            <option value="">物理</option>
+                            <option value="">化学</option>
                         </select>
                         <select name="" id="">
-                            <option value="">班级</option>
+                            <option value="" selected disabled style="display: none;">班级</option>
+                            <option value="">个性化一对一</option>
+                            <option value="">精品小班</option>
+                            <option value="">春季学霸班</option>
+                            <option value="">雏鹰计划</option>
+                            <option value=""> 中考密训</option>
                         </select>
                         <p>立即获取课程报价</p>
                     </div>
@@ -533,7 +561,20 @@
         style: 样式类名,
         pre: 前缀
     */
-
+    var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: false, // 循环模式选项
+    
+    
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    
+  })
 
     function checkTime(i) { //将0-9的数字前面加上0，例1变为01 
         return i < 10 ? "0" + i : i
