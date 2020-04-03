@@ -101,22 +101,86 @@
     width: 45%;
     margin-bottom: 20px;
 }
+
 .five-back {
-    background-image: url("./../images/seaside/zhongxiaoxue/zu 32.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100vw;
     height: 350px;
+    position: relative;
 }
-.five-back div{
+
+.five-back>div{
+    position: relative;
+    z-index: 1;
     padding-top: 220px;
     padding-left: 20px;
 }
-.five-back p{
+.five-back>div>p{
     text-align: left;
     font-size: 13px;
     color: white;
     line-height: 25px;  
+}
+.five-back>.five-backls{
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.five-back>.fives{
+    padding: 0;
+    position: absolute;
+    top: 200px;
+    width: 100vw;
+    height: 150px;
+    background-color: #5e3196;
+}
+.five-backls>div{
+    position: relative;
+    width: 17.2vw;
+    float: left;
+    background-color: #23227d;
+    border-radius: 15px  0 0 0;
+    color: #23227d;
+    font-weight: bold;
+    bottom: 0px;
+}
+.five-backls>div>p{
+    position: absolute;
+    width: 100%;
+    top: -25px;
+    text-align: center;
+}
+.five-backls>div>div{ 
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    width: 30px;
+    color: white;
+}
+.five-backls>div:nth-of-type(1){
+    height: 60px;
+}
+.five-backls>div:nth-of-type(2){
+    height: 90px;
+}
+.five-backls>div:nth-of-type(3){
+    height: 120px;
+}.five-backls>div:nth-of-type(4){
+    height: 150px;
+}.five-backls>div:nth-of-type(5){
+    height: 180px;
+}
+.five-backls>.tabha{
+    background: #5e3196;
+        color: #5e3196;
 }
 .shangke-input{
     width: 90%;
