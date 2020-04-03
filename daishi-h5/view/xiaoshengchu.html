@@ -33,7 +33,7 @@
         </div>
         <!-- <p>俗话说:"初一重新排队,初二两极分化,初三天上地下"</p> -->
         <div class="zhuang" >
-            <img src="../images/images_xsc/xsc (3).png" alt="">
+            <img src="../images/images_xsc/166_02.png" alt="">
             <div class="jion">
                 <p>立即报名</p>
             </div>
@@ -49,8 +49,8 @@
         </div>
     </div>
     <div class="public">
-        <div class="course-price">
-            <div class="shangke-input">
+        <div class="course-price" style='width:94%;'>
+            <div class="shangke-input" style='margin-left: -47vw; width:100%;'>
                 <input type="text" placeholder="请输入孩子的姓名">
                 <div class="shangke-select1 shangke-div"></div>
                 <div class="shangke-select2 shangke-div"></div>
@@ -58,7 +58,7 @@
                 <input type="text" placeholder="请输入您的电话">
                 <input type="text" placeholder="住址（便于就近安排校区）">
             </div>
-            <div class="course-price-get">立即获取课程报价</div>
+            <div class="cor-p">立即获取课程报价</div>
         </div>
     </div>
     <div class="cammp">
@@ -66,11 +66,11 @@
             <img src="../images/images_xsc/xsc_1.png" alt="">
            </div>
             
-            <img src="../images/images_xsc/xsc (7).jpg" alt="">
+            <img src="../images/images_xsc/999_04.png" alt="">
     </div>
     <div class="broke">
             <img src="../images/images_xsc/xsc (10).png" alt="">
-            <div class="cammp">
+            <div class="cammps">
                 <img src="../images/images_xsc/xsc (8).png" alt="">
             </div>
             <div class="bro_p">
@@ -201,5 +201,28 @@
     <!-- <script src="./../js/share.js"> </script> -->
     <script src="../js/select.js"></script>
 </body>
+<script>
 
+new Select({
+            position:$('.shangke-select1'),
+            arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+            width:'48%',
+            height:'35px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select2'),
+            arr:["科目",'语文','数学','英语','物理','化学','语言表演','情商美术'],
+            width:'48%',
+            height:'35px',
+            drop:'180px'
+        })
+        new Select({
+            position:$('.shangke-select3'),
+            arr:["班级",'一对一','3~6人精品','15人大师班'],
+            width:'48%',
+            height:'35px',
+            drop:'180px'
+        })
+</script>
 </html>
