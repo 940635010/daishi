@@ -160,6 +160,15 @@
     <script src="../js/select.js"></script>
     <script src="../js/prev.js"></script>
     <script>
+        new TimeCount({
+            parent: document.getElementsByClassName("time1")[0],
+            date: "2020-06-01"
+        })
+
+        new TimeCount({
+            parent: document.getElementsByClassName("time2")[0],
+            date: "2020-06-07"
+        })
         new Select({
             position: $('.shangke-select1'),
             arr: ["年级", "幼儿", "一年级", "二年级", "三年级", "四年级", "五年级", "六年级", "初一", "初二", "初三", "高一", "高二", "高三"],
