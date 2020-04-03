@@ -98,19 +98,27 @@
             </div>
             <div class="five-content">
                 <div class="five-item">
-                    <select name="小学" id="">
-                        <option value="">小学</option>
-                        <option value="">小学</option>
-                        <option value="">小学</option>
-                        <option value="">小学</option>
+                    <select name="小学" id="school">
+                        <option value="小学">小学</option>
+                        <option value="初一丨初二">初一丨初二</option>
+                        <option value="初三">初三</option>
+                        <option value="高一丨高二">高一丨高二</option>
+                        <option value="高三">高三</option>
                     </select>
-                    <select name="语文" id="">
-                        <option value="">语文</option>
-                        <option value="">数学</option>
-                        <option value="">英语</option>
-                        <option value="">物理</option>
+                    <select name="语文" id="course">
+                        <option value="语文">语文</option>
+                        <option value="数学">数学</option>
+                        <option value="英语">英语</option>
                     </select>
                     <div class="five-back">
+                        <div class="fives"></div>
+                        <div class="five-backls">
+                            <div class="tass tabha"><div>基础</div><p>LV1</p></div>
+                            <div class="tass"><div>进阶</div><p>LV2</p></div>
+                            <div class="tass"><div>优化</div><p>LV3</p></div>
+                            <div class="tass"><div>拔高</div><p>LV4</p></div>
+                            <div class="tass"><div>超越</div><p>LV5</p></div>
+                        </div>
                         <div>
                             <p>1、夯实基础训练</p>
                             <p>2、升学考点专项训练 </p>
@@ -338,6 +346,58 @@ new Select({
         width: '48%',
         height: '35px',
         drop: '180px'
+    })
+    $('#school').change(function(e){
+        var key=e.target.value
+        switch (key) {
+            case "小学":
+                $('.tass').removeClass('tabha')
+                $('.five-backls>div:nth-of-type(1)').addClass('tabha')
+            $('#course').html(`<option value="语文">语文</option>
+                        <option value="数学">数学</option>
+                        <option value="英语">英语</option>`)
+                break;
+            
+                case "初一丨初二":
+                $('.tass').removeClass('tabha')
+                $('.five-backls>div:nth-of-type(2)').addClass('tabha')
+            $('#course').html(`<option value="语文">语文</option>
+                        <option value="数学">数学</option>
+                        <option value="英语">英语</option>`)
+                break;
+            case "初三":
+                $('.tass').removeClass('tabha')
+                $('.five-backls>div:nth-of-type(3)').addClass('tabha')
+            $('#course').html(`<option value="语文">语文</option>
+                        <option value="数学">数学</option>
+                        <option value="英语">英语</option>
+                        <option value="物理">物理</option>
+                        <option value="化学">化学</option>`)
+                break;
+            case "高一丨高二":
+                $('.tass').removeClass('tabha')
+                $('.five-backls>div:nth-of-type(4)').addClass('tabha')
+            $('#course').html(`<option value="语文">语文</option>
+                        <option value="数学">数学</option>
+                        <option value="英语">英语</option>
+                        <option value="物理">物理</option>
+                        <option value="化学">化学</option>
+                        <option value="生物">生物</option>`)
+                break;
+            case "高三":
+                $('.tass').removeClass('tabha')
+                $('.five-backls>div:nth-of-type(5)').addClass('tabha')
+            $('#course').html(`<option value="语文">语文</option>
+                        <option value="数学">数学</option>
+                        <option value="英语">英语</option>
+                        <option value="物理">物理</option>
+                        <option value="化学">化学</option>
+                        <option value="生物">生物</option>`)
+                break;
+            default:
+
+                break;
+        }
     })
 </script>
 
