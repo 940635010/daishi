@@ -426,6 +426,7 @@
     left: 50%;
     transform: translate(-50%);
     background-color: white;
+    z-index:100;
 }
 .process-title>span:first-child{
     display: inline-block;
@@ -447,10 +448,12 @@
 .entra-features{
     width: 100%;
     height:740px;
-    background-image: url(../images/entrance/08.jpg);
-    background-size: 100% 100%;
     position: relative;
-    z-index: -1;
+}
+.entra-features img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
 }
 .features-title{
     width: 600px;
@@ -462,6 +465,7 @@
     left: 50%;
     transform: translate(-50%);
     background-color: white;
+    z-index:100;
 }
 .features-title>span:first-child{
     display: inline-block;
@@ -516,7 +520,6 @@
 /* 选拔流程 */
 .szxxjsbox1{
     width: 100%;
-    margin-top: 30px;
     background-color: #f8f8f8;
 }
 .szlsqq{

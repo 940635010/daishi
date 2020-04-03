@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> 
-    <script src="../js/swiper.min.js"></script>
+    
     <style>
         * {
             padding: 0;
@@ -358,20 +358,20 @@
                         <!-- 5阶教学标准 -->
                         <div class="step-content show">
                             <div class="con-school">
-                                <div class="school">
+                                <div class="school" id='school_bb'>
                                     <div>小学</div>
                                     <div class="school-wid">初一 | 初二</div>
                                     <div>初三</div>
                                     <div class="school-wid">高一 | 高二</div>
                                     <div class="school-back">高三</div>
                                 </div>
-                                <div class="school">
+                                <div class="school schho">
                                     <div>语文</div>
                                     <div>英语</div>
                                     <div>数学</div>
-                                    <div>物理</div>
-                                    <div>化学</div>
-                                    <div class="school-back">生物</div>
+                                    <div class='wuli'>物理</div>
+                                    <div class='huax'>化学</div>
+                                    <div class="school-back shengw">生物</div>
                                 </div>
                             </div>
                             <div class="con-text">
@@ -398,7 +398,7 @@
                     </div>
                 </div>
             </div>
-
+        <img src="../images/index/bluebg_06.png" alt="" id='picimg'>
             <!-- 关注 -->
             <div class="index-att center">
                 <div class="att-title">热点关注</div>
@@ -551,8 +551,11 @@
         </div>
     </div>
 </body>
-<script src='https://cdn.bootcss.com/jquery/3.4.1/jquery.js'></script>
+<script src="../js/jquery-1.8.3.min.js"></script>
 <script src="../js/index.js"></script>
+<script src="../js/swiper.min.js"></script>
+
+
 <script>
 
     /*
@@ -563,7 +566,7 @@
     */
     var mySwiper = new Swiper ('.swiper-container', {
     direction: 'horizontal', // 垂直切换选项
-    loop: false, // 循环模式选项
+    loop: true, // 循环模式选项
     
     
     
@@ -668,7 +671,120 @@
         parent: document.getElementsByClassName("top-gk-time")[0],
         date: "2020-07-6"
     })
-    
+    $('.schho').delegate("div",'click',function(e){
+    e.stopPropagation()
+    $(this).css({
+        'background-color':"rgb(79,228,255)",
+          'color':'rgb(39,90,224)'
+      })
+      $(this).siblings().css({
+        'background-color':"rgb(39,90,224)",
+          'color':"rgb(79,228,255)"
+      })
+  })
+    $('#school_bb').delegate('div','click',function(e){
+    e.stopPropagation()
+      $(this).css({
+          'background-color':"rgb(79,228,255)",
+          'color':'rgb(39,90,224)'
+      })
+      $(this).siblings().css({
+          'background-color':"rgb(39,90,224)",
+          'color':"rgb(79,228,255)"
+      })
+      var index=$(this).index()
+      if(index==0 || index==1){
+          $('.schho').css('width',"589px")
+          $('.wuli').css('display','none')
+          $('.huax').css('display','none')
+          $('.shengw').css('display','none')
+      }else if(index==2){
+        $('.schho').css('width',"1000px")
+          $('.shengw').css('display','none')
+          $('.wuli').css('display','block')
+          $('.huax').css('display','block')
+      }else if(index==3 ||index==4){
+        $('.schho').css('width',"1200px")
+        $('.shengw').css('display','block')
+          $('.wuli').css('display','block')
+          $('.huax').css('display','block')
+      }
+      if(index==0){
+        $('.schho').delegate("div",'click',function(e){
+            e.stopPropagation()
+            var ind=$(this).index()
+            if(ind==0){
+                $('.con-text').find('img').attr('src','../images/index/0001_03.png')
+            }else if(ind==1){
+                $('.con-text').find('img').attr('src','../images/index/0002_03.png')
+            }else if(ind==2){
+                $('.con-text').find('img').attr('src','../images/index/003_03.png')
+            }
+  })
+      }else if(index==1){
+        $('.schho').delegate("div",'click',function(e){
+        var ind=$(this).index()
+            if(ind==0){
+                $('.con-text').find('img').attr('src','../images/index/0004_03.png')
+            }else if(ind==1){
+                $('.con-text').find('img').attr('src','../images/index/0005_03.png')
+            }else if(ind==2){
+                $('.con-text').find('img').attr('src','../images/index/0006_03.png')
+            }
+        })
+      }else if(index==2){
+        $('.schho').delegate("div",'click',function(e){
+        var ind=$(this).index()
+               if(ind==0){
+                $('.con-text').find('img').attr('src','../images/index/0007_03.png')
+            }else if(ind==1){
+                $('.con-text').find('img').attr('src','../images/index/0008_03.png')
+            }else if(ind==2){
+                $('.con-text').find('img').attr('src','../images/index/0009_03.png')
+            }else if(ind==3){
+                $('.con-text').find('img').attr('src','../images/index/0010_03.png')
+            }else if(ind==4){
+                $('.con-text').find('img').attr('src','../images/index/0011_03.png')
+            }
+        })
+      }else if(index==3){
+        $('.schho').delegate("div",'click',function(e){
+            var ind=$(this).index()
+        if(ind==0){
+            $('.con-text').find('img').attr('src','../images/index/0013_03.png')
+            }else if(ind==1){
+                $('.con-text').find('img').attr('src','../images/index/0014_03.png')
+            }else if(ind==2){
+                $('.con-text').find('img').attr('src','../images/index/0017_03.png')
+            }else if(ind==3){
+                $('.con-text').find('img').attr('src','../images/index/0016_03.png')
+            }else if(ind==4){
+                $('.con-text').find('img').attr('src','../images/index/0015_03.png')
+            }else if(ind==5){
+                $('.con-text').find('img').attr('src','../images/index/0012_03.png')
+            }
+        })
+      }else if(index==4){
+        $('.schho').delegate("div",'click',function(e){
+            var ind=$(this).index()
+        if(ind==0){
+            $('.con-text').find('img').attr('src','../images/index/101_03.png')
+            }else if(ind==1){
+                $('.con-text').find('img').attr('src','../images/index/102_03.png')
+            }else if(ind==2){
+                $('.con-text').find('img').attr('src','../images/index/103_03.png')
+            }else if(ind==3){
+                $('.con-text').find('img').attr('src','../images/index/104_03.png')
+            }else if(ind==4){
+                $('.con-text').find('img').attr('src','../images/index/105_03.png')
+            }else if(ind==5){
+                $('.con-text').find('img').attr('src','../images/index/106_03.png')
+            }
+        })
+      }
+
+  })
+ 
 
 </script>
 
