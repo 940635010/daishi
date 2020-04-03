@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="./../style/share.css">
     <link rel="stylesheet" href="../style/base.css">
     <link rel="stylesheet" href="./../style/share.css">
     <link rel="stylesheet" href="../style/select.css">
-    <link rel="stylesheet" href="./../style/index.css">
-    <!-- <link rel="stylesheet" href="./../style/chunji.css"> -->
+    <link rel="stylesheet" href="../style/swiper.css">
+    <link rel="stylesheet" href="../style/prev.css">
     <link rel="stylesheet" href="../style/teacher.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <title>teacher</title>
@@ -35,6 +35,7 @@
             <img src="./../images/images_sz/sz.png">
         </div>
     </div>
+    <!-- 大区域块 -->
     <div class="experience">
         <img src="../images/images_gl/gl (1).jpg" alt="">
     </div>
@@ -44,32 +45,145 @@
             好的老师是决定孩子成功的关键
         </div>
         <div class="team_content">
-         
+            <p>戴氏教育'中考中心拥有百名全职教师,每一位老师都拥有</p>
+            <p>5年以上一线授课经验，我们的十字筛选通过率仅为1.26%,</p>
+            <p>80%的老师毕业于985/211大学,通过严格的筛选磨课,必须</p>
+            <p>拥有教师资格证才能正式上岗带班授课</p>
         </div>
     </div>
     <div class="know_t">
         <img src="../images/images_sz/sz (3).jpg" alt="">
         <div class="km">
-            <p>点击 了解教师团队</p>
+            <p>点击了解教师团队</p>
         </div>
     </div>
+    <!-- 添加 -->
     <div class="lunbo">
+        <div class="_main">
+            <div class="context">
+                <div id="gallery"
+                    class="_main1 swiper-container gallery-top swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper" id="_top"
+                        style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
 
+                    </div>
+                </div>
+                <div class="context_1">
+                    <div id="thumbs" class=" _main2 swiper-container gallery-thumbs swiper-container-initialized swiper-container-horizontal
+              swiper-container-free-mode swiper-container-thumbs">
+                        <div class="swiper-wrapper h_img"
+                            style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                    <div class="arrow">
+                        <img src="../images/img/arror.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- 大区域块 -->
     <div class="choies">
         <img src="../images/images_sz/sz (2).jpg" alt="">
     </div>
-    <div class="public">
-        <div class="ly">
+    <!-- 公共 -->
+    <div class="shangke-input">
+        <input type="text" placeholder="请输入孩子的姓名">
+        <div class="shangke-select1 shangke-div"></div>
+        <div class="shangke-select2 shangke-div"></div>
+        <div class="shangke-select3 shangke-div"></div>
+        <input type="text" placeholder="请输入您的电话">
+        <input type="text" placeholder="住址（便于就近安排校区）">
+    </div>
+    <div class="course-price-get">立即获取课程报价</div>
+
+    <!-- 固定地步区域 -->
+    <div>
+        <div class="products">
+            <img src="./../images/share/footer_03.jpg">
         </div>
-        <div class="git">
-            <p>立即获取课程报价</p>
+        <div class="free">
+            <img src="./../images/share/footer2_12.jpg">
+        </div>
+    </div>
+    <p class="clear"></p>
+    <footer>
+        <ul>
+            <li><img src="./../images/share/foot-span_03.jpg"> </li>
+            <li><img src="./../images/share/foot-span_05.jpg"> </li>
+            <li><img src="./../images/share/foot-span_07.jpg"> </li>
+            <li><img src="./../images/share/foot-span_09.jpg"> </li>
+        </ul>
+    </footer>
+    <!-- 遮罩层  -->
+    <div id="bg">
+        <div class="index-nav">
+            <div class="baise">
+                <div class="baise-name">
+                    <img src="./../images/share/tuceng1.png" alt="">
+                    <h4>029-6606-0688</h4>
+                    <p>点击拨打客服电话</p>
+                </div>
+                <div class="baise-content">
+                    <div><img src="./../images/share/zu31@2x(13).png" alt="">
+                        <p>首页</p>
+                    </div>
+                    <div><img src="./../images/share/zu 31@2x(14).png" alt="">
+                        <p>社区查询</p>
+                    </div>
+                    <div><img src="./../images/share/zu 31@2x(15).png" alt="">
+                        <p>价格查询</p>
+                    </div>
+                    <div><img src="./../images/share/zu 31@2x(16).png" alt="">
+                        <p>关于我们</p>
+                    </div>
+                </div>
+                <div class="foots">
+                    <div><img src="./../images/share/dianhua-2@2x.png" alt="">
+                        <p>电话咨询</p>
+                    </div>
+                    <div><img src="./../images/share/message-channel@2x.png" alt="">
+                        <p>短信咨询</p>
+                    </div>
+                    <div><img src="./../images/share/kefu@2x.png" alt="">
+                        <p>在线咨询</p>
+                    </div>
+                </div>
+            </div>
+            <div class="yinying" id="btnclose" onclick="hidediv();">
+            </div>
         </div>
     </div>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
     <script src="./../js/jquery-2.2.4.min.js"></script>
     <script src="./../js/share.js"> </script>
     <script src="../js/select.js"></script>
+    <script src="../js/prev.js"></script>
+    <script>
+        new Select({
+            position: $('.shangke-select1'),
+            arr: ["年级", "幼儿", "一年级", "二年级", "三年级", "四年级", "五年级", "六年级", "初一", "初二", "初三", "高一", "高二", "高三"],
+            width: '48%',
+            height: '35px',
+            drop: '180px'
+        })
+        new Select({
+            position: $('.shangke-select2'),
+            arr: ["科目", '语文', '数学', '英语', '物理', '化学', '语言表演', '情商美术'],
+            width: '48%',
+            height: '35px',
+            drop: '180px'
+        })
+        new Select({
+            position: $('.shangke-select3'),
+            arr: ["班级", '一对一', '3~6人精品', '15人大师班'],
+            width: '48%',
+            height: '35px',
+            drop: '180px'
+        })
+    </script>
 </body>
 
 </html>

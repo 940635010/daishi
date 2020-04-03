@@ -22,8 +22,9 @@ html{
 .team>img{
   width: 95%;
   margin: auto;
-  margin-top: 30vw;
-  /* box-shadow:1vw 1vw 2vw lightslategrey; */
+  margin-left: 2.5vw;
+  margin-top: 40vw;
+
   border-radius: 1vw;
   
 }
@@ -34,14 +35,29 @@ html{
     color: white;
     border-radius: 5vw;
     position: absolute;
-    top: -3vw;
-    left: 10vw;
+    top: 30vw;
+    left: 12vw;
+    font-size: 20px;
+    line-height: 40px;
     background:linear-gradient(270deg,#4c26f4 0%,rgb(87, 203, 238) 100%);
+}
+.team_content{
+    width: 327px;
+    height: 81px;
+    position: absolute;
+    top: 43vw;
+    left: 10vw;
+    line-height: 9vw;
+}
+.team_content>p{
+    font-size: 12px;
 }
 /* know_t */
 .know_t{
+    /* position: relative; */
     width: 100%;
     margin-top: 6vw;
+    margin-bottom: 6vw;
 }
 .know_t>img{
     width: 100%;
@@ -58,32 +74,37 @@ html{
     margin-left: 2vw;
     display: inline-block;
     position: relative;
+    line-height: 25px;
 }
 .km>p{
     text-align: center;
     margin: auto;
+    font-weight: bolder;
 }
 
 /*lunbo  */
 .lunbo{
-  
+    width: 100vw;
+    /* height: 600px; */
     margin-top: 20vw;
-    width: 92vw;
+    /* width: 92vw;
     height: 70vw;
-    border: 1px solid #000;
+    border: 1px solid #000; */
     box-sizing: border-box;
     margin: auto;
 }
-
+.context_1{
+    margin-top: 25vw;
+}
 /* choies */
 .choies{
     width: 100%;
-    margin-top: 6vw;
+    margin-top: 30vw;
 }
 .choies>img{
     width: 90%;
     margin: auto;
-    /* box-shadow:1vw 1vw 2vw lightslategrey; */
+  margin-left: 5vw;
 }
 
 /* public */
@@ -94,6 +115,14 @@ html{
     height: 40vw;
     margin: auto;
     margin-top: 6vw;
+}
+.swiper-slide img{
+    width: 32.8vw;
+    height: 44.6vw
+}
+.s_head>img{
+    width: 100%;
+    height: 120%;
 }
 .git{
     width: 80%;
@@ -119,4 +148,11 @@ html{
 
 .cs {
     top: -50px;
+}
+.shangke-input {
+    width: 90%;
+    margin: 0 auto;
+}
+.course-price-get{
+    
 }
