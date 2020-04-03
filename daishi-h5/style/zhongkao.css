@@ -160,6 +160,9 @@
     text-align: center;
     color: white;
 } 
+.eight div .eight-content-item h4{
+    line-height: 26px;
+}
 .eight div .eight-content-item p{
     color: #2192F9;
     font-size: 12px;
@@ -176,8 +179,8 @@
 
 }
 .teacher-content {
-    width: 90%;
-    height: 150px;
+    width: 100%;
+    /* height: 150px; */
     margin: 0 auto;
 }
 .teacher .talk{
@@ -196,14 +199,13 @@
 }
 .teacher .teacher-choose{
     text-align: center;
-    margin-top: 40px;
 }
 .teacher .teacher-choose img{
     width: 90%;
     height: 190px;
 }
 .teacher {
-    height: 490px;
+    height: 560px;
 }
 .teacher-name3{
     text-align: center;
@@ -226,7 +228,7 @@
     margin: 20px 0;
 }
 .xioaguo-name img{
-    width: 140px;
+    width: 165px;
     height: 61px;
 }
 .environment{
@@ -280,4 +282,15 @@
     border-radius: 20%;
     background: #000;
     opacity: .2;
+}
+.settings .timeItem {
+    display: inline-block;
+    font-size: 12px;
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    color: black;
+    border-radius: 4px;
+    background: white;
+    font-weight: bold;
 }

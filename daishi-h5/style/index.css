@@ -10,7 +10,6 @@
     background-color: white;
 }
 .cs{
-    top: 50px;
     height: 320px;
 }
 .settings{
@@ -338,4 +337,51 @@
     border-radius: 20%;
     background: #000;
     opacity: .2;
+}
+.daojishi{
+    background-image: url("./../images/seaside/daojishi.png");
+    width: 100%;
+    height: 100px;
+}
+.daojishi-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.daojishi-item{
+    width: 50%;
+    height: 60px;
+    padding-left: 10px;
+}
+.daojishi-item .name{
+    width: 98px;
+    height: 19px;
+    background-color: #70ffff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: inline-block;
+    text-align: center;
+}
+.daojishi-item .timeItem{
+    text-align: center;
+    font-size: 15px;
+}
+.daojishi-item .zhongkao{
+    margin-top: 10px;
+}
+.daojishi-item .gaokao{
+    margin-top: 10px;
+}
+.daojishi .lianxiwo{
+    color: white;
+    font-size: 12px;
+    width: 184px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 14px;
+    background-color: #00dbed;
+    margin: 4px auto;
 }

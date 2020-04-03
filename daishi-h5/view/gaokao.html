@@ -234,7 +234,6 @@
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
             <div class="talk">与TA交流</div>
@@ -321,14 +320,35 @@
         date: "2020-06-07"
     })
     new TimeCount({
-    parent: document.getElementsByClassName("time1")[0],
-    date: "2020-06-01"
-})
+        parent: document.getElementsByClassName("time1")[0],
+        date: "2020-06-01"
+    })
 
-new TimeCount({
-    parent: document.getElementsByClassName("time2")[0],
-    date: "2020-06-07"
-})
+    new TimeCount({
+        parent: document.getElementsByClassName("time2")[0],
+        date: "2020-06-07"
+    })
+    new Select({
+        position: $('.shangke-select1'),
+        arr: ["年级", "幼儿", "一年级", "二年级", "三年级", "四年级", "五年级", "六年级", "初一", "初二", "初三", "高一", "高二", "高三"],
+        width: '48%',
+        height: '35px',
+        drop: '180px'
+    })
+    new Select({
+        position: $('.shangke-select2'),
+        arr: ["科目", '语文', '数学', '英语', '物理', '化学', '语言表演', '情商美术'],
+        width: '48%',
+        height: '35px',
+        drop: '180px'
+    })
+    new Select({
+        position: $('.shangke-select3'),
+        arr: ["班级", '一对一', '3~6人精品', '15人大师班'],
+        width: '48%',
+        height: '35px',
+        drop: '180px'
+    })
 </script>
 
 </html>

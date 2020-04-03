@@ -96,12 +96,12 @@ header ul li img {
 
 .swiper-container {
     width: 100%;
-    height: 188px;
+    height: 250px;
 }
 
 .swiper-slide {
     width: 100%;
-    height: 188px;
+    height: 250px;
 }
 
 .swiper-slide img {
@@ -113,6 +113,7 @@ header ul li img {
     position: relative;
     border-radius: 10px;
     margin: 0 auto;
+    padding: 10px;
     z-index: 9;
     border: 1px solid rgba(128, 128, 128, 0.397);
 }
@@ -121,9 +122,8 @@ header ul li img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 92%;
+    padding: 0 10px;
     height: 50px;
-    margin: 20px auto 5px;
 }
 
 .settings>ul>li>img {
@@ -136,6 +136,7 @@ header ul li img {
     justify-content: space-between;
     align-items: center;
     /* width: 100%; */
+    height: 10px;
     margin: 0 auto;
 }
 

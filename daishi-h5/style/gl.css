@@ -1,60 +1,304 @@
-html{
+.ML-xuanchuan img {
     width: 100%;
+    height: 188px;
 }
-
-/* experience */
-.experience{
-    width: 100%;
+.settings{
+    top: -40px;
+        height: 70px;
+        width: 90%;
+    background-color: #2192FA;
 }
-.experience>img{
-    width: 100%;
-}
-/* supervise */
-.supervise{
-    width: 90%;
-    margin: auto;
-    margin-top: 6vw;
-}
-.supervise>img{
-    width: 100%;
-}
-.xq{
-    width: 70%;
-    height: 9vw;
-    margin: auto;
-    margin-top: 2vw;
+.settings .title {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
     text-align: center;
-    /* border: 1px solid #000; */
-    box-sizing: border-box;
-    color: white;
-    background-color: rgb(252,195,0);
+    font-size: 12px;
+    border-radius: 10px;
+    background-color: #70FFFF;
 }
-.xq>p{
-    line-height: 9vw;
+.settings .times2 {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    width: 170px;
+    height: 25px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
 }
-
-/* coach */
-.coach{
-    width: 100%;
-    margin-top: 6vw;
+.settings .late {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 130px;
+    height: 35px;
+    border-radius: 17px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #FEE63B;
+    color: #2192FA;
 }
-.coach>img{
-    width: 90%;
-    margin: auto;
+.lb{
+    text-align: center;
+    margin-bottom: 0;
 }
-
-/* public */
+.lb img{
+    margin-left: 0;
+}
+.course-price .course-price-name {
+    border-left: 4px solid #2192FA;
+}
 .shangke-input{
+    margin: 20px auto;
+    width: 100%;
+}
+.six{
+    padding: 14px;
+    box-sizing: border-box;
+}
+.six-content {
+    background-image: url("./../images/seaside/zhongkao/zu33-6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    padding-top: 40px;
+    width: 100%;
+}
+.six-content-items {
+    margin: 0px auto;
+}
+.six-content .six-content-item {
+    margin-bottom: 15px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.six-content .six-content-item div {
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+    line-height: 30px;
+}
+.six-content .six-content-item div img {
+    margin-top: 4px;
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+    background-color: #2d8fee;
+}
+.six-content .six-content-item div h4 {
+    font-size: 14px;
+}
+.six-content .six-content-item p {
+    font-size: 12px;
+}
+.six-content .six-content-item{
+    background-image: url("./../images/seaside/guanli/liujie.png");
+    color: #2d8fee;
+}
+.xiangqing {
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    background: linear-gradient(269deg,rgba(236,88,41,1) 0%,rgba(241,152,72,1) 34%,rgba(241,202,72,1) 100%);
+}
+.zseven{
+    position: relative;
+    margin-top: 10px;
+    background-image: url("./../images/seaside/zhongkao/7bu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    background-color: white;
+    height: 535px;
+}
+.dingwei{
+    position: absolute;
+    bottom: 20px;
+    left: calc(15%);
+}
+.eight{
+    margin-top: 20px;
+    background-image: url("./../images/seaside/zhongkao/zu33-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    background-color: white;
+    height: 562px;
+}
+.eight .eight-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+.eight .eight-content div{
+    margin-top: 30px;
+}
+.eight div .eight-content-item{
+    width: 150px;
+    height: 90px;
+    margin: 20px 0;
+    background-image: url("./../images/seaside/zhongkao/zu33-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    text-align: center;
+    color: white;
+} 
+.eight div .eight-content-item h4{
+    line-height: 26px;
+}
+.eight div .eight-content-item p{
+    color: #2192F9;
+    font-size: 12px;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.teacher-name2{
+    text-align: center;
+}
+.teacher-name2 img{
+    width: 50%;
+    height: 60px;
+
+}
+.teacher-content {
+    width: 100%;
+    /* height: 150px; */
+    margin: 0 auto;
+}
+.teacher .talk{
+    background-color: #FF5A56;
+    top: 25px;
+    position: relative; 
+    left: 70px;
+    width: 235px;
+    height: 35px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 9;
+}
+.teacher .teacher-choose{
+    text-align: center;
+}
+.teacher .teacher-choose img{
+    width: 90%;
+    height: 190px;
+}
+.teacher {
+    height: 560px;
+}
+.teacher-name3{
+    text-align: center;
+    margin: 20px 0;
+}
+.teacher-name3 img{
+    width: 140px;
+    height: 61px;
+}
+.teacher .teacher-choose img {
+    width: 90%;
+    height: 188px;
+}
+.teacher .teacher-choose {
+    position: relative;
+    /* top: -60px; */
+}
+.xioaguo-name{
+    text-align: center;
+    margin: 20px 0;
+}
+.xioaguo-name img{
+    width: 165px;
+    height: 61px;
+}
+.environment-name{
+    text-align: center;
+    margin: 20px 0;
+}
+.environment-name img{
+    width: 90%;
+    height: 24px;
+}
+.environment{
+    text-align: center;
+    margin: 20px 0;
+}
+.environment-content img {
+    height: 587px;
+    width: 90%;
+}
+.course-price {
+    margin-top: 20px;
+}
+.xiaoguo-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 90%;
     margin: 0 auto;
 }
-.course-price-get{
-    width: 90%;
-    margin: 20px auto;
+.xiaoguo-content div:nth-last-of-type(1){
+    width: 95px;
+    height: 238px;
+    background-image: url("./../images/seaside/zhongkao/fenshu_21.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 90%;
     text-align: center;
-    color: white;
-    height: 40px;
-    line-height: 40px;
-    background:linear-gradient(269deg,rgba(236,88,41,1) 0%,rgba(241,152,72,1) 34%,rgba(241,202,72,1) 100%);
 }
-
+.xiaoguo-content div:nth-last-of-type(2){
+    width: 165px;
+    height: 290px;
+    background-image: url("./../images/seaside/zhongkao/zu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    text-align: center;
+}
+.xiaoguo-content div:nth-last-of-type(3){
+    width: 95px;
+    height: 238px;
+    background-image: url("./../images/seaside/zhongkao/zu33-5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 10%;
+    text-align: center;
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 20%;
+    background: #000;
+    opacity: .2;
+}
+.settings .timeItem {
+    display: inline-block;
+    font-size: 12px;
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    color: black;
+    border-radius: 4px;
+    background: white;
+    font-weight: bold;
+}

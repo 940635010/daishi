@@ -219,7 +219,7 @@
 
 }
 .teacher-content {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 .teacher .talk{
@@ -240,10 +240,10 @@
 }
 .teacher .teacher-choose img{
     width: 90%;
-    height: 190px;
+    height: 245px;
 }
 .teacher{
-    height: 430px;
+    height: 550px;
 }
 .teacher-name2{
     text-align: center;

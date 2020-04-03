@@ -184,11 +184,10 @@
                         <div class="swiper-slide"><img src="./../images/seaside/zhongkao/t5.jpg" /></div>
                     </div>
                     <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
                 </div>
             </div>
-            <div class="talk" style="top: 25px;">与TA交流</div>
+            <div class="talk" style="top: -10px;">与TA交流</div>
             <div class="teacher-choose">
                 <img src="./../images/seaside/zhongkao/liucheng.png" alt="">
             </div>
@@ -203,8 +202,9 @@
                 <div></div>
                 <div></div>
             </div>
-            <div style="text-align: center;"><img src="./../images/seaside/zhongkao/choose_21.jpg" alt=""
-                    style="width: 283px;height: 46px;"></div>
+            <div style="text-align: center;">
+                <img src="./../images/seaside/zhongkao/choose_21.jpg" alt="" style="width: 283px;height: 46px;">
+            </div>
             <div class="xiangqing">立即报名：028-66060688</div>
         </div>
         <!-- 环境部分 -->
@@ -222,7 +222,7 @@
                     <input type="text" placeholder="请输入您的电话">
                     <input type="text" placeholder="住址（便于就近安排校区）">
                 </div>
-                <div class="course-price-get">立即获取课程报价</div>
+                <div class="xiangqing">立即获取课程报价</div>
             </div>
         </div>
     </div>
@@ -303,6 +303,27 @@ new TimeCount({
     parent: document.getElementsByClassName("time2")[0],
     date: "2020-06-07"
 })
+new Select({
+        position: $('.shangke-select1'),
+        arr: ["年级", "幼儿", "一年级", "二年级", "三年级", "四年级", "五年级", "六年级", "初一", "初二", "初三", "高一", "高二", "高三"],
+        width: '48%',
+        height: '35px',
+        drop: '180px'
+    })
+    new Select({
+        position: $('.shangke-select2'),
+        arr: ["科目", '语文', '数学', '英语', '物理', '化学', '语言表演', '情商美术'],
+        width: '48%',
+        height: '35px',
+        drop: '180px'
+    })
+    new Select({
+        position: $('.shangke-select3'),
+        arr: ["班级", '一对一', '3~6人精品', '15人大师班'],
+        width: '48%',
+        height: '35px',
+        drop: '180px'
+    })
 </script>
 
 </html>
