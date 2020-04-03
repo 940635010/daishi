@@ -98,7 +98,7 @@
     opacity: 0.9;
 }
 .pcly{
-    background-image: url(../images/liuyan/pcly.png);
+    background-image: url(../images/ly/beijng.png);
     width: 600px;
     height: 568px;
     margin: auto;
@@ -164,4 +164,10 @@
     font-size: 30px;
     color: white;
     text-align: center;
+}
+.close-btn:hover{
+    cursor:pointer;
+}
+.liuyan-box>button:hover{
+    cursor:pointer;
 }

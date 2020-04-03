@@ -35,10 +35,10 @@ $('.shoufei-i').on('click',function(){
 
 new Select({
     position:$('.liuyan-select1'),
-    arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+    arr:['年级','小学','初一 | 初二','初三','高一 | 高二','高三'],
     width:'234px',
     height:'57px',
-    drop:'90px'
+    drop:'180px'
 })
 $('.close-btn').on('click',function(){
     $('#liuyan-box').css({'display':'none'})
