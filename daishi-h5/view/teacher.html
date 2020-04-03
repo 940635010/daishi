@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../style/share.css">
     <link rel="stylesheet" href="../style/base.css">
-    <link rel="stylesheet" href="./../style/share.css">
     <link rel="stylesheet" href="../style/select.css">
-    <link rel="stylesheet" href="../style/swiper.css">
     <link rel="stylesheet" href="../style/prev.css">
     <link rel="stylesheet" href="../style/teacher.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -162,6 +160,15 @@
     <script src="../js/select.js"></script>
     <script src="../js/prev.js"></script>
     <script>
+        new TimeCount({
+            parent: document.getElementsByClassName("time1")[0],
+            date: "2020-06-01"
+        })
+
+        new TimeCount({
+            parent: document.getElementsByClassName("time2")[0],
+            date: "2020-06-07"
+        })
         new Select({
             position: $('.shangke-select1'),
             arr: ["年级", "幼儿", "一年级", "二年级", "三年级", "四年级", "五年级", "六年级", "初一", "初二", "初三", "高一", "高二", "高三"],

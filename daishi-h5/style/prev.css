@@ -1,7 +1,3 @@
-  *{
-    padding: 0;
-    margin: 0;
-  }
 
 ._main{
   width: 100vw;
@@ -31,6 +27,7 @@
 }
 ._main2{
 width: 75.46vw;
+height: auto;
 }
 .arrow{
   width: 15.47vw;
@@ -48,7 +45,7 @@ width: 100%;
 .father{
   position: relative;
 }
-.b_head{
+#gallery .b_head{
   width: 32.8vw;
   height: 44.6vw;
 }
@@ -63,7 +60,7 @@ width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font:bold;
+  font-weight:bold;
 }
 .info{
   width: 77.6vw;
@@ -85,11 +82,11 @@ width: 100%;
   justify-content: space-between;
   /* justify-content: space-between; */
 }
-.info_cont>img{
+#gallery  .info_cont>img{
   max-width: 57.87vw;
   height: 5.84vw;
 }
-.info_cont>span{
+#gallery  .info_cont>span{
   max-width: 57.86vw;
   font-size: 1.6vw;
   line-height: 5vw;
