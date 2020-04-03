@@ -33,13 +33,12 @@
     }
     // 打开选项
     Select.prototype.click=function(){
-        console.log(1)
         if(this.position.css('overflow')=='hidden'){
             this.position.css({'overflow':'visible'})
         }else{
             this.position.css({'overflow':'hidden','height':this.hei})
         }
-        e.stopPropagation();
+
     }
     // 点击展开的元素
     Select.prototype.onchild=function(_this){
