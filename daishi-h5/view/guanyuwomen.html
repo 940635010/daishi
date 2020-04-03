@@ -68,7 +68,7 @@
         }
         h2{
             width: 88%;
-            margin-left: 6%;
+            margin-left: 3%;
             border-left: 3px solid #487ebd;
             padding-left: 2%;
             font-size: 18px;
@@ -87,7 +87,7 @@
             display: flex;
             flex-wrap: wrap;
             font-size: 12px;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
         .huan-ims>li{
             width: 33%;
@@ -122,6 +122,7 @@
             text-align: center;
             line-height: 35px;
             font-weight: 600;
+            font-size: 12px;
         }
         .huan-ul>button{
             background-color: #438ae5;
@@ -153,7 +154,7 @@
         }
         .products{
             background-color: white;
-
+            text-align: center;
         }
         .products img{
             width: 375px;
@@ -164,17 +165,16 @@
             line-height: 60px;
             font-size: 13px;
         }
-        footer>ul>li img{
-            margin-top: 25px;
-            width: 50px;
-            height: 50px;
-        }
         .shangke-products{
             margin-top: 21px;
             width: 100%;
         }
         .shangke-products>img{
             width: 100%;
+        }
+        .free{
+            text-align: center;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -239,14 +239,18 @@
     <div class="shangke-products">
         <img src="../images/ly/zu 24(2).png">
     </div>
-    <div class="products">
-        <img src="./../images/share/footer_03.jpg">
+    <!-- 固定地步区域 -->
+    <div>
+        <div class="products">
+            <img src="./../images/share/footer_03.jpg">
+        </div>
+        <div class="free">
+            <img src="./../images/share/footer2_12.jpg">
+        </div>
     </div>
-    <div class="free">
-        <img src="./../images/share/footer2_12.jpg" >
-    </div>
-    <footer>
-        <ul>
+    <p class="clear"></p>
+    <footer style="z-index: 999;">
+        <ul style="z-index: 999;">
             <li><img src="./../images/share/foot-span_03.jpg"> </li>
             <li><img src="./../images/share/foot-span_05.jpg"> </li>
             <li><img src="./../images/share/foot-span_07.jpg"> </li>
