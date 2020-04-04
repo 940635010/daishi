@@ -555,7 +555,9 @@
                         <p>联电话：028-66060688</p>
                         <p>校区地址：顺城街，顺吉大厦3楼</p>
                     </div>
-                    <div class="pic-back">
+                </div>
+                <div class="footer-fixed">
+                      <div class="pic-back">
                         <img src="../images/index/ren.png" alt="">
                     </div>
                     <div class="footer-inp">
@@ -563,8 +565,18 @@
                         <input type="text" placeholder="请输入您的电话">
                         <select name="" id="">
                             <option value="" selected disabled style="display: none;">年级</option>
-                            <option value="">初三</option>
+                            <option value="">幼儿</option>
+                            <option value="">一年级</option>
+                            <option value="">二年级</option>
+                            <option value="">三年级</option>
+                            <option value="">四年级</option>
+                            <option value="">五年级</option>
                             <option value="">六年级</option>
+                            <option value="">初二</option>
+                            <option value="">初三</option>
+                            <option value="">初三</option>
+                            <option value="">高一</option>
+                            <option value="">高二</option>
                             <option value="">高三</option>
                         </select>
                         <select name="" id="">
@@ -573,17 +585,18 @@
                             <option value="">英语</option>
                             <option value="">物理</option>
                             <option value="">化学</option>
+                            <option value="">语言表演</option>
+                            <option value="">情商美术</option>
                         </select>
                         <select name="" id="">
                             <option value="" selected disabled style="display: none;">班级</option>
                             <option value="">个性化一对一</option>
-                            <option value="">精品小班</option>
-                            <option value="">春季学霸班</option>
-                            <option value="">雏鹰计划</option>
-                            <option value=""> 中考密训</option>
+                            <option value="">3~6人精品</option>
+                            <option value="">15人大师班</option>
                         </select>
                         <p>立即获取课程报价</p>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -710,19 +723,17 @@
         style: 样式类名,
         pre: 前缀
     */
-    var mySwiper = new Swiper ('.swiper-container', {
-    direction: 'horizontal', // 垂直切换选项
-    loop: true, // 循环模式选项
-    
-    
-    
-    // 如果需要前进后退按钮
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    
-    
+    var mySwiper = new Swiper ('.swiper-container',{
+          speed:600,
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+        autoplay:true,
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+
   })
 
     function checkTime(i) { //将0-9的数字前面加上0，例1变为01 

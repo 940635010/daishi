@@ -176,7 +176,7 @@ a{
 /* ===========课程类型========== */
 .boxx{
     height:540px;
-    width:1200px;
+    width:375px;
     position: absolute;
     left:50%;
     margin-left:-600px;
@@ -282,6 +282,7 @@ a{
     margin-bottom: 30px;
 }
 .course-1-link{
+    cursor: pointer;
     width: 104px;
     height: 30px;
     text-align: center;
@@ -1030,6 +1031,12 @@ margin-left:125px ;
 }
 .pic-txt>p{
     margin-bottom: 9px;
+}
+.footer-fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 99
 }
 .pic-back{
     width: 100%;
