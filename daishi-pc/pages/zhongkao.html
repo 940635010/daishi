@@ -28,6 +28,18 @@
         .shangke-ys{
             margin-bottom: 42px;
         }
+        .ly-styke{
+            position: absolute;
+            width: 117px;
+            height: 30px;
+            bottom: 148px;
+            z-index: 999;
+            left: 897px;
+
+        }
+        .ly-styke:hover{
+            cursor:pointer
+        }
     </style>
 </head>
 
@@ -83,7 +95,7 @@
                 <img src="../images/entrance/zkback.jpg" alt="">
                 <div class="entra-countdown center">
                     <div class="countdown-time"></div>
-                    <div class="entra-btn">早报名早提升</div>
+                    <div class="entra-btn kefu">早报名早提升</div>
                 </div>
             </div>
             <!-- 推销 -->
@@ -131,7 +143,7 @@
                     <input type="text" placeholder="请输入您的电话">
                     <input type="text" placeholder="住址（便于就近安排校区）">
                 </div>
-                <div class="entra-form-btn">立即获取课程报价</div>
+                <div class="entra-form-btn ly-bnt">立即获取课程报价</div>
             </div>
 
             <!-- 详情 -->
@@ -148,7 +160,7 @@
                     <img src="../images/entrance/22.jpg" alt="">
                     <img src="../images/entrance/23.jpg" alt="">
                 </div>
-                <div class="dails-btn">028-66060638点击立即咨询</div>
+                <div class="dails-btn kefu">028-66060638点击立即咨询</div>
                 <div class="entra-title1">
                     <span>7步</span>
                     <span>精细化流程</span>
@@ -172,13 +184,13 @@
                     <span>8大</span>
                     <span>特色化辅导优势</span>
                 </div>
-                <div class="dails-btn">028-66060638点击立即咨询</div>
+                <div class="dails-btn kefu">028-66060638点击立即咨询</div>
             </div>
 
             <!-- 特殊辅导 -->
             <div class="entra-features">
                 <img src="../images/entrance/08.jpg" alt="">
-                <div class="features-btn">028-66060638点击立即咨询</div>
+                <div class="features-btn kefu">028-66060638点击立即咨询</div>
                 <div class="features-title">
                     <span>名师出高徒</span>
                     <span>严格把控教师选拔流程</span>
@@ -217,6 +229,7 @@
     <!-- 如果需要导航按钮 -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
+    <div class="ly-styke kefu"></div>
     </div>
 <!-- <div class="tutor-btn">优秀模范导师</div> -->
 
@@ -250,7 +263,7 @@
                     <div><img src="../images/yinxing/xbhj3.png"></div>
                     <div><img src="../images/yinxing/xbhj4.png"></div>
                     <div><img src="../images/yinxing/xbhj5.png"></div>
-                    <div class="effect-baojia">立即获取课程报价</div>
+                    <div class="effect-baojia kefu">立即获取课程报价</div>
                 </div>
             </div>
 
@@ -305,7 +318,7 @@
                         <option value="">雏鹰计划</option>
                         <option value=""> 中考密训</option>
                         </select>
-                        <p>立即获取课程报价</p>
+                        <p class="ly-bnt">立即获取课程报价</p>
                     </div>
                 </div>
             </div>
@@ -334,7 +347,17 @@
 <script src="../js/swiper.min.js"></script>
 <script src="../js/select.js"></script>
 <script src="../js/zmsf.js"></script>
+ <!-- 商务通 -->
+ <script language="javascript" src="http://ddt.zoosnet.net/JS/LsJS.aspx?siteid=DDT72038452&float=1&lng=cn"></script>
 <script>
+        $('.kefu').on('click', function () {
+         window.open(
+             'http://ddt.zoosnet.net/LR/Chatpre.aspx?id=DDT72038452&lng=cn',
+             "newwindow",
+             "alwaysRaised=yes, height=600,width=800,top=100,left=300,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no,z-look=yes"
+         );
+         return false;
+     })
     /*
         date:未来的时间，
         style: 样式类名,

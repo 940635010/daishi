@@ -192,20 +192,20 @@
         <div class="about">
             <p>校区查询</p>
             <ul class="about-ul">
-                <li class="about-li"><a href="#">顺吉大厦总校</a></li>
-                <li class="about-li"><a href="#">温江成实外</a></li>
-                <li class="about-li"><a href="#">骡马市</a> </li>
-                <li class="about-li"><a href="#">高升桥</a></li>
-                <li class="about-li"><a href="#">桐梓林</a></li>
-                <li class="about-li"><a href="#">牛王庙</a></li>
-                <li class="about-li"><a href="#">双楠</a></li>
-                <li class="about-li"><a href="#">龙爪堰</a></li>
-                <li class="about-li"><a href="#">北门客运站</a></li>
-                <li class="about-li"><a href="#">万象城</a></li>
-                <li class="about-li"><a href="#">省体育馆</a></li>
-                <li class="about-li"><a href="#">建设路</a></li>
+                <li class="about-li kefu"><a href="#">顺吉大厦总校</a></li>
+                <li class="about-li kefu"><a href="#">温江成实外</a></li>
+                <li class="about-li kefu"><a href="#">骡马市</a> </li>
+                <li class="about-li kefu"><a href="#">高升桥</a></li>
+                <li class="about-li kefu"><a href="#">桐梓林</a></li>
+                <li class="about-li kefu"><a href="#">牛王庙</a></li>
+                <li class="about-li kefu"><a href="#">双楠</a></li>
+                <li class="about-li kefu"><a href="#">龙爪堰</a></li>
+                <li class="about-li kefu"><a href="#">北门客运站</a></li>
+                <li class="about-li kefu"><a href="#">万象城</a></li>
+                <li class="about-li kefu"><a href="#">省体育馆</a></li>
+                <li class="about-li kefu"><a href="#">建设路</a></li>
             </ul>
-            <div class="shangke-btn">
+            <div class="shangke-btn kefu">
                 028-66060688更多校区地址查询
             </div>
         </div>
@@ -261,7 +261,7 @@
                     <option value="">雏鹰计划</option>
                     <option value=""> 中考密训</option>
                 </select>
-                <p>立即获取课程报价</p>
+                <p class="ly-bnt">立即获取课程报价</p>
             </div>
         </div>
     </div>
@@ -285,8 +285,17 @@
     <script src="../js/jquery-1.8.3.min.js"></script>
     <script src="../js/select.js"></script>
     <script src="../js/zmsf.js"></script>
-    
+    <!-- 商务通 -->
+<script language="javascript" src="http://ddt.zoosnet.net/JS/LsJS.aspx?siteid=DDT72038452&float=1&lng=cn"></script>
     <script>
+        $('.kefu').on('click', function () {
+         window.open(
+             'http://ddt.zoosnet.net/LR/Chatpre.aspx?id=DDT72038452&lng=cn',
+             "newwindow",
+             "alwaysRaised=yes, height=600,width=800,top=100,left=300,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no,z-look=yes"
+         );
+         return false;
+     })
         /*
         倒计时的封装
         date:未来的时间，

@@ -35,6 +35,18 @@
         .shangke-ys{
             margin-bottom: 42px;
         }
+        .ly-styke{
+            position: absolute;
+            width: 117px;
+            height: 30px;
+            bottom: 148px;
+            z-index: 999;
+            left: 897px;
+
+        }
+        .ly-styke:hover{
+            cursor:pointer
+        }
     </style>
 </head>
 <body>
@@ -90,7 +102,7 @@
                 <img src='../images/gaokao/111_03.png'>
                 <div class="entra-countdown center">
                     <div class="countdown-time"></div>
-                    <div class="entra-btn">早报名早提升</div>
+                    <div class="entra-btn kefu">早报名早提升</div>
                 </div>
             </div>
             <!-- 推销 -->
@@ -137,7 +149,7 @@
                     <input type="text" placeholder="请输入您的电话">
                     <input type="text" placeholder="住址（便于就近安排校区）">
                 </div>
-                <div class="entra-form-btn">立即获取课程报价</div>
+                <div class="entra-form-btn ly-bnt">立即获取课程报价</div>
             </div>
           <!-- 详情 -->
           <div class="studyState"> 
@@ -145,7 +157,7 @@
                <img src="../images/gaokao/22_12.png" alt="" id='pictwo'>
                <img src="../images/gaokao/444_14.png" alt="" id='picthree'>
                <div></div>
-               <span class="studybtn"></span>
+               <span class="studybtn kefu"></span>
           </div>
           <!-- 表单部分 -->
           <div class="footer_service">
@@ -162,12 +174,12 @@
                 <input type="text" placeholder="请输入您的电话">
                 <input type="text" placeholder="住址（便于就近安排校区）">
             </div>
-            <div class="form-btn">立即获取课程报价</div>
+            <div class="form-btn ly-bnt">立即获取课程报价</div>
           </div>
          <!-- 课程特色 -->
          <div class='speciallesson'>
              <img src="../images/gaokao/88_33.png" alt="">
-             <div>点击了解详情</div>
+             <div class="kefu">点击了解详情</div>
          </div>
          <!-- 详情老师圆圈中心部分 -->
          <div class="circletitle">
@@ -200,6 +212,7 @@
                     <!-- 如果需要导航按钮 -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+                    <div class="kefu ly-styke"></div>
                     </div>
             <!-- <div class="tutor-btn">优秀模范导师</div> -->
         
@@ -207,7 +220,7 @@
         <div class="envi">
              <img src="../images/gaokao/1515_03.png" alt="" id='envione'>
              <img src="../images/gaokao/1414_06.png" alt="" id='envitwo'>
-            <div>点击了解详情</div>
+            <div class="kefu">点击了解详情</div>
         </div>
         </div>
         <!-- 底部 -->
@@ -257,7 +270,7 @@
                         <option value="">雏鹰计划</option>
                         <option value=""> 中考密训</option>
                     </select>
-                    <p>立即获取课程报价</p>
+                    <p class="ly-bnt">立即获取课程报价</p>
                 </div>
             </div>
         </div>
@@ -283,7 +296,17 @@
 <script src="../js/select.js"></script>
 <script src="../js/jquery-1.8.3.min.js"></script>
 <script src="../js/swiper.min.js"></script>
+ <!-- 商务通 -->
+ <script language="javascript" src="http://ddt.zoosnet.net/JS/LsJS.aspx?siteid=DDT72038452&float=1&lng=cn"></script>
 <script>
+      $('.kefu').on('click', function () {
+         window.open(
+             'http://ddt.zoosnet.net/LR/Chatpre.aspx?id=DDT72038452&lng=cn',
+             "newwindow",
+             "alwaysRaised=yes, height=600,width=800,top=100,left=300,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no,z-look=yes"
+         );
+         return false;
+     })
     // 收费NEW的select
 new Select({
     position:$('#charge-select1'),
@@ -330,7 +353,7 @@ $('.close-btn').on('click',function(){
     $('#liuyan-box').css({'display':'none'})
 })
 
-$('.footer-inpt').children('p').on('click',function(){
+$('.ly-bnt').on('click',function(){
     $('#liuyan-box').css({'display':'block'})
 })
     /*

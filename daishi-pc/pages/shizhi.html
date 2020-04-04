@@ -61,6 +61,18 @@
 .banner-course{
     margin-left: 0px;
 }
+.ly-styke{
+            position: absolute;
+            width: 117px;
+            height: 30px;
+            bottom: 148px;
+            z-index: 999;
+            left: 897px;
+
+        }
+        .ly-styke:hover{
+            cursor:pointer
+        }
     </style>
 </head>
 
@@ -156,11 +168,11 @@
                         <p>初中课程</p>
                     </div>
                     <div class="course-one-2">
-                        <span>语文</span>
-                        <span>数学</span>
-                        <span>英语</span>
-                        <span>物理</span>
-                        <span>化学</span>
+                        <span class="kefu">语文</span>
+                        <span class="kefu">数学</span>
+                        <span class="kefu">英语</span>
+                        <span class="kefu">物理</span>
+                        <span class="kefu">化学</span>
                     </div>
                 </div>
                 <div class="course-one">
@@ -171,11 +183,11 @@
                         <p>高中课程</p>
                     </div>
                     <div class="course-one-2">
-                        <span>语文</span>
-                        <span>数学</span>
-                        <span>英语</span>
-                        <span>文综</span>
-                        <span>理综</span>
+                        <span class="kefu">语文</span>
+                        <span class="kefu">数学</span>
+                        <span class="kefu">英语</span>
+                        <span class="kefu">文综</span>
+                        <span class="kefu">理综</span>
                     </div>
                 </div>
                 <div class="course-one">
@@ -186,11 +198,11 @@
                         <p>小学课程</p>
                     </div>
                     <div class="course-one-2">
-                        <span class='specialtext'>语文</span>
-                        <span class='specialtext'>数学</span>
-                        <span class='specialtext'>英语</span>
-                        <span class='specialtext'>语言表演</span>
-                        <span id='iq'>情商美术</span>
+                        <span class='specialtext kefu'>语文</span>
+                        <span class='specialtext kefu'>数学</span>
+                        <span class='specialtext kefu'>英语</span>
+                        <span class='specialtext kefu'>语言表演</span>
+                        <span id='iq' class="kefu">情商美术</span>
                     </div>
                 </div>
             </div>
@@ -253,7 +265,7 @@
         <!-- 了解团队 -->
         <div class="sztd1">
             <div class="szimg-3">
-                <div class="szdianji"></div>
+                <div class="szdianji kefu"></div>
             </div>
         </div>
         <!-- 按钮图片 -->
@@ -286,6 +298,7 @@
                     <div class="swiper-slide"> <img src="../images/entrance/005.jpg" alt=""></div>
                 </div>
                 <!-- 如果需要导航按钮 -->
+                <div class="kefu ly-styke"></div>
                 <div class="swiper-button-prev swiper-button-prev1"></div>
                 <div class="swiper-button-next swiper-button-next1"></div>
             </div>
@@ -339,7 +352,7 @@
                 <option value="">雏鹰计划</option>
                 <option value=""> 中考密训</option>
             </select>
-            <p>立即获取课程报价</p>
+            <p class="ly-bnt">立即获取课程报价</p>
         </div>
     </div>
 </div>
@@ -365,8 +378,17 @@
 <script src="../js/swiper.min.js"></script>
 <script src="../js/select.js"></script>
 <script src="../js/zmsf.js"></script>
+<!-- 商务通 -->
+<script language="javascript" src="http://ddt.zoosnet.net/JS/LsJS.aspx?siteid=DDT72038452&float=1&lng=cn"></script>
 <script>
-
+$('.kefu').on('click', function () {
+         window.open(
+             'http://ddt.zoosnet.net/LR/Chatpre.aspx?id=DDT72038452&lng=cn',
+             "newwindow",
+             "alwaysRaised=yes, height=600,width=800,top=100,left=300,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no,z-look=yes"
+         );
+         return false;
+     })
     /*
         倒计时的封装
         date:未来的时间，

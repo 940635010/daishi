@@ -107,7 +107,7 @@
                       
                 </div>
                </div>
-               <div id='yuyuebtn1'>028-66060688立即预约提升课程</div>
+               <div id='yuyuebtn1' class="kefu">028-66060688立即预约提升课程</div>
             </div>
             <div class="picban">
                 <img src='../images/youshengxiao/whyus_03.png'>
@@ -116,7 +116,7 @@
                 <img src='../images/youshengxiao/worth5_06.png'>
                 <div class="forminput"><input type="text" placeholder="请输入您孩子的姓名">
                     <input type="text" placeholder="请输入您的电话"></div>
-                <div id='redbtn'></div>
+                <div id='redbtn' class="kefu"></div>
             </div>
         <!-- 问题部分 -->
            <div class="question">
@@ -124,7 +124,7 @@
                <img src="../images/youshengxiao/3.png" alt="" id='pcquetwo'>
                <img src="../images/youshengxiao/2.png" alt="" id='pcquethree'>
                <img src="../images/youshengxiao/1.png" alt="" id='pcquefour'>
-               <div id='yuyuebtn'>028-66060688立即预约提升课程</div>
+               <div id='yuyuebtn' class="kefu">028-66060688立即预约提升课程</div>
            </div>
         <!-- 优秀学员 -->
         <div class="goodstu">
@@ -134,7 +134,7 @@
         <!-- 训练 -->
         <div class='training'>
             <img src="../images/youshengxiao/615_12.png" alt="">
-            <div></div>
+            <div class="kefu"></div>
         </div>
         <!-- 时间 -->
         <div class='timing'>
@@ -152,7 +152,7 @@
         <!-- 小区环境 -->
         <div class='huanj'>
             <img src="../images/youshengxiao/huan_13.png" alt="">
-            <div></div>
+            <div class="kefu"></div>
         </div>
         <!-- 底部 -->
         <div class="index-footer">
@@ -201,7 +201,7 @@
                         <option value="">雏鹰计划</option>
                         <option value=""> 中考密训</option>
                     </select>
-                    <p>立即获取课程报价</p>
+                    <p class="ly-bnt">立即获取课程报价</p>
                 </div>
             </div>
         </div>
@@ -226,8 +226,18 @@
 </body>
 <script src="../js/jquery-1.8.3.min.js"></script>
 <script src="../js/select.js"></script>
+<!-- 商务通 -->
+<script language="javascript" src="http://ddt.zoosnet.net/JS/LsJS.aspx?siteid=DDT72038452&float=1&lng=cn"></script>
 
 <script>
+    $('.kefu').on('click', function () {
+         window.open(
+             'http://ddt.zoosnet.net/LR/Chatpre.aspx?id=DDT72038452&lng=cn',
+             "newwindow",
+             "alwaysRaised=yes, height=600,width=800,top=100,left=300,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no,z-look=yes"
+         );
+         return false;
+     })
     // 收费NEW的select
 new Select({
     position:$('#charge-select1'),

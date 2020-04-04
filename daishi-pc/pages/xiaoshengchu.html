@@ -60,6 +60,17 @@
 .banner-course{
     margin-left: 0px;
 }
+.ly-styke{
+    position: absolute;
+    width: 117px;
+    height: 30px;
+    bottom: 156px;
+    z-index: 999;
+    left: 901px;
+        }
+        .ly-styke:hover{
+            cursor:pointer
+        }
 </style>
 </head>
 <body>
@@ -122,7 +133,7 @@
                 <img class="wh" src="../images/yinxing/xsywh.png" alt="">
                 <p>据数据统计，在小学进入初中的升学中，仅18%的学生能顺利进入初中学习状态，30%的学生成绩直线下降、厌学，52%的学生不会学习，初二爬坡时跌下，到了初三的知识融会贯通，更是有心无力，最终无缘高中。</p>
                 <img class="jdt" src="../images/yinxing/xsyjdt.png" alt="">
-                <div class="xsyan">立即报名参加</div>
+                <div class="xsyan kefu">立即报名参加</div>
             </div>
         </div>
         <!-- 优秀始于起跑线 -->
@@ -138,7 +149,7 @@
         <div class="shangke-ys shangke-select3"></div>
         <input type="text" placeholder="请输入您的电话">
         <input type="text" placeholder="住址（方便就近安排校区）">
-        <button class="shangke-btn"  onclick="window.location.href = 'liuyan.html'">立即获取课程价格</button>
+        <button class="shangke-btn ly-bnt">立即获取课程价格</button>
     </div>
     <!-- 搭配《夏令营雏鹰计划》 -->
     <div class="xsyxly-1q">
@@ -162,7 +173,7 @@
     </div>
     <div class="scydap">
         <img src="../images/yinxing/scydap.png" alt="">
-        <div class="xsyan">立即报名参加</div>
+        <div class="xsyan kefu">立即报名参加</div>
     </div>
     <!-- 精细化上课流程 -->
     <div class="xsyxly-1q">
@@ -171,13 +182,13 @@
     <div class="xihuan">
         <div class="xihuabs"></div>
     </div>
-    <div class="xsyan">立即报名参加</div>
+    <div class="xsyan kefu">立即报名参加</div>
     <!-- 收费标准，组团报名更划算 -->
     <div class="xsyxly-1q">
         <img src="../images/yinxing/xsy-bt5.png" alt="">
     </div>
     <div class="sfbz1-w1">
-        <div class="xsyan www1a">立即报名参加</div>
+        <div class="xsyan www1a kefu">立即报名参加</div>
     </div>
     <!-- 优秀教师模范 -->
     <div class="xsyxly-1q">
@@ -204,6 +215,7 @@
             <div class="swiper-slide"> <img src="../images/yinxing/xsc03.jpg" alt=""></div>
         </div>
         <!-- 如果需要导航按钮 -->
+        <div class="ly-styke kefu"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
@@ -217,7 +229,7 @@
         <div><img src="../images/yinxing/xbhj3.png"></div>
         <div><img src="../images/yinxing/xbhj4.png"></div>
         <div><img src="../images/yinxing/xbhj5.png"></div>
-        <div class="xb-hj-insbox">立即获取课程报价</div>
+        <div class="xb-hj-insbox kefu">立即获取课程报价</div>
     </div>
     </div>
     <!-- 底部 -->
@@ -271,7 +283,7 @@
                     <option value="">雏鹰计划</option>
                     <option value=""> 中考密训</option>
                 </select>
-                <p>立即获取课程报价</p>
+                <p class="ly-bnt">立即获取课程报价</p>
             </div>
         </div>
     </div>
@@ -298,8 +310,17 @@
 <script src="../js/select.js"></script>
 <script src="../js/swiper.min.js"></script>
 <script src="../js/zmsf.js"></script>
+<!-- 商务通 -->
+<script language="javascript" src="http://ddt.zoosnet.net/JS/LsJS.aspx?siteid=DDT72038452&float=1&lng=cn"></script>
 <script>
-
+$('.kefu').on('click', function () {
+         window.open(
+             'http://ddt.zoosnet.net/LR/Chatpre.aspx?id=DDT72038452&lng=cn',
+             "newwindow",
+             "alwaysRaised=yes, height=600,width=800,top=100,left=300,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no,z-look=yes"
+         );
+         return false;
+     })
 var mySwiper = new Swiper ('.swiper-container', {
     direction: 'horizontal', // 垂直切换选项
     loop: true, // 循环模式选项

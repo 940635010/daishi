@@ -43,6 +43,6 @@ $('.close-btn').on('click',function(){
     $('#liuyan-box').css({'display':'none'})
 })
 
-$('.footer-inp').children('p').on('click',function(){
+$('.ly-bnt').on('click',function(){
     $('#liuyan-box').css({'display':'block'})
 })
