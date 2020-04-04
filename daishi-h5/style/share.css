@@ -295,8 +295,7 @@ footer>ul>li img {
 }
 .lb img{
     height: 160px;
-    width: 90%;
-    margin-left: 15px;
+    width: 100%;
 }
 /* 课程报价 */
 .course-price{
