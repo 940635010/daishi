@@ -4,16 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="课外辅导">
+    <meta name="description" content="戴氏教育——中国著名教育品牌，专注于中高考名校冲刺培训，以一套高效独特的DSE教学法，助无数学子圆梦理想名校（初中、高中、国内外大学）">
+    <title>戴氏教育</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> 
     <link rel="stylesheet" href="../style/select.css">
     <link rel="stylesheet" href="../css/shoufei.css">
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
         /* 封装倒计时样式 */
         .timeItem {
             font-size: 20px;
@@ -30,13 +28,51 @@
             font-weight: bold;
             vertical-align: top;
         }
+        @-webkit-keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
     </style>
 </head>
 
 <body>
     <div class="index-wrap">
         <!-- 头部 -->
-        <div class="index-header">
+        <div class="index-header wow slideInUp">
             <div class="index-head">
                 <!-- logo -->
                 <a href="#">
@@ -85,7 +121,7 @@
         <!-- 主体部分 -->
         <div class="index-main">
             <!-- 轮播图+课程 -->
-            <div class="index-banner">
+            <div class="index-banner wow slideInUp">
                 <!-- 轮播图 -->
                
                     <div class="swiper-container">
@@ -174,7 +210,7 @@
                 
             </div>
             <!-- 课程 -->
-            <div class="course">
+            <div class="course wow slideInUp">
                 <div class="course-1">
                     <div class="course-1-logo center">
                         <img src="../images/index/zk.png" alt="">
@@ -226,7 +262,7 @@
             </div>
 
             <!-- 推销 -->
-            <div class="index-shell">
+            <div class="index-shell wow slideInUp">
                 <div class="index-sell center">
                     <div class="index-sell-1">
                         <p>K12</p>
@@ -262,7 +298,7 @@
 
 
             <!-- 方格布局 课程 -->
-        <div class="xb-grow">
+        <div class="xb-grow wow slideInUp">
             <div id='higherindex'>
                 <img src="../images/index/allblue_03.png" alt="" id='seeblue'>
                 <img src="../images/index/twelve_03.png" alt="" id='anotherpic'>
@@ -341,7 +377,7 @@
         </div>
 
             <!-- 步骤 -->
-            <div class="index-step">
+            <div class="index-step wow slideInUp">
                 <div class="step center">
                     <div class="step-nav">
                         <ul>
@@ -401,7 +437,7 @@
             </div>
         <img src="../images/index/bluebg_06.png" alt="" id='picimg'>
             <!-- 关注 -->
-            <div class="index-att center">
+            <div class="index-att center wow slideInUp">
                 <div class="att-title">热点关注</div>
                 <div class="att-content">
                     <div class="content-1 border-b border-r att-active">
@@ -440,7 +476,7 @@
             </div>
 
             <!-- 资讯 -->
-            <div class="index-infor center">
+            <div class="index-infor center wow slideInUp">
                 <div class="infor-title">热点资讯</div>
                 <div class="infor-bom">
                     <div class="infor-bom-l">
@@ -495,7 +531,7 @@
             </div>
 
             <!-- 底部 -->
-            <div class="index-footer">
+            <div class="index-footer wow slideInUp">
                 <div class="footer-back">
                     <div class="back-logo center">
                         <img src="../images/index/logo_u16.png" alt="">
@@ -514,7 +550,7 @@
                         <img src="../images/index/f6.jpg" alt="">
                     </div>
                     <div class="pic-txt center">
-                        <p>网站经案号</p>
+                        <p>备案信息：蜀ICP备1234567890号</p>
                         <p>联电话：028-66060688</p>
                         <p>校区地址：顺城街，顺吉大厦3楼</p>
                     </div>
@@ -552,7 +588,7 @@
         </div>
     </div>
     <!-- 收费遮罩 -->
-    <div id="shoufei-box">
+    <div id="shoufei-box" class="hidden">
         <div id="shoufei-mask">
         </div>
         <div class="shoufei-box">
@@ -588,13 +624,81 @@
             <div class="close-btn">X</div>
         </div>
     </div>
+    <!--右侧-->
+    <div id="floatright" class="wow slideInUp">
+         <ul>
+             <li>
+                <a href="javascript:;" class="kefu">
+                   <img src="../images/index/kaoshizhongxinoff.png" alt="">
+                   <p>中考集训</p>
+                </a>
+             </li>
+             <li>
+               <a href="javascript:;" class="kefu">
+                   <img src="../images/index/kaoshizhongxinoff.png" alt="">
+                   <p>高考集训</p>
+                </a>
+                </li>
+              <li>
+                 <a href="javascript:;" class="kefu">
+                   <img src="../images/index/kaoshizhongxinoff.png" alt="">
+                   <p>中小学1对1</p>
+                </a>
+                </li>
+                <li>
+                 <a href="javascript:;" class="kefu">
+                   <img src="../images/index/kaoshizhongxinoff.png" alt="">
+                   <p>春季班</p>
+                </a>
+                </li>
+                <li>
+                 <a href="javascript:;" class="kefu">
+                   <img src="../images/index/kaoshizhongxinoff.png" alt="">
+                   <p>幼升小</p>
+                </a>
+                </li>
+                <li style="border-bottom:1px solid rgba(255,255,255,1);">
+                 <a href="javascript:;" class="kefu">
+                   <img src="../images/index/kaoshizhongxinoff.png" alt="">
+                   <p>小升初</p>
+                </a>
+                </li>
+         </ul>
+         <div class="sumtime">
+             <p style="font-size: 14px;margin-bottom: 6px">价格查询 | 校区查询</p>
+             <p style="font-size: 18px">028-66060688</p>
+         </div>
+         <a href="javascript:;" class="top">
+             <img src="../images/index/righttop.png" alt="">
+         </a>
+     </div>
+
 </body>
 <script src="../js/jquery-1.8.3.min.js"></script>
 <script src="../js/index.js"></script>
 <script src="../js/swiper.min.js"></script>
 <script src="../js/select.js"></script>
 <script src="../js/zmsf.js"></script>
+<script src="../js/wow.js"></script>
+ <!-- 商务通 -->
+ <script language="javascript" src="http://ddt.zoosnet.net/JS/LsJS.aspx?siteid=DDT72038452&float=1&lng=cn"></script>
 <script>
+
+
+       
+       $('.kefu').on('click', function () {
+         window.open(
+             'http://ddt.zoosnet.net/LR/Chatpre.aspx?id=DDT72038452&lng=cn',
+             "newwindow",
+             "alwaysRaised=yes, height=600,width=800,top=100,left=300,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no,z-look=yes"
+         );
+         return false;
+     })
+     $('#floatright .top').on('click', function () {
+         $("html,body").animate({
+             scrollTop: 0
+         }, 500);
+      })  
 
     
     /*
@@ -824,6 +928,13 @@
 
   })
  
+
+         var wow = new WOW(
+             {
+                 boxClass: 'wow',      // animated element css class (default is wow)
+             }
+         );
+         wow.init();
 
 </script>
 

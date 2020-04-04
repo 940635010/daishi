@@ -2,6 +2,9 @@
     position: absolute;
     z-index: 999;
 }
+#shoufei-box.hidden{
+    display: none;
+}
 #shoufei-mask{
     width: 100%;
     height: 100%;
