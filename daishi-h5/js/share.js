@@ -182,3 +182,18 @@ $('.kefu').on('click', function () {
     );
     return false;
 })
+
+// liuyan
+new Select({
+    position:$('.liuyan-select1'),
+    arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
+    width:'45%',
+    height:'35px',
+    drop:'90px'
+})
+$('.liuyan-btn').on('click',function(){
+    $('.liuyan').css({'display':'none'})
+})
+$('.ly-bnt').on('click',function(){
+    $('.liuyan').css({'display':'block'})
+})

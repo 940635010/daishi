@@ -11,76 +11,16 @@
             margin: 0;
             padding: 0;
         }
-        .liuyan{
-            background-image: url(../images/liuyan/ydliuyan.png);
-            width: 100%;
-            height: 667px;
-            background-repeat:no-repeat;
-            background-size:100% 100%;
-        }
-        .liuyan-box{
-            position: relative;
-            width: 82%;
-            padding-top: 15px;
-            top: 41%;
-            height: 300px;
-            box-sizing: border-box;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            align-content: flex-start;
-        }
-        .liuyan-box>input{
-            padding-left: 10px;
-        }
-        .liuyan-box>p{
-            font-size: 12px;
-            text-align: center;
-            font-weight: 600;
-            width: 100%;
-            margin-bottom: 17px;
-        }
-        .ly-inp1{
-            width: 45%;
-            height: 35px;
-            border: 1px solid black;
-        }
-        .ly-inp2{
-            width: 100%;
-            height: 35px;
-            margin: 15px 0;
-            border: 1px solid black;
-        }
         
-        .liuyan-box>button{
-            width: 100%;
-            font-size: 12px;
-            background-color: #ffde35;
-            border: 0;
-            color: #1128af;
-            height: 36px;
-            margin-top: 15px;
-        }
-        #TextArea1{
-            padding-left: 10px;
-            border: 1px solid black;
-        }
-        .liuyan-btn{
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            top: 14px;
-            right: 10px;
-        }
     </style>
 </head>
 <body>
+    <!-- liuyan -->
     <div class="liuyan">
         <div class="liuyan-box">
             <p>请填写以下信息，我们将尽快与您联系！</p>
             <input class="ly-inp1" type="text" placeholder="您孩子的姓名">
-            <div class="shangke-select1"></div>
+            <div class="liuyan-select1"></div>
             <input class="ly-inp2" type="text" placeholder="您的联系电话">
             <textarea id="TextArea1" cols="100" rows="5" placeholder="回复"/></textarea>
             <button>立即提交</button>
@@ -91,7 +31,7 @@
     <script src="../js/select.js"></script>
     <script>
         new Select({
-            position:$('.shangke-select1'),
+            position:$('.liuyan-select1'),
             arr:["年级","幼儿","一年级","二年级","三年级","四年级","五年级","六年级","初一","初二","初三","高一","高二","高三"],
             width:'45%',
             height:'35px',
