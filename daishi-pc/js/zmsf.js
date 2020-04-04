@@ -21,15 +21,14 @@ new Select({
     drop:'180px'
 })
 window.onload=function(){
-    if(sessionStorage.getItem("key")){
-        $('#shoufei-box').css('display','none')
+    if(!sessionStorage.getItem("key")){
+        $('#shoufei-box').removeClass("hidden")
     }
 }
 $('.shoufei-i').on('click',function(){
-    console.log($('#shoufei-box').css('display'))
     if($('#shoufei-box').css('display')=='block'){
         sessionStorage.setItem("key", "ture");
-        $('#shoufei-box').css('display','none')
+        $('#shoufei-box').addClass("hidden")
     }
 })
 
