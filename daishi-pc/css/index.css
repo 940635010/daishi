@@ -176,7 +176,7 @@ a{
 /* ===========课程类型========== */
 .boxx{
     height:540px;
-    width:1200px;
+    width:375px;
     position: absolute;
     left:50%;
     margin-left:-600px;
@@ -185,9 +185,9 @@ a{
 }
 .banner-course{
     width: 370px;
-    height: 540px;
+    height: 564px;
     background-color: white;
-    padding: 20px 0px 0px 20px;
+    padding: 40px 0px 0px 40px;
     box-sizing: border-box;
     position: absolute;
     top: 0;
@@ -195,10 +195,17 @@ a{
     z-index:50;
 }
 
+.course-one span{
+    cursor: pointer;
+}
+.course-one span:hover{
+   color: #5291ef;
+}
+
 .course-one{
     font-size: 16px;
     color: #999999;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 .course-one-1{
     display: flex;
@@ -231,7 +238,7 @@ a{
     font-weight: bold;
 }
 .course-one-2{
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 .course-one-2>span,.course-one-3>span{
     margin-right: 23px;
@@ -275,6 +282,7 @@ a{
     margin-bottom: 30px;
 }
 .course-1-link{
+    cursor: pointer;
     width: 104px;
     height: 30px;
     text-align: center;
@@ -1023,6 +1031,12 @@ margin-left:125px ;
 }
 .pic-txt>p{
     margin-bottom: 9px;
+}
+.footer-fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 99
 }
 .pic-back{
     width: 100%;
