@@ -172,3 +172,13 @@ document.getElementById('bg').addEventListener('touchmove', function (e) {
     e.preventDefault(); 
     e.stopPropagation();
 },false) 
+
+/* 商务通 */
+$('.kefu').on('click', function () {
+    window.open(
+        'http://ddt.zoosnet.net/LR/Chatpre.aspx?id=DDT72038452&lng=cn',
+        "newwindow",
+        "alwaysRaised=yes, height=600,width=800,top=100,left=300,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no,z-look=yes"
+    );
+    return false;
+})
