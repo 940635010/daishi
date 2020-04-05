@@ -29,42 +29,42 @@
             vertical-align: top;
         }
         @-webkit-keyframes slideInUp {
-    from {
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-        visibility: visible;
-    }
+            from {
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+                visibility: visible;
+            }
 
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
+            to {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
 
-@keyframes slideInUp {
-    from {
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-        visibility: visible;
-    }
+        @keyframes slideInUp {
+            from {
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+                visibility: visible;
+            }
 
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
+            to {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
 
-.slideInUp {
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-}
+        .slideInUp {
+            -webkit-animation-name: slideInUp;
+            animation-name: slideInUp;
+        }
 
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
+        .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
 
     </style>
 </head>
@@ -95,11 +95,11 @@
                     <div class="index-bom">
                         <div class="bom-nav">
                             <ul>
-                                <li class="li-active">首页</li>
-                                <li>师资力量</li>
-                                <li>校区查询</li>
-                                <li>热点资讯</li>
-                                <li>关于我们</li>
+                                <li><a href="./index.html" class="li-active">首页</a></li>
+                                <li><a href="./shizhi.html">师资力量</a></li>
+                                <li><a href="./guanyuwomen.html#chaxun">校区查询</a></li>
+                                <li><a href="#redianzixun">热点资讯</a></li>
+                                <li><a href="./guanyuwomen.html">关于我们</a></li>
                             </ul>
                             <div class="nav-line"></div>
                         </div>
@@ -471,13 +471,13 @@
                     </div>
                     <div class="content-1">
                         <p class="con-txt">其他问题</p>
-                        <p class="attp kefu">在线咨询</p>
+                        <p class="attp kefu" id="redianzixun">在线咨询</p>
                     </div>
                 </div>
             </div>
 
             <!-- 资讯 -->
-            <div class="index-infor center wow slideInUp">
+            <div class="index-infor center wow slideInUp" >
                 <div class="infor-title">热点资讯</div>
                 <div class="infor-bom">
                     <div class="infor-bom-l">

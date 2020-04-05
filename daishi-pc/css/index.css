@@ -79,6 +79,12 @@ a{
 }
 
 /* =======点击时字体的颜色 */
+.bom-nav a{
+    color: #323232
+}
+.bom-nav a:hover{
+     color:#438ae4 ;
+}
 .bom-nav .li-active{
     color:#438ae4 ;
 }

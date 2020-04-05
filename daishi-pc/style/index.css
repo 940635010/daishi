@@ -73,7 +73,6 @@
   display: block;
   margin: auto;
   height: 48px;
-  /* é¡¶éƒ¨æ  */
 }
 #banner .menu > .tit {
   width: 280px;
@@ -86,7 +85,6 @@
   box-sizing: border-box;
   position: relative;
   height: 48px;
-  /* ä¾§è¾¹æ  */
 }
 #banner .menu > .tit .slidebar {
   left: 0;
