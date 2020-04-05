@@ -314,6 +314,13 @@ footer>ul>li img {
     margin: 50px 0;
     text-align: center;
 }
+.baise-name h4{
+    font-size: 16px;
+    font-weight: 700
+}
+.baise-content p {
+    font-size: 16px
+}
 .baise .baise-name img{
     width: 65px;
     height: 50px;
